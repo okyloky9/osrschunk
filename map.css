@@ -1,0 +1,92 @@
+.unused {
+    background: none;
+    opacity:0;
+}
+
+.possible {
+    background: purple;
+    opacity:0.4;
+}
+
+.active {
+    background: green;
+    opacity:0.4;
+}
+
+.unused:hover {
+    opacity:0.3;
+    background:purple;
+}
+.possible:hover {
+    opacity:0.3;
+    background:green;
+}
+.active:hover {
+    opacity:0.3;
+    background:white;
+}
+
+.background {
+    left:0px;
+    top:0px;
+}
+
+.chunk {
+    display:block;
+    height:192px;
+    position:absolute;
+    width:192px;
+}
+
+*{padding:0;margin:0;}
+
+body{
+    font-family:Verdana, Geneva, sans-serif;
+    background-color:#CCC;
+}
+
+.float {
+    position:fixed;
+    z-index: 1;
+    background-color:#0C9;
+    color:#FFF;
+    border-radius:10rem;
+    text-align:center;
+    box-shadow: 2% 2% 3% #999;
+}
+
+.float:active {
+    /*box-shadow: 0 5px #666;*/
+    transform: translateY(3%);
+}
+
+#add-chunk {
+    width:10%;
+    height:5%;
+    bottom:5%;
+    right:5%;
+}
+
+#reset-map {
+    width:10%;
+    height:5%;
+    bottom:5%;
+    left:5%;
+}
+
+#add-chunk:hover {
+    cursor:pointer;
+}
+
+#reset-map:hover {
+    cursor:pointer;
+}
+
+.float-text{
+    font-size:2vh;
+    margin-top:1.5vh;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none;
+}
