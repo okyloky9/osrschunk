@@ -3,48 +3,6 @@ local = JSON.parse(localStorage.getItem("local"));
 
 initMap();
 
-button = document.getElementById('add-chunk');
-button.onclick = function() {
-    var candidates = document.getElementsByClassName("possible");
-    console.log(candidates);
-    var newChunk = candidates[Math.floor(Math.random()*candidates.length)];
-    console.log(newChunk);
-    updateChunk(newChunk, 'active');
-    var x = (newChunk.style.left.split('px')[0]-25)/192;
-    var y = (newChunk.style.top.split('px')[0]-25)/192;
-    try {
-        if (chunks[x-1][y].classList.contains('unused')) {
-            updateChunk(chunks[x-1][y], 'possible')
-        }
-    } catch(e){}
-    try {
-        if (chunks[x+1][y].classList.contains('unused')) {
-            updateChunk(chunks[x+1][y], 'possible')
-        }
-    } catch(e){}
-    try {
-        if (chunks[x][y-1].classList.contains('unused')) {
-            updateChunk(chunks[x][y-1], 'possible')
-        }
-    } catch(e){}
-    try {
-        if (chunks[x][y+1].classList.contains('unused')) {;
-            updateChunk(chunks[x][y+1], 'possible')
-        }
-    } catch(e){}
-    localStorage.setItem("local", JSON.stringify(chunks));
-};
-
-button = document.getElementById('reset-map');
-button.onclick = function() {
-    localStorage.removeItem("local");
-    for (i in chunks) {
-        for (j in chunks[i]) {
-            updateChunk(chunks[i][j], 'unused');
-        }
-    }
-};
-
 function initMap() {
     for (i = 0; i < 43; i++) {
         if (chunks.length <= i) {
