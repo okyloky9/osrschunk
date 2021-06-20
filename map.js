@@ -21,14 +21,7 @@ function initMap() {
             chunks[i][j].classList.add("unused");
             chunks[i][j].setAttribute('style', 'top:'+(25+(j*192))+"px; left:"+(25+(i*192))+"px");
             chunks[i][j].onclick = function() {
-                if (this.classList.contains('unused')) {
-                    updateChunk(this, 'possible')
-                } else if (this.classList.contains('possible')) {
-                    updateChunk(this, 'active')
-                } else if (this.classList.contains('active')) {
-                    updateChunk(this, 'unused')
-                }
-                localStorage.setItem("local", JSON.stringify(chunks));
+               //open up a menu related to that specific chunk with clue related data
             }
         }
     }
