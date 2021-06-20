@@ -60,28 +60,6 @@ body{
     transform: translateY(3%);
 }
 
-#add-chunk {
-    width:10%;
-    height:5%;
-    bottom:5%;
-    right:5%;
-}
-
-#reset-map {
-    width:10%;
-    height:5%;
-    bottom:5%;
-    left:5%;
-}
-
-#add-chunk:hover {
-    cursor:pointer;
-}
-
-#reset-map:hover {
-    cursor:pointer;
-}
-
 .float-text{
     font-size:2vh;
     margin-top:1.5vh;
