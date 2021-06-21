@@ -3,26 +3,13 @@
     opacity:0;
 }
 
-.possible {
-    background: purple;
-    opacity:0.4;
-}
-
-.active {
-    background: green;
-    opacity:0.4;
+.impossible {
+    background: red;
+    opacity:0.8;
 }
 
 .unused:hover {
-    opacity:0.3;
-    background:purple;
-}
-.possible:hover {
-    opacity:0.3;
-    background:green;
-}
-.active:hover {
-    opacity:0.3;
+    opacity:0.1;
     background:white;
 }
 
@@ -43,28 +30,4 @@
 body{
     font-family:Verdana, Geneva, sans-serif;
     background-color:#CCC;
-}
-
-.float {
-    position:fixed;
-    z-index: 1;
-    background-color:#0C9;
-    color:#FFF;
-    border-radius:10rem;
-    text-align:center;
-    box-shadow: 2% 2% 3% #999;
-}
-
-.float:active {
-    /*box-shadow: 0 5px #666;*/
-    transform: translateY(3%);
-}
-
-.float-text{
-    font-size:2vh;
-    margin-top:1.5vh;
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+/Edge */
-    user-select: none;
 }
