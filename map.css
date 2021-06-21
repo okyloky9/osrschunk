@@ -10,7 +10,12 @@
 
 .unused:hover {
     opacity:0.1;
-    background:white;
+    background:green;
+}
+
+.impossible:hover {
+    opacity: 0.5;
+    background:red;
 }
 
 .background {
