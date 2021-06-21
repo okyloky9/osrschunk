@@ -35,8 +35,7 @@ function initMap() {
 
 function updateChunk(chunk, status) {
     if (status!=='unused') { chunk.classList.remove('unused'); }
-    if (status!=='possible') { chunk.classList.remove('possible'); }
-    if (status!=='active') { chunk.classList.remove('active'); }
+    if (status!=='impossible') { chunk.classList.remove('impossible'); }
     chunk.classList.add(status);
     chunk.status=status;
 }
