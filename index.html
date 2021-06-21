@@ -8,5 +8,22 @@
 <body>
     <img id="background" src="WorldMap_OSRS.png" alt="OSRS Map">
     <script src="map.js"></script>
+    
+    <script type="text/javascript">
+        var cnv = document.getElemementByID("background");
+        var ctx = cnv.getContext("2d");
+        
+        for (var i=5; i<=605; i=i+6){
+            ctx.moveTo(i,5);
+            ctx.lineTo(i,605);
+            
+            ctx.moveTo(5,i);
+            ctx.lineTo(605,i);
+            
+            ctx.strokeStyle = "#f0f0f0";
+            ctx.stroke();
+        }
+    </script>
+    
 </body>
 </html>
