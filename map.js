@@ -1,4 +1,12 @@
 let chunks = [];
+
+let begChunks = [];
+let easyChunks = [];
+let medChunks = [];
+let hardChunks = [];
+let eliteChunks = [];
+let masterChunks = [];
+
 local = JSON.parse(localStorage.getItem("local"));
 
 initMap();
