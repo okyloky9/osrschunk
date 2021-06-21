@@ -23,7 +23,7 @@ function initMap() {
             chunks[i][j].onclick = function() {
                 if(this.classList.contains('unused')){
                     updateChunk(this, 'impossible')
-                }else{
+                }else if(this.classList.contains('impossible')){
                     updateChunk(this, 'unused')
                 }
                 //open up a menu related to that specific chunk with clue related data
