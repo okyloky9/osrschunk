@@ -21,7 +21,8 @@ function initMap() {
             chunks[i][j].classList.add("unused");
             chunks[i][j].setAttribute('style', 'top:'+(25+(j*192))+"px; left:"+(25+(i*192))+"px");
             chunks[i][j].onclick = function() {
-               //open up a menu related to that specific chunk with clue related data
+                //open up a menu related to that specific chunk with clue related data
+                localStorage.setItem("local", JSON.stringify(chunks));
             }
         }
     }
