@@ -9,8 +9,8 @@
 }
 
 .unused:hover {
-    opacity:0.1;
-    background:green;
+    opacity:0.3;
+    background:lime;
 }
 
 .impossible:hover {
