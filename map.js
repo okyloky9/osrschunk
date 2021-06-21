@@ -1,7 +1,4 @@
 let chunks = [];
-const zoomElement = document.querySelection(".background");
-let zoom = 1;
-const ZOOM_SPEED = 0.1;
 local = JSON.parse(localStorage.getItem("local"));
 
 initMap();
@@ -36,13 +33,4 @@ function updateChunk(chunk, status) {
     if (status!=='active') { chunk.classList.remove('active'); }
     chunk.classList.add(status);
     chunk.status=status;
-}
-
-document.addEventListener("wheel", function(e) {
-    if(e.deltaY > 0){
-        zoomElement.style.transform = `scale(${zoom += ZOOM_SPEED})`;
-    }else{
-        zoomElement.style.transform = `scale(${zoom -= ZOOM_SPEED})`;
-    }
-});
 }
