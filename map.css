@@ -12,7 +12,7 @@
   height: 50%px;
   width: 30%; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
+  z-index: 2; /* Stay on top */
   top: 25%;
   left: 25px;
   background-color: #111; /* Black */
@@ -33,6 +33,7 @@
 .background {
     left:0px;
     top:0px;
+    z-index: 0;
 }
 
 .chunk {
@@ -40,6 +41,7 @@
     height:192px;
     position:absolute;
     width:192px;
+    z-index: 1;
 }
 
 *{padding:0;margin:0;}
