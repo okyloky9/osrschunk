@@ -49,7 +49,7 @@ function initImpossible(){
     impChunks.push([chunks[31][13]);
     
     for(i=0; impChunks.length; i++){
-        updateChunk(i, 'impossible')
+        updateChunk(i, 'impossible');
     }
 }
 
