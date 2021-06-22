@@ -1,8 +1,10 @@
 let chunks = [];
 
+let header = document.getElementById("head");
+
 let impChunks = [[31,13];
 
-let begChunks = [];
+let begChunks = [[32,13],[30,11],[30,12],[30,13],[33,12],[33,11],[33,13],[33,14],[34,11];
 let easyChunks = [];
 let medChunks = [];
 let hardChunks = [];
@@ -31,18 +33,13 @@ function initMap() {
             chunks[i][j].classList.add("unused");
             chunks[i][j].setAttribute('style', 'top:'+(41+(j*192))+"px; left:"+(40+(i*192))+"px");
             chunks[i][j].onclick = function() {
-                if(this.classList.contains('unused')){
-                    updateChunk(this, 'impossible')
-                }else if(this.classList.contains('impossible')){
-                    updateChunk(this, 'unused')
-                }
-                localStorage.setItem("local", JSON.stringify(chunks));
-                //open up a menu related to that specific chunk with clue related data
+                header.textContent = "[" + chunks[i][j].toString() + "]";
             }
         }
     }
     
     initImpossible();
+    initBeginner();
     
 }
 
@@ -51,6 +48,13 @@ function initImpossible(){
         updateChunk(chunks[impChunks[i][1]][impChunks[i][2]], 'impossible');
     }
     
+    localStorage.setItem("local", JSON.stringify(chunks));
+}
+
+function initBeginner(){
+    for(i=0; i < begChunks.length; i++){
+        chunks[begChunks[i][1]][begChunks[i][2]].classList.add("beginner")
+    }
     localStorage.setItem("local", JSON.stringify(chunks));
 }
 
