@@ -12,7 +12,6 @@ let masterChunks = [];
 local = JSON.parse(localStorage.getItem("local"));
 
 initMap();
-initImpossible();
 
 function initMap() {
     for (i = 0; i < 43; i++) {
@@ -42,6 +41,9 @@ function initMap() {
             }
         }
     }
+    
+    initImpossible();
+    
 }
 
 function initImpossible(){
