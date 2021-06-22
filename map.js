@@ -1,5 +1,7 @@
 let chunks = [];
 
+let impChunks = [];
+
 let begChunks = [];
 let easyChunks = [];
 let medChunks = [];
