@@ -1,6 +1,6 @@
 let chunks = [];
 
-let impChunks = [];
+let impChunks = [[chunks[31][13]];
 
 let begChunks = [];
 let easyChunks = [];
@@ -12,6 +12,7 @@ let masterChunks = [];
 local = JSON.parse(localStorage.getItem("local"));
 
 initMap();
+initImpossible();
 
 function initMap() {
     for (i = 0; i < 43; i++) {
@@ -40,6 +41,12 @@ function initMap() {
                 localStorage.setItem("local", JSON.stringify(chunks));
             }
         }
+    }
+}
+
+function initImpossible(){
+    for(i=0; impChunks.length; i++){
+        updateChunk(i, 'impossible')
     }
 }
 
