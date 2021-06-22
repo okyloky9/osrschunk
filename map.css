@@ -13,6 +13,26 @@
     background:lime;
 }
 
+.floating-menu {
+    font-family: sans-serif;
+    background: black;
+    opacity:0.5
+    padding: 5px;;
+    width: 130px;
+    z-index: 100;
+    position: fixed;
+}
+
+.floating-menu a, 
+
+.floating-menu h3 {
+    font-size: 0.9em;
+    opacity: 0.7;
+    display: block;
+    margin: 0 0.5em;
+    color: gray;
+}
+
 .impossible:hover {
     opacity: 0.5;
     background:red;
