@@ -29,7 +29,7 @@ function initMap() {
             }
 
             chunks[i][j].classList.add("unused");
-            chunks[i][j].setAttribute('style', 'top:'+(25+(j*192))+"px; left:"+(25+(i*192))+"px");
+            chunks[i][j].setAttribute('style', 'top:'+(40+(j*192))+"px; left:"+(40+(i*192))+"px");
             chunks[i][j].onclick = function() {
                 if(this.classList.contains('unused')){
                     updateChunk(this, 'impossible')
