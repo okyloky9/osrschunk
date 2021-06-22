@@ -16,8 +16,8 @@
 .floating-menu {
     font-family: sans-serif;
     background: black;
-    opacity:0.5
-    padding: 5px;;
+    opacity:0.5;
+    padding: 5px;
     width: 130px;
     z-index: 100;
     position: fixed;
