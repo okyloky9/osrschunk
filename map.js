@@ -47,7 +47,7 @@ function initMap() {
 function initImpossible(){
     impChunks.push([chunks[31][13]);
     
-    for(i=0; impChunks.length; i++){
+    for(i=0; i < impChunks.length; i++){
         updateChunk(i, 'impossible');
     }
     localStorage.setItem("local", JSON.stringify(chunks));
