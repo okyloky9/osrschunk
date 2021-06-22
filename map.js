@@ -1,6 +1,6 @@
 let chunks = [];
 
-let impChunks = [];
+let impChunks = [[31,13];
 
 let begChunks = [];
 let easyChunks = [];
@@ -47,8 +47,6 @@ function initMap() {
 }
 
 function initImpossible(){
-    impChunks.push([31,13]); 
-    
     for(i=0; i < impChunks.length; i++){
         updateChunk(chunks[impChunks[i][1]][impChunks[i][2]], 'impossible');
     }
