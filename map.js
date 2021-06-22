@@ -1,6 +1,6 @@
 let chunks = [];
 
-let header = document.getElementById("head");
+var header = document.getElementById("head");
 
 let impChunks = [[31,13]];
 
