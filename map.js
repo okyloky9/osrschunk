@@ -1,7 +1,5 @@
 let chunks = [];
 
-var header = document.getElementById("head");
-
 let impChunks = [[31,13]];
 
 let begChunks = [[32,13],[30,11],[30,12],[30,13],[33,12],[33,11],[33,13],[33,14],[34,11]];
@@ -33,7 +31,8 @@ function initMap() {
             chunks[i][j].classList.add("unused");
             chunks[i][j].setAttribute('style', 'top:'+(41+(j*192))+"px; left:"+(40+(i*192))+"px");
             chunks[i][j].onclick = function() {
-                header.textContent = "[" + chunks[i][j].toString() + "]";
+                document.getElementById("head").textContent = "[" + chunks[i][j].toString() + "]";
+                localStorage.setItem("local", JSON.stringify(chunks));
             }
         }
     }
