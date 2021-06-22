@@ -37,20 +37,20 @@ function initMap() {
                 }else if(this.classList.contains('impossible')){
                     updateChunk(this, 'unused')
                 }
-                //open up a menu related to that specific chunk with clue related data
                 localStorage.setItem("local", JSON.stringify(chunks));
+                //open up a menu related to that specific chunk with clue related data
             }
         }
     }
 }
 
 function initImpossible(){
-    
     impChunks.push([chunks[31][13]);
     
     for(i=0; impChunks.length; i++){
         updateChunk(i, 'impossible');
     }
+    localStorage.setItem("local", JSON.stringify(chunks));
 }
 
 function updateChunk(chunk, status) {
