@@ -9,14 +9,14 @@
 }
 
 .sidenav {
-  height: 600px;
-  width: 400px; /* Set the width of the sidebar */
+  height: 50%px;
+  width: 30%; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
-  top: 30%;
+  top: 25%;
   left: 25px;
   background-color: #111; /* Black */
-  opacity:0.9;
+  opacity:0.8;
   overflow-x: hidden; /* Disable horizontal scroll */
 }
 
