@@ -2,9 +2,9 @@ let chunks = [];
 
 let header = document.getElementById("head");
 
-let impChunks = [[31,13];
+let impChunks = [[31,13]];
 
-let begChunks = [[32,13],[30,11],[30,12],[30,13],[33,12],[33,11],[33,13],[33,14],[34,11];
+let begChunks = [[32,13],[30,11],[30,12],[30,13],[33,12],[33,11],[33,13],[33,14],[34,11]];
 let easyChunks = [];
 let medChunks = [];
 let hardChunks = [];
