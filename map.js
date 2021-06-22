@@ -28,6 +28,12 @@ function initMap() {
             } catch(e){
                 updateChunk(chunks[i][j], 'unused');
             }
+            
+            impChunks.push([chunks[31][13])
+    
+            for(i=0; impChunks.length; i++){
+                updateChunk(i, 'impossible')
+            }
 
             chunks[i][j].classList.add("unused");
             chunks[i][j].setAttribute('style', 'top:'+(41+(j*192))+"px; left:"+(40+(i*192))+"px");
@@ -41,15 +47,6 @@ function initMap() {
                 localStorage.setItem("local", JSON.stringify(chunks));
             }
         }
-    }
-}
-
-function initImpossible(){
-    
-    impChunks.push([chunks[31][13])
-    
-    for(i=0; impChunks.length; i++){
-        updateChunk(i, 'impossible')
     }
 }
 
