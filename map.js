@@ -58,8 +58,8 @@ function initBeginner(){
 }
 
 function updateChunk(chunk, status) {
-    if (status!=='unused') { chunk.classList.remove('unused'); }
-    if (status!=='impossible') { chunk.classList.remove('impossible'); }
+    //if (status!=='unused') { chunk.classList.remove('unused'); }
+    //if (status!=='impossible') { chunk.classList.remove('impossible'); }
     chunk.classList.add(status);
     chunk.status=status;
 }
