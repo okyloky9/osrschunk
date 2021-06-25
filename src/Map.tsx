@@ -25,19 +25,30 @@ export default function Map() {
 
   return (
     <TransformWrapper minScale={0.1} limitToBounds={false}>
-      <TransformComponent>
-        <table id="map" cellSpacing={0} cellPadding={0}>
-          <tbody>
-            {chunks.map((row, y) => (
-              <tr key={`row-${y}`}>
-                {row.map((chunk, x) => (
-                  <td key={`chunk-${x}-${y}`}></td>
+      {({ ...props }) => {
+        const { scale } = props.state;
+
+        return (
+          <TransformComponent>
+            <table
+              id="map"
+              cellSpacing={0}
+              cellPadding={0}
+              className={scale > 1 ? 'zoomed-in' : ''}
+            >
+              <tbody>
+                {chunks.map((row, y) => (
+                  <tr key={`row-${y}`}>
+                    {row.map((chunk, x) => (
+                      <td key={`chunk-${x}-${y}`}></td>
+                    ))}
+                  </tr>
                 ))}
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </TransformComponent>
+              </tbody>
+            </table>
+          </TransformComponent>
+        );
+      }}
     </TransformWrapper>
   );
 }

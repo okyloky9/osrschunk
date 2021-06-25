@@ -6,6 +6,10 @@
   background-position: top -41px left -40px;
   background-repeat: no-repeat;
 
+  &.zoomed-in {
+    image-rendering: pixelated;
+  }
+
   table-layout: fixed;
   border-collapse: collapse;
 
