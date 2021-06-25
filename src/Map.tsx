@@ -22,7 +22,7 @@ export default function Map() {
   const height = 25;
 
   const [chunks, setChunks] = useState(initChunks(width, height));
-  const [view, setView] = useState({ scale: .5, translation: { x: 0, y: 0 } });
+  const [view, setView] = useState({ scale: 1.2, translation: { x: 0, y: 0 } });
   const [dimensions, setDimensions] = useState({
     width: window.innerWidth,
     height: window.innerHeight,
