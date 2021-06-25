@@ -26,27 +26,36 @@ export default function Map() {
   return (
     <TransformWrapper minScale={0.1} limitToBounds={false}>
       {({ ...props }) => {
-        const { scale } = props.state;
+        const { setTransform, state } = props;
+        const { scale } = state;
 
         return (
-          <TransformComponent>
-            <table
-              id="map"
-              cellSpacing={0}
-              cellPadding={0}
-              className={scale > 1 ? 'zoomed-in' : ''}
-            >
-              <tbody>
-                {chunks.map((row, y) => (
-                  <tr key={`row-${y}`}>
-                    {row.map((chunk, x) => (
-                      <td key={`chunk-${x}-${y}`}></td>
-                    ))}
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </TransformComponent>
+          <>
+            <TransformComponent>
+              <table
+                id="map"
+                cellSpacing={0}
+                cellPadding={0}
+                className={scale > 1 ? 'zoomed-in' : ''}
+              >
+                <tbody>
+                  {chunks.map((row, y) => (
+                    <tr key={`row-${y}`}>
+                      {row.map((chunk, x) => (
+                        <td key={`chunk-${x}-${y}`}></td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </TransformComponent>
+
+            <div id="controls">
+              <button onClick={() => setTransform(0, 0, 0.15, 500, 'easeOut')}>
+                zoom out
+              </button>
+            </div>
+          </>
         );
       }}
     </TransformWrapper>
