@@ -9068,6 +9068,11 @@ react-is@^17.0.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.1.tgz#5b3531bd76a645a4c9fb6e693ed36419e3301339"
   integrity sha512-NAnt2iGDXohE5LI7uBnLnqvLQMtzhkiAOLXTmv+qnF9Ky7xAPcX8Up/xWIhxvLVGJvuLiNc4xQLtuqDRzb4fSA==
 
+react-map-interaction@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/react-map-interaction/-/react-map-interaction-2.1.0.tgz#fa76d42d27bf1124c65a5312c98c08922fedc208"
+  integrity sha512-bD6Gz2nuf60HF4WAYfBOjsqttrFlTd1u/TrCQSxdl3KITiTpTxr1vvLIr1k+NR2w3Jln+gux+oWDbjnh8Dhv7w==
+
 react-refresh@^0.8.3:
   version "0.8.3"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.8.3.tgz#721d4657672d400c5e3c75d063c4a85fb2d5d68f"
@@ -9138,11 +9143,6 @@ react-scripts@4.0.3:
     workbox-webpack-plugin "5.1.4"
   optionalDependencies:
     fsevents "^2.1.3"
-
-react-zoom-pan-pinch@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/react-zoom-pan-pinch/-/react-zoom-pan-pinch-2.0.2.tgz#902e170df065db1d4dc075f4479db5f18116c628"
-  integrity sha512-7czrWgZUSN04ZgdLqmPi9e9w7+kPHjj/HOdY4dybvFsbFNULGcQOrvJa+z7+LbMWcVOMXOpV/+G39Rxdcjd5+g==
 
 react@^17.0.2:
   version "17.0.2"
