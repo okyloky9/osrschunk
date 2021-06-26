@@ -1,7 +1,14 @@
 import { useEffect, useRef } from 'react';
 
-import { chunkHasClues, createClassString, getChunk } from '../utils';
-import { MapChunk } from '../models';
+import ClueIcon from './ClueIcon';
+import {
+  capitalizeFirstLetter,
+  chunkHasClues,
+  clueCountsForChunk,
+  createClassString,
+  getChunk,
+} from '../utils';
+import { ClueDifficulty, MapChunk } from '../models';
 
 const ChunkTile: React.FC<{
   chunk: MapChunk;
@@ -110,6 +117,9 @@ const ChunkTile: React.FC<{
     tdEl.addEventListener('touchcancel', resetMouseState);
   }, [tdRef]);
 
+  // get clue counts
+  const clueCounts = clueCountsForChunk(chunkData);
+
   return (
     <td
       className={createClassString({
@@ -118,8 +128,25 @@ const ChunkTile: React.FC<{
       ref={tdRef}
     >
       <div className="chunk-tile">
-        <div className="chunk-coords">
-          ({chunk.x}, {chunk.y})
+        <div>
+          <div className="chunk-coords">
+            ({chunk.x}, {chunk.y})
+          </div>
+
+          <div className="chunk-clues-and-counts">
+            {Object.entries(clueCounts)
+              .filter(([_, value]) => value)
+              .map(([difficulty, count]) => (
+                <div className={difficulty} key={`clue-count-${difficulty}`}>
+                  <ClueIcon
+                    difficulty={
+                      capitalizeFirstLetter(difficulty) as ClueDifficulty
+                    }
+                  />
+                  <span className="clue-count">{count}</span>
+                </div>
+              ))}
+          </div>
         </div>
       </div>
     </td>

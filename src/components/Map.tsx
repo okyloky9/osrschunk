@@ -42,6 +42,8 @@ export default function Map() {
   // settings
   const [showSidebar, setShowSideBar] = useState(false);
   const [showCoords, setShowCoords] = useState(false);
+  const [showClues, setShowClues] = useState(true);
+  const [showClueCounts, setShowClueCounts] = useState(true);
 
   // on load
   useEffect(() => {
@@ -99,6 +101,7 @@ export default function Map() {
           cellPadding={0}
           className={createClassString({
             'show-coords': showCoords,
+            'show-clues': showClues,
             'zoomed-in': scale > 1,
           })}
         >
@@ -133,12 +136,34 @@ export default function Map() {
             <form>
               <h1>Settings</h1>
 
-              <ToggleSwitch
-                checked={showCoords}
-                onChange={(e) => setShowCoords(e.target.checked)}
-              >
-                Show Chunk Coords
-              </ToggleSwitch>
+              <div>
+                <ToggleSwitch
+                  checked={showCoords}
+                  onChange={(e) => setShowCoords(e.target.checked)}
+                >
+                  Show Chunk Coords
+                </ToggleSwitch>
+              </div>
+
+              <div>
+                <ToggleSwitch
+                  checked={showClues}
+                  onChange={(e) => setShowClues(e.target.checked)}
+                >
+                  Show Clues
+                </ToggleSwitch>
+              </div>
+
+              {showClues && (
+                <div>
+                  <ToggleSwitch
+                    checked={showClueCounts}
+                    onChange={(e) => setShowClueCounts(e.target.checked)}
+                  >
+                    Show Clue Counts
+                  </ToggleSwitch>
+                </div>
+              )}
             </form>
           </div>
         ) : (

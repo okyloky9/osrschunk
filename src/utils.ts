@@ -39,3 +39,7 @@ export function createClassString(object: {
 
   return classes.length ? classes.join(' ') : undefined;
 }
+
+export function capitalizeFirstLetter(str: string): string {
+  return `${str.charAt(0).toUpperCase()}${str.substr(1)}`;
+}

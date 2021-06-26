@@ -13,14 +13,69 @@
     image-rendering: pixelated;
   }
 
+  // chunk coords
   .chunk-coords {
     display: none;
   }
 
   &.show-coords .chunk-coords {
-    display: block;
     position: relative;
+
+    display: block;
+
+    padding: 2px;
+
     z-index: 1;
+  }
+
+  // clue icons and counts
+  .chunk-clues-and-counts {
+    display: none;
+
+    padding: 2px;
+
+    div {
+      position: relative;
+      display: inline-block;
+
+      &.beginner img {
+        filter: drop-shadow(0 0 4px #ffffff);
+      }
+
+      &.easy img {
+        filter: drop-shadow(0 0 4px #00aa00);
+      }
+
+      &.medium img {
+        filter: drop-shadow(0 0 4px #00ffff);
+      }
+
+      &.hard img {
+        filter: drop-shadow(0 0 4px #d101d1);
+      }
+
+      &.elite img {
+        filter: drop-shadow(0 0 4px #ffd700);
+      }
+
+      &.master img {
+        filter: drop-shadow(0 0 4px #ff0000);
+      }
+
+      span {
+        position: absolute;
+        top: 5px;
+        left: 10px;
+      }
+    }
+  }
+
+  &.show-clues .chunk-clues-and-counts {
+    display: block;
+
+    &:empty {
+      display: none;
+    }
   }
 
   tr {
@@ -56,9 +111,11 @@
 
         width: 100%;
         height: 100%;
-        box-sizing: border-box;
 
-        padding: 2px;
+        > div {
+          display: inline-block;
+          background-color: rgba(0, 0, 0, 0.7);
+        }
       }
     }
   }
@@ -67,7 +124,7 @@
 #sidebar {
   height: 100vh;
 
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
   color: #ffffff;
 
   form {
@@ -76,6 +133,10 @@
     h1 {
       margin-block-start: 0;
       font-size: 20px;
+    }
+
+    > div:not(:last-child) {
+      margin-bottom: 6px;
     }
   }
 }
