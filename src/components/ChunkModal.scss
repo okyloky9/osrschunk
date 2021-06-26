@@ -25,6 +25,10 @@
     th {
       border: 1px solid #ddd;
       padding: 8px;
+
+      .alternate-chunk {
+        color: #2a59bd;
+      }
     }
   }
 }
