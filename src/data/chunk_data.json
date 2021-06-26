@@ -79,7 +79,14 @@
         "type": "Anagram",
         "clueHint": "Rain Cove",
         "solution": "Veronica",
-        "location": "Outside Draynor Manor"
+        "location": "Outside Draynor Manor",
+        "alternateChunks": [
+          {
+            "x": 30,
+            "y": 12,
+            "notes": "TODO"
+          }
+        ]
       },
       {
         "type": "Hot/Cold",
@@ -97,7 +104,14 @@
         "type": "Anagram",
         "clueHint": "Rain Cove",
         "solution": "Veronica",
-        "location": "Outside Draynor Manor"
+        "location": "Outside Draynor Manor",
+        "alternateChunks": [
+          {
+            "x": 30,
+            "y": 11,
+            "notes": "TODO"
+          }
+        ]
       },
       {
         "type": "Hot/Cold",
@@ -133,7 +147,14 @@
         "type": "Anagram",
         "clueHint": "Sir Share Red",
         "solution": "Hairdresser",
-        "location": "Western Falador"
+        "location": "Western Falador",
+        "alternateChunks": [
+          {
+            "x": 28,
+            "y": 11,
+            "notes": "TODO"
+          }
+        ]
       }
     ]
   },
@@ -145,7 +166,14 @@
         "type": "Anagram",
         "clueHint": "Sir Share Red",
         "solution": "Hairdresser",
-        "location": "Western Falador"
+        "location": "Western Falador",
+        "alternateChunks": [
+          {
+            "x": 27,
+            "y": 11,
+            "notes": "TODO"
+          }
+        ]
       },
       {
         "type": "Emote",
@@ -159,7 +187,17 @@
     "x": 32,
     "y": 10,
     "beginnerClues": [
-      { "type": "Charlie the Tramp", "location": "North of Varrock entrance" },
+      {
+        "type": "Charlie the Tramp",
+        "location": "North of Varrock entrance",
+        "alternateChunks": [
+          {
+            "x": 32,
+            "y": 11,
+            "notes": "TODO"
+          }
+        ]
+      },
       {
         "type": "Emote",
         "clueHint": "Blow a raspberry at Gypsy Aris in her tent.",
@@ -180,7 +218,17 @@
     "x": 32,
     "y": 11,
     "beginnerClues": [
-      { "type": "Charlie the Tramp", "location": "North of Varrock entrance" }
+      {
+        "type": "Charlie the Tramp",
+        "location": "North of Varrock entrance",
+        "alternateChunks": [
+          {
+            "x": 32,
+            "y": 10,
+            "notes": "TODO"
+          }
+        ]
+      }
     ]
   },
   {
@@ -265,7 +313,14 @@
         "clueHint": "Atop Ice Mountain",
         "solution": "Dig atop Ice Mountain.",
         "location": "Ice Mountain",
-        "itemsRequired": ["Spade", "Strange Device"]
+        "itemsRequired": ["Spade", "Strange Device"],
+        "alternateChunks": [
+          {
+            "x": 29,
+            "y": 9,
+            "notes": "TODO"
+          }
+        ]
       }
     ]
   },
@@ -278,7 +333,14 @@
         "clueHint": "Atop Ice Mountain",
         "solution": "Dig atop Ice Mountain.",
         "location": "Ice Mountain",
-        "itemsRequired": ["Spade", "Strange Device"]
+        "itemsRequired": ["Spade", "Strange Device"],
+        "alternateChunks": [
+          {
+            "x": 28,
+            "y": 9,
+            "notes": "TODO"
+          }
+        ]
       }
     ]
   },
