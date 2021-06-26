@@ -83,4 +83,9 @@
       transform: translate3d(22px, 2px, 0);
     }
   }
+
+  span {
+    position: relative;
+    top: -3px;
+  }
 }
