@@ -42,7 +42,8 @@ export default function Map() {
   // settings
   const [showSidebar, setShowSideBar] = useState(false);
   const [showCoords, setShowCoords] = useState(false);
-  const [showClues, setShowClues] = useState(false);
+  const [showClues, setShowClues] = useState(true);
+  const [showClueCounts, setShowClueCounts] = useState(true);
 
   // on load
   useEffect(() => {
@@ -152,6 +153,17 @@ export default function Map() {
                   Show Clues
                 </ToggleSwitch>
               </div>
+
+              {showClues && (
+                <div>
+                  <ToggleSwitch
+                    checked={showClueCounts}
+                    onChange={(e) => setShowClueCounts(e.target.checked)}
+                  >
+                    Show Clue Counts
+                  </ToggleSwitch>
+                </div>
+              )}
             </form>
           </div>
         ) : (

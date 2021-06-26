@@ -35,10 +35,37 @@
     padding: 2px;
 
     div {
+      position: relative;
       display: inline-block;
 
-      img {
+      &.beginner img {
+        filter: drop-shadow(0 0 4px #ffffff);
+      }
+
+      &.easy img {
+        filter: drop-shadow(0 0 4px #00aa00);
+      }
+
+      &.medium img {
+        filter: drop-shadow(0 0 4px #00ffff);
+      }
+
+      &.hard img {
+        filter: drop-shadow(0 0 4px #d101d1);
+      }
+
+      &.elite img {
         filter: drop-shadow(0 0 4px #ffd700);
+      }
+
+      &.master img {
+        filter: drop-shadow(0 0 4px #ff0000);
+      }
+
+      span {
+        position: absolute;
+        top: 5px;
+        left: 10px;
       }
     }
   }

@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 
 import ClueIcon from './ClueIcon';
 import {
+  capitalizeFirstLetter,
   chunkHasClues,
   clueCountsForChunk,
   createClassString,
@@ -134,16 +135,15 @@ const ChunkTile: React.FC<{
 
           <div className="chunk-clues-and-counts">
             {Object.entries(clueCounts)
-              .filter(([difficulty, value]) => value)
+              .filter(([_, value]) => value)
               .map(([difficulty, count]) => (
-                <div key={`clue-count-${difficulty}`}>
+                <div className={difficulty} key={`clue-count-${difficulty}`}>
                   <ClueIcon
                     difficulty={
-                      `${difficulty.charAt(0).toUpperCase()}${difficulty.substr(
-                        1
-                      )}` as ClueDifficulty
+                      capitalizeFirstLetter(difficulty) as ClueDifficulty
                     }
                   />
+                  <span className="clue-count">{count}</span>
                 </div>
               ))}
           </div>
