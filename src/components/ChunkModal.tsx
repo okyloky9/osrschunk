@@ -8,12 +8,24 @@ const ChunkModal: React.FC<{ chunk: ChunkData }> = ({ chunk }) => {
         Chunk ({chunk.x}, {chunk.y})
       </h1>
 
-      <ClueTable clues={chunk.beginnerClues} difficulty="Beginner" />
-      <ClueTable clues={chunk.easyClues} difficulty="Easy" />
-      <ClueTable clues={chunk.mediumClues} difficulty="Medium" />
-      <ClueTable clues={chunk.hardClues} difficulty="Hard" />
-      <ClueTable clues={chunk.eliteClues} difficulty="Elite" />
-      <ClueTable clues={chunk.masterClues} difficulty="Master" />
+      <div>
+        <ClueTable clues={chunk.beginnerClues} difficulty="Beginner" />
+      </div>
+      <div>
+        <ClueTable clues={chunk.easyClues} difficulty="Easy" />
+      </div>
+      <div>
+        <ClueTable clues={chunk.mediumClues} difficulty="Medium" />
+      </div>
+      <div>
+        <ClueTable clues={chunk.hardClues} difficulty="Hard" />
+      </div>
+      <div>
+        <ClueTable clues={chunk.eliteClues} difficulty="Elite" />
+      </div>
+      <div>
+        <ClueTable clues={chunk.masterClues} difficulty="Master" />
+      </div>
     </div>
   );
 };
