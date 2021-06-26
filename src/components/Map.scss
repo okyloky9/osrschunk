@@ -19,22 +19,36 @@
   }
 
   &.show-coords .chunk-coords {
-    display: block;
     position: relative;
+
+    display: block;
+
+    padding: 2px;
+
     z-index: 1;
   }
 
   // clue icons and counts
-  .chunk-clues-and-counts div {
+  .chunk-clues-and-counts {
     display: none;
 
-    img {
-      filter: drop-shadow(0 0 4px #ffd700);
+    padding: 2px;
+
+    div {
+      display: inline-block;
+
+      img {
+        filter: drop-shadow(0 0 4px #ffd700);
+      }
     }
   }
 
-  &.show-clues .chunk-clues-and-counts div {
-    display: inline-block;
+  &.show-clues .chunk-clues-and-counts {
+    display: block;
+
+    &:empty {
+      display: none;
+    }
   }
 
   tr {
@@ -70,9 +84,11 @@
 
         width: 100%;
         height: 100%;
-        box-sizing: border-box;
 
-        padding: 2px;
+        > div {
+          display: inline-block;
+          background-color: rgba(0, 0, 0, 0.7);
+        }
       }
     }
   }

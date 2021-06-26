@@ -127,24 +127,26 @@ const ChunkTile: React.FC<{
       ref={tdRef}
     >
       <div className="chunk-tile">
-        <div className="chunk-coords">
-          ({chunk.x}, {chunk.y})
-        </div>
+        <div>
+          <div className="chunk-coords">
+            ({chunk.x}, {chunk.y})
+          </div>
 
-        <div className="chunk-clues-and-counts">
-          {Object.entries(clueCounts)
-            .filter(([difficulty, value]) => value)
-            .map(([difficulty, count]) => (
-              <div key={`clue-count-${difficulty}`}>
-                <ClueIcon
-                  difficulty={
-                    `${difficulty.charAt(0).toUpperCase()}${difficulty.substr(
-                      1
-                    )}` as ClueDifficulty
-                  }
-                />
-              </div>
-            ))}
+          <div className="chunk-clues-and-counts">
+            {Object.entries(clueCounts)
+              .filter(([difficulty, value]) => value)
+              .map(([difficulty, count]) => (
+                <div key={`clue-count-${difficulty}`}>
+                  <ClueIcon
+                    difficulty={
+                      `${difficulty.charAt(0).toUpperCase()}${difficulty.substr(
+                        1
+                      )}` as ClueDifficulty
+                    }
+                  />
+                </div>
+              ))}
+          </div>
         </div>
       </div>
     </td>
