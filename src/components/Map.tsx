@@ -1,12 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
 import { MapInteractionCSS } from 'react-map-interaction';
 
-import { Modal } from '.';
+import { ChunkTile, Modal } from '.';
 import type { ModalHandle } from '.';
 import { ToggleSwitch } from './forms';
-import { listHasChunk } from '../utils';
 import { Chunk } from '../models';
-import chunkData from '../data/chunk_data.json';
 
 function initChunks(width: number, height: number): Chunk[][] {
   const chunks: Chunk[][] = [];
@@ -29,7 +27,7 @@ export default function Map() {
   const modal = useRef<ModalHandle>(null);
 
   // chunk map
-  const [chunks, setChunks] = useState(initChunks(width, height));
+  const [chunks] = useState(initChunks(width, height));
   const [selectedChunk, setSelectedChunk] = useState<Chunk>();
 
   // view and window dimensions
@@ -97,21 +95,12 @@ export default function Map() {
             {chunks.map((row, y) => (
               <tr key={`row-${y}`}>
                 {row.map((chunk, x) => (
-                  <td
-                    className={
-                      listHasChunk(chunkData.impossible, [x, y])
-                        ? 'impossible'
-                        : undefined
-                    }
+                  <ChunkTile
+                    chunk={chunk}
                     onClick={() => setSelectedChunk(chunk)}
+                    showCoords={showCoords}
                     key={`chunk-${x}-${y}`}
-                  >
-                    {showCoords && (
-                      <>
-                        ({x}, {y})
-                      </>
-                    )}
-                  </td>
+                  />
                 ))}
               </tr>
             ))}
@@ -161,7 +150,11 @@ export default function Map() {
       </div>
 
       <Modal ref={modal}>
-        Chunk ({selectedChunk?.x}, {selectedChunk?.y})
+        <div id="chunk-modal">
+          <h1>
+            Chunk ({selectedChunk?.x}, {selectedChunk?.y})
+          </h1>
+        </div>
       </Modal>
     </>
   );
