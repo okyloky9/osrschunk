@@ -17,17 +17,22 @@
     }
   }
 
-  table {
-    border-collapse: collapse;
+  > div {
     width: 100%;
+    overflow-x: scroll;
 
-    td,
-    th {
-      border: 1px solid #ddd;
-      padding: 8px;
+    table {
+      border-collapse: collapse;
+      width: 100%;
 
-      .alternate-chunk {
-        color: #2a59bd;
+      td,
+      th {
+        border: 1px solid #ddd;
+        padding: 8px;
+
+        .alternate-chunk {
+          color: #2a59bd;
+        }
       }
     }
   }
