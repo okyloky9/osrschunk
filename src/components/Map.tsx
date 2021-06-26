@@ -157,6 +157,7 @@ export default function Map() {
           <h1>
             Chunk ({selectedChunk?.x}, {selectedChunk?.y})
           </h1>
+          Placeholder
         </div>
       </Modal>
     </>
