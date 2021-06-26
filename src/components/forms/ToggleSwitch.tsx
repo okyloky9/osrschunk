@@ -9,7 +9,7 @@ const ToggleSwitch: React.FC<{
     <label className="toggle-switch">
       <input checked={checked} type="checkbox" onChange={onChange} />
       <i />
-      {children}
+      <span>{children}</span>
     </label>
   );
 };

@@ -1,0 +1,21 @@
+#chunk-modal {
+  h1 {
+    margin-block-start: 0;
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+
+    td,
+    th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+  }
+}
