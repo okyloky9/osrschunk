@@ -10,6 +10,14 @@
     image-rendering: pixelated;
   }
 
+  .chunk-coords {
+    display: none;
+  }
+
+  &.show-coords .chunk-coords {
+    display: block;
+  }
+
   table-layout: fixed;
   border-collapse: collapse;
 

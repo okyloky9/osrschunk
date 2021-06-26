@@ -5,6 +5,7 @@ import { ChunkTile, Modal } from '.';
 import type { ModalHandle } from '.';
 import { ToggleSwitch } from './forms';
 import { Chunk } from '../models';
+import { createClassString } from '../utils';
 
 function initChunks(width: number, height: number): Chunk[][] {
   const chunks: Chunk[][] = [];
@@ -89,7 +90,10 @@ export default function Map() {
           id="map"
           cellSpacing={0}
           cellPadding={0}
-          className={scale > 1 ? 'zoomed-in' : ''}
+          className={createClassString({
+            'show-coords': showCoords,
+            'zoomed-in': scale > 1,
+          })}
         >
           <tbody>
             {chunks.map((row, y) => (
@@ -98,7 +102,6 @@ export default function Map() {
                   <ChunkTile
                     chunk={chunk}
                     onClick={() => setSelectedChunk(chunk)}
-                    showCoords={showCoords}
                     key={`chunk-${x}-${y}`}
                   />
                 ))}

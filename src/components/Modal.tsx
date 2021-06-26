@@ -8,6 +8,8 @@ import {
 } from 'react';
 import { createPortal } from 'react-dom';
 
+import { createClassString } from '../utils';
+
 const modalElement = document.getElementById('modal-root') as Element;
 
 export type ModalHandle = { close: () => void; open: () => void };
@@ -45,8 +47,14 @@ export default forwardRef<
 
   return createPortal(
     isOpen ? (
-      <div className={`modal ${fade ? 'modal-fade' : ''}`}>
+      <div
+        className={createClassString({
+          modal: true,
+          'modal-fade': fade,
+        })}
+      >
         <div className="modal-overlay" onClick={close} />
+
         <span
           role="button"
           className="modal-close"
@@ -55,6 +63,7 @@ export default forwardRef<
         >
           x
         </span>
+
         <div className="modal-body">{children}</div>
       </div>
     ) : null,

@@ -1,7 +1,7 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 
 import chunkData from '../data/chunk_data.json';
-import { listHasChunk } from '../utils';
+import { createClassString, listHasChunk } from '../utils';
 import { Chunk } from '../models';
 
 const ChunkTile: React.FC<{
@@ -70,18 +70,14 @@ const ChunkTile: React.FC<{
 
   return (
     <td
-      className={
-        listHasChunk(chunkData.impossible, [chunk.x, chunk.y])
-          ? 'impossible'
-          : undefined
-      }
+      className={createClassString({
+        impossible: listHasChunk(chunkData.impossible, [chunk.x, chunk.y]),
+      })}
       ref={tdRef}
     >
-      {showCoords && (
-        <>
-          ({chunk.x}, {chunk.y})
-        </>
-      )}
+      <span className="chunk-coords">
+        ({chunk.x}, {chunk.y})
+      </span>
     </td>
   );
 };
