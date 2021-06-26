@@ -1,6 +1,8 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { MapInteractionCSS } from 'react-map-interaction';
 
+import { Modal } from '.';
+import type { ModalHandle } from '.';
 import { ToggleSwitch } from './forms';
 import { listHasChunk } from '../utils';
 import { Chunk } from '../models';
@@ -13,7 +15,7 @@ function initChunks(width: number, height: number): Chunk[][] {
     chunks.push([]);
 
     for (let x = 0; x < width; x++) {
-      chunks[y].push(new Chunk());
+      chunks[y].push(new Chunk(x, y));
     }
   }
 
@@ -24,8 +26,11 @@ export default function Map() {
   const width = 43;
   const height = 25;
 
+  const modal = useRef<ModalHandle>(null);
+
   // chunk map
   const [chunks, setChunks] = useState(initChunks(width, height));
+  const [selectedChunk, setSelectedChunk] = useState<Chunk>();
 
   // view and window dimensions
   const [view, setView] = useState({ scale: 1.2, translation: { x: 0, y: 0 } });
@@ -38,6 +43,7 @@ export default function Map() {
   const [showSidebar, setShowSideBar] = useState(false);
   const [showCoords, setShowCoords] = useState(false);
 
+  // on load
   useEffect(() => {
     function handleResize() {
       setWindowDimensions({
@@ -48,6 +54,17 @@ export default function Map() {
 
     window.addEventListener('resize', handleResize);
   }, []);
+
+  // when chunk is selected or deselected
+  useEffect(() => {
+    if (!modal.current) return;
+
+    if (selectedChunk) {
+      modal.current.open();
+    } else {
+      modal.current.close();
+    }
+  }, [modal, selectedChunk]);
 
   const { scale } = view;
 
@@ -86,6 +103,7 @@ export default function Map() {
                         ? 'impossible'
                         : undefined
                     }
+                    onClick={() => setSelectedChunk(chunk)}
                     key={`chunk-${x}-${y}`}
                   >
                     {showCoords && (
@@ -141,6 +159,10 @@ export default function Map() {
           zoom out
         </button>
       </div>
+
+      <Modal ref={modal}>
+        Chunk ({selectedChunk?.x}, {selectedChunk?.y})
+      </Modal>
     </>
   );
 }
