@@ -51,7 +51,11 @@ export default function Map() {
 
   const { scale } = view;
 
-  const minScale = windowDimensions.width / (width * 192);
+  const minWidthScale = windowDimensions.width / (width * 192);
+  const minHeightScale = windowDimensions.height / (height * 192);
+
+  const minScale =
+    minWidthScale > minHeightScale ? minWidthScale : minHeightScale;
 
   return (
     <>
