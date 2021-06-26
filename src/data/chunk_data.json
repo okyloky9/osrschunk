@@ -41,7 +41,7 @@
       },
       {
         "type": "Map",
-        "clueHint": "https://oldschool.runescape.wiki/w/File:Map_clue_Wizard_tower.png",
+        "clueHint": "https://oldschool.runescape.wiki/images/1/1b/Map_clue_Wizard_tower.png?e1c87",
         "location": "Directly behind the Wizards' Tower, there's a fern you can use as a reference; the dig spot is one tile directly north of the fern. Fairy ring code D*I*S is very close.",
         "itemsRequired": ["Spade"]
       }
@@ -119,7 +119,7 @@
       },
       {
         "type": "Map",
-        "clueHint": "https://oldschool.runescape.wiki/w/File:Map_clue_Draynor_willows.png",
+        "clueHint": "https://oldschool.runescape.wiki/images/e/ed/Map_clue_Draynor_willows.png?bb604",
         "location": "South of Draynor Village bank, by the fishing spot",
         "itemsRequired": ["Spade"]
       }
@@ -288,7 +288,7 @@
     "beginnerClues": [
       {
         "type": "Map",
-        "clueHint": "https://oldschool.runescape.wiki/w/File:Map_clue_Falador_stones.png",
+        "clueHint": "https://oldschool.runescape.wiki/images/2/2e/Map_clue_Falador_stones.png?1d2b6",
         "location": "Due east of Falador's north gate. Look for the (grapple) agility shortcut icon.",
         "itemsRequired": ["Spade"]
       }
@@ -307,7 +307,7 @@
       },
       {
         "type": "Map",
-        "clueHint": "https://oldschool.runescape.wiki/w/File:Map_clue_Champions_guild.png",
+        "clueHint": "https://oldschool.runescape.wiki/images/3/36/Map_clue_Champions_guild.png?3bdf1",
         "location": "Locate the single tree that is west of the Champions' Guild, outside Varrock. Dig two squares to the east of it.",
         "itemsRequired": ["Spade"]
       }
@@ -333,7 +333,7 @@
     "beginnerClues": [
       {
         "type": "Map",
-        "clueHint": "https://oldschool.runescape.wiki/w/File:Map_clue_South-eastern_Varrock_Mine.png",
+        "clueHint": "https://oldschool.runescape.wiki/images/9/95/Map_clue_South-eastern_Varrock_Mine.png?f0802",
         "location": "South-east Varrock mine. Dig one square west of the small fern.",
         "itemsRequired": ["Spade"]
       }
