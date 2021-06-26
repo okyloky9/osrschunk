@@ -709,7 +709,7 @@
           {
             "x": 22,
             "y": 11,
-            "notes": "Hot and cold clues have an area you can dig in. You can dig in either chunk."
+            "notes": "Uri can be spawned across these chunks."
           }
         ]
       }
@@ -732,7 +732,7 @@
           {
             "x": 22,
             "y": 10,
-            "notes": "Hot and cold clues have an area you can dig in. You can dig in either chunk."
+            "notes": "Uri can be spawned across these chunks."
           }
         ]
       }
