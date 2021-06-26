@@ -37,8 +37,8 @@ const ChunkTile: React.FC<{
     // if the left mouse button was released
     if (mouseDownRef.current && e.button === 0) {
       // only trigger `onClick` when the user isn't moving the map
-      if (moveDistanceRef.current <= 10) {
-        onClick && onClick();
+      if (onClick && moveDistanceRef.current <= 10) {
+        onClick();
       }
 
       resetMouseState();
