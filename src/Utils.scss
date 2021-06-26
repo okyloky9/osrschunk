@@ -1,0 +1,39 @@
+.controls {
+  position: absolute;
+
+  &.pin-top-left {
+    top: 0;
+    left: 0;
+
+    &.margin {
+      margin: 20px 0 0 20px;
+    }
+  }
+
+  &.pin-top-right {
+    top: 0;
+    right: 0;
+
+    &.margin {
+      margin: 20px 20px 0 0;
+    }
+  }
+
+  &.pin-bottom-left {
+    bottom: 0;
+    left: 0;
+
+    &.margin {
+      margin: 0 0 20px 20px;
+    }
+  }
+
+  &.pin-bottom-right {
+    bottom: 0;
+    right: 0;
+
+    &.margin {
+      margin: 0 20px 20px 0;
+    }
+  }
+}

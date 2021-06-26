@@ -1,9 +1,12 @@
 import { useEffect, useState } from 'react';
 import { MapInteractionCSS } from 'react-map-interaction';
 
-import Chunk from './Chunk';
+import { ToggleSwitch } from './forms';
+import { listHasChunk } from './utils';
+import { Chunk } from './models';
+import chunkData from './data/chunk_data.json';
 
-function initChunks(width: number, height: number) {
+function initChunks(width: number, height: number): Chunk[][] {
   const chunks: Chunk[][] = [];
 
   for (let y = 0; y < height; y++) {
@@ -21,16 +24,23 @@ export default function Map() {
   const width = 43;
   const height = 25;
 
+  // chunk map
   const [chunks, setChunks] = useState(initChunks(width, height));
+
+  // view and window dimensions
   const [view, setView] = useState({ scale: 1.2, translation: { x: 0, y: 0 } });
-  const [dimensions, setDimensions] = useState({
+  const [windowDimensions, setWindowDimensions] = useState({
     width: window.innerWidth,
     height: window.innerHeight,
   });
 
+  // settings
+  const [showSidebar, setShowSideBar] = useState(false);
+  const [showCoords, setShowCoords] = useState(false);
+
   useEffect(() => {
     function handleResize() {
-      setDimensions({
+      setWindowDimensions({
         width: window.innerWidth,
         height: window.innerHeight,
       });
@@ -41,7 +51,7 @@ export default function Map() {
 
   const { scale } = view;
 
-  const minScale = dimensions.width / (width * 192);
+  const minScale = windowDimensions.width / (width * 192);
 
   return (
     <>
@@ -51,8 +61,8 @@ export default function Map() {
         translationBounds={{
           xMax: 0,
           yMax: 0,
-          xMin: -(width * 192 * scale) + dimensions.width,
-          yMin: -(height * 192 * scale) + dimensions.height,
+          xMin: -(width * 192 * scale) + windowDimensions.width,
+          yMin: -(height * 192 * scale) + windowDimensions.height,
         }}
         minScale={minScale}
       >
@@ -66,7 +76,20 @@ export default function Map() {
             {chunks.map((row, y) => (
               <tr key={`row-${y}`}>
                 {row.map((chunk, x) => (
-                  <td key={`chunk-${x}-${y}`}></td>
+                  <td
+                    className={
+                      listHasChunk(chunkData.impossible, [x, y])
+                        ? 'impossible'
+                        : undefined
+                    }
+                    key={`chunk-${x}-${y}`}
+                  >
+                    {showCoords && (
+                      <>
+                        ({x}, {y})
+                      </>
+                    )}
+                  </td>
                 ))}
               </tr>
             ))}
@@ -74,7 +97,38 @@ export default function Map() {
         </table>
       </MapInteractionCSS>
 
-      <div id="controls">
+      <div className="controls pin-top-left">
+        {showSidebar ? (
+          <div id="sidebar">
+            <div className="controls pin-top-right">
+              <button
+                onClick={() => setShowSideBar(false)}
+                aria-label="Hide sidebar"
+              >
+                &lt;
+              </button>
+            </div>
+
+            <form>
+              <ToggleSwitch
+                checked={showCoords}
+                onChange={(e) => setShowCoords(e.target.checked)}
+              >
+                Show Chunk Coords
+              </ToggleSwitch>
+            </form>
+          </div>
+        ) : (
+          <button
+            onClick={() => setShowSideBar(true)}
+            aria-label="Show sidebar"
+          >
+            &gt;
+          </button>
+        )}
+      </div>
+
+      <div className="controls pin-bottom-right margin">
         <button
           onClick={() =>
             setView({ scale: minScale, translation: { x: 0, y: 0 } })
