@@ -45,6 +45,14 @@
         "location": "Directly behind the Wizards' Tower, there's a fern you can use as a reference; the dig spot is one tile directly north of the fern. Fairy ring code D*I*S is very close.",
         "itemsRequired": ["Spade"]
       }
+    ],
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Clap on the causeway to the Wizards' Tower.",
+        "location": "Wizards' Tower bridge",
+        "requiredItems": ["White Apron", "Emerald Ring", "Iron Med Helm"]
+      }
     ]
   },
   {
@@ -68,6 +76,14 @@
         "clueHint": "In Bar",
         "solution": "Brian",
         "location": "Port Sarim battleaxe shop"
+      }
+    ],
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Cheer for the monks at Port Sarim.",
+        "location": "Port Sarim docks",
+        "itemsRequired": ["Coif", "Steel Plateskirt", "Sapphire Necklace"]
       }
     ]
   },
@@ -94,6 +110,19 @@
         "location": "Draynor Manor",
         "itemsRequired": ["Spade", "Strange Device"]
       }
+    ],
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Spin in Draynor Manor by the fountain.",
+        "location": "Draynor Manor",
+        "itemsRequired": ["Bronze Full Helm", "Iron Platebody", "Studded Chaps"]
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Belladonna, my dear. If only I had gloves, then I could hold you at last.",
+        "location": "Draynor Manor"
+      }
     ]
   },
   {
@@ -119,6 +148,14 @@
         "location": "Draynor Village",
         "itemsRequired": ["Spade", "Strange Device"]
       }
+    ],
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Dance at the crossroads north of Draynor.",
+        "location": "Draynor crossroads",
+        "itemsRequired": ["Iron Chainbody", "Sapphire Ring", "Longbow"]
+      }
     ]
   },
   {
@@ -136,6 +173,14 @@
         "clueHint": "https://oldschool.runescape.wiki/images/e/ed/Map_clue_Draynor_willows.png?bb604",
         "location": "South of Draynor Village bank, by the fishing spot",
         "itemsRequired": ["Spade"]
+      }
+    ],
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Yawn in Draynor Marketplace.",
+        "location": "Draynor Village Market",
+        "itemsRequired": ["Studded Chaps", "Iron Kiteshield", "Steel Longsword"]
       }
     ]
   },
@@ -181,6 +226,242 @@
         "solution": "Flynn's Mace Market is located near the north entrance of Falador.",
         "location": "Flynn's Mace Shop"
       }
+    ],
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Wave in the Falador gem store.",
+        "location": "Falador gem store",
+        "itemsRequired": [
+          "Mithril Pickaxe",
+          "Black Platebody",
+          "Iron Kiteshield"
+        ]
+      }
+    ]
+  },
+  {
+    "x": 28,
+    "y": 15,
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Wave on Mudskipper Point.",
+        "location": "Mudskipper Point",
+        "requiredItems": ["Black Cape", "Steel Mace", "Leather Chaps"]
+      }
+    ]
+  },
+  {
+    "x": 22,
+    "y": 12,
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Blow a raspberry at the monkey cage in Ardougne Zoo.",
+        "location": "Ardougne Zoo",
+        "requiredItems": ["Studded Body", "Bronze Platelegs", "Staff"]
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "A crate found in the tower of a church is your next location.",
+        "location": "Climb the ladder and search the crates on the 2nd floor in the church in East Ardougne."
+      }
+    ]
+  },
+  {
+    "x": 32,
+    "y": 9,
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Spin in the Varrock Castle courtyard.",
+        "location": "Varrock Castle courtyard",
+        "requiredItems": ["Coif", "Black Axe", "Ruby Ring"]
+      },
+      {
+        "type": "Emote",
+        "clueHint": "Yawn in the Varrock library.",
+        "location": "Varrock Castle library",
+        "requiredItems": ["HAM Robe", "Green Robe Top", "Iron Warhammer"]
+      }
+    ]
+  },
+  {
+    "x": 31,
+    "y": 12,
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Think in the middle of the wheat field by the lumbridge mill.",
+        "location": "Lumbridge wheat field",
+        "requiredItems": [
+          "Blue Robe Top",
+          "Turquoise Robe Bottoms",
+          "Oak Shortbow"
+        ]
+      }
+    ]
+  },
+  {
+    "x": 4,
+    "y": 7,
+    "easyClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Dig by the Giant's Den entrance, looking out over Lake Molch.",
+        "location": "South-east of Lake Molch. Just south of the Shayzien rowboat, outside the dungeon entrance.",
+        "requiredItems": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 33,
+    "y": 9,
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Wave along the south fence of the Lumber Yard.",
+        "location": "Lumber Yard",
+        "requiredItems": ["Hardleather Body", "Leather Chaps", "Bronze Axe"]
+      }
+    ]
+  },
+  {
+    "x": 23,
+    "y": 11,
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Clap on the top level of the mill, north of East Ardougne.",
+        "location": "North of East Ardougne",
+        "requiredItems": ["Blue Robe Top", "Tiara", "HAM Robe"]
+      }
+    ]
+  },
+  {
+    "x": 24,
+    "y": 8,
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Laugh at the crossroads south of the Sinclair Mansion.",
+        "location": "South of Sinclair Mansion",
+        "requiredItems": ["Leather Cowl", "Iron Scimitar", "Blue Wizard Robe"]
+      }
+    ]
+  },
+  {
+    "x": 34,
+    "y": 9,
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Panic in the Limestone Mine.",
+        "location": "Limestone Mine East of Lumber Yard",
+        "requiredItems": ["Bronze Platelegs", "Steel Med Helm", "Steel Pickaxe"]
+      }
+    ]
+  },
+  {
+    "x": 23,
+    "y": 14,
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Panic on the pier where you catch the Fishing trawler.",
+        "location": "North most dock in Port Khazard, east of the Fight Arena."
+      }
+    ]
+  },
+  {
+    "x": 28,
+    "y": 13,
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Shrug in the mine near Rimmington.",
+        "location": "Rimmington mine",
+        "itemsRequired": ["Gold Necklace", "Gold Ring", "Bronze Spear"]
+      }
+    ]
+  },
+  {
+    "x": 25,
+    "y": 10,
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Blow raspberries outside the entrance to Keep Le Faye.",
+        "location": "Keep Le Faye",
+        "requiredItems": ["Coif", "Iron Platebody", "Leather Gloves"]
+      },
+      {
+        "type": "Emote",
+        "clueHint": "Jump for joy at the beehives.",
+        "location": "Catherby beehives",
+        "requiredItems": ["Desert Shirt", "Steel Axe", "Green Robe Bottoms"]
+      }
+    ]
+  },
+  {
+    "x": 27,
+    "y": 9,
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Cheer at the Druids' Circle.",
+        "location": "Taverley",
+        "requiredItems": ["Blue Wizard Hat", "Bronze 2H Sword", "HAM Boots"]
+      }
+    ]
+  },
+  {
+    "x": 27,
+    "y": 8,
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Cheer at the games room.",
+        "location": "The basement of the Games Room in Burthorpe.",
+        "requiredItems": ["Wear nothing"]
+      }
+    ]
+  },
+  {
+    "x": 24,
+    "y": 11,
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Bow outside the entrance to the Legends' Guild.",
+        "location": "Legends' Guild",
+        "requiredItems": ["Emerald Amulet", "Iron Platelegs", "Oak Longbow"]
+      }
+    ]
+  },
+  {
+    "x": 33,
+    "y": 13,
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Bow in the ticket office of the Duel Arena.",
+        "location": "Duel Arena",
+        "requiredItems": ["Coif", "Iron Chainbody", "Leather Chaps"]
+      }
+    ]
+  },
+  {
+    "x": 34,
+    "y": 11,
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Clap in the main exam room in the Exam Centre.",
+        "location": "Exam Centre",
+        "requiredItems": ["White Apron", "Green Boots", "Leather Gloves"]
+      }
     ]
   },
   {
@@ -189,6 +470,7 @@
     "beginnerClues": [
       {
         "type": "Charlie the Tramp",
+        "clueHint": "Talk to Charlie the Tramp",
         "location": "North of Varrock entrance",
         "alternateChunks": [
           {
@@ -212,6 +494,14 @@
         "location": "Thessalia's Fine Clothes",
         "itemsRequired": ["Chef's Hat", "Red Cape"]
       }
+    ],
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Do a jig in Varrock's rune store.",
+        "location": "Varrock Rune Shop",
+        "itemsRequired": ["Air Tiara", "Staff of Water"]
+      }
     ]
   },
   {
@@ -220,6 +510,7 @@
     "beginnerClues": [
       {
         "type": "Charlie the Tramp",
+        "clueHint": "Talk to Charlie the Tramp",
         "location": "North of Varrock entrance",
         "alternateChunks": [
           {
@@ -281,6 +572,46 @@
     ]
   },
   {
+    "x": 29,
+    "y": 11,
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Dance in the Party Room.",
+        "location": "Falador Part Room",
+        "requiredItems": [
+          "Steel Full Helm",
+          "Steel Platebody",
+          "Iron Plateskirt"
+        ]
+      }
+    ]
+  },
+  {
+    "x": 32,
+    "y": 14,
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Dance in the shack in Lumbridge Swamp.",
+        "location": "East Lumbridge Swamp",
+        "requiredItems": ["Bronze Dagger", "Iron Full Helm", "Gold Ring"]
+      }
+    ]
+  },
+  {
+    "x": 28,
+    "y": 12,
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Spin at the crossroads north of Rimmington.",
+        "location": "North of Rimmington",
+        "requiredItems": ["Leather Chaps", "Cream Robe Top", "Green Hat"]
+      }
+    ]
+  },
+  {
     "x": 31,
     "y": 9,
     "beginnerClues": [
@@ -289,6 +620,14 @@
         "clueHint": "Bow to Brugsen Bursen at the Grand Exchange.",
         "solution": "Brugsen Bursen is found inside the Grand Exchange",
         "location": "Grand Exchange"
+      }
+    ],
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Dance at the entrance to the Grand Exchange.",
+        "location": "Grand Exchange",
+        "itemsRequired": ["Pink Skirt", "Pink Robe Top", "Body Tiara"]
       }
     ]
   },
@@ -301,6 +640,14 @@
         "clueHint": "Panic at Al Kharid mine.",
         "solution": "Al Kharid mine is located just north of Al Kharid.",
         "location": "Al Kharid mine"
+      }
+    ],
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Headbang in the mine north of Al Kharid.",
+        "location": "Al Kharid mine",
+        "itemsRequired": ["Desert Shirt", "Leather Boots", "Leather Gloves"]
       }
     ]
   },
@@ -338,6 +685,52 @@
           {
             "x": 28,
             "y": 9,
+            "notes": "Hot and cold clues have an area you can dig in. You can dig in either chunk."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "x": 22,
+    "y": 10,
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Dance a jig by the entrance to the Fishing Guild.",
+        "location": "Fishing Guild",
+        "itemsRequired": [
+          "Bronze Chainbody",
+          "Sapphire Amulet",
+          "Emerald Ring"
+        ],
+        "alternateChunks": [
+          {
+            "x": 22,
+            "y": 11,
+            "notes": "Hot and cold clues have an area you can dig in. You can dig in either chunk."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "x": 22,
+    "y": 11,
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Dance a jig by the entrance to the Fishing Guild.",
+        "location": "Fishing Guild",
+        "itemsRequired": [
+          "Bronze Chainbody",
+          "Sapphire Amulet",
+          "Emerald Ring"
+        ],
+        "alternateChunks": [
+          {
+            "x": 22,
+            "y": 10,
             "notes": "Hot and cold clues have an area you can dig in. You can dig in either chunk."
           }
         ]
