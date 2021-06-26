@@ -152,7 +152,7 @@ export default function Map() {
         </button>
       </div>
 
-      <Modal ref={modal}>
+      <Modal onClose={() => setSelectedChunk(undefined)} ref={modal}>
         <div id="chunk-modal">
           <h1>
             Chunk ({selectedChunk?.x}, {selectedChunk?.y})

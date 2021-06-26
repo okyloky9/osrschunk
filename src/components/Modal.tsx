@@ -16,11 +16,19 @@ export type ModalHandle = { close: () => void; open: () => void };
 
 export default forwardRef<
   ModalHandle,
-  { children: ReactNode; defaultOpened?: boolean; fade?: boolean }
->(({ children, defaultOpened = false, fade = false }, ref) => {
+  {
+    children: ReactNode;
+    defaultOpened?: boolean;
+    fade?: boolean;
+    onClose?: () => void;
+  }
+>(({ children, defaultOpened = false, fade = false, onClose }, ref) => {
   const [isOpen, setIsOpen] = useState(defaultOpened);
 
-  const close = useCallback(() => setIsOpen(false), []);
+  const close = useCallback(() => {
+    setIsOpen(false);
+    if (onClose) onClose();
+  }, []);
 
   useImperativeHandle(
     ref,
