@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 import { MapInteractionCSS } from 'react-map-interaction';
 
 import { ToggleSwitch } from './forms';
-import { listHasChunk } from './utils';
-import { Chunk } from './models';
-import chunkData from './data/chunk_data.json';
+import { listHasChunk } from '../utils';
+import { Chunk } from '../models';
+import chunkData from '../data/chunk_data.json';
 
 function initChunks(width: number, height: number): Chunk[][] {
   const chunks: Chunk[][] = [];

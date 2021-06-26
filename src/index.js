@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Map from './Map';
+import { Map } from './components';
 import reportWebVitals from './reportWebVitals';
 
 import './Styles.scss';
