@@ -6,6 +6,9 @@
   background-position: top -41px left -40px;
   background-repeat: no-repeat;
 
+  table-layout: fixed;
+  border-collapse: collapse;
+
   &.zoomed-in {
     image-rendering: pixelated;
   }
@@ -16,10 +19,9 @@
 
   &.show-coords .chunk-coords {
     display: block;
+    position: relative;
+    z-index: 1;
   }
-
-  table-layout: fixed;
-  border-collapse: collapse;
 
   tr {
     height: 192px;
@@ -28,26 +30,34 @@
       width: 192px;
       box-sizing: border-box;
 
-      vertical-align: top;
-
       border: 1px solid rgba(0, 0, 0, 0.6);
-      padding: 2px;
 
       color: #ffffff;
       text-shadow: 1px 1px 2px #000000;
+      vertical-align: top;
+
+      z-index: 1;
 
       &:hover {
-        opacity: 0.3;
-        background: lime;
+        background: rgba(0, 255, 0, 0.4);
       }
 
       &.impossible {
-        opacity: 0.5;
-        background: red;
+        background: rgba(255, 0, 0, 0.5);
 
         &:hover {
-          background: darkred;
+          background: rgba(139, 0, 0, 0.5);
         }
+      }
+
+      .chunk-tile {
+        position: relative;
+
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+
+        padding: 2px;
       }
     }
   }

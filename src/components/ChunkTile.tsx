@@ -75,9 +75,11 @@ const ChunkTile: React.FC<{
       })}
       ref={tdRef}
     >
-      <span className="chunk-coords">
-        ({chunk.x}, {chunk.y})
-      </span>
+      <div className="chunk-tile">
+        <div className="chunk-coords">
+          ({chunk.x}, {chunk.y})
+        </div>
+      </div>
     </td>
   );
 };
