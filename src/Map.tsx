@@ -2,8 +2,10 @@ import { useEffect, useState } from 'react';
 import { MapInteractionCSS } from 'react-map-interaction';
 
 import Chunk from './Chunk';
+import { listHasChunk } from './utils';
+import chunkData from './data/chunk_data.json';
 
-function initChunks(width: number, height: number) {
+function initChunks(width: number, height: number): Chunk[][] {
   const chunks: Chunk[][] = [];
 
   for (let y = 0; y < height; y++) {
@@ -66,7 +68,16 @@ export default function Map() {
             {chunks.map((row, y) => (
               <tr key={`row-${y}`}>
                 {row.map((chunk, x) => (
-                  <td key={`chunk-${x}-${y}`}></td>
+                  <td
+                    className={
+                      listHasChunk(chunkData.impossible, [x, y])
+                        ? 'impossible'
+                        : undefined
+                    }
+                    key={`chunk-${x}-${y}`}
+                  >
+                    ({x}, {y})
+                  </td>
                 ))}
               </tr>
             ))}
