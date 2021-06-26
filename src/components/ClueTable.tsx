@@ -1,16 +1,20 @@
-import { Clue } from '../models';
+import { Clue, ClueDifficulty } from '../models';
+import ClueIcon from './ClueIcon';
 
-const ClueTable: React.FC<{ clues: Clue[] | undefined; type: string }> = ({
-  clues,
-  type,
-}) => {
+const ClueTable: React.FC<{
+  clues: Clue[] | undefined;
+  difficulty: ClueDifficulty;
+}> = ({ clues, difficulty }) => {
   const ClueHint = ({ hint }: { hint: string }) => {
     return hint.startsWith('http') ? <img src={hint} /> : <>{hint}</>;
   };
 
   return clues && clues.length ? (
     <>
-      <h2>{type} Clues</h2>
+      <h2>
+        <ClueIcon difficulty={difficulty} />
+        <span>{difficulty} Clues</span>
+      </h2>
 
       <table>
         <thead>
