@@ -42,13 +42,14 @@
         background: rgba(0, 255, 0, 0.4);
       }
 
-      &.impossible {
-        background: rgba(255, 0, 0, 0.5);
+      // TODO: uncomment this once we've populated all the chunk data
+      // &.impossible {
+      //   background: rgba(255, 0, 0, 0.5);
 
-        &:hover {
-          background: rgba(139, 0, 0, 0.5);
-        }
-      }
+      //   &:hover {
+      //     background: rgba(139, 0, 0, 0.5);
+      //   }
+      // }
 
       .chunk-tile {
         position: relative;
@@ -76,12 +77,5 @@
       margin-block-start: 0;
       font-size: 20px;
     }
-  }
-}
-
-#chunk-modal {
-  h1 {
-    margin-block-start: 0;
-    font-size: 20px;
   }
 }

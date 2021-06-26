@@ -1,4 +1,4 @@
-export default class Chunk {
+export default class MapChunk {
   public x: number;
   public y: number;
 

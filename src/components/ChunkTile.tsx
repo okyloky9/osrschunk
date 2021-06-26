@@ -1,14 +1,14 @@
 import { useEffect, useRef } from 'react';
 
-import chunkData from '../data/chunk_data.json';
-import { createClassString, listHasChunk } from '../utils';
-import { Chunk } from '../models';
+import { chunkHasClues, createClassString, getChunk } from '../utils';
+import { MapChunk } from '../models';
 
 const ChunkTile: React.FC<{
-  chunk: Chunk;
+  chunk: MapChunk;
   onClick?: () => void;
-  showCoords?: boolean;
-}> = ({ chunk, onClick, showCoords = false }) => {
+}> = ({ chunk, onClick }) => {
+  const chunkData = getChunk(chunk.x, chunk.y);
+
   const tdRef = useRef<HTMLTableDataCellElement>(null);
 
   // state for when the mouse left button is held down
@@ -71,7 +71,7 @@ const ChunkTile: React.FC<{
   return (
     <td
       className={createClassString({
-        impossible: listHasChunk(chunkData.impossible, [chunk.x, chunk.y]),
+        impossible: !chunkHasClues(chunkData),
       })}
       ref={tdRef}
     >

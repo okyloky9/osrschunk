@@ -4,17 +4,18 @@ import { MapInteractionCSS } from 'react-map-interaction';
 import { ChunkTile, Modal } from '.';
 import type { ModalHandle } from '.';
 import { ToggleSwitch } from './forms';
-import { Chunk } from '../models';
-import { createClassString } from '../utils';
+import { ChunkData, MapChunk } from '../models';
+import { createClassString, getChunk } from '../utils';
+import ChunkModal from './ChunkModal';
 
-function initChunks(width: number, height: number): Chunk[][] {
-  const chunks: Chunk[][] = [];
+function initChunks(width: number, height: number): MapChunk[][] {
+  const chunks: MapChunk[][] = [];
 
   for (let y = 0; y < height; y++) {
     chunks.push([]);
 
     for (let x = 0; x < width; x++) {
-      chunks[y].push(new Chunk(x, y));
+      chunks[y].push(new MapChunk(x, y));
     }
   }
 
@@ -29,7 +30,7 @@ export default function Map() {
 
   // chunk map
   const [chunks] = useState(initChunks(width, height));
-  const [selectedChunk, setSelectedChunk] = useState<Chunk>();
+  const [selectedChunk, setSelectedChunk] = useState<MapChunk>();
 
   // view and window dimensions
   const [view, setView] = useState({ scale: 1.2, translation: { x: 0, y: 0 } });
@@ -65,6 +66,7 @@ export default function Map() {
     }
   }, [modal, selectedChunk]);
 
+  // min scale calculations
   const { scale } = view;
 
   const minWidthScale = windowDimensions.width / (width * 192);
@@ -72,6 +74,11 @@ export default function Map() {
 
   const minScale =
     minWidthScale > minHeightScale ? minWidthScale : minHeightScale;
+
+  // get selected chunk data
+  const selectedChunkData = selectedChunk
+    ? getChunk(selectedChunk.x, selectedChunk.y)
+    : undefined;
 
   return (
     <>
@@ -155,12 +162,11 @@ export default function Map() {
       </div>
 
       <Modal onClose={() => setSelectedChunk(undefined)} ref={modal}>
-        <div id="chunk-modal">
-          <h1>
-            Chunk ({selectedChunk?.x}, {selectedChunk?.y})
-          </h1>
-          Placeholder
-        </div>
+        <ChunkModal
+          chunk={
+            selectedChunkData ? selectedChunkData : (selectedChunk as ChunkData)
+          }
+        />
       </Modal>
     </>
   );

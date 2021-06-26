@@ -1,5 +1,342 @@
-{
-    "impossible": [
-        [7,1]
+[
+  {
+    "x": 33,
+    "y": 14,
+    "beginnerClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "An Earl",
+        "solution": "Ranael",
+        "location": "Al Kharid skirt shop"
+      }
     ]
-}
+  },
+  {
+    "x": 31,
+    "y": 10,
+    "beginnerClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Carpet Ahoy",
+        "solution": "Apothecary",
+        "location": "South-west Varrock"
+      },
+      {
+        "type": "Anagram",
+        "clueHint": "Rug Deter",
+        "solution": "Gertrude",
+        "location": "Outside Draynor Manor"
+      }
+    ]
+  },
+  {
+    "x": 30,
+    "y": 14,
+    "beginnerClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Disorder",
+        "solution": "Sedridor",
+        "location": "Wizards' Tower basement"
+      },
+      {
+        "type": "Map",
+        "clueHint": "https://oldschool.runescape.wiki/w/File:Map_clue_Wizard_tower.png",
+        "location": "Directly behind the Wizards' Tower, there's a fern you can use as a reference; the dig spot is one tile directly north of the fern. Fairy ring code D*I*S is very close.",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 28,
+    "y": 10,
+    "beginnerClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "I Cord",
+        "solution": "Doric",
+        "location": "North of Falador"
+      }
+    ]
+  },
+  {
+    "x": 29,
+    "y": 13,
+    "beginnerClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "In Bar",
+        "solution": "Brian",
+        "location": "Port Sarim battleaxe shop"
+      }
+    ]
+  },
+  {
+    "x": 30,
+    "y": 11,
+    "beginnerClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Rain Cove",
+        "solution": "Veronica",
+        "location": "Outside Draynor Manor"
+      },
+      {
+        "type": "Hot/Cold",
+        "clueHint": "Patch of mushrooms just north-west of Draynor Manor",
+        "location": "Draynor Manor",
+        "itemsRequired": ["Spade", "Strange Device"]
+      }
+    ]
+  },
+  {
+    "x": 30,
+    "y": 12,
+    "beginnerClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Rain Cove",
+        "solution": "Veronica",
+        "location": "Outside Draynor Manor"
+      },
+      {
+        "type": "Hot/Cold",
+        "clueHint": "Inside the wheat field next to Draynor Village",
+        "location": "Draynor Village",
+        "itemsRequired": ["Spade", "Strange Device"]
+      }
+    ]
+  },
+  {
+    "x": 30,
+    "y": 13,
+    "beginnerClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Taunt Roof",
+        "solution": "Fortunato",
+        "location": "Draynor Village Market"
+      },
+      {
+        "type": "Map",
+        "clueHint": "https://oldschool.runescape.wiki/w/File:Map_clue_Draynor_willows.png",
+        "location": "South of Draynor Village bank, by the fishing spot",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 27,
+    "y": 11,
+    "beginnerClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Sir Share Red",
+        "solution": "Hairdresser",
+        "location": "Western Falador"
+      }
+    ]
+  },
+  {
+    "x": 28,
+    "y": 11,
+    "beginnerClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Sir Share Red",
+        "solution": "Hairdresser",
+        "location": "Western Falador"
+      },
+      {
+        "type": "Emote",
+        "clueHint": "Spin at Flynn's Mace Shop.",
+        "solution": "Flynn's Mace Market is located near the north entrance of Falador.",
+        "location": "Flynn's Mace Shop"
+      }
+    ]
+  },
+  {
+    "x": 32,
+    "y": 10,
+    "beginnerClues": [
+      { "type": "Charlie the Tramp", "location": "North of Varrock entrance" },
+      {
+        "type": "Emote",
+        "clueHint": "Blow a raspberry at Gypsy Aris in her tent.",
+        "solution": "Gypsy Aris can be found in her tent at Varrock Square.",
+        "location": "Gypsy Aris' tent",
+        "itemsRequired": ["Gold Ring", "Gold Necklace"]
+      },
+      {
+        "type": "Emote",
+        "clueHint": "Cheer at Iffie Nitter.",
+        "solution": "Iffie can be found in Thessalia's Fine Clothes store in Varrock",
+        "location": "Thessalia's Fine Clothes",
+        "itemsRequired": ["Chef's Hat", "Red Cape"]
+      }
+    ]
+  },
+  {
+    "x": 32,
+    "y": 11,
+    "beginnerClues": [
+      { "type": "Charlie the Tramp", "location": "North of Varrock entrance" }
+    ]
+  },
+  {
+    "x": 32,
+    "y": 13,
+    "beginnerClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Always walking around the castle grounds and somehow knows everyone's age.",
+        "solution": "Talk to Hans walking around Lumbridge Castle.",
+        "location": "Lumbridge Castle"
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "In the place Duke Horacio calls home, talk to a man with a hat dropped by goblins.",
+        "solution": "Talk to the Cook in Lumbridge Castle.",
+        "location": "Lumbridge Castle"
+      },
+      {
+        "type": "Emote",
+        "clueHint": "Clap at Bob's Brilliant Axes.",
+        "solution": "Bob's Brilliant Axes is located in south Lumbridge, right outside Lumbridge Castle.",
+        "location": "Bob's Brilliant Axes",
+        "itemsRequired": ["Bronze Axe", "Leather Boots"]
+      }
+    ]
+  },
+  {
+    "x": 30,
+    "y": 10,
+    "beginnerClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "In a village of barbarians, I am the one who guards the village from up high.",
+        "solution": "Talk to Hunding atop the tower on the east side of Barbarian Village.",
+        "location": "Barbarian Village"
+      }
+    ]
+  },
+  {
+    "x": 33,
+    "y": 15,
+    "beginnerClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Near the open desert I reside, to get past me you must abide. Go forward if you dare, for when you pass me, you'll be sweating by your hair.",
+        "solution": "Talk to Shantay at the Shantay Pass south of Al Kharid.",
+        "location": "Shantay Pass"
+      }
+    ]
+  },
+  {
+    "x": 31,
+    "y": 9,
+    "beginnerClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Bow to Brugsen Bursen at the Grand Exchange.",
+        "solution": "Brugsen Bursen is found inside the Grand Exchange",
+        "location": "Grand Exchange"
+      }
+    ]
+  },
+  {
+    "x": 33,
+    "y": 12,
+    "beginnerClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Panic at Al Kharid mine.",
+        "solution": "Al Kharid mine is located just north of Al Kharid.",
+        "location": "Al Kharid mine"
+      }
+    ]
+  },
+  {
+    "x": 28,
+    "y": 9,
+    "beginnerClues": [
+      {
+        "type": "Hot/Cold",
+        "clueHint": "Atop Ice Mountain",
+        "solution": "Dig atop Ice Mountain.",
+        "location": "Ice Mountain",
+        "itemsRequired": ["Spade", "Strange Device"]
+      }
+    ]
+  },
+  {
+    "x": 29,
+    "y": 9,
+    "beginnerClues": [
+      {
+        "type": "Hot/Cold",
+        "clueHint": "Atop Ice Mountain",
+        "solution": "Dig atop Ice Mountain.",
+        "location": "Ice Mountain",
+        "itemsRequired": ["Spade", "Strange Device"]
+      }
+    ]
+  },
+  {
+    "x": 29,
+    "y": 10,
+    "beginnerClues": [
+      {
+        "type": "Map",
+        "clueHint": "https://oldschool.runescape.wiki/w/File:Map_clue_Falador_stones.png",
+        "location": "Due east of Falador's north gate. Look for the (grapple) agility shortcut icon.",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 31,
+    "y": 11,
+    "beginnerClues": [
+      {
+        "type": "Hot/Cold",
+        "clueHint": "Cow field north of Lumbridge",
+        "solution": "Dig in the cow field north of Lumbridge",
+        "location": "Lumbridge",
+        "itemsRequired": ["Spade", "Strange Device"]
+      },
+      {
+        "type": "Map",
+        "clueHint": "https://oldschool.runescape.wiki/w/File:Map_clue_Champions_guild.png",
+        "location": "Locate the single tree that is west of the Champions' Guild, outside Varrock. Dig two squares to the east of it.",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 34,
+    "y": 12,
+    "beginnerClues": [
+      {
+        "type": "Hot/Cold",
+        "clueHint": "North-east of Al Kharid Mine",
+        "solution": "Dig to the North-east of Al Kharid Mine",
+        "location": "Al Kharid mine",
+        "itemsRequired": ["Spade", "Strange Device"]
+      }
+    ]
+  },
+  {
+    "x": 33,
+    "y": 11,
+
+    "beginnerClues": [
+      {
+        "type": "Map",
+        "clueHint": "https://oldschool.runescape.wiki/w/File:Map_clue_South-eastern_Varrock_Mine.png",
+        "location": "South-east Varrock mine. Dig one square west of the small fern.",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  }
+]
