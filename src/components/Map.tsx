@@ -124,6 +124,8 @@ export default function Map() {
             </div>
 
             <form>
+              <h1>Settings</h1>
+
               <ToggleSwitch
                 checked={showCoords}
                 onChange={(e) => setShowCoords(e.target.checked)}
