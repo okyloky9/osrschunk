@@ -9,7 +9,7 @@ const ClueTable: React.FC<{
   difficulty: ClueDifficulty;
 }> = ({ clues, difficulty }) => {
   const ClueHint = ({ hint }: { hint: string }) => {
-    return hint.startsWith('http') ? <img src={hint} /> : <>{hint}</>;
+    return hint && hint.startsWith('http') ? <img src={hint} /> : <>{hint}</>;
   };
 
   return clues && clues.length ? (
