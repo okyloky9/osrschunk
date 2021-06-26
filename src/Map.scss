@@ -17,11 +17,9 @@
     height: 192px;
 
     td {
-      box-sizing: border-box;
-
       width: 192px;
-
       border: 1px solid rgba(0, 0, 0, 0.6);
+      box-sizing: border-box;
 
       vertical-align: top;
 
@@ -42,8 +40,10 @@
   }
 }
 
-#controls {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
+#sidebar {
+  background: darkgrey;
+
+  form {
+    padding: 20px 10px 10px 10px;
+  }
 }
