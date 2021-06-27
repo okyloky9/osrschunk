@@ -1,12 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 import { MapInteractionCSS } from 'react-map-interaction';
 
-import { ChunkTile, ClueIcon, Modal } from '.';
+import { ChunkModal, ChunkTile, ClueIcon, Modal } from '.';
 import type { ModalHandle } from '.';
 import { ToggleSwitch } from './forms';
 import { ChunkData, ClueDifficulty, MapChunk } from '../models';
 import { capitalizeFirstLetter, createClassString, getChunk } from '../utils';
-import ChunkModal from './ChunkModal';
 
 function initChunks(width: number, height: number): MapChunk[][] {
   const chunks: MapChunk[][] = [];
