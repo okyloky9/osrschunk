@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 import { MapInteractionCSS } from 'react-map-interaction';
 
-import { ChunkTile, Modal } from '.';
+import { ChunkTile, ClueIcon, Modal } from '.';
 import type { ModalHandle } from '.';
 import { ToggleSwitch } from './forms';
-import { ChunkData, MapChunk } from '../models';
-import { createClassString, getChunk } from '../utils';
+import { ChunkData, ClueDifficulty, MapChunk } from '../models';
+import { capitalizeFirstLetter, createClassString, getChunk } from '../utils';
 import ChunkModal from './ChunkModal';
 
 function initChunks(width: number, height: number): MapChunk[][] {
@@ -45,6 +45,16 @@ export default function Map() {
   const [showCoords, setShowCoords] = useState(false);
   const [showClues, setShowClues] = useState(true);
   const [showClueCounts, setShowClueCounts] = useState(true);
+  const [clueDifficultiesToShow, setClueDifficultiesToShow] = useState<{
+    [difficulty: string]: boolean;
+  }>({
+    beginner: true,
+    easy: true,
+    medium: true,
+    hard: true,
+    elite: true,
+    master: true,
+  });
   const [highlightChunksWithoutClues, setHighlightChunksWithoutClues] =
     useState(false);
 
@@ -113,6 +123,12 @@ export default function Map() {
             'show-coords': showCoords,
             'show-clues': showClues,
             'show-clue-counts': showClues && showClueCounts,
+            'show-beginner-clues': showClues && clueDifficultiesToShow.beginner,
+            'show-easy-clues': showClues && clueDifficultiesToShow.easy,
+            'show-medium-clues': showClues && clueDifficultiesToShow.medium,
+            'show-hard-clues': showClues && clueDifficultiesToShow.hard,
+            'show-elite-clues': showClues && clueDifficultiesToShow.elite,
+            'show-master-clues': showClues && clueDifficultiesToShow.master,
             'highlight-chunks-without-clues': highlightChunksWithoutClues,
             'zoomed-in': scale > 1,
           })}
@@ -157,6 +173,8 @@ export default function Map() {
                 </ToggleSwitch>
               </div>
 
+              {showClues && <hr />}
+
               <div>
                 <ToggleSwitch
                   checked={showClues}
@@ -167,14 +185,39 @@ export default function Map() {
               </div>
 
               {showClues && (
-                <div>
-                  <ToggleSwitch
-                    checked={showClueCounts}
-                    onChange={(e) => setShowClueCounts(e.target.checked)}
-                  >
-                    Show clue counts
-                  </ToggleSwitch>
-                </div>
+                <>
+                  <div>
+                    <ToggleSwitch
+                      checked={showClueCounts}
+                      onChange={(e) => setShowClueCounts(e.target.checked)}
+                    >
+                      Show clue counts
+                    </ToggleSwitch>
+                  </div>
+
+                  {Object.keys(clueDifficultiesToShow).map((difficulty) => (
+                    <div key={`toggle-clue-difficulty-${difficulty}`}>
+                      <ToggleSwitch
+                        checked={clueDifficultiesToShow[difficulty]}
+                        onChange={(e) =>
+                          setClueDifficultiesToShow({
+                            ...clueDifficultiesToShow,
+                            [difficulty]: e.target.checked,
+                          })
+                        }
+                      >
+                        Show {difficulty} clues{' '}
+                        <ClueIcon
+                          difficulty={
+                            capitalizeFirstLetter(difficulty) as ClueDifficulty
+                          }
+                        />
+                      </ToggleSwitch>
+                    </div>
+                  ))}
+
+                  <hr />
+                </>
               )}
 
               <div>

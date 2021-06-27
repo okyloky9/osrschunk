@@ -36,7 +36,7 @@
 
     div {
       position: relative;
-      display: inline-block;
+      display: none;
 
       &.beginner img {
         filter: drop-shadow(0 0 4px #ffffff);
@@ -82,6 +82,30 @@
 
   &.show-clue-counts .chunk-clues-and-counts span {
     display: block;
+  }
+
+  &.show-beginner-clues .chunk-clues-and-counts div.beginner {
+    display: inline-block;
+  }
+
+  &.show-easy-clues .chunk-clues-and-counts div.easy {
+    display: inline-block;
+  }
+
+  &.show-medium-clues .chunk-clues-and-counts div.medium {
+    display: inline-block;
+  }
+
+  &.show-hard-clues .chunk-clues-and-counts div.hard {
+    display: inline-block;
+  }
+
+  &.show-elite-clues .chunk-clues-and-counts div.elite {
+    display: inline-block;
+  }
+
+  &.show-master-clues .chunk-clues-and-counts div.master {
+    display: inline-block;
   }
 
   // chunks without clues
@@ -144,6 +168,11 @@
 
     > div:not(:last-child) {
       margin-bottom: 6px;
+    }
+
+    .toggle-switch img {
+      position: relative;
+      top: 7px;
     }
   }
 }
