@@ -23,17 +23,18 @@ function initChunks(width: number, height: number): MapChunk[][] {
 }
 
 export default function Map() {
+  // map dimensions (in chunks)
   const width = 43;
   const height = 25;
 
+  // modal ref
   const modal = useRef<ModalHandle>(null);
 
   // chunk map
   const [chunks] = useState(initChunks(width, height));
   const [selectedChunk, setSelectedChunk] = useState<MapChunk>();
 
-  // view and window dimensions
-  const [view, setView] = useState({ scale: 1.2, translation: { x: 0, y: 0 } });
+  // window dimensions
   const [windowDimensions, setWindowDimensions] = useState({
     width: window.innerWidth,
     height: window.innerHeight,
@@ -46,6 +47,19 @@ export default function Map() {
   const [showClueCounts, setShowClueCounts] = useState(true);
   const [highlightChunksWithoutClues, setHighlightChunksWithoutClues] =
     useState(false);
+
+  // min scale calculations
+  const minWidthScale = windowDimensions.width / (width * 192);
+  const minHeightScale = windowDimensions.height / (height * 192);
+
+  const minScale =
+    minWidthScale > minHeightScale ? minWidthScale : minHeightScale;
+
+  // view state
+  const [view, setView] = useState({
+    scale: minScale,
+    translation: { x: 0, y: 0 },
+  });
 
   // on load
   useEffect(() => {
@@ -70,19 +84,13 @@ export default function Map() {
     }
   }, [modal, selectedChunk]);
 
-  // min scale calculations
-  const { scale } = view;
-
-  const minWidthScale = windowDimensions.width / (width * 192);
-  const minHeightScale = windowDimensions.height / (height * 192);
-
-  const minScale =
-    minWidthScale > minHeightScale ? minWidthScale : minHeightScale;
-
   // get selected chunk data
   const selectedChunkData = selectedChunk
     ? getChunk(selectedChunk.x, selectedChunk.y)
     : undefined;
+
+  // get current view scale
+  const { scale } = view;
 
   return (
     <>
