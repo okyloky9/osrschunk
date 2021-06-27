@@ -123,7 +123,7 @@ const ChunkTile: React.FC<{
   return (
     <td
       className={createClassString({
-        impossible: !chunkHasClues(chunkData),
+        'no-clues': !chunkHasClues(chunkData),
       })}
       ref={tdRef}
     >

@@ -44,6 +44,8 @@ export default function Map() {
   const [showCoords, setShowCoords] = useState(false);
   const [showClues, setShowClues] = useState(true);
   const [showClueCounts, setShowClueCounts] = useState(true);
+  const [highlightChunksWithoutClues, setHighlightChunksWithoutClues] =
+    useState(false);
 
   // on load
   useEffect(() => {
@@ -103,6 +105,7 @@ export default function Map() {
             'show-coords': showCoords,
             'show-clues': showClues,
             'show-clue-counts': showClues && showClueCounts,
+            'highlight-chunks-without-clues': highlightChunksWithoutClues,
             'zoomed-in': scale > 1,
           })}
         >
@@ -142,7 +145,7 @@ export default function Map() {
                   checked={showCoords}
                   onChange={(e) => setShowCoords(e.target.checked)}
                 >
-                  Show Chunk Coords
+                  Show chunk coords
                 </ToggleSwitch>
               </div>
 
@@ -151,7 +154,7 @@ export default function Map() {
                   checked={showClues}
                   onChange={(e) => setShowClues(e.target.checked)}
                 >
-                  Show Clues
+                  Show clues
                 </ToggleSwitch>
               </div>
 
@@ -161,10 +164,21 @@ export default function Map() {
                     checked={showClueCounts}
                     onChange={(e) => setShowClueCounts(e.target.checked)}
                   >
-                    Show Clue Counts
+                    Show clue counts
                   </ToggleSwitch>
                 </div>
               )}
+
+              <div>
+                <ToggleSwitch
+                  checked={highlightChunksWithoutClues}
+                  onChange={(e) =>
+                    setHighlightChunksWithoutClues(e.target.checked)
+                  }
+                >
+                  Highlight chunks without clues
+                </ToggleSwitch>
+              </div>
             </form>
           </div>
         ) : (

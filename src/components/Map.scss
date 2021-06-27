@@ -84,6 +84,16 @@
     display: block;
   }
 
+  // chunks without clues
+  &.highlight-chunks-without-clues tr td.no-clues {
+    background: rgba(255, 0, 0, 0.5);
+
+    &:hover {
+      background: rgba(139, 0, 0, 0.5);
+    }
+  }
+
+  // table rows & cells
   tr {
     height: 192px;
 
@@ -102,15 +112,6 @@
       &:hover {
         background: rgba(0, 255, 0, 0.4);
       }
-
-      // TODO: uncomment this once we've populated all the chunk data
-      // &.impossible {
-      //   background: rgba(255, 0, 0, 0.5);
-
-      //   &:hover {
-      //     background: rgba(139, 0, 0, 0.5);
-      //   }
-      // }
 
       .chunk-tile {
         position: relative;
