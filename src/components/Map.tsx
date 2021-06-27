@@ -123,12 +123,13 @@ export default function Map() {
             'show-coords': showCoords,
             'show-clues': showClues,
             'show-clue-counts': showClues && showClueCounts,
-            'show-beginner-clues': showClues && clueDifficultiesToShow.beginner,
-            'show-easy-clues': showClues && clueDifficultiesToShow.easy,
-            'show-medium-clues': showClues && clueDifficultiesToShow.medium,
-            'show-hard-clues': showClues && clueDifficultiesToShow.hard,
-            'show-elite-clues': showClues && clueDifficultiesToShow.elite,
-            'show-master-clues': showClues && clueDifficultiesToShow.master,
+            ...Object.entries(clueDifficultiesToShow).reduce(
+              (o, [difficulty, enabled]) => ({
+                ...o,
+                [`show-${difficulty}-clues`]: showClues && enabled,
+              }),
+              {}
+            ),
             'highlight-chunks-without-clues': highlightChunksWithoutClues,
             'zoomed-in': scale > 1,
           })}
@@ -195,26 +196,30 @@ export default function Map() {
                     </ToggleSwitch>
                   </div>
 
-                  {Object.keys(clueDifficultiesToShow).map((difficulty) => (
-                    <div key={`toggle-clue-difficulty-${difficulty}`}>
-                      <ToggleSwitch
-                        checked={clueDifficultiesToShow[difficulty]}
-                        onChange={(e) =>
-                          setClueDifficultiesToShow({
-                            ...clueDifficultiesToShow,
-                            [difficulty]: e.target.checked,
-                          })
-                        }
-                      >
-                        Show {difficulty} clues{' '}
-                        <ClueIcon
-                          difficulty={
-                            capitalizeFirstLetter(difficulty) as ClueDifficulty
+                  {Object.entries(clueDifficultiesToShow).map(
+                    ([difficulty, enabled]) => (
+                      <div key={`toggle-clue-difficulty-${difficulty}`}>
+                        <ToggleSwitch
+                          checked={enabled}
+                          onChange={(e) =>
+                            setClueDifficultiesToShow({
+                              ...clueDifficultiesToShow,
+                              [difficulty]: e.target.checked,
+                            })
                           }
-                        />
-                      </ToggleSwitch>
-                    </div>
-                  ))}
+                        >
+                          Show {difficulty} clues{' '}
+                          <ClueIcon
+                            difficulty={
+                              capitalizeFirstLetter(
+                                difficulty
+                              ) as ClueDifficulty
+                            }
+                          />
+                        </ToggleSwitch>
+                      </div>
+                    )
+                  )}
 
                   <hr />
                 </>
