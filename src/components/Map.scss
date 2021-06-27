@@ -63,6 +63,8 @@
       }
 
       span {
+        display: none;
+
         position: absolute;
         top: 5px;
         left: 10px;
@@ -76,6 +78,10 @@
     &:empty {
       display: none;
     }
+  }
+
+  &.show-clue-counts .chunk-clues-and-counts span {
+    display: block;
   }
 
   tr {

@@ -102,6 +102,7 @@ export default function Map() {
           className={createClassString({
             'show-coords': showCoords,
             'show-clues': showClues,
+            'show-clue-counts': showClues && showClueCounts,
             'zoomed-in': scale > 1,
           })}
         >
