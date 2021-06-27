@@ -54,9 +54,10 @@ const ClueTable: React.FC<{
                     <React.Fragment key={`alt-chunk-${alt.x}-${alt.y}`}>
                       <span
                         className="alternate-chunk"
+                        data-class="alternate-chunk-tooltip"
                         data-tip={alt.notes}
                         data-place="top"
-                        data-type="info"
+                        data-background-color="#13135f"
                       >
                         ({alt.x}, {alt.y})
                       </span>
