@@ -53,6 +53,7 @@ const ClueTable: React.FC<{
 
             return (
               <tr key={index}>
+                {/* Type */}
                 <td>
                   {editing ? (
                     <select
@@ -80,6 +81,8 @@ const ClueTable: React.FC<{
                     type
                   )}
                 </td>
+
+                {/* Clue */}
                 <td>
                   {editing ? (
                     <input
@@ -95,9 +98,45 @@ const ClueTable: React.FC<{
                     <ClueHint hint={clueHint} />
                   )}
                 </td>
-                <td>{solution}</td>
-                <td>{location}</td>
+
+                {/* Solution */}
+                <td>
+                  {editing ? (
+                    <input
+                      value={solution || ''}
+                      onChange={(e) =>
+                        updateClue(index, {
+                          ...clue,
+                          solution: e.target.value,
+                        })
+                      }
+                    />
+                  ) : (
+                    solution
+                  )}
+                </td>
+
+                {/* Location */}
+                <td>
+                  {editing ? (
+                    <input
+                      value={location || ''}
+                      onChange={(e) =>
+                        updateClue(index, {
+                          ...clue,
+                          location: e.target.value,
+                        })
+                      }
+                    />
+                  ) : (
+                    location
+                  )}
+                </td>
+
+                {/* Items */}
                 <td>{itemsRequired?.join(', ')}</td>
+
+                {/* Alternate Chunks */}
                 <td>
                   {alternateChunks?.map((alt, index) => (
                     <React.Fragment key={`alt-chunk-${alt.x}-${alt.y}`}>
