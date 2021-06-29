@@ -1,7 +1,7 @@
 import ClueTable from './ClueTable';
-import type { ChunkData } from '../models';
+import type { Chunk } from '../models';
 
-const ChunkModal: React.FC<{ chunk: ChunkData }> = ({ chunk }) => {
+const ChunkModal: React.FC<{ chunk: Chunk }> = ({ chunk }) => {
   return (
     <div id="chunk-modal">
       <h1>

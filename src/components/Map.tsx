@@ -4,21 +4,21 @@ import { MapInteractionCSS } from 'react-map-interaction';
 import { ChunkModal, ChunkTile, ClueIcon, Modal } from '.';
 import type { ModalHandle } from '.';
 import { ToggleSwitch } from './forms';
-import { ChunkData, ClueDifficulty, MapChunk } from '../models';
+import { Chunk, ClueDifficulty, MapChunk } from '../models';
 import { capitalizeFirstLetter, createClassString, getChunk } from '../utils';
 
-function initChunks(width: number, height: number): MapChunk[][] {
-  const chunks: MapChunk[][] = [];
+function initMapChunks(width: number, height: number): MapChunk[][] {
+  const mapChunks: MapChunk[][] = [];
 
   for (let y = 0; y < height; y++) {
-    chunks.push([]);
+    mapChunks.push([]);
 
     for (let x = 0; x < width; x++) {
-      chunks[y].push(new MapChunk(x, y));
+      mapChunks[y].push(new MapChunk(x, y));
     }
   }
 
-  return chunks;
+  return mapChunks;
 }
 
 export default function Map() {
@@ -30,8 +30,8 @@ export default function Map() {
   const modal = useRef<ModalHandle>(null);
 
   // chunk map
-  const [chunks] = useState(initChunks(width, height));
-  const [selectedChunk, setSelectedChunk] = useState<MapChunk>();
+  const [mapChunks] = useState(initMapChunks(width, height));
+  const [selectedMapChunk, setSelectedMapChunk] = useState<MapChunk>();
 
   // window dimensions
   const [windowDimensions, setWindowDimensions] = useState({
@@ -82,20 +82,20 @@ export default function Map() {
     window.addEventListener('resize', handleResize);
   }, []);
 
-  // when chunk is selected or deselected
+  // when map chunk is selected or deselected
   useEffect(() => {
     if (!modal.current) return;
 
-    if (selectedChunk) {
+    if (selectedMapChunk) {
       modal.current.open();
     } else {
       modal.current.close();
     }
-  }, [modal, selectedChunk]);
+  }, [modal, selectedMapChunk]);
 
   // get selected chunk data
-  const selectedChunkData = selectedChunk
-    ? getChunk(selectedChunk.x, selectedChunk.y)
+  const selectedChunk = selectedMapChunk
+    ? getChunk(selectedMapChunk.x, selectedMapChunk.y)
     : undefined;
 
   // get current view scale
@@ -134,12 +134,12 @@ export default function Map() {
           })}
         >
           <tbody>
-            {chunks.map((row, y) => (
+            {mapChunks.map((row, y) => (
               <tr key={`row-${y}`}>
-                {row.map((chunk, x) => (
+                {row.map((mapChunk, x) => (
                   <ChunkTile
-                    chunk={chunk}
-                    onClick={() => setSelectedChunk(chunk)}
+                    mapChunk={mapChunk}
+                    onClick={() => setSelectedMapChunk(mapChunk)}
                     key={`chunk-${x}-${y}`}
                   />
                 ))}
@@ -256,11 +256,9 @@ export default function Map() {
         </button>
       </div>
 
-      <Modal onClose={() => setSelectedChunk(undefined)} ref={modal}>
+      <Modal onClose={() => setSelectedMapChunk(undefined)} ref={modal}>
         <ChunkModal
-          chunk={
-            selectedChunkData ? selectedChunkData : (selectedChunk as ChunkData)
-          }
+          chunk={selectedChunk ? selectedChunk : (selectedMapChunk as Chunk)}
         />
       </Modal>
     </>

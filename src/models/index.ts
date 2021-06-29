@@ -1,3 +1,3 @@
-export { default as MapChunk } from './MapChunk';
-export type { default as ChunkData } from './ChunkData';
+export type { default as Chunk } from './Chunk';
 export type { default as Clue, ClueDifficulty } from './Clue';
+export { default as MapChunk } from './MapChunk';

@@ -11,12 +11,12 @@ import {
 import { ClueDifficulty, MapChunk } from '../models';
 
 const ChunkTile: React.FC<{
-  chunk: MapChunk;
+  mapChunk: MapChunk;
   onClick?: () => void;
-}> = ({ chunk, onClick }) => {
-  const chunkData = getChunk(chunk.x, chunk.y);
+}> = ({ mapChunk, onClick }) => {
+  const chunk = getChunk(mapChunk.x, mapChunk.y);
 
-  const tdRef = useRef<HTMLTableDataCellElement>(null);
+  const tdRef = useRef<HTMLTableCellElement>(null);
 
   // state for when the mouse left button is held down
   const mouseDownRef = useRef(false);
@@ -118,19 +118,19 @@ const ChunkTile: React.FC<{
   }, [tdRef]);
 
   // get clue counts
-  const clueCounts = clueCountsForChunk(chunkData);
+  const clueCounts = clueCountsForChunk(chunk);
 
   return (
     <td
       className={createClassString({
-        'no-clues': !chunkHasClues(chunkData),
+        'no-clues': !chunkHasClues(chunk),
       })}
       ref={tdRef}
     >
       <div className="chunk-tile">
         <div>
           <div className="chunk-coords">
-            ({chunk.x}, {chunk.y})
+            ({mapChunk.x}, {mapChunk.y})
           </div>
 
           <div className="chunk-clues-and-counts">
