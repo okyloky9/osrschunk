@@ -5,7 +5,8 @@ import { ChunkModal, ChunkTile, ClueIcon, Modal } from '.';
 import type { ModalHandle } from '.';
 import { ToggleSwitch } from './forms';
 import { Chunk, ClueDifficulty, MapChunk } from '../models';
-import { capitalizeFirstLetter, createClassString, getChunk } from '../utils';
+import { capitalizeFirstLetter, createClassString } from '../utils';
+import chunkData from '../data';
 
 function initMapChunks(width: number, height: number): MapChunk[][] {
   const mapChunks: MapChunk[][] = [];
@@ -95,7 +96,7 @@ export default function Map() {
 
   // get selected chunk data
   const selectedChunk = selectedMapChunk
-    ? getChunk(selectedMapChunk.x, selectedMapChunk.y)
+    ? chunkData.getChunk(selectedMapChunk.x, selectedMapChunk.y)
     : undefined;
 
   // get current view scale

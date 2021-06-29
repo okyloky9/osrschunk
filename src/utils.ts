@@ -1,11 +1,4 @@
 import type { Chunk } from './models';
-import chunkJson from './data/chunk-data.json';
-
-const chunkData = chunkJson as Chunk[];
-
-export function getChunk(x: number, y: number): Chunk | undefined {
-  return chunkData.find((chunk) => chunk.x === x && chunk.y === y);
-}
 
 export function clueCountsForChunk(chunk: Chunk | undefined) {
   return {

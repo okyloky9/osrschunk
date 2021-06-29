@@ -6,15 +6,15 @@ import {
   chunkHasClues,
   clueCountsForChunk,
   createClassString,
-  getChunk,
 } from '../utils';
 import { ClueDifficulty, MapChunk } from '../models';
+import chunkData from '../data';
 
 const ChunkTile: React.FC<{
   mapChunk: MapChunk;
   onClick?: () => void;
 }> = ({ mapChunk, onClick }) => {
-  const chunk = getChunk(mapChunk.x, mapChunk.y);
+  const chunk = chunkData.getChunk(mapChunk.x, mapChunk.y);
 
   const tdRef = useRef<HTMLTableCellElement>(null);
 
