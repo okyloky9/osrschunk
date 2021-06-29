@@ -1,30 +1,68 @@
-import ClueTable from './ClueTable';
-import type { Chunk } from '../models';
+import { useContext } from 'react';
 
-const ChunkModal: React.FC<{ chunk: Chunk }> = ({ chunk }) => {
+import ClueTable from './ClueTable';
+import { ChunkDataContext } from '../data';
+
+const ChunkModal: React.FC<{
+  chunkCoords: { x: number; y: number };
+  editMode: boolean;
+}> = ({ chunkCoords, editMode }) => {
+  const { getChunk, setChunk } = useContext(ChunkDataContext);
+
+  const chunk = getChunk(chunkCoords.x, chunkCoords.y);
+
   return (
     <div id="chunk-modal">
       <h1>
-        Chunk ({chunk.x}, {chunk.y})
+        Chunk ({chunkCoords.x}, {chunkCoords.y})
       </h1>
 
       <div>
-        <ClueTable clues={chunk.beginnerClues} difficulty="Beginner" />
+        <ClueTable
+          clues={chunk?.beginnerClues}
+          difficulty="Beginner"
+          editMode={editMode}
+        />
       </div>
+
       <div>
-        <ClueTable clues={chunk.easyClues} difficulty="Easy" />
+        <ClueTable
+          clues={chunk?.easyClues}
+          difficulty="Easy"
+          editMode={editMode}
+        />
       </div>
+
       <div>
-        <ClueTable clues={chunk.mediumClues} difficulty="Medium" />
+        <ClueTable
+          clues={chunk?.mediumClues}
+          difficulty="Medium"
+          editMode={editMode}
+        />
       </div>
+
       <div>
-        <ClueTable clues={chunk.hardClues} difficulty="Hard" />
+        <ClueTable
+          clues={chunk?.hardClues}
+          difficulty="Hard"
+          editMode={editMode}
+        />
       </div>
+
       <div>
-        <ClueTable clues={chunk.eliteClues} difficulty="Elite" />
+        <ClueTable
+          clues={chunk?.eliteClues}
+          difficulty="Elite"
+          editMode={editMode}
+        />
       </div>
+
       <div>
-        <ClueTable clues={chunk.masterClues} difficulty="Master" />
+        <ClueTable
+          clues={chunk?.masterClues}
+          difficulty="Master"
+          editMode={editMode}
+        />
       </div>
     </div>
   );

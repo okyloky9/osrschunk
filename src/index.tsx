@@ -2,13 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import { Map } from './components';
+import { ChunkDataProvider } from './data';
 import reportWebVitals from './reportWebVitals';
 
 import './Styles.scss';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Map />
+    <ChunkDataProvider>
+      <Map />
+    </ChunkDataProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

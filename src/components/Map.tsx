@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useContext, useEffect, useRef, useState } from 'react';
 import { MapInteractionCSS } from 'react-map-interaction';
 
 import { ChunkModal, ChunkTile, ClueIcon, Modal } from '.';
@@ -6,7 +6,7 @@ import type { ModalHandle } from '.';
 import { ToggleSwitch } from './forms';
 import { Chunk, ClueDifficulty, MapChunk } from '../models';
 import { capitalizeFirstLetter, createClassString } from '../utils';
-import chunkData from '../data';
+import { ChunkDataContext } from '../data';
 
 function initMapChunks(width: number, height: number): MapChunk[][] {
   const mapChunks: MapChunk[][] = [];
@@ -26,6 +26,9 @@ export default function Map() {
   // map dimensions (in chunks)
   const width = 43;
   const height = 25;
+
+  // chunk data
+  const { getChunk } = useContext(ChunkDataContext);
 
   // modal ref
   const modal = useRef<ModalHandle>(null);
@@ -57,6 +60,7 @@ export default function Map() {
   });
   const [highlightChunksWithoutClues, setHighlightChunksWithoutClues] =
     useState(false);
+  const [editMode, setEditMode] = useState(false);
 
   // min scale calculations
   const minWidthScale = windowDimensions.width / (width * 192);
@@ -93,11 +97,6 @@ export default function Map() {
       modal.current.close();
     }
   }, [modal, selectedMapChunk]);
-
-  // get selected chunk data
-  const selectedChunk = selectedMapChunk
-    ? chunkData.getChunk(selectedMapChunk.x, selectedMapChunk.y)
-    : undefined;
 
   // get current view scale
   const { scale } = view;
@@ -235,6 +234,17 @@ export default function Map() {
                   Highlight chunks without clues
                 </ToggleSwitch>
               </div>
+
+              <hr />
+
+              <div>
+                <ToggleSwitch
+                  checked={editMode}
+                  onChange={(e) => setEditMode(e.target.checked)}
+                >
+                  Data editing mode
+                </ToggleSwitch>
+              </div>
             </form>
           </div>
         ) : (
@@ -258,9 +268,9 @@ export default function Map() {
       </div>
 
       <Modal onClose={() => setSelectedMapChunk(undefined)} ref={modal}>
-        <ChunkModal
-          chunk={selectedChunk ? selectedChunk : (selectedMapChunk as Chunk)}
-        />
+        {selectedMapChunk && (
+          <ChunkModal chunkCoords={selectedMapChunk} editMode={editMode} />
+        )}
       </Modal>
     </>
   );

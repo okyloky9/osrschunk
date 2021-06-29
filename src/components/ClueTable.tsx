@@ -7,7 +7,8 @@ import ClueIcon from './ClueIcon';
 const ClueTable: React.FC<{
   clues: Clue[] | undefined;
   difficulty: ClueDifficulty;
-}> = ({ clues, difficulty }) => {
+  editMode: boolean;
+}> = ({ clues, difficulty, editMode }) => {
   const ClueHint = ({ hint }: { hint: string }) => {
     return hint && hint.startsWith('http') ? <img src={hint} /> : <>{hint}</>;
   };

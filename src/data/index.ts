@@ -1,3 +1,1 @@
-import chunkData from './chunk-data';
-
-export default chunkData;
+export * from './chunk-data';

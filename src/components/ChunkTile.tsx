@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useContext, useEffect, useRef } from 'react';
 
 import ClueIcon from './ClueIcon';
 import {
@@ -8,13 +8,14 @@ import {
   createClassString,
 } from '../utils';
 import { ClueDifficulty, MapChunk } from '../models';
-import chunkData from '../data';
+import { ChunkDataContext } from '../data';
 
 const ChunkTile: React.FC<{
   mapChunk: MapChunk;
   onClick?: () => void;
 }> = ({ mapChunk, onClick }) => {
-  const chunk = chunkData.getChunk(mapChunk.x, mapChunk.y);
+  const { getChunk } = useContext(ChunkDataContext);
+  const chunk = getChunk(mapChunk.x, mapChunk.y);
 
   const tdRef = useRef<HTMLTableCellElement>(null);
 
