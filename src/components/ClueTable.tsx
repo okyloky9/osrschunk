@@ -137,7 +137,7 @@ const ClueTable: React.FC<{
                 <td>
                   {editing ? (
                     <input
-                      value={itemsRequired?.join(',')}
+                      value={itemsRequired ? itemsRequired.join(',') : ''}
                       onChange={(e) =>
                         updateClue(index, {
                           ...clue,
@@ -152,23 +152,57 @@ const ClueTable: React.FC<{
 
                 {/* Alternate Chunks */}
                 <td>
-                  {alternateChunks?.map((alt, index) => (
-                    <React.Fragment key={`alt-chunk-${alt.x}-${alt.y}`}>
-                      <span
-                        className="alternate-chunk"
-                        data-class="alternate-chunk-tooltip"
-                        data-tip={alt.notes}
-                        data-place="top"
-                        data-background-color="#13135f"
-                      >
-                        ({alt.x}, {alt.y})
-                      </span>
-                      <ReactTooltip />
+                  {editing ? (
+                    <>
+                      {alternateChunks?.map((alt, index) => (
+                        <div className="edit-alternate-chunk">
+                          <div>
+                            <input
+                              min={0}
+                              max={99}
+                              type="number"
+                              value={alt.x}
+                            />
+                            ,{' '}
+                            <input
+                              min={0}
+                              max={99}
+                              type="number"
+                              value={alt.y}
+                            />
+                            <br />
+                            <input value={alt.notes} />
+                          </div>
 
-                      {alternateChunks.length > 1 &&
-                        index < alternateChunks.length - 1 && <>, </>}
-                    </React.Fragment>
-                  ))}
+                          <div className="right">
+                            <button type="button">X</button>
+                          </div>
+                        </div>
+                      ))}
+
+                      {alternateChunks?.length && <br />}
+
+                      <button type="button">+</button>
+                    </>
+                  ) : (
+                    alternateChunks?.map((alt, index) => (
+                      <React.Fragment key={`alt-chunk-${alt.x}-${alt.y}`}>
+                        <span
+                          className="alternate-chunk"
+                          data-class="alternate-chunk-tooltip"
+                          data-tip={alt.notes}
+                          data-place="top"
+                          data-background-color="#13135f"
+                        >
+                          ({alt.x}, {alt.y})
+                        </span>
+                        <ReactTooltip />
+
+                        {alternateChunks.length > 1 &&
+                          index < alternateChunks.length - 1 && <>, </>}
+                      </React.Fragment>
+                    ))
+                  )}
                 </td>
               </tr>
             );
