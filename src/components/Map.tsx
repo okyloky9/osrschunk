@@ -4,7 +4,7 @@ import { MapInteractionCSS } from 'react-map-interaction';
 import { ChunkModal, ChunkTile, ClueIcon, Modal } from '.';
 import type { ModalHandle } from '.';
 import { ToggleSwitch } from './forms';
-import { Chunk, ClueDifficulty, MapChunk } from '../models';
+import { ClueDifficulty, MapChunk } from '../models';
 import { capitalizeFirstLetter, createClassString } from '../utils';
 import { ChunkDataContext } from '../data';
 
@@ -28,7 +28,7 @@ export default function Map() {
   const height = 25;
 
   // chunk data
-  const { getChunk } = useContext(ChunkDataContext);
+  const { exportChunkData } = useContext(ChunkDataContext);
 
   // modal ref
   const modal = useRef<ModalHandle>(null);
@@ -245,6 +245,14 @@ export default function Map() {
                   Data editing mode
                 </ToggleSwitch>
               </div>
+
+              {editMode && (
+                <div>
+                  <button type="button" onClick={exportChunkData}>
+                    Export chunk-data.json
+                  </button>
+                </div>
+              )}
             </form>
           </div>
         ) : (

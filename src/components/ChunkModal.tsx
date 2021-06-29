@@ -11,7 +11,10 @@ const ChunkModal: React.FC<{
   const { getChunk, setChunk } = useContext(ChunkDataContext);
 
   const { x, y } = chunkCoords;
-  const chunk = getChunk(x, y);
+  const chunk = getChunk(x, y) || {
+    x,
+    y,
+  };
 
   function updateClues(type: ClueDifficulty, clues: Clue[]) {
     setChunk(x, y, {

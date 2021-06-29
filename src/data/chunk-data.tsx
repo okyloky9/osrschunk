@@ -14,6 +14,7 @@ for (const chunk of chunkJson) {
 }
 
 const ChunkDataContext = createContext<{
+  exportChunkData: () => void;
   getChunk: (x: number, y: number) => Chunk | undefined;
   setChunk: (x: number, y: number, chunk: Chunk) => void;
 }>(null as any);
@@ -31,12 +32,24 @@ const ChunkDataProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
     setChunkData(_chunkData);
   }
 
-  // TODO: write this method
-  // function exportChunkData() {}
+  function exportChunkData() {
+    const chunks = Array.from(chunkData.values());
+    const json = JSON.stringify(chunks);
+
+    const blob = new Blob([json], { type: 'application/json' });
+
+    const anchor = document.createElement('a');
+    anchor.download = 'chunk-data.json';
+    anchor.href = window.URL.createObjectURL(blob);
+    anchor.click();
+
+    anchor.remove();
+  }
 
   return (
     <ChunkDataContext.Provider
       value={{
+        exportChunkData,
         getChunk,
         setChunk,
       }}
