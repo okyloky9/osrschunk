@@ -154,35 +154,110 @@ const ClueTable: React.FC<{
                 <td>
                   {editing ? (
                     <>
-                      {alternateChunks?.map((alt, index) => (
-                        <div className="edit-alternate-chunk">
-                          <div>
-                            <input
-                              min={0}
-                              max={99}
-                              type="number"
-                              value={alt.x}
-                            />
-                            ,{' '}
-                            <input
-                              min={0}
-                              max={99}
-                              type="number"
-                              value={alt.y}
-                            />
-                            <br />
-                            <input value={alt.notes} />
+                      {alternateChunks?.map((alt, altIndex) => {
+                        function updateAlt(
+                          i: number,
+                          a: { x: number; y: number; notes: string }
+                        ) {
+                          const _alternateChunks = [
+                            ...(alternateChunks as any[]),
+                          ];
+
+                          _alternateChunks.splice(i, 1, a);
+
+                          updateClue(index, {
+                            ...clue,
+                            alternateChunks: _alternateChunks,
+                          });
+                        }
+
+                        return (
+                          <div className="edit-alternate-chunk" key={altIndex}>
+                            <div>
+                              <input
+                                min={0}
+                                max={99}
+                                type="number"
+                                value={alt.x}
+                                onChange={(e) =>
+                                  updateAlt(altIndex, {
+                                    ...alt,
+                                    x: Number.parseInt(e.target.value, 10),
+                                  })
+                                }
+                              />
+                              ,{' '}
+                              <input
+                                min={0}
+                                max={99}
+                                type="number"
+                                value={alt.y}
+                                onChange={(e) =>
+                                  updateAlt(altIndex, {
+                                    ...alt,
+                                    y: Number.parseInt(e.target.value, 10),
+                                  })
+                                }
+                              />
+                              <br />
+                              <input
+                                value={alt.notes}
+                                onChange={(e) =>
+                                  updateAlt(altIndex, {
+                                    ...alt,
+                                    notes: e.target.value,
+                                  })
+                                }
+                              />
+                            </div>
+
+                            <div className="right">
+                              <button
+                                type="button"
+                                onClick={() => {
+                                  const _alternateChunks = [...alternateChunks];
+                                  _alternateChunks.splice(altIndex, 1);
+
+                                  updateClue(index, {
+                                    ...clue,
+                                    alternateChunks: _alternateChunks,
+                                  });
+                                }}
+                              >
+                                X
+                              </button>
+                            </div>
                           </div>
+                        );
+                      })}
 
-                          <div className="right">
-                            <button type="button">X</button>
-                          </div>
-                        </div>
-                      ))}
+                      {alternateChunks?.length ? (
+                        <div className="spacer" />
+                      ) : (
+                        <></>
+                      )}
 
-                      {alternateChunks?.length && <br />}
+                      <button
+                        type="button"
+                        onClick={() => {
+                          const _alternateChunks = alternateChunks
+                            ? [...alternateChunks]
+                            : [];
 
-                      <button type="button">+</button>
+                          _alternateChunks.push({
+                            x: 0,
+                            y: 0,
+                            notes: 'notes go here',
+                          });
+
+                          updateClue(index, {
+                            ...clue,
+                            alternateChunks: _alternateChunks,
+                          });
+                        }}
+                      >
+                        +
+                      </button>
                     </>
                   ) : (
                     alternateChunks?.map((alt, index) => (
