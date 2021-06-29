@@ -134,7 +134,21 @@ const ClueTable: React.FC<{
                 </td>
 
                 {/* Items */}
-                <td>{itemsRequired?.join(', ')}</td>
+                <td>
+                  {editing ? (
+                    <input
+                      value={itemsRequired?.join(',')}
+                      onChange={(e) =>
+                        updateClue(index, {
+                          ...clue,
+                          itemsRequired: e.target.value.split(','),
+                        })
+                      }
+                    />
+                  ) : (
+                    itemsRequired?.join(', ')
+                  )}
+                </td>
 
                 {/* Alternate Chunks */}
                 <td>
