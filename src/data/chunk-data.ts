@@ -3,14 +3,16 @@ import Chunk from '../models/chunk';
 import chunkJson from './chunk-data.json';
 
 class ChunkData {
-  public chunks: Chunk[];
+  private chunkMap = new Map<string, Chunk>();
 
   constructor(chunks: Chunk[]) {
-    this.chunks = chunks;
+    for (const chunk of chunks) {
+      this.chunkMap.set(`${chunk.x},${chunk.y}`, chunk);
+    }
   }
 
   public getChunk(x: number, y: number): Chunk | undefined {
-    return this.chunks.find((chunk) => chunk.x === x && chunk.y === y);
+    return this.chunkMap.get(`${x},${y}`);
   }
 }
 
