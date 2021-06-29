@@ -35,6 +35,12 @@ const ClueTable: React.FC<{
     updateClues(_clues);
   }
 
+  function deleteClue(index: number) {
+    if (!clues || !updateClues) return;
+    clues.splice(index, 1);
+    updateClues([...clues]);
+  }
+
   return (clues && clues.length) || editing ? (
     <>
       <h2>
@@ -51,6 +57,7 @@ const ClueTable: React.FC<{
             <th>Location</th>
             <th>Items</th>
             <th>Alternate Chunks</th>
+            {editing && <th>Delete</th>}
           </tr>
         </thead>
 
@@ -299,6 +306,14 @@ const ClueTable: React.FC<{
                       ))
                     )}
                   </td>
+
+                  {editing && (
+                    <td>
+                      <button type="button" onClick={() => deleteClue(index)}>
+                        X
+                      </button>
+                    </td>
+                  )}
                 </tr>
               );
             })}
