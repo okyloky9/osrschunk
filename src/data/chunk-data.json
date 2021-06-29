@@ -24,6 +24,26 @@
     ]
   },
   {
+    "x": 8,
+    "y": 8,
+    "easyClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Salty peter.",
+        "location": "",
+        "solution": "Talk to Konoo who is digging saltpetre in Hosidius.",
+        "itemsRequired": ["Spade"],
+        "alternateChunks": [
+          {
+            "x": 8,
+            "y": 9,
+            "notes": "Konoo will path around and sometimes enter either chunk."
+          }
+        ]
+      }
+    ]
+  },
+  {
     "x": 9,
     "y": 8,
     "easyClues": [
@@ -56,6 +76,26 @@
         "clueHint": "Cheer at the games room.",
         "location": "The basement of the Games Room in Burthorpe.",
         "requiredItems": ["Wear nothing"]
+      }
+    ]
+  },
+  {
+    "x": 8,
+    "y": 9,
+    "easyClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Salty peter.",
+        "location": "",
+        "alternateChunks": [
+          {
+            "x": 8,
+            "y": 8,
+            "notes": "Konoo will path around and sometimes enter either chunk."
+          }
+        ],
+        "itemsRequired": ["Spade"],
+        "solution": "Talk to Konoo who is digging saltpetre in Hosidius."
       }
     ]
   },
