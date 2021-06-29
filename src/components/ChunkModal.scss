@@ -36,6 +36,27 @@
       }
     }
   }
+
+  .edit-alternate-chunk {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+
+    .right {
+      margin-left: 4px;
+      display: flex;
+    }
+
+    .spacer {
+      height: 5px;
+    }
+  }
+
+  .add-clue {
+    margin-top: 10px;
+  }
 }
 
 .alternate-chunk-tooltip {

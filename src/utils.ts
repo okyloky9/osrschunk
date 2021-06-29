@@ -1,13 +1,6 @@
-import type { ChunkData } from './models';
-import chunkJson from './data/chunk_data.json';
+import type { Chunk } from './models';
 
-const chunkData = chunkJson as ChunkData[];
-
-export function getChunk(x: number, y: number): ChunkData | undefined {
-  return chunkData.find((chunk) => chunk.x === x && chunk.y === y);
-}
-
-export function clueCountsForChunk(chunk: ChunkData | undefined) {
+export function clueCountsForChunk(chunk: Chunk | undefined) {
   return {
     beginner: chunk?.beginnerClues?.length || 0,
     easy: chunk?.easyClues?.length || 0,
@@ -18,7 +11,7 @@ export function clueCountsForChunk(chunk: ChunkData | undefined) {
   };
 }
 
-export function chunkHasClues(chunk: ChunkData | undefined): boolean {
+export function chunkHasClues(chunk: Chunk | undefined): boolean {
   const clueCount = clueCountsForChunk(chunk);
 
   for (const count of Object.values(clueCount)) {

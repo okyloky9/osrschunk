@@ -1,6 +1,6 @@
 import type { Clue } from '.';
 
-type ChunkData = {
+type Chunk = {
   x: number;
   y: number;
   beginnerClues?: Clue[];
@@ -11,4 +11,4 @@ type ChunkData = {
   masterClues?: Clue[];
 };
 
-export default ChunkData;
+export default Chunk;
