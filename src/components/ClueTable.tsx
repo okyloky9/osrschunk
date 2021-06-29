@@ -7,11 +7,19 @@ import ClueIcon from './ClueIcon';
 const ClueTable: React.FC<{
   clues: Clue[] | undefined;
   difficulty: ClueDifficulty;
-  editMode: boolean;
-}> = ({ clues, difficulty, editMode }) => {
+  updateClues?: (clues: Clue[]) => void;
+}> = ({ clues, difficulty, updateClues }) => {
+  const editing = !!updateClues;
+
   const ClueHint = ({ hint }: { hint: string }) => {
     return hint && hint.startsWith('http') ? <img src={hint} /> : <>{hint}</>;
   };
+
+  function updateClue(index: number, clue: Clue) {
+    if (!clues || !updateClues) return;
+    clues.splice(index, 1, clue);
+    updateClues([...clues]);
+  }
 
   return clues && clues.length ? (
     <>
@@ -33,19 +41,33 @@ const ClueTable: React.FC<{
         </thead>
 
         <tbody>
-          {clues.map(
-            ({
+          {clues.map((clue, index) => {
+            const {
               alternateChunks,
               clueHint,
               itemsRequired,
               location,
               solution,
               type,
-            }) => (
-              <tr key={clueHint}>
-                <td>{type}</td>
+            } = clue;
+
+            return (
+              <tr key={index}>
+                <td>{editing ? <input value={type} readOnly /> : type}</td>
                 <td>
-                  <ClueHint hint={clueHint} />
+                  {editing ? (
+                    <input
+                      value={clueHint}
+                      onChange={(e) =>
+                        updateClue(index, {
+                          ...clue,
+                          clueHint: e.target.value,
+                        })
+                      }
+                    />
+                  ) : (
+                    <ClueHint hint={clueHint} />
+                  )}
                 </td>
                 <td>{solution}</td>
                 <td>{location}</td>
@@ -70,8 +92,8 @@ const ClueTable: React.FC<{
                   ))}
                 </td>
               </tr>
-            )
-          )}
+            );
+          })}
         </tbody>
       </table>
     </>
