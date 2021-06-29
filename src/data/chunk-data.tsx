@@ -34,8 +34,10 @@ const ChunkDataProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
 
   function exportChunkData() {
     const chunks = Array.from(chunkData.values());
-    const json = JSON.stringify(chunks);
 
+    chunks.sort((a, b) => a.y - b.y || a.x - b.x);
+
+    const json = JSON.stringify(chunks);
     const blob = new Blob([json], { type: 'application/json' });
 
     const anchor = document.createElement('a');

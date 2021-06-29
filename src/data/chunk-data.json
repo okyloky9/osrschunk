@@ -1,13 +1,304 @@
 [
   {
+    "x": 7,
+    "y": 6,
+    "easyClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Dig in the centre of a great kingdom of 5 cities.",
+        "location": "Dig in front of the large statue in the centre of Great Kourend.",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 4,
+    "y": 7,
+    "easyClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Dig by the Giant's Den entrance, looking out over Lake Molch.",
+        "location": "South-east of Lake Molch. Just south of the Shayzien rowboat, outside the dungeon entrance.",
+        "requiredItems": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 9,
+    "y": 8,
+    "easyClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "I wouldn't wear this jean on my legs.",
+        "solution": "Talk to Father Jean in the Hosidius church.",
+        "location": "Hosidius church"
+      }
+    ]
+  },
+  {
+    "x": 24,
+    "y": 8,
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Laugh at the crossroads south of the Sinclair Mansion.",
+        "location": "South of Sinclair Mansion",
+        "requiredItems": ["Leather Cowl", "Iron Scimitar", "Blue Wizard Robe"]
+      }
+    ]
+  },
+  {
+    "x": 27,
+    "y": 8,
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Cheer at the games room.",
+        "location": "The basement of the Games Room in Burthorpe.",
+        "requiredItems": ["Wear nothing"]
+      }
+    ]
+  },
+  {
+    "x": 9,
+    "y": 9,
+    "easyClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Monk's residence in the far west. See robe storage device.",
+        "solution": "Search the drawers in the south tent of the monk's camp.",
+        "location": "West of the Hosidius mine"
+      }
+    ]
+  },
+  {
+    "x": 20,
+    "y": 9,
+    "easyClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Dig near some giant mushrooms behind the Grand Tree.",
+        "location": "Dig near the red mushrooms north-west of the Grand Tree.",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 27,
+    "y": 9,
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Cheer at the Druids' Circle.",
+        "location": "Taverley",
+        "requiredItems": ["Blue Wizard Hat", "Bronze 2H Sword", "HAM Boots"]
+      }
+    ]
+  },
+  {
+    "x": 28,
+    "y": 9,
+    "beginnerClues": [
+      {
+        "type": "Hot/Cold",
+        "clueHint": "Atop Ice Mountain",
+        "solution": "Dig atop Ice Mountain.",
+        "location": "Ice Mountain",
+        "itemsRequired": ["Spade", "Strange Device"],
+        "alternateChunks": [
+          {
+            "x": 29,
+            "y": 9,
+            "notes": "Hot and cold clues have an area you can dig in. You can dig in either chunk."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "x": 29,
+    "y": 9,
+    "beginnerClues": [
+      {
+        "type": "Hot/Cold",
+        "clueHint": "Atop Ice Mountain",
+        "solution": "Dig atop Ice Mountain.",
+        "location": "Ice Mountain",
+        "itemsRequired": ["Spade", "Strange Device"],
+        "alternateChunks": [
+          {
+            "x": 28,
+            "y": 9,
+            "notes": "Hot and cold clues have an area you can dig in. You can dig in either chunk."
+          }
+        ]
+      }
+    ],
+    "easyClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Impossible to make angry.",
+        "solution": "Speak to Abbot Langley.",
+        "location": "Edgeville Monastary"
+      }
+    ]
+  },
+  {
+    "x": 30,
+    "y": 9,
+    "easyClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "I wonder how many bronze swords he has handed out.",
+        "solution": "Talk to Vannaka. He can be found in Edgeville Dungeon.",
+        "location": "Edgeville Dungeon"
+      }
+    ]
+  },
+  {
+    "x": 31,
+    "y": 9,
+    "beginnerClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Bow to Brugsen Bursen at the Grand Exchange.",
+        "solution": "Brugsen Bursen is found inside the Grand Exchange",
+        "location": "Grand Exchange"
+      }
+    ],
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Dance at the entrance to the Grand Exchange.",
+        "location": "Grand Exchange",
+        "itemsRequired": ["Pink Skirt", "Pink Robe Top", "Body Tiara"]
+      }
+    ]
+  },
+  {
+    "x": 32,
+    "y": 9,
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Spin in the Varrock Castle courtyard.",
+        "location": "Varrock Castle courtyard",
+        "requiredItems": ["Coif", "Black Axe", "Ruby Ring"]
+      },
+      {
+        "type": "Emote",
+        "clueHint": "Yawn in the Varrock library.",
+        "location": "Varrock Castle library",
+        "requiredItems": ["HAM Robe", "Green Robe Top", "Iron Warhammer"]
+      }
+    ]
+  },
+  {
     "x": 33,
-    "y": 14,
+    "y": 9,
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Wave along the south fence of the Lumber Yard.",
+        "location": "Lumber Yard",
+        "requiredItems": ["Hardleather Body", "Leather Chaps", "Bronze Axe"]
+      }
+    ]
+  },
+  {
+    "x": 34,
+    "y": 9,
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Panic in the Limestone Mine.",
+        "location": "Limestone Mine East of Lumber Yard",
+        "requiredItems": ["Bronze Platelegs", "Steel Med Helm", "Steel Pickaxe"]
+      }
+    ]
+  },
+  {
+    "x": 22,
+    "y": 10,
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Dance a jig by the entrance to the Fishing Guild.",
+        "location": "Fishing Guild",
+        "itemsRequired": [
+          "Bronze Chainbody",
+          "Sapphire Amulet",
+          "Emerald Ring"
+        ],
+        "alternateChunks": [
+          {
+            "x": 22,
+            "y": 11,
+            "notes": "Uri can be spawned across these chunks."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "x": 25,
+    "y": 10,
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Blow raspberries outside the entrance to Keep Le Faye.",
+        "location": "Keep Le Faye",
+        "requiredItems": ["Coif", "Iron Platebody", "Leather Gloves"]
+      },
+      {
+        "type": "Emote",
+        "clueHint": "Jump for joy at the beehives.",
+        "location": "Catherby beehives",
+        "requiredItems": ["Desert Shirt", "Steel Axe", "Green Robe Bottoms"]
+      }
+    ]
+  },
+  {
+    "x": 28,
+    "y": 10,
     "beginnerClues": [
       {
         "type": "Anagram",
-        "clueHint": "An Earl",
-        "solution": "Ranael",
-        "location": "Al Kharid skirt shop"
+        "clueHint": "I Cord",
+        "solution": "Doric",
+        "location": "North of Falador"
+      }
+    ]
+  },
+  {
+    "x": 29,
+    "y": 10,
+    "beginnerClues": [
+      {
+        "type": "Map",
+        "clueHint": "https://oldschool.runescape.wiki/images/2/2e/Map_clue_Falador_stones.png?1d2b6",
+        "location": "Due east of Falador's north gate. Look for the (grapple) agility shortcut icon.",
+        "itemsRequired": ["Spade"]
+      }
+    ],
+    "easyClues": [
+      {
+        "type": "Map",
+        "clueHint": "Dig between some ominous stones in Falador.",
+        "location": "Three standing stones inside a walled area. East of the northern Falador gate.",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 30,
+    "y": 10,
+    "beginnerClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "In a village of barbarians, I am the one who guards the village from up high.",
+        "solution": "Talk to Hunding atop the tower on the east side of Barbarian Village.",
+        "location": "Barbarian Village"
       }
     ]
   },
@@ -30,164 +321,89 @@
     ]
   },
   {
-    "x": 30,
-    "y": 14,
-    "beginnerClues": [
-      {
-        "type": "Anagram",
-        "clueHint": "Disorder",
-        "solution": "Sedridor",
-        "location": "Wizards' Tower basement"
-      },
-      {
-        "type": "Map",
-        "clueHint": "https://oldschool.runescape.wiki/images/1/1b/Map_clue_Wizard_tower.png?e1c87",
-        "location": "Directly behind the Wizards' Tower, there's a fern you can use as a reference; the dig spot is one tile directly north of the fern. Fairy ring code D*I*S is very close.",
-        "itemsRequired": ["Spade"]
-      }
-    ],
-    "easyClues": [
-      {
-        "type": "Emote",
-        "clueHint": "Clap on the causeway to the Wizards' Tower.",
-        "location": "Wizards' Tower bridge",
-        "requiredItems": ["White Apron", "Emerald Ring", "Iron Med Helm"]
-      }
-    ]
-  },
-  {
-    "x": 28,
+    "x": 32,
     "y": 10,
     "beginnerClues": [
       {
-        "type": "Anagram",
-        "clueHint": "I Cord",
-        "solution": "Doric",
-        "location": "North of Falador"
-      }
-    ]
-  },
-  {
-    "x": 29,
-    "y": 13,
-    "beginnerClues": [
-      {
-        "type": "Anagram",
-        "clueHint": "In Bar",
-        "solution": "Brian",
-        "location": "Port Sarim battleaxe shop"
-      }
-    ],
-    "easyClues": [
-      {
-        "type": "Emote",
-        "clueHint": "Cheer for the monks at Port Sarim.",
-        "location": "Port Sarim docks",
-        "itemsRequired": ["Coif", "Steel Plateskirt", "Sapphire Necklace"]
-      },
-      {
-        "type": "Cryptic",
-        "clueHint": "One of the sailors in Port Sarim is your next destination.",
-        "solution": "Speak to Captain Tobias on the docks of Port Sarim.",
-        "location": "Port Sarim"
-      }
-    ]
-  },
-  {
-    "x": 30,
-    "y": 11,
-    "beginnerClues": [
-      {
-        "type": "Anagram",
-        "clueHint": "Rain Cove",
-        "solution": "Veronica",
-        "location": "Outside Draynor Manor",
+        "type": "Charlie the Tramp",
+        "clueHint": "Talk to Charlie the Tramp",
+        "location": "North of Varrock entrance",
         "alternateChunks": [
           {
-            "x": 30,
-            "y": 12,
-            "notes": "Veronica will path around and sometimes enter either chunk."
-          }
-        ]
-      },
-      {
-        "type": "Hot/Cold",
-        "clueHint": "Patch of mushrooms just north-west of Draynor Manor",
-        "location": "Draynor Manor",
-        "itemsRequired": ["Spade", "Strange Device"]
-      }
-    ],
-    "easyClues": [
-      {
-        "type": "Emote",
-        "clueHint": "Spin in Draynor Manor by the fountain.",
-        "location": "Draynor Manor",
-        "itemsRequired": ["Bronze Full Helm", "Iron Platebody", "Studded Chaps"]
-      },
-      {
-        "type": "Cryptic",
-        "clueHint": "Belladonna, my dear. If only I had gloves, then I could hold you at last.",
-        "solution": "Talk to the Tool leprechaun at Belladonna farming patch at Draynor Manor.",
-        "location": "Draynor Manor"
-      }
-    ]
-  },
-  {
-    "x": 30,
-    "y": 12,
-    "beginnerClues": [
-      {
-        "type": "Anagram",
-        "clueHint": "Rain Cove",
-        "solution": "Veronica",
-        "location": "Outside Draynor Manor",
-        "alternateChunks": [
-          {
-            "x": 30,
+            "x": 32,
             "y": 11,
-            "notes": "Veronica will path around and sometimes enter either chunk."
+            "notes": "Charlie will path around and sometimes enter either chunk."
           }
         ]
       },
       {
-        "type": "Hot/Cold",
-        "clueHint": "Inside the wheat field next to Draynor Village",
-        "location": "Draynor Village",
-        "itemsRequired": ["Spade", "Strange Device"]
+        "type": "Emote",
+        "clueHint": "Blow a raspberry at Gypsy Aris in her tent.",
+        "solution": "Gypsy Aris can be found in her tent at Varrock Square.",
+        "location": "Gypsy Aris' tent",
+        "itemsRequired": ["Gold Ring", "Gold Necklace"]
+      },
+      {
+        "type": "Emote",
+        "clueHint": "Cheer at Iffie Nitter.",
+        "solution": "Iffie can be found in Thessalia's Fine Clothes store in Varrock",
+        "location": "Thessalia's Fine Clothes",
+        "itemsRequired": ["Chef's Hat", "Red Cape"]
       }
     ],
     "easyClues": [
       {
         "type": "Emote",
-        "clueHint": "Dance at the crossroads north of Draynor.",
-        "location": "Draynor crossroads",
-        "itemsRequired": ["Iron Chainbody", "Sapphire Ring", "Longbow"]
+        "clueHint": "Do a jig in Varrock's rune store.",
+        "location": "Varrock Rune Shop",
+        "itemsRequired": ["Air Tiara", "Staff of Water"]
       }
     ]
   },
   {
-    "x": 30,
-    "y": 13,
-    "beginnerClues": [
-      {
-        "type": "Anagram",
-        "clueHint": "Taunt Roof",
-        "solution": "Fortunato",
-        "location": "Draynor Village Market"
-      },
-      {
-        "type": "Map",
-        "clueHint": "https://oldschool.runescape.wiki/images/e/ed/Map_clue_Draynor_willows.png?bb604",
-        "location": "South of Draynor Village bank, by the fishing spot",
-        "itemsRequired": ["Spade"]
-      }
-    ],
+    "x": 22,
+    "y": 11,
     "easyClues": [
       {
         "type": "Emote",
-        "clueHint": "Yawn in Draynor Marketplace.",
-        "location": "Draynor Village Market",
-        "itemsRequired": ["Studded Chaps", "Iron Kiteshield", "Steel Longsword"]
+        "clueHint": "Dance a jig by the entrance to the Fishing Guild.",
+        "location": "Fishing Guild",
+        "itemsRequired": [
+          "Bronze Chainbody",
+          "Sapphire Amulet",
+          "Emerald Ring"
+        ],
+        "alternateChunks": [
+          {
+            "x": 22,
+            "y": 10,
+            "notes": "Uri can be spawned across these chunks."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "x": 23,
+    "y": 11,
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Clap on the top level of the mill, north of East Ardougne.",
+        "location": "North of East Ardougne",
+        "requiredItems": ["Blue Robe Top", "Tiara", "HAM Robe"]
+      }
+    ]
+  },
+  {
+    "x": 24,
+    "y": 11,
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Bow outside the entrance to the Legends' Guild.",
+        "location": "Legends' Guild",
+        "requiredItems": ["Emerald Amulet", "Iron Platelegs", "Oak Longbow"]
       }
     ]
   },
@@ -253,14 +469,124 @@
     ]
   },
   {
-    "x": 28,
-    "y": 15,
+    "x": 29,
+    "y": 11,
     "easyClues": [
       {
         "type": "Emote",
-        "clueHint": "Wave on Mudskipper Point.",
-        "location": "Mudskipper Point",
-        "requiredItems": ["Black Cape", "Steel Mace", "Leather Chaps"]
+        "clueHint": "Dance in the Party Room.",
+        "location": "Falador Party Room",
+        "requiredItems": [
+          "Steel Full Helm",
+          "Steel Platebody",
+          "Iron Plateskirt"
+        ]
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Look in the ground floor crates of houses in Falador.",
+        "location": "Falador East",
+        "solution": "The house East of Falador East Bank."
+      }
+    ]
+  },
+  {
+    "x": 30,
+    "y": 11,
+    "beginnerClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Rain Cove",
+        "solution": "Veronica",
+        "location": "Outside Draynor Manor",
+        "alternateChunks": [
+          {
+            "x": 30,
+            "y": 12,
+            "notes": "Veronica will path around and sometimes enter either chunk."
+          }
+        ]
+      },
+      {
+        "type": "Hot/Cold",
+        "clueHint": "Patch of mushrooms just north-west of Draynor Manor",
+        "location": "Draynor Manor",
+        "itemsRequired": ["Spade", "Strange Device"]
+      }
+    ],
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Spin in Draynor Manor by the fountain.",
+        "location": "Draynor Manor",
+        "itemsRequired": ["Bronze Full Helm", "Iron Platebody", "Studded Chaps"]
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Belladonna, my dear. If only I had gloves, then I could hold you at last.",
+        "solution": "Talk to the Tool leprechaun at Belladonna farming patch at Draynor Manor.",
+        "location": "Draynor Manor"
+      }
+    ]
+  },
+  {
+    "x": 31,
+    "y": 11,
+    "beginnerClues": [
+      {
+        "type": "Hot/Cold",
+        "clueHint": "Cow field north of Lumbridge",
+        "solution": "Dig in the cow field north of Lumbridge",
+        "location": "Lumbridge",
+        "itemsRequired": ["Spade", "Strange Device"]
+      },
+      {
+        "type": "Map",
+        "clueHint": "https://oldschool.runescape.wiki/images/3/36/Map_clue_Champions_guild.png?3bdf1",
+        "location": "Locate the single tree that is west of the Champions' Guild, outside Varrock. Dig two squares to the east of it.",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 32,
+    "y": 11,
+    "beginnerClues": [
+      {
+        "type": "Charlie the Tramp",
+        "clueHint": "Talk to Charlie the Tramp",
+        "location": "North of Varrock entrance",
+        "alternateChunks": [
+          {
+            "x": 32,
+            "y": 10,
+            "notes": "Charlie will path around and sometimes enter either chunk."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "x": 33,
+    "y": 11,
+    "beginnerClues": [
+      {
+        "type": "Map",
+        "clueHint": "https://oldschool.runescape.wiki/images/9/95/Map_clue_South-eastern_Varrock_Mine.png?f0802",
+        "location": "South-east Varrock mine. Dig one square west of the small fern.",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 34,
+    "y": 11,
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Clap in the main exam room in the Exam Centre.",
+        "location": "Exam Centre",
+        "requiredItems": ["White Apron", "Green Boots", "Leather Gloves"]
       }
     ]
   },
@@ -282,20 +608,47 @@
     ]
   },
   {
-    "x": 32,
-    "y": 9,
+    "x": 28,
+    "y": 12,
     "easyClues": [
       {
         "type": "Emote",
-        "clueHint": "Spin in the Varrock Castle courtyard.",
-        "location": "Varrock Castle courtyard",
-        "requiredItems": ["Coif", "Black Axe", "Ruby Ring"]
+        "clueHint": "Spin at the crossroads north of Rimmington.",
+        "location": "North of Rimmington",
+        "requiredItems": ["Leather Chaps", "Cream Robe Top", "Green Hat"]
+      }
+    ]
+  },
+  {
+    "x": 30,
+    "y": 12,
+    "beginnerClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Rain Cove",
+        "solution": "Veronica",
+        "location": "Outside Draynor Manor",
+        "alternateChunks": [
+          {
+            "x": 30,
+            "y": 11,
+            "notes": "Veronica will path around and sometimes enter either chunk."
+          }
+        ]
       },
       {
+        "type": "Hot/Cold",
+        "clueHint": "Inside the wheat field next to Draynor Village",
+        "location": "Draynor Village",
+        "itemsRequired": ["Spade", "Strange Device"]
+      }
+    ],
+    "easyClues": [
+      {
         "type": "Emote",
-        "clueHint": "Yawn in the Varrock library.",
-        "location": "Varrock Castle library",
-        "requiredItems": ["HAM Robe", "Green Robe Top", "Iron Warhammer"]
+        "clueHint": "Dance at the crossroads north of Draynor.",
+        "location": "Draynor crossroads",
+        "itemsRequired": ["Iron Chainbody", "Sapphire Ring", "Longbow"]
       }
     ]
   },
@@ -316,73 +669,47 @@
     ]
   },
   {
-    "x": 4,
-    "y": 7,
-    "easyClues": [
-      {
-        "type": "Cryptic",
-        "clueHint": "Dig by the Giant's Den entrance, looking out over Lake Molch.",
-        "location": "South-east of Lake Molch. Just south of the Shayzien rowboat, outside the dungeon entrance.",
-        "requiredItems": ["Spade"]
-      }
-    ]
-  },
-  {
     "x": 33,
-    "y": 9,
-    "easyClues": [
+    "y": 12,
+    "beginnerClues": [
       {
         "type": "Emote",
-        "clueHint": "Wave along the south fence of the Lumber Yard.",
-        "location": "Lumber Yard",
-        "requiredItems": ["Hardleather Body", "Leather Chaps", "Bronze Axe"]
+        "clueHint": "Panic at Al Kharid mine.",
+        "solution": "Al Kharid mine is located just north of Al Kharid.",
+        "location": "Al Kharid mine"
       }
-    ]
-  },
-  {
-    "x": 23,
-    "y": 11,
+    ],
     "easyClues": [
       {
         "type": "Emote",
-        "clueHint": "Clap on the top level of the mill, north of East Ardougne.",
-        "location": "North of East Ardougne",
-        "requiredItems": ["Blue Robe Top", "Tiara", "HAM Robe"]
-      }
-    ]
-  },
-  {
-    "x": 24,
-    "y": 8,
-    "easyClues": [
-      {
-        "type": "Emote",
-        "clueHint": "Laugh at the crossroads south of the Sinclair Mansion.",
-        "location": "South of Sinclair Mansion",
-        "requiredItems": ["Leather Cowl", "Iron Scimitar", "Blue Wizard Robe"]
+        "clueHint": "Headbang in the mine north of Al Kharid.",
+        "location": "Al Kharid mine",
+        "itemsRequired": ["Desert Shirt", "Leather Boots", "Leather Gloves"]
       }
     ]
   },
   {
     "x": 34,
-    "y": 9,
-    "easyClues": [
+    "y": 12,
+    "beginnerClues": [
       {
-        "type": "Emote",
-        "clueHint": "Panic in the Limestone Mine.",
-        "location": "Limestone Mine East of Lumber Yard",
-        "requiredItems": ["Bronze Platelegs", "Steel Med Helm", "Steel Pickaxe"]
+        "type": "Hot/Cold",
+        "clueHint": "North-east of Al Kharid Mine",
+        "solution": "Dig to the North-east of Al Kharid Mine",
+        "location": "Al Kharid mine",
+        "itemsRequired": ["Spade", "Strange Device"]
       }
     ]
   },
   {
-    "x": 23,
-    "y": 14,
+    "x": 27,
+    "y": 13,
     "easyClues": [
       {
-        "type": "Emote",
-        "clueHint": "Panic on the pier where you catch the Fishing trawler.",
-        "location": "North most dock in Port Khazard, east of the Fight Arena."
+        "type": "Cryptic",
+        "clueHint": "I would make a chemistry joke, but I'm afraid I wouldn't get a reaction.",
+        "solution": "Talk to Chemist in Rimmington.",
+        "location": "Rimmington"
       }
     ]
   },
@@ -399,138 +726,54 @@
     ]
   },
   {
-    "x": 25,
-    "y": 10,
-    "easyClues": [
-      {
-        "type": "Emote",
-        "clueHint": "Blow raspberries outside the entrance to Keep Le Faye.",
-        "location": "Keep Le Faye",
-        "requiredItems": ["Coif", "Iron Platebody", "Leather Gloves"]
-      },
-      {
-        "type": "Emote",
-        "clueHint": "Jump for joy at the beehives.",
-        "location": "Catherby beehives",
-        "requiredItems": ["Desert Shirt", "Steel Axe", "Green Robe Bottoms"]
-      }
-    ]
-  },
-  {
-    "x": 27,
-    "y": 9,
-    "easyClues": [
-      {
-        "type": "Emote",
-        "clueHint": "Cheer at the Druids' Circle.",
-        "location": "Taverley",
-        "requiredItems": ["Blue Wizard Hat", "Bronze 2H Sword", "HAM Boots"]
-      }
-    ]
-  },
-  {
-    "x": 27,
-    "y": 8,
-    "easyClues": [
-      {
-        "type": "Emote",
-        "clueHint": "Cheer at the games room.",
-        "location": "The basement of the Games Room in Burthorpe.",
-        "requiredItems": ["Wear nothing"]
-      }
-    ]
-  },
-  {
-    "x": 24,
-    "y": 11,
-    "easyClues": [
-      {
-        "type": "Emote",
-        "clueHint": "Bow outside the entrance to the Legends' Guild.",
-        "location": "Legends' Guild",
-        "requiredItems": ["Emerald Amulet", "Iron Platelegs", "Oak Longbow"]
-      }
-    ]
-  },
-  {
-    "x": 33,
+    "x": 29,
     "y": 13,
-    "easyClues": [
-      {
-        "type": "Emote",
-        "clueHint": "Bow in the ticket office of the Duel Arena.",
-        "location": "Duel Arena",
-        "requiredItems": ["Coif", "Iron Chainbody", "Leather Chaps"]
-      }
-    ]
-  },
-  {
-    "x": 34,
-    "y": 11,
-    "easyClues": [
-      {
-        "type": "Emote",
-        "clueHint": "Clap in the main exam room in the Exam Centre.",
-        "location": "Exam Centre",
-        "requiredItems": ["White Apron", "Green Boots", "Leather Gloves"]
-      }
-    ]
-  },
-  {
-    "x": 32,
-    "y": 10,
     "beginnerClues": [
       {
-        "type": "Charlie the Tramp",
-        "clueHint": "Talk to Charlie the Tramp",
-        "location": "North of Varrock entrance",
-        "alternateChunks": [
-          {
-            "x": 32,
-            "y": 11,
-            "notes": "Charlie will path around and sometimes enter either chunk."
-          }
-        ]
-      },
-      {
-        "type": "Emote",
-        "clueHint": "Blow a raspberry at Gypsy Aris in her tent.",
-        "solution": "Gypsy Aris can be found in her tent at Varrock Square.",
-        "location": "Gypsy Aris' tent",
-        "itemsRequired": ["Gold Ring", "Gold Necklace"]
-      },
-      {
-        "type": "Emote",
-        "clueHint": "Cheer at Iffie Nitter.",
-        "solution": "Iffie can be found in Thessalia's Fine Clothes store in Varrock",
-        "location": "Thessalia's Fine Clothes",
-        "itemsRequired": ["Chef's Hat", "Red Cape"]
+        "type": "Anagram",
+        "clueHint": "In Bar",
+        "solution": "Brian",
+        "location": "Port Sarim battleaxe shop"
       }
     ],
     "easyClues": [
       {
         "type": "Emote",
-        "clueHint": "Do a jig in Varrock's rune store.",
-        "location": "Varrock Rune Shop",
-        "itemsRequired": ["Air Tiara", "Staff of Water"]
+        "clueHint": "Cheer for the monks at Port Sarim.",
+        "location": "Port Sarim docks",
+        "itemsRequired": ["Coif", "Steel Plateskirt", "Sapphire Necklace"]
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "One of the sailors in Port Sarim is your next destination.",
+        "solution": "Speak to Captain Tobias on the docks of Port Sarim.",
+        "location": "Port Sarim"
       }
     ]
   },
   {
-    "x": 32,
-    "y": 11,
+    "x": 30,
+    "y": 13,
     "beginnerClues": [
       {
-        "type": "Charlie the Tramp",
-        "clueHint": "Talk to Charlie the Tramp",
-        "location": "North of Varrock entrance",
-        "alternateChunks": [
-          {
-            "x": 32,
-            "y": 10,
-            "notes": "Charlie will path around and sometimes enter either chunk."
-          }
-        ]
+        "type": "Anagram",
+        "clueHint": "Taunt Roof",
+        "solution": "Fortunato",
+        "location": "Draynor Village Market"
+      },
+      {
+        "type": "Map",
+        "clueHint": "https://oldschool.runescape.wiki/images/e/ed/Map_clue_Draynor_willows.png?bb604",
+        "location": "South of Draynor Village bank, by the fishing spot",
+        "itemsRequired": ["Spade"]
+      }
+    ],
+    "easyClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Yawn in Draynor Marketplace.",
+        "location": "Draynor Village Market",
+        "itemsRequired": ["Studded Chaps", "Iron Kiteshield", "Steel Longsword"]
       }
     ]
   },
@@ -568,96 +811,51 @@
     ]
   },
   {
-    "x": 30,
-    "y": 9,
-    "easyClues": [
-      {
-        "type": "Cryptic",
-        "clueHint": "I wonder how many bronze swords he has handed out.",
-        "solution": "Talk to Vannaka. He can be found in Edgeville Dungeon.",
-        "location": "Edgeville Dungeon"
-      }
-    ]
-  },
-  {
-    "x": 27,
+    "x": 33,
     "y": 13,
     "easyClues": [
       {
-        "type": "Cryptic",
-        "clueHint": "I would make a chemistry joke, but I'm afraid I wouldn't get a reaction.",
-        "solution": "Talk to Chemist in Rimmington.",
-        "location": "Rimmington"
+        "type": "Emote",
+        "clueHint": "Bow in the ticket office of the Duel Arena.",
+        "location": "Duel Arena",
+        "requiredItems": ["Coif", "Iron Chainbody", "Leather Chaps"]
       }
     ]
   },
   {
-    "x": 9,
-    "y": 9,
+    "x": 23,
+    "y": 14,
     "easyClues": [
       {
-        "type": "Cryptic",
-        "clueHint": "Monk's residence in the far west. See robe storage device.",
-        "solution": "Search the drawers in the south tent of the monk's camp.",
-        "location": "West of the Hosidius mine"
-      }
-    ]
-  },
-  {
-    "x": 9,
-    "y": 8,
-    "easyClues": [
-      {
-        "type": "Cryptic",
-        "clueHint": "I wouldn't wear this jean on my legs.",
-        "solution": "Talk to Father Jean in the Hosidius church.",
-        "location": "Hosidius church"
+        "type": "Emote",
+        "clueHint": "Panic on the pier where you catch the Fishing trawler.",
+        "location": "North most dock in Port Khazard, east of the Fight Arena."
       }
     ]
   },
   {
     "x": 30,
-    "y": 10,
+    "y": 14,
     "beginnerClues": [
       {
-        "type": "Cryptic",
-        "clueHint": "In a village of barbarians, I am the one who guards the village from up high.",
-        "solution": "Talk to Hunding atop the tower on the east side of Barbarian Village.",
-        "location": "Barbarian Village"
-      }
-    ]
-  },
-  {
-    "x": 33,
-    "y": 15,
-    "beginnerClues": [
+        "type": "Anagram",
+        "clueHint": "Disorder",
+        "solution": "Sedridor",
+        "location": "Wizards' Tower basement"
+      },
       {
-        "type": "Cryptic",
-        "clueHint": "Near the open desert I reside, to get past me you must abide. Go forward if you dare, for when you pass me, you'll be sweating by your hair.",
-        "solution": "Talk to Shantay at the Shantay Pass south of Al Kharid.",
-        "location": "Shantay Pass"
+        "type": "Map",
+        "clueHint": "https://oldschool.runescape.wiki/images/1/1b/Map_clue_Wizard_tower.png?e1c87",
+        "location": "Directly behind the Wizards' Tower, there's a fern you can use as a reference; the dig spot is one tile directly north of the fern. Fairy ring code D*I*S is very close.",
+        "itemsRequired": ["Spade"]
       }
-    ]
-  },
-  {
-    "x": 29,
-    "y": 11,
+    ],
     "easyClues": [
       {
         "type": "Emote",
-        "clueHint": "Dance in the Party Room.",
-        "location": "Falador Party Room",
-        "requiredItems": [
-          "Steel Full Helm",
-          "Steel Platebody",
-          "Iron Plateskirt"
-        ]
-      },
-      {
-        "type": "Cryptic",
-        "clueHint": "Look in the ground floor crates of houses in Falador.",
-        "location": "Falador East",
-        "solution": "The house East of Falador East Bank."
+        "clueHint": "Clap on the causeway to the Wizards' Tower.",
+        "location": "Wizards' Tower bridge",
+        "requiredItems": ["White Apron", "Emerald Ring", "Iron Med Helm"]
       }
     ]
   },
@@ -674,224 +872,38 @@
     ]
   },
   {
-    "x": 28,
-    "y": 12,
-    "easyClues": [
+    "x": 33,
+    "y": 14,
+    "beginnerClues": [
       {
-        "type": "Emote",
-        "clueHint": "Spin at the crossroads north of Rimmington.",
-        "location": "North of Rimmington",
-        "requiredItems": ["Leather Chaps", "Cream Robe Top", "Green Hat"]
+        "type": "Anagram",
+        "clueHint": "An Earl",
+        "solution": "Ranael",
+        "location": "Al Kharid skirt shop"
       }
     ]
   },
   {
-    "x": 31,
-    "y": 9,
-    "beginnerClues": [
-      {
-        "type": "Emote",
-        "clueHint": "Bow to Brugsen Bursen at the Grand Exchange.",
-        "solution": "Brugsen Bursen is found inside the Grand Exchange",
-        "location": "Grand Exchange"
-      }
-    ],
+    "x": 28,
+    "y": 15,
     "easyClues": [
       {
         "type": "Emote",
-        "clueHint": "Dance at the entrance to the Grand Exchange.",
-        "location": "Grand Exchange",
-        "itemsRequired": ["Pink Skirt", "Pink Robe Top", "Body Tiara"]
+        "clueHint": "Wave on Mudskipper Point.",
+        "location": "Mudskipper Point",
+        "requiredItems": ["Black Cape", "Steel Mace", "Leather Chaps"]
       }
     ]
   },
   {
     "x": 33,
-    "y": 12,
+    "y": 15,
     "beginnerClues": [
-      {
-        "type": "Emote",
-        "clueHint": "Panic at Al Kharid mine.",
-        "solution": "Al Kharid mine is located just north of Al Kharid.",
-        "location": "Al Kharid mine"
-      }
-    ],
-    "easyClues": [
-      {
-        "type": "Emote",
-        "clueHint": "Headbang in the mine north of Al Kharid.",
-        "location": "Al Kharid mine",
-        "itemsRequired": ["Desert Shirt", "Leather Boots", "Leather Gloves"]
-      }
-    ]
-  },
-  {
-    "x": 28,
-    "y": 9,
-    "beginnerClues": [
-      {
-        "type": "Hot/Cold",
-        "clueHint": "Atop Ice Mountain",
-        "solution": "Dig atop Ice Mountain.",
-        "location": "Ice Mountain",
-        "itemsRequired": ["Spade", "Strange Device"],
-        "alternateChunks": [
-          {
-            "x": 29,
-            "y": 9,
-            "notes": "Hot and cold clues have an area you can dig in. You can dig in either chunk."
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "x": 29,
-    "y": 9,
-    "beginnerClues": [
-      {
-        "type": "Hot/Cold",
-        "clueHint": "Atop Ice Mountain",
-        "solution": "Dig atop Ice Mountain.",
-        "location": "Ice Mountain",
-        "itemsRequired": ["Spade", "Strange Device"],
-        "alternateChunks": [
-          {
-            "x": 28,
-            "y": 9,
-            "notes": "Hot and cold clues have an area you can dig in. You can dig in either chunk."
-          }
-        ]
-      }
-    ],
-    "easyClues": [
       {
         "type": "Cryptic",
-        "clueHint": "Impossible to make angry.",
-        "solution": "Speak to Abbot Langley.",
-        "location": "Edgeville Monastary"
-      }
-    ]
-  },
-  {
-    "x": 22,
-    "y": 10,
-    "easyClues": [
-      {
-        "type": "Emote",
-        "clueHint": "Dance a jig by the entrance to the Fishing Guild.",
-        "location": "Fishing Guild",
-        "itemsRequired": [
-          "Bronze Chainbody",
-          "Sapphire Amulet",
-          "Emerald Ring"
-        ],
-        "alternateChunks": [
-          {
-            "x": 22,
-            "y": 11,
-            "notes": "Uri can be spawned across these chunks."
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "x": 22,
-    "y": 11,
-    "easyClues": [
-      {
-        "type": "Emote",
-        "clueHint": "Dance a jig by the entrance to the Fishing Guild.",
-        "location": "Fishing Guild",
-        "itemsRequired": [
-          "Bronze Chainbody",
-          "Sapphire Amulet",
-          "Emerald Ring"
-        ],
-        "alternateChunks": [
-          {
-            "x": 22,
-            "y": 10,
-            "notes": "Uri can be spawned across these chunks."
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "x": 29,
-    "y": 10,
-    "beginnerClues": [
-      {
-        "type": "Map",
-        "clueHint": "https://oldschool.runescape.wiki/images/2/2e/Map_clue_Falador_stones.png?1d2b6",
-        "location": "Due east of Falador's north gate. Look for the (grapple) agility shortcut icon.",
-        "itemsRequired": ["Spade"]
-      }
-    ],
-    "easyClues": [
-      {
-        "type": "Map",
-        "clueHint": "Dig between some ominous stones in Falador.",
-        "location": "Three standing stones inside a walled area. East of the northern Falador gate.",
-        "itemsRequired": ["Spade"]
-      }
-    ]
-  },
-  {
-    "x": 31,
-    "y": 11,
-    "beginnerClues": [
-      {
-        "type": "Hot/Cold",
-        "clueHint": "Cow field north of Lumbridge",
-        "solution": "Dig in the cow field north of Lumbridge",
-        "location": "Lumbridge",
-        "itemsRequired": ["Spade", "Strange Device"]
-      },
-      {
-        "type": "Map",
-        "clueHint": "https://oldschool.runescape.wiki/images/3/36/Map_clue_Champions_guild.png?3bdf1",
-        "location": "Locate the single tree that is west of the Champions' Guild, outside Varrock. Dig two squares to the east of it.",
-        "itemsRequired": ["Spade"]
-      }
-    ]
-  },
-  {
-    "x": 34,
-    "y": 12,
-    "beginnerClues": [
-      {
-        "type": "Hot/Cold",
-        "clueHint": "North-east of Al Kharid Mine",
-        "solution": "Dig to the North-east of Al Kharid Mine",
-        "location": "Al Kharid mine",
-        "itemsRequired": ["Spade", "Strange Device"]
-      }
-    ]
-  },
-  {
-    "x": 7,
-    "y": 6,
-    "easyClues": [
-      {
-        "type": "Cryptic",
-        "clueHint": "Dig in the centre of a great kingdom of 5 cities.",
-        "location": "Dig in front of the large statue in the centre of Great Kourend.",
-        "itemsRequired": ["Spade"]
-      }
-    ]
-  },
-  {
-    "x": 20,
-    "y": 9,
-    "easyClues": [
-      {
-        "type": "Cryptic",
-        "clueHint": "Dig near some giant mushrooms behind the Grand Tree.",
-        "location": "Dig near the red mushrooms north-west of the Grand Tree.",
-        "itemsRequired": ["Spade"]
+        "clueHint": "Near the open desert I reside, to get past me you must abide. Go forward if you dare, for when you pass me, you'll be sweating by your hair.",
+        "solution": "Talk to Shantay at the Shantay Pass south of Al Kharid.",
+        "location": "Shantay Pass"
       }
     ]
   },
@@ -903,19 +915,6 @@
         "type": "Cryptic",
         "clueHint": "Dig under Ithoi's cabin.",
         "location": "Ithoi's cabin.",
-        "itemsRequired": ["Spade"]
-      }
-    ]
-  },
-  {
-    "x": 33,
-    "y": 11,
-
-    "beginnerClues": [
-      {
-        "type": "Map",
-        "clueHint": "https://oldschool.runescape.wiki/images/9/95/Map_clue_South-eastern_Varrock_Mine.png?f0802",
-        "location": "South-east Varrock mine. Dig one square west of the small fern.",
         "itemsRequired": ["Spade"]
       }
     ]
