@@ -53,7 +53,33 @@ const ClueTable: React.FC<{
 
             return (
               <tr key={index}>
-                <td>{editing ? <input value={type} readOnly /> : type}</td>
+                <td>
+                  {editing ? (
+                    <select
+                      value={type}
+                      onChange={(e) =>
+                        updateClue(index, { ...clue, type: e.target.value })
+                      }
+                    >
+                      {[
+                        'Anagram',
+                        'Challenge Scroll',
+                        'Charlie the Tramp',
+                        'Cipher',
+                        'Coordinates',
+                        'Cryptic',
+                        'Emote',
+                        'Map',
+                        'Music',
+                        'Puzzle Box',
+                      ].map((option) => (
+                        <option key={option}>{option}</option>
+                      ))}
+                    </select>
+                  ) : (
+                    type
+                  )}
+                </td>
                 <td>
                   {editing ? (
                     <input
