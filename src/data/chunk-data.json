@@ -1,5 +1,29 @@
 [
   {
+    "x": 26,
+    "y": 2,
+    "masterClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "A Elf Knows",
+        "location": "Weiss",
+        "solution": "Snowflake"
+      }
+    ]
+  },
+  {
+    "x": 8,
+    "y": 5,
+    "eliteClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "At Herg",
+        "location": "South-eastern corner of Arceuus in the General Store.",
+        "solution": "Regath"
+      }
+    ]
+  },
+  {
     "x": 7,
     "y": 6,
     "easyClues": [
@@ -445,6 +469,14 @@
         "clueHint": "Do a jig in Varrock's rune store.",
         "location": "Varrock Rune Shop",
         "itemsRequired": ["Air Tiara", "Staff of Water"]
+      }
+    ],
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "A Baker",
+        "location": "Varrock Square (fur trader)",
+        "solution": "Baraek"
       }
     ]
   },
@@ -950,6 +982,15 @@
         "clueHint": "Search the boxes in one of the tents in Al Kharid.",
         "location": "",
         "solution": "Search the crates in the tent east of the Silk trader."
+      }
+    ],
+    "mediumClues": [],
+    "hardClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Ace Match Elm",
+        "location": "North of the glider in Al Kharid, outside of the town. Camulet not required.",
+        "solution": "Cam the Camel"
       }
     ]
   },
