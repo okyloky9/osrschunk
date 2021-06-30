@@ -9,6 +9,8 @@ import { ClueDifficulty, MapChunk } from '../models';
 import { capitalizeFirstLetter, createClassString } from '../utils';
 import { ChunkDataContext } from '../data';
 
+const SETTINGS_KEY = 'SETTINGS';
+
 function initMapChunks(width: number, height: number): MapChunk[][] {
   const mapChunks: MapChunk[][] = [];
 
@@ -67,6 +69,54 @@ export default function Map() {
     useState(false);
   const [editMode, setEditMode] = useState(false);
 
+  // on load
+  useEffect(() => {
+    // whenever the window is resized, up the windows dimensions state
+    function handleResize() {
+      setWindowDimensions({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    }
+
+    window.addEventListener('resize', handleResize);
+
+    // load settings from local storage
+    const settingsJson = localStorage.getItem(SETTINGS_KEY);
+    if (settingsJson) {
+      const settings = JSON.parse(settingsJson);
+
+      setShowCoords(settings.showCoords);
+      setShowClues(settings.showClues);
+      setShowClueCounts(settings.showClueCounts);
+      setClueDifficultiesToShow(settings.clueDifficultiesToShow);
+      setHighlightChunksWithoutClues(settings.highlightChunksWithoutClues);
+      setEditMode(settings.editMode);
+    }
+  }, []);
+
+  // save settings on changes
+  useEffect(() => {
+    localStorage.setItem(
+      SETTINGS_KEY,
+      JSON.stringify({
+        showCoords,
+        showClues,
+        showClueCounts,
+        clueDifficultiesToShow,
+        highlightChunksWithoutClues,
+        editMode,
+      })
+    );
+  }, [
+    showCoords,
+    showClues,
+    showClueCounts,
+    clueDifficultiesToShow,
+    highlightChunksWithoutClues,
+    editMode,
+  ]);
+
   // min scale calculations
   const minWidthScale = windowDimensions.width / (width * 192);
   const minHeightScale = windowDimensions.height / (height * 192);
@@ -79,18 +129,6 @@ export default function Map() {
     scale: minScale,
     translation: { x: 0, y: 0 },
   });
-
-  // on load
-  useEffect(() => {
-    function handleResize() {
-      setWindowDimensions({
-        width: window.innerWidth,
-        height: window.innerHeight,
-      });
-    }
-
-    window.addEventListener('resize', handleResize);
-  }, []);
 
   // when map chunk is selected or deselected
   useEffect(() => {
