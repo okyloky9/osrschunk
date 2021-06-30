@@ -19,7 +19,7 @@ const ChunkModal: React.FC<{
   function updateClues(type: ClueDifficulty, clues: Clue[]) {
     setChunk(x, y, {
       ...chunk,
-      [`${type.toLowerCase()}Clues`]: clues,
+      [`${type.toLowerCase()}Clues`]: clues.filter((clue) => !clue.copied),
     } as Chunk);
   }
 
