@@ -5,6 +5,7 @@ type Clue = {
   location: string;
   itemsRequired?: string[];
   alternateChunks?: { x: number; y: number; notes: string }[];
+  copied?: boolean;
 };
 
 export default Clue;
