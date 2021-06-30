@@ -50,6 +50,9 @@ export default function Map() {
     height: window.innerHeight,
   });
 
+  // interval(s)
+  const [autoSaveInterval, setAutoSaveInterval] = useState<number>();
+
   // settings
   const [showSidebar, setShowSideBar] = useState(false);
   const [showCoords, setShowCoords] = useState(false);
@@ -68,6 +71,27 @@ export default function Map() {
   const [highlightChunksWithoutClues, setHighlightChunksWithoutClues] =
     useState(false);
   const [editMode, setEditMode] = useState(false);
+
+  // when edit mode is toggled
+  useEffect(() => {
+    if (editMode && !autoSaveInterval) {
+      // setup interval for saving to local storage
+      const fiveMinutesInMilliseconds = 5 * 60 * 1000;
+
+      const intervalId = setInterval(() => {
+        saveChunkDataToLocalStorage();
+        toast('💾 Automatically saved chunk data locally!', {
+          type: 'success',
+        });
+      }, fiveMinutesInMilliseconds) as any as number;
+
+      setAutoSaveInterval(intervalId);
+    } else if (!editMode && autoSaveInterval) {
+      // clear auto save interval
+      clearInterval(autoSaveInterval);
+      setAutoSaveInterval(undefined);
+    }
+  }, [editMode, autoSaveInterval]);
 
   // on load
   useEffect(() => {
