@@ -71,6 +71,7 @@ const ClueTable: React.FC<{
                 location,
                 solution,
                 type,
+                copied,
               } = clue;
 
               return (
@@ -83,6 +84,7 @@ const ClueTable: React.FC<{
                         onChange={(e) =>
                           updateClue(index, { ...clue, type: e.target.value })
                         }
+                        disabled={copied}
                       >
                         {[
                           'Anagram',
@@ -115,6 +117,7 @@ const ClueTable: React.FC<{
                             clueHint: e.target.value,
                           })
                         }
+                        disabled={copied}
                       />
                     ) : (
                       <ClueHint hint={clueHint} />
@@ -132,6 +135,7 @@ const ClueTable: React.FC<{
                             solution: e.target.value,
                           })
                         }
+                        disabled={copied}
                       />
                     ) : (
                       solution
@@ -149,6 +153,7 @@ const ClueTable: React.FC<{
                             location: e.target.value,
                           })
                         }
+                        disabled={copied}
                       />
                     ) : (
                       location
@@ -166,6 +171,7 @@ const ClueTable: React.FC<{
                             itemsRequired: e.target.value.split(','),
                           })
                         }
+                        disabled={copied}
                       />
                     ) : (
                       itemsRequired?.join(', ')
@@ -210,6 +216,7 @@ const ClueTable: React.FC<{
                                       x: Number.parseInt(e.target.value, 10),
                                     })
                                   }
+                                  disabled={copied}
                                 />
                                 ,{' '}
                                 <input
@@ -223,6 +230,7 @@ const ClueTable: React.FC<{
                                       y: Number.parseInt(e.target.value, 10),
                                     })
                                   }
+                                  disabled={copied}
                                 />
                                 <br />
                                 <input
@@ -233,6 +241,7 @@ const ClueTable: React.FC<{
                                       notes: e.target.value,
                                     })
                                   }
+                                  disabled={copied}
                                 />
                               </div>
 
@@ -250,6 +259,7 @@ const ClueTable: React.FC<{
                                       alternateChunks: _alternateChunks,
                                     });
                                   }}
+                                  disabled={copied}
                                 >
                                   X
                                 </button>
@@ -282,6 +292,7 @@ const ClueTable: React.FC<{
                               alternateChunks: _alternateChunks,
                             });
                           }}
+                          disabled={copied}
                         >
                           +
                         </button>
@@ -309,7 +320,11 @@ const ClueTable: React.FC<{
 
                   {editing && (
                     <td>
-                      <button type="button" onClick={() => deleteClue(index)}>
+                      <button
+                        type="button"
+                        onClick={() => deleteClue(index)}
+                        disabled={copied}
+                      >
                         X
                       </button>
                     </td>
