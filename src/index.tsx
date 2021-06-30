@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { ToastContainer } from 'react-toastify';
 
 import { Map } from './components';
 import { ChunkDataProvider } from './data';
@@ -11,6 +12,8 @@ ReactDOM.render(
   <React.StrictMode>
     <ChunkDataProvider>
       <Map />
+
+      <ToastContainer autoClose={3000} />
     </ChunkDataProvider>
   </React.StrictMode>,
   document.getElementById('root')

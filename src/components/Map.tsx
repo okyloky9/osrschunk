@@ -1,5 +1,6 @@
 import { useContext, useEffect, useRef, useState } from 'react';
 import { MapInteractionCSS } from 'react-map-interaction';
+import { toast } from 'react-toastify';
 
 import { ChunkModal, ChunkTile, ClueIcon, Modal } from '.';
 import type { ModalHandle } from '.';
@@ -258,7 +259,12 @@ export default function Map() {
                     <button
                       className="success"
                       type="button"
-                      onClick={saveChunkDataToLocalStorage}
+                      onClick={() => {
+                        saveChunkDataToLocalStorage();
+                        toast('💾 Chunk data saved locally!', {
+                          type: 'success',
+                        });
+                      }}
                     >
                       Save chunk data locally
                     </button>
@@ -270,7 +276,12 @@ export default function Map() {
                     <button
                       className="info"
                       type="button"
-                      onClick={exportChunkData}
+                      onClick={() => {
+                        exportChunkData();
+                        toast('✅ Chunk data exported!', {
+                          type: 'success',
+                        });
+                      }}
                     >
                       Export chunk-data.json
                     </button>
@@ -282,7 +293,17 @@ export default function Map() {
                     <button
                       className="danger"
                       type="button"
-                      onClick={clearLocalStorageChunkData}
+                      onClick={() => {
+                        clearLocalStorageChunkData();
+                        toast(
+                          <>
+                            🗑 Local data has been cleared!
+                            <br />
+                            Now viewing the hosted data.
+                          </>,
+                          { type: 'info' }
+                        );
+                      }}
                     >
                       Reset local chunk data
                       <br />

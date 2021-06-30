@@ -1,4 +1,5 @@
 import React, { createContext, ReactNode, useEffect, useState } from 'react';
+import { toast } from 'react-toastify';
 
 import Chunk from '../models/chunk';
 import chunkJson from './chunk-data.json';
@@ -80,6 +81,7 @@ const ChunkDataProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   useEffect(() => {
     if (localStorage.getItem(LOCAL_STORAGE_KEY)) {
       loadChunkDataFromLocalStorage();
+      toast('📂 Local chunk data loaded!', { type: 'info' });
     }
   }, []);
 
