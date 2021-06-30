@@ -12,6 +12,95 @@
     ]
   },
   {
+    "x": 31,
+    "y": 2,
+    "mediumClues": [
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Mandrith",
+        "location": "Outside the Wilderness Resource Area gate."
+      }
+    ]
+  },
+  {
+    "x": 9,
+    "y": 3,
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "R Slicer",
+        "location": "Arceuus essence mine",
+        "solution": "Clerris"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Clerris",
+        "location": "Arceuus essence mine"
+      }
+    ]
+  },
+  {
+    "x": 10,
+    "y": 3,
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "A Heart",
+        "location": "Soul altar on Zeah",
+        "solution": "Aretha"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Aretha",
+        "location": "Soul altar"
+      }
+    ]
+  },
+  {
+    "x": 15,
+    "y": 3,
+    "mediumClues": [
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Oneiromancer",
+        "location": "Near the astral rune ruins"
+      }
+    ]
+  },
+  {
+    "x": 21,
+    "y": 3,
+    "mediumClues": [
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Miner Magnus",
+        "location": "In the area with a mining icon."
+      }
+    ]
+  },
+  {
+    "x": 7,
+    "y": 4,
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "His Phor",
+        "location": "Arceuus Library",
+        "solution": "Horphis"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Horphis",
+        "location": "Arceuus Library"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Professor Gracklebone",
+        "location": "Arceuus Library"
+      }
+    ]
+  },
+  {
     "x": 10,
     "y": 4,
     "easyClues": [
@@ -20,6 +109,30 @@
         "clueHint": "Thanks, Grandma!",
         "location": "",
         "solution": "Tynan can be found in the north-east corner of Port Piscarilius."
+      }
+    ],
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Clash Ion",
+        "location": "Most north-eastern point of Port Piscarilius, north of the fishing shop.",
+        "solution": "Nicholas"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Nicholas",
+        "location": "Most north-eastern point of Port Piscarilius, north of the fishing shop."
+      }
+    ]
+  },
+  {
+    "x": 18,
+    "y": 4,
+    "mediumClues": [
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Lisse Isaakson",
+        "location": "Neitiznot"
       }
     ]
   },
@@ -32,6 +145,36 @@
         "clueHint": "At Herg",
         "location": "South-eastern corner of Arceuus in the General Store.",
         "solution": "Regath"
+      }
+    ],
+    "mediumClues": [
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Regath",
+        "location": "South-eastern corner of Arceuus in the General Store.",
+        "solution": ""
+      }
+    ]
+  },
+  {
+    "x": 10,
+    "y": 5,
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Tamed Rocks",
+        "location": "Port Piscarilius, building north-east of the general store.",
+        "solution": "Dockmaster"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Captain Khaled",
+        "location": "Port Piscarilius foodhall"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Dockmaster",
+        "location": "Port Piscarilius, building north-east of the general store."
       }
     ]
   },
@@ -60,6 +203,28 @@
     ]
   },
   {
+    "x": 23,
+    "y": 6,
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Dt Run B",
+        "location": "Rellekka, inside the main hall.",
+        "solution": "Brundt the Chieftain"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Brundt the Chieftain",
+        "location": "Rellekka, inside the main hall."
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Sigli the Huntsman",
+        "location": "The entrance to Rellekka"
+      }
+    ]
+  },
+  {
     "x": 4,
     "y": 7,
     "easyClues": [
@@ -68,6 +233,28 @@
         "clueHint": "Dig by the Giant's Den entrance, looking out over Lake Molch.",
         "location": "South-east of Lake Molch. Just south of the Shayzien rowboat, outside the dungeon entrance.",
         "requiredItems": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 5,
+    "y": 7,
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Pacinng a taie",
+        "location": "East of the War Tent in the Shayzien Encampment.",
+        "solution": "Captain Ginea"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Captain Ginea",
+        "location": "Near the Shayzien infirmary"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Nurse Wooned",
+        "location": "In the Shayzien infirmary"
       }
     ]
   },
@@ -92,6 +279,23 @@
         "clueHint": "Search the crates in the fruit store just east of the Hosidius town centre.",
         "location": "",
         "solution": "Search the crates in house containing fruit stalls."
+      }
+    ]
+  },
+  {
+    "x": 6,
+    "y": 8,
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Uesnkrl Nrieddo",
+        "location": "The Cloak and Stagger tavern in Shayzien.",
+        "solution": "Drunken soldier"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Drunken Soldier",
+        "location": "The Cloak and Stagger tavern in Shayzien."
       }
     ]
   },
@@ -125,6 +329,36 @@
         "solution": "Talk to Father Jean in the Hosidius church.",
         "location": "Hosidius church"
       }
+    ],
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "I Am Sir",
+        "location": "Marisi is a farmer found in the allotment patch located within Hosidius.",
+        "solution": "Marisi"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Marisi",
+        "location": "Marisi is a farmer found in the allotment patch located within Hosidius."
+      }
+    ]
+  },
+  {
+    "x": 10,
+    "y": 8,
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Low Lag",
+        "location": "Vinery in Hosidius.",
+        "solution": "Gallow"
+      },
+      {
+        "type": "Anagram",
+        "clueHint": "Gallow",
+        "location": "Vinery in Hosidius."
+      }
     ]
   },
   {
@@ -142,6 +376,18 @@
         "clueHint": "Speak to the staff of Sinclair mansion.",
         "location": "",
         "solution": "Speak to Louisa, on the 1st floor, found at the Sinclair Mansion."
+      }
+    ]
+  },
+  {
+    "x": 26,
+    "y": 8,
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "A Bas",
+        "location": "Found in the cave on the path towards the Death Plateau west of Burthorpe.",
+        "solution": "Saba"
       }
     ]
   },
@@ -179,6 +425,57 @@
         "location": "",
         "solution": "Turael is located in the small house east of The Toad and Chicken inn."
       }
+    ],
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Heoric",
+        "location": "Burthorpe Castle, top floor.",
+        "solution": "Eohric"
+      },
+      {
+        "type": "Anagram",
+        "clueHint": "Sand Nut",
+        "location": "Anvil in north-eastern Burthorpe.",
+        "solution": "Dunstan"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Dunstan",
+        "location": "Anvil in north-eastern Burthorpe."
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Eohric",
+        "location": "Burthorpe Castle, top floor."
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Martin Thwait",
+        "location": "Rogue's Den"
+      }
+    ]
+  },
+  {
+    "x": 30,
+    "y": 8,
+    "mediumClues": [
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Dark mage",
+        "location": "The Abyss"
+      }
+    ]
+  },
+  {
+    "x": 36,
+    "y": 8,
+    "mediumClues": [
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Old crone",
+        "location": "In her house"
+      }
     ]
   },
   {
@@ -214,6 +511,22 @@
     ]
   },
   {
+    "x": 19,
+    "y": 9,
+    "mediumClues": [
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Gnome ball referee",
+        "location": "Gnome Ball field"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Gnome Coach",
+        "location": "Gnome Ball field"
+      }
+    ]
+  },
+  {
     "x": 20,
     "y": 9,
     "easyClues": [
@@ -222,6 +535,34 @@
         "clueHint": "Dig near some giant mushrooms behind the Grand Tree.",
         "location": "Dig near the red mushrooms north-west of the Grand Tree.",
         "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 21,
+    "y": 9,
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Goblets Odd Toes",
+        "location": "South of the Barbarian Outpost, in Otto's Grotto.",
+        "solution": "Otto Godblessed"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Otto Godblessed",
+        "location": "South of the Barbarian Outpost, in Otto's Grotto."
+      }
+    ]
+  },
+  {
+    "x": 22,
+    "y": 9,
+    "easyClues": [
+      {
+        "type": "Map",
+        "clueHint": "https://oldschool.runescape.wiki/images/b/b2/Map_clue_Galahad.png?554e8",
+        "location": "One tile west of the north door of Galahad's house, west of McGrubor's Wood. Fairy ring code A*L*S is very close, squeeze through the gate northeast of the fairy ring (around the building.)"
       }
     ]
   },
@@ -258,6 +599,19 @@
         "clueHint": "Speak to Sir Kay in Camelot Castle.",
         "location": "",
         "solution": "Sir Kay can be found in the courtyard at Camelot Castle."
+      }
+    ],
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Kay Sir",
+        "location": "The courtyard in Camelot Castle.",
+        "solution": "Sir Kay"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Sir Kay",
+        "location": "The courtyard in Camelot Castle."
       }
     ]
   },
@@ -325,6 +679,19 @@
         "location": "",
         "solution": "Search the southeastern bookcase at Edgeville Monastery."
       }
+    ],
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Are Col",
+        "location": "The peak of Ice Mountain west of Edgeville.",
+        "solution": "Oracle"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Oracle",
+        "location": "The peak of Ice Mountain west of Edgeville."
+      }
     ]
   },
   {
@@ -348,6 +715,13 @@
         "clueHint": "Talk to the mother of a basement dwelling son.",
         "location": "",
         "solution": "Evil Dave's mother, Doris, is located in the house west of Edgeville bank."
+      }
+    ],
+    "mediumClues": [
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Evil Dave",
+        "location": "Under his mother's house in Edgeville"
       }
     ]
   },
@@ -393,6 +767,19 @@
         "location": "",
         "solution": "Search the crate in the corner of the kitchen in Varrock Castle."
       }
+    ],
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Lark In Dog",
+        "location": "Ground floor of Varrock Palace.",
+        "solution": "King Roald"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "King Roald",
+        "location": "Ground floor of Varrock Palace."
+      }
     ]
   },
   {
@@ -420,6 +807,17 @@
     ]
   },
   {
+    "x": 35,
+    "y": 9,
+    "mediumClues": [
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Drezel",
+        "location": "Under the temple"
+      }
+    ]
+  },
+  {
     "x": 36,
     "y": 9,
     "easyClues": [
@@ -432,6 +830,36 @@
     ]
   },
   {
+    "x": 19,
+    "y": 10,
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Bail Trims",
+        "location": "In the cave west of the Stronghold Slayer Cave entrance in the Tree Gnome Stronghold.",
+        "solution": "Brimstail"
+      },
+      {
+        "type": "Anagram",
+        "clueHint": "I Even",
+        "location": "The slayer master in Gnome Stronghold.",
+        "alternateChunks": [
+          {
+            "x": 20,
+            "y": 10,
+            "notes": "Can talk to Nieve/Steve from either side"
+          }
+        ],
+        "solution": "Nieve"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Brimstail",
+        "location": "In the cave west of the Stronghold Slayer Cave entrance in the Tree Gnome Stronghold."
+      }
+    ]
+  },
+  {
     "x": 20,
     "y": 10,
     "easyClues": [
@@ -440,6 +868,40 @@
         "clueHint": "Talk to Ermin.",
         "location": "",
         "solution": "Ermin can be found on the 2nd floor of the tree house south-east of the Gnome Agility Course."
+      }
+    ],
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "I Even",
+        "location": "The slayer master in Gnome Stronghold.",
+        "solution": "Nieve",
+        "alternateChunks": [
+          {
+            "x": 19,
+            "y": 10,
+            "notes": "Can talk to Nieve/Steve from either side"
+          }
+        ]
+      },
+      {
+        "type": "Anagram",
+        "clueHint": "Veste",
+        "location": "Up the stairs in the Asgarnian Ice Dungeon wyvern area. If Monkey Madness II is completed, he can be found by the entrance to the Stronghold Slayer Cave.",
+        "solution": "Steve",
+        "alternateChunks": [
+          { "x": 29, "y": 14, "notes": "Refer to \"location\"" }
+        ]
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Guard Vemmeldo",
+        "location": "In the bank of the Gnome Stronghold"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Nieve/Steve",
+        "location": "The slayer master in Gnome Stronghold."
       }
     ]
   },
@@ -475,6 +937,23 @@
         "clueHint": "Search for a crate in a building in Hemenster.",
         "location": "",
         "solution": "House north of the Fishing Contest quest area, west of Grandpa Jack.\t"
+      }
+    ]
+  },
+  {
+    "x": 24,
+    "y": 10,
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Peak Reflex",
+        "location": "Flax field south of Seers' Village.",
+        "solution": "Flax keeper"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Flax keeper",
+        "location": "Flax field south of Seers' Village."
       }
     ]
   },
@@ -517,6 +996,19 @@
         "clueHint": "Search the drawers in Catherby's Archery shop.",
         "location": "",
         "solution": "Hickton's Archery Emporium in Catherby."
+      }
+    ],
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Thickno",
+        "location": "Hickton's Archery Emporium in Catherby. Second house east of the bank.",
+        "solution": "Hickton"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Hickton",
+        "location": "Hickton's Archery Emporium in Catherby. Second house east of the bank."
       }
     ]
   },
@@ -590,6 +1082,11 @@
         "clueHint": "Speak to Rusty north of Falador.",
         "location": "",
         "solution": "Rusty can be found north-east of Falador on the way to the Mind altar."
+      },
+      {
+        "type": "Map",
+        "clueHint": "https://oldschool.runescape.wiki/images/f/ff/Map_clue_Falador_statue_crossroads.png?01058",
+        "location": "The statue is located at the crossroads north of Falador."
       }
     ]
   },
@@ -606,7 +1103,7 @@
     ],
     "easyClues": [
       {
-        "type": "Map",
+        "type": "Cryptic",
         "clueHint": "Dig between some ominous stones in Falador.",
         "location": "Three standing stones inside a walled area. East of the northern Falador gate.",
         "itemsRequired": ["Spade"]
@@ -634,6 +1131,27 @@
             "x": 29,
             "y": 11,
             "notes": "You may chose to unlock either chunk because of the dungeon unlock rule."
+          }
+        ]
+      },
+      {
+        "type": "Map",
+        "clueHint": "https://oldschool.runescape.wiki/images/2/2e/Map_clue_Falador_stones.png?1d2b6",
+        "location": "",
+        "solution": "Due east of Falador's north gate. Look for the (grapple) agility shortcut icon.",
+        "itemsRequired": ["Spade"]
+      }
+    ],
+    "mediumClues": [
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Prospector Percy",
+        "location": "Motherlode Mine",
+        "alternateChunks": [
+          {
+            "x": 29,
+            "y": 11,
+            "notes": "Motherlode can be accessed from both chunks."
           }
         ]
       }
@@ -788,6 +1306,54 @@
         "clueHint": "A Baker",
         "location": "Varrock Square (fur trader)",
         "solution": "Baraek"
+      },
+      {
+        "type": "Anagram",
+        "clueHint": "Armchair The Pelt",
+        "location": "Next to the south entrance of Varrock.",
+        "solution": "Charlie the Tramp",
+        "alternateChunks": [
+          {
+            "x": 32,
+            "y": 11,
+            "notes": "Charlie will path around and sometimes enter either chunk."
+          }
+        ]
+      },
+      {
+        "type": "Anagram",
+        "clueHint": "El Ow",
+        "location": "Varrock archery store",
+        "solution": "Lowe"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Baraek",
+        "location": "Varrock market"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Charlie the Tramp",
+        "location": "Near Varrock entrance",
+        "alternateChunks": [
+          {
+            "x": 32,
+            "y": 11,
+            "notes": "Charlie will path around and sometimes enter either chunk."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "x": 20,
+    "y": 11,
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Me If",
+        "location": "Just outside the gates of Tree Gnome Stronghold.",
+        "solution": "Femi"
       }
     ]
   },
@@ -817,6 +1383,19 @@
         "clueHint": "Search the crates in the shed just north of East Ardougne.",
         "location": "",
         "solution": "The crates in the shed north of the northern Ardougne bank."
+      }
+    ],
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Nod Med",
+        "location": "Behind the most north-western house in East Ardougne.",
+        "solution": "Edmond"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Edmond",
+        "location": "Behind the most north-western house in East Ardougne."
       }
     ]
   },
@@ -977,6 +1556,30 @@
         "location": "",
         "solution": "The Squire is located in the courtyard of the White Knights' Castle."
       }
+    ],
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Leakey",
+        "location": "Rising Sun Inn in Falador.",
+        "solution": "Kaylee"
+      },
+      {
+        "type": "Anagram",
+        "clueHint": "Que Sir",
+        "location": "Falador Castle Courtyard",
+        "solution": "Squire"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Kaylee",
+        "location": "Rising Sun Inn in Falador."
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Squire",
+        "location": "Falador Castle Courtyard"
+      }
     ]
   },
   {
@@ -1043,6 +1646,26 @@
         "location": "",
         "solution": "Lucy is the bartender on the 2nd floor of the Party Room."
       }
+    ],
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Peaty Pert",
+        "location": "Falador Party Room",
+        "solution": "Party Pete"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Prospector Percy",
+        "location": "Motherlode Mine",
+        "alternateChunks": [
+          {
+            "x": 29,
+            "y": 10,
+            "notes": "Motherlode can be accessed from both chunks."
+          }
+        ]
+      }
     ]
   },
   {
@@ -1107,6 +1730,14 @@
         "location": "Locate the single tree that is west of the Champions' Guild, outside Varrock. Dig two squares to the east of it.",
         "itemsRequired": ["Spade"]
       }
+    ],
+    "easyClues": [
+      {
+        "type": "Map",
+        "clueHint": "https://oldschool.runescape.wiki/images/3/36/Map_clue_Champions_guild.png?3bdf1",
+        "location": "Locate the single tree that is west of the Champions' Guild, outside Varrock. Dig two squares to the east of it.",
+        "itemsRequired": ["Spade"]
+      }
     ]
   },
   {
@@ -1117,6 +1748,33 @@
         "type": "Charlie the Tramp",
         "clueHint": "Talk to Charlie the Tramp",
         "location": "North of Varrock entrance",
+        "alternateChunks": [
+          {
+            "x": 32,
+            "y": 10,
+            "notes": "Charlie will path around and sometimes enter either chunk."
+          }
+        ]
+      }
+    ],
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Armchair The Pelt",
+        "location": "Next to the south entrance of Varrock.",
+        "alternateChunks": [
+          {
+            "x": 32,
+            "y": 10,
+            "notes": "Charlie will path around and sometimes enter either chunk."
+          }
+        ],
+        "solution": "Charlie the Tramp"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Charlie the Tramp",
+        "location": "Near Varrock entrance",
         "alternateChunks": [
           {
             "x": 32,
@@ -1147,6 +1805,12 @@
           { "x": 33, "y": 12, "notes": "Ali can move between these chunks" }
         ],
         "solution": "Ali the Leaflet Dropper can be found roaming north of the Al Kharid mine."
+      },
+      {
+        "type": "Map",
+        "clueHint": "https://oldschool.runescape.wiki/images/9/95/Map_clue_South-eastern_Varrock_Mine.png?f0802",
+        "location": "South-east Varrock mine. Dig one square west of the small fern.",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -1164,6 +1828,46 @@
         "type": "Cryptic",
         "clueHint": "Search the bush at the digsite centre.",
         "location": "The bush is on the east side of the west pathway towards the Digsite from the Exam Centre."
+      }
+    ]
+  },
+  {
+    "x": 16,
+    "y": 12,
+    "mediumClues": [
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Eluned",
+        "location": "Near Prifdinnas Dye shop",
+        "alternateChunks": [{ "x": 0, "y": 0, "notes": "notes go here" }]
+      }
+    ]
+  },
+  {
+    "x": 21,
+    "y": 12,
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Err Cure It",
+        "location": "West Ardougne centre square",
+        "solution": "Recruiter"
+      },
+      {
+        "type": "Anagram",
+        "clueHint": "Hick Jet",
+        "location": "West Ardougne centre square",
+        "solution": "Jethick"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Jethick",
+        "location": "West Ardougne centre square"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Recruiter",
+        "location": "West Ardougne centre square"
       }
     ]
   },
@@ -1194,6 +1898,33 @@
         "location": "",
         "solution": "Upstairs of the pub north of the Ardougne Castle."
       }
+    ],
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Eek Zero Op",
+        "location": "Ardougne Zoo",
+        "solution": "Zoo keeper",
+        "alternateChunks": [
+          {
+            "x": 22,
+            "y": 13,
+            "notes": "Southernmost zookeeper will very rarely go close enough to this chunk."
+          }
+        ]
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Zoo keeper",
+        "location": "Ardougne Zoo",
+        "alternateChunks": [
+          {
+            "x": 22,
+            "y": 13,
+            "notes": "Southernmost zookeeper will very rarely go close enough to this chunk."
+          }
+        ]
+      }
     ]
   },
   {
@@ -1211,6 +1942,23 @@
         "clueHint": "Search the drawers on the ground floor of a building facing Ardougne's Market.",
         "location": "",
         "solution": "Inside Noella's house north of the market."
+      }
+    ]
+  },
+  {
+    "x": 24,
+    "y": 12,
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Arc O Line",
+        "location": "North Witchaven next to the row boat. After the Sea Slug quest, she is found wandering the coast.",
+        "solution": "Caroline"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Caroline",
+        "location": "North Witchaven next to the row boat. After the Sea Slug quest, she is found wandering the coast."
       }
     ]
   },
@@ -1343,6 +2091,12 @@
         "alternateChunks": [
           { "x": 33, "y": 11, "notes": "Ali can move between these chunks." }
         ]
+      },
+      {
+        "type": "Map",
+        "clueHint": "https://oldschool.runescape.wiki/images/a/ae/Map_clue_Al_Kharid_mines.png?e9990",
+        "location": "\tJust north of Al-Kharid, in the centre of the mine.",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -1357,6 +2111,78 @@
         "location": "Al Kharid mine",
         "itemsRequired": ["Spade", "Strange Device"]
       }
+    ],
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Aha Jar",
+        "location": "The hospital of the Duel Arena.",
+        "solution": "Jaraah"
+      }
+    ]
+  },
+  {
+    "x": 37,
+    "y": 12,
+    "mediumClues": [
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Strange Old Man",
+        "location": "Digging in the Barrows mounds."
+      }
+    ]
+  },
+  {
+    "x": 22,
+    "y": 13,
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Eek Zero Op",
+        "location": "Ardougne Zoo",
+        "solution": "Zoo keeper",
+        "alternateChunks": [
+          {
+            "x": 22,
+            "y": 12,
+            "notes": "The southernmost Ardougne zoo keeper will sometimes path close enough for you to get them here."
+          }
+        ]
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Brother Kojo",
+        "location": "Clock Tower"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Brother Omad",
+        "location": "Monastary"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Zoo keeper",
+        "location": "Ardougne Zoo",
+        "alternateChunks": [
+          {
+            "x": 22,
+            "y": 12,
+            "notes": "Southernmost zookeeper will very rarely go close enough to this chunk."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "x": 24,
+    "y": 13,
+    "mediumClues": [
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Sir Percival",
+        "location": "Blow the Holy Grail magic whistle to enter the Fisher Realm, or enter from fairy code B*J*R",
+        "itemsRequired": ["Magic Whistle", " Dramen Staff"]
+      }
     ]
   },
   {
@@ -1368,6 +2194,25 @@
         "clueHint": "I would make a chemistry joke, but I'm afraid I wouldn't get a reaction.",
         "solution": "Talk to Chemist in Rimmington.",
         "location": "Rimmington"
+      }
+    ],
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Ratai",
+        "location": "Rimmington bush patch",
+        "solution": "Taria",
+        "alternateChunks": [
+          { "x": 28, "y": 13, "notes": "Taria can go between chunks." }
+        ]
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Taria",
+        "location": "Rimmington bush patch",
+        "alternateChunks": [
+          { "x": 28, "y": 13, "notes": "Taria can go between chunks." }
+        ]
       }
     ]
   },
@@ -1398,6 +2243,25 @@
         "clueHint": "Search through some drawers in the upstairs of a house in Rimmington.",
         "location": "",
         "solution": "On the 2nd floor of the house north of Hetty the Witch's house in Rimmington."
+      }
+    ],
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Ratai",
+        "location": "Rimmington bush patch",
+        "alternateChunks": [
+          { "x": 27, "y": 13, "notes": "Taria can go between chunks." }
+        ],
+        "solution": "Taria"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Taria",
+        "location": "Rimmington bush patch",
+        "alternateChunks": [
+          { "x": 27, "y": 13, "notes": "Taria can go between chunks." }
+        ]
       }
     ]
   },
@@ -1455,6 +2319,19 @@
         "location": "",
         "solution": "Talk to The Face located by the manhole just north of the Port Sarim fishing shop."
       }
+    ],
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "A Basic Anti Pot",
+        "location": "Port Sarim docks",
+        "solution": "Captain Tobias"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Captain Tobias",
+        "location": "Port Sarim docks"
+      }
     ]
   },
   {
@@ -1492,6 +2369,13 @@
         "clueHint": "Speak to Ned in Draynor Village.",
         "location": "",
         "solution": "Ned is found north or the Draynor bank."
+      }
+    ],
+    "mediumClues": [
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Wise Old Man",
+        "location": "In his house"
       }
     ]
   },
@@ -1557,6 +2441,51 @@
         "location": "",
         "solution": "The Doomsayer can be found just north of Lumbridge Castle entrance."
       }
+    ],
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Area Chef Trek",
+        "location": "Found in the church in Lumbridge.",
+        "solution": "Father Aereck"
+      },
+      {
+        "type": "Anagram",
+        "clueHint": "Ok Co",
+        "location": "Ground floor of Lumbridge Castle.",
+        "solution": "Cook"
+      },
+      {
+        "type": "Anagram",
+        "clueHint": "Snah",
+        "location": "Lumbridge Castle courtyard",
+        "solution": "Hans"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Iron Man tutor",
+        "location": "North of Lumbridge Castle entrance"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Ambassador Alvijar",
+        "location": "Dorgesh-Kaan"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Cook",
+        "location": "Lumbridge Castle"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Doomsayer",
+        "location": "Outside Lumbridge Castle"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Father Aereck",
+        "location": "Found in the church in Lumbridge."
+      }
     ]
   },
   {
@@ -1582,7 +2511,13 @@
         "solution": "Search the crates in the house, marked with a Cooking range icon.png icon, south-east of the gem stall."
       }
     ],
-    "mediumClues": [],
+    "mediumClues": [
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Cam the Camel",
+        "location": "Near the Al Kharid entrance"
+      }
+    ],
     "hardClues": [
       {
         "type": "Anagram",
@@ -1605,6 +2540,85 @@
     ]
   },
   {
+    "x": 16,
+    "y": 14,
+    "mediumClues": [
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Eluned",
+        "location": "Northeast of Tyras Camp",
+        "alternateChunks": [
+          {
+            "x": 17,
+            "y": 14,
+            "notes": "Eluned teleports around between two locations."
+          },
+          {
+            "x": 16,
+            "y": 12,
+            "notes": "After completion of the Song of the Elves quest, she moves to Prifddinas."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "x": 17,
+    "y": 14,
+    "mediumClues": [
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Eluned",
+        "location": "Southwest of Lletya",
+        "alternateChunks": [
+          {
+            "x": 16,
+            "y": 14,
+            "notes": "Eluned teleports around between two locations."
+          },
+          {
+            "x": 16,
+            "y": 12,
+            "notes": "After completion of the Song of the Elves quest, she moves to Prifddinas."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "x": 18,
+    "y": 14,
+    "mediumClues": [
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Oronwen",
+        "location": "Crafting store in Lletya"
+      }
+    ]
+  },
+  {
+    "x": 21,
+    "y": 14,
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Goblin Kern",
+        "location": "Tree Gnome Village, next to the Spirit Tree.",
+        "solution": "King Bolren"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Bolkoy",
+        "location": "Tree Gnome Village general store"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Spirit Tree",
+        "location": "Tree Gnome Village"
+      }
+    ]
+  },
+  {
     "x": 23,
     "y": 14,
     "easyClues": [
@@ -1622,6 +2636,29 @@
     ]
   },
   {
+    "x": 25,
+    "y": 14,
+    "mediumClues": [
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Cap'n Izzy No-Beard's parrot",
+        "location": "Brimhaven"
+      }
+    ]
+  },
+  {
+    "x": 27,
+    "y": 14,
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Halt Us",
+        "location": "The owner of the banana plantation on Musa Point (Karamja).",
+        "solution": "Luthas"
+      }
+    ]
+  },
+  {
     "x": 29,
     "y": 14,
     "easyClues": [
@@ -1630,6 +2667,17 @@
         "clueHint": "Search the bucket in the Port Sarim jail.",
         "location": "",
         "solution": "Tell Shantay in Shantay Pass that you're an outlaw."
+      }
+    ],
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Veste",
+        "location": "Up the stairs in the Asgarnian Ice Dungeon wyvern area. If Monkey Madness II is completed, he can be found by the entrance to the Stronghold Slayer Cave.",
+        "solution": "Steve",
+        "alternateChunks": [
+          { "x": 20, "y": 10, "notes": "Refer to \"location\"" }
+        ]
       }
     ]
   },
@@ -1662,6 +2710,19 @@
         "clueHint": "Search a bookcase in the Wizards tower.",
         "location": "",
         "solution": "The bookcase located on the 1st floor."
+      },
+      {
+        "type": "Map",
+        "clueHint": "https://oldschool.runescape.wiki/images/1/1b/Map_clue_Wizard_tower.png?e1c87",
+        "location": "Directly behind the Wizards' Tower, there's a fern you can use as a reference; the dig spot is one tile directly north of the fern. Fairy ring code D*I*S is very close.",
+        "itemsRequired": ["Spade"]
+      }
+    ],
+    "mediumClues": [
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Wizard Traiborn",
+        "location": "The 2nd floor of the Wizards' Tower"
       }
     ]
   },
@@ -1692,6 +2753,13 @@
         "clueHint": "Dance in the shack in Lumbridge Swamp.",
         "location": "East Lumbridge Swamp",
         "requiredItems": ["Bronze Dagger", "Iron Full Helm", "Gold Ring"]
+      }
+    ],
+    "mediumClues": [
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Fairy Godfather",
+        "location": "Zanaris"
       }
     ]
   },
@@ -1725,6 +2793,19 @@
         "location": "",
         "solution": "Zeke is the owner of the scimitar shop in Al Kharid."
       }
+    ],
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "R Ak Mi",
+        "location": "Al Kharid kebab shop just south of the furnace.",
+        "solution": "Karim"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Karim",
+        "location": "Al Kharid kebab shop just south of the furnace."
+      }
     ]
   },
   {
@@ -1743,6 +2824,30 @@
         "location": "",
         "solution": "Search the drawers in Yanille's hunting shop."
       }
+    ],
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "I Doom Icon Inn",
+        "location": "Nightmare Zone",
+        "solution": "Dominic Onion"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Dominic Onion",
+        "location": "Nightmare Zone"
+      }
+    ]
+  },
+  {
+    "x": 23,
+    "y": 15,
+    "mediumClues": [
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Hazelmere",
+        "location": "South of Phort Khazard on his island"
+      }
     ]
   },
   {
@@ -1754,6 +2859,17 @@
         "clueHint": "Wave on Mudskipper Point.",
         "location": "Mudskipper Point",
         "requiredItems": ["Black Cape", "Steel Mace", "Leather Chaps"]
+      }
+    ]
+  },
+  {
+    "x": 32,
+    "y": 15,
+    "mediumClues": [
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Weird Old Man",
+        "location": "Outside the Northern entrance to the Kalphite Lair."
       }
     ]
   },
@@ -1770,6 +2886,57 @@
     ]
   },
   {
+    "x": 25,
+    "y": 16,
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Got A Boy",
+        "location": "Centre of Tai Bwo Wannai.",
+        "solution": "Gabooty"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Gabooty",
+        "location": "Centre of Tai Bwo Wannai."
+      }
+    ]
+  },
+  {
+    "x": 23,
+    "y": 17,
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Icy Fe",
+        "location": "Rantz's cave, south-east of Gu'Tanoth and far eastern portion of Feldip Hills",
+        "solution": "Fycie"
+      }
+    ]
+  },
+  {
+    "x": 34,
+    "y": 17,
+    "mediumClues": [
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Ali the Kebab seller",
+        "location": "Pollnivneach"
+      }
+    ]
+  },
+  {
+    "x": 39,
+    "y": 17,
+    "mediumClues": [
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Brother Tranquility",
+        "location": "Mos Le'Harmless"
+      }
+    ]
+  },
+  {
     "x": 21,
     "y": 19,
     "easyClues": [
@@ -1778,6 +2945,30 @@
         "clueHint": "Dig under Ithoi's cabin.",
         "location": "Ithoi's cabin.",
         "itemsRequired": ["Spade"]
+      }
+    ],
+    "mediumClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Calamari Made Mud",
+        "location": "Next to a spa in the Corsair Cove.",
+        "solution": "Madame Caldarium"
+      },
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Madame Caldarium",
+        "location": "Next to a spa in the Corsair Cove."
+      }
+    ]
+  },
+  {
+    "x": 25,
+    "y": 20,
+    "mediumClues": [
+      {
+        "type": "Challenge Scroll",
+        "clueHint": "Awowogei",
+        "location": "Ape Atoll"
       }
     ]
   }
