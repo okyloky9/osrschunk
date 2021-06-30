@@ -69,7 +69,7 @@ export default forwardRef<
           aria-label="close"
           onClick={close}
         >
-          x
+          <span>x</span>
         </span>
 
         <div className="modal-body">{children}</div>
