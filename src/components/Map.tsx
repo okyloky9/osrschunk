@@ -28,7 +28,11 @@ export default function Map() {
   const height = 25;
 
   // chunk data
-  const { exportChunkData } = useContext(ChunkDataContext);
+  const {
+    exportChunkData,
+    clearLocalStorageChunkData,
+    saveChunkDataToLocalStorage,
+  } = useContext(ChunkDataContext);
 
   // modal ref
   const modal = useRef<ModalHandle>(null);
@@ -247,11 +251,45 @@ export default function Map() {
               </div>
 
               {editMode && (
-                <div>
-                  <button type="button" onClick={exportChunkData}>
-                    Export chunk-data.json
-                  </button>
-                </div>
+                <>
+                  <br />
+
+                  <div>
+                    <button
+                      className="success"
+                      type="button"
+                      onClick={saveChunkDataToLocalStorage}
+                    >
+                      Save chunk data locally
+                    </button>
+                  </div>
+
+                  <br />
+
+                  <div>
+                    <button
+                      className="info"
+                      type="button"
+                      onClick={exportChunkData}
+                    >
+                      Export chunk-data.json
+                    </button>
+                  </div>
+
+                  <br />
+
+                  <div>
+                    <button
+                      className="danger"
+                      type="button"
+                      onClick={clearLocalStorageChunkData}
+                    >
+                      Reset local chunk data
+                      <br />
+                      (cannot be undone)
+                    </button>
+                  </div>
+                </>
               )}
             </form>
           </div>

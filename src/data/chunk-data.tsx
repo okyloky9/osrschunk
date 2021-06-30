@@ -1,26 +1,36 @@
-import React, { createContext, ReactNode, useState } from 'react';
+import React, { createContext, ReactNode, useEffect, useState } from 'react';
 
 import Chunk from '../models/chunk';
 import chunkJson from './chunk-data.json';
 
-function coords(x: number, y: number): string {
-  return `${x},${y}`;
-}
-
-const chunkMap = new Map<string, Chunk>();
-
-for (const chunk of chunkJson) {
-  chunkMap.set(coords(chunk.x, chunk.y), chunk);
-}
-
 const ChunkDataContext = createContext<{
   exportChunkData: () => void;
+  clearLocalStorageChunkData: () => void;
+  saveChunkDataToLocalStorage: () => void;
   getChunk: (x: number, y: number) => Chunk | undefined;
   setChunk: (x: number, y: number, chunk: Chunk) => void;
 }>(null as any);
 
 const ChunkDataProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [chunkData, setChunkData] = useState(chunkMap);
+  const LOCAL_STORAGE_KEY = 'CHUNKS';
+
+  function coords(x: number, y: number): string {
+    return `${x},${y}`;
+  }
+
+  function chunkArrayToMap(chunks: Chunk[]) {
+    const chunkMap = new Map<string, Chunk>();
+
+    for (const chunk of chunks) {
+      chunkMap.set(coords(chunk.x, chunk.y), chunk);
+    }
+
+    return chunkMap;
+  }
+
+  function chunkMapToArray() {
+    return Array.from(chunkData.values());
+  }
 
   function getChunk(x: number, y: number): Chunk | undefined {
     return chunkData.get(coords(x, y));
@@ -33,7 +43,7 @@ const ChunkDataProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   }
 
   function exportChunkData() {
-    const chunks = Array.from(chunkData.values());
+    const chunks = chunkMapToArray();
 
     chunks.sort((a, b) => a.y - b.y || a.x - b.x);
 
@@ -48,10 +58,37 @@ const ChunkDataProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
     anchor.remove();
   }
 
+  function saveChunkDataToLocalStorage() {
+    const chunks = chunkMapToArray();
+    const json = JSON.stringify(chunks);
+    localStorage.setItem(LOCAL_STORAGE_KEY, json);
+  }
+
+  function loadChunkDataFromLocalStorage() {
+    const json = localStorage.getItem(LOCAL_STORAGE_KEY) as string;
+    const chunks = JSON.parse(json);
+    setChunkData(chunkArrayToMap(chunks));
+  }
+
+  function clearLocalStorageChunkData() {
+    localStorage.removeItem(LOCAL_STORAGE_KEY);
+    setChunkData(chunkArrayToMap(chunkJson));
+  }
+
+  const [chunkData, setChunkData] = useState(chunkArrayToMap(chunkJson));
+
+  useEffect(() => {
+    if (localStorage.getItem(LOCAL_STORAGE_KEY)) {
+      loadChunkDataFromLocalStorage();
+    }
+  }, []);
+
   return (
     <ChunkDataContext.Provider
       value={{
         exportChunkData,
+        clearLocalStorageChunkData,
+        saveChunkDataToLocalStorage,
         getChunk,
         setChunk,
       }}
