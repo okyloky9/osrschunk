@@ -124,6 +124,18 @@
     ]
   },
   {
+    "x": 24,
+    "y": 9,
+    "easyClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Search for a crate on the ground floor of a house in Seers' Village.",
+        "location": "",
+        "solution": "Search inside Phantuwti Fanstuwi Farsight's house, located south of the pub in Seers' Village."
+      }
+    ]
+  },
+  {
     "x": 27,
     "y": 9,
     "easyClues": [
@@ -180,6 +192,12 @@
         "clueHint": "Impossible to make angry.",
         "solution": "Speak to Abbot Langley.",
         "location": "Edgeville Monastary"
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the bookcase in the monastery.\t",
+        "location": "",
+        "solution": "Search the southeastern bookcase at Edgeville Monastery."
       }
     ]
   },
@@ -230,6 +248,12 @@
         "clueHint": "Yawn in the Varrock library.",
         "location": "Varrock Castle library",
         "requiredItems": ["HAM Robe", "Green Robe Top", "Iron Warhammer"]
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search for a crate in Varrock Castle.",
+        "location": "",
+        "solution": "Search the crate in the corner of the kitchen in Varrock Castle."
       }
     ]
   },
@@ -281,6 +305,18 @@
     ]
   },
   {
+    "x": 23,
+    "y": 10,
+    "easyClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Search for a crate in a building in Hemenster.",
+        "location": "",
+        "solution": "House north of the Fishing Contest quest area, west of Grandpa Jack.\t"
+      }
+    ]
+  },
+  {
     "x": 25,
     "y": 10,
     "easyClues": [
@@ -295,6 +331,18 @@
         "clueHint": "Jump for joy at the beehives.",
         "location": "Catherby beehives",
         "requiredItems": ["Desert Shirt", "Steel Axe", "Green Robe Bottoms"]
+      }
+    ]
+  },
+  {
+    "x": 27,
+    "y": 10,
+    "easyClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the boxes in a shop in Taverley.",
+        "location": "",
+        "solution": "The box inside Gaius' Two Handed Shop."
       }
     ]
   },
@@ -648,6 +696,18 @@
     ]
   },
   {
+    "x": 23,
+    "y": 12,
+    "easyClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the boxes just outside the Armour shop in East Ardougne.",
+        "location": "",
+        "solution": "Outside Zenesha's Plate Mail Body Shop."
+      }
+    ]
+  },
+  {
     "x": 28,
     "y": 12,
     "easyClues": [
@@ -705,6 +765,12 @@
           "Turquoise Robe Bottoms",
           "Oak Shortbow"
         ]
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the chest in Fred the Farmer's bedroom.",
+        "location": "",
+        "solution": "Search the chest by Fred the Farmer's bed in his house north-west of Lumbridge."
       }
     ]
   },
@@ -788,6 +854,12 @@
         "clueHint": "One of the sailors in Port Sarim is your next destination.",
         "solution": "Speak to Captain Tobias on the docks of Port Sarim.",
         "location": "Port Sarim"
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search chests found in the upstairs of shops in Port Sarim.",
+        "location": "",
+        "solution": "Search the chest in the upstairs of Wydin's Food Store, on the east wall."
       }
     ]
   },
@@ -814,6 +886,12 @@
         "clueHint": "Yawn in Draynor Marketplace.",
         "location": "Draynor Village Market",
         "itemsRequired": ["Studded Chaps", "Iron Kiteshield", "Steel Longsword"]
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search a wardrobe in Draynor.",
+        "location": "",
+        "solution": "Go to Aggie's house and search the wardrobe in northern wall."
       }
     ]
   },
@@ -845,8 +923,15 @@
       {
         "type": "Cryptic",
         "clueHint": "Dig where only the skilled, the wealthy, or the brave can choose not to visit again.",
-        "location": "Dig at Lumbridge spawn (teleport area).",
-        "itemsRequired": ["Spade"]
+        "location": "",
+        "itemsRequired": ["Spade"],
+        "solution": "Dig at Lumbridge spawn (teleport area)."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the boxes in the goblin house near Lumbridge.",
+        "location": "",
+        "solution": "The first house on the left when entering the city from the southern entrance."
       }
     ]
   },
@@ -859,6 +944,12 @@
         "clueHint": "Bow in the ticket office of the Duel Arena.",
         "location": "Duel Arena",
         "requiredItems": ["Coif", "Iron Chainbody", "Leather Chaps"]
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the boxes in one of the tents in Al Kharid.",
+        "location": "",
+        "solution": "Search the crates in the tent east of the Silk trader."
       }
     ]
   },
@@ -896,6 +987,30 @@
         "clueHint": "Clap on the causeway to the Wizards' Tower.",
         "location": "Wizards' Tower bridge",
         "requiredItems": ["White Apron", "Emerald Ring", "Iron Med Helm"]
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search a bookcase in the Wizards tower.",
+        "location": "",
+        "solution": "The bookcase located on the 1st floor."
+      }
+    ]
+  },
+  {
+    "x": 31,
+    "y": 14,
+    "easyClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Search a bookcase in Lumbridge swamp.",
+        "location": "",
+        "solution": "Located in Father Urhney's house."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the eastern bookcase in Father Urhney's house.",
+        "location": "",
+        "solution": "Father Urhney's house is found in the western end of the Lumbridge Swamp."
       }
     ]
   },
