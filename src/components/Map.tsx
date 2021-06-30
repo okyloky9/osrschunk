@@ -219,7 +219,7 @@ export default function Map() {
       <div className="controls pin-top-left">
         {showSidebar ? (
           <div id="sidebar">
-            <div className="controls pin-top-right">
+            <div className="controls pin-top-left">
               <button
                 onClick={() => setShowSideBar(false)}
                 aria-label="Hide sidebar"
