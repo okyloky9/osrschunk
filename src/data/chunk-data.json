@@ -12,6 +12,18 @@
     ]
   },
   {
+    "x": 10,
+    "y": 4,
+    "easyClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Thanks, Grandma!",
+        "location": "",
+        "solution": "Tynan can be found in the north-east corner of Port Piscarilius."
+      }
+    ]
+  },
+  {
     "x": 8,
     "y": 5,
     "eliteClues": [
@@ -36,6 +48,18 @@
     ]
   },
   {
+    "x": 10,
+    "y": 6,
+    "easyClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Talk to Charles at Port Piscarilius.",
+        "location": "",
+        "solution": "Charles is found by Veos' ship in Port Piscarilius."
+      }
+    ]
+  },
+  {
     "x": 4,
     "y": 7,
     "easyClues": [
@@ -44,6 +68,30 @@
         "clueHint": "Dig by the Giant's Den entrance, looking out over Lake Molch.",
         "location": "South-east of Lake Molch. Just south of the Shayzien rowboat, outside the dungeon entrance.",
         "requiredItems": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 8,
+    "y": 7,
+    "easyClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the open crate found in the Hosidius kitchens.",
+        "location": "",
+        "solution": "Search the open crate found in the Hosidius kitchens."
+      }
+    ]
+  },
+  {
+    "x": 10,
+    "y": 7,
+    "easyClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the crates in the fruit store just east of the Hosidius town centre.",
+        "location": "",
+        "solution": "Search the crates in house containing fruit stalls."
       }
     ]
   },
@@ -88,6 +136,12 @@
         "clueHint": "Laugh at the crossroads south of the Sinclair Mansion.",
         "location": "South of Sinclair Mansion",
         "requiredItems": ["Leather Cowl", "Iron Scimitar", "Blue Wizard Robe"]
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Speak to the staff of Sinclair mansion.",
+        "location": "",
+        "solution": "Speak to Louisa, on the 1st floor, found at the Sinclair Mansion."
       }
     ]
   },
@@ -100,6 +154,30 @@
         "clueHint": "Cheer at the games room.",
         "location": "The basement of the Games Room in Burthorpe.",
         "requiredItems": ["Wear nothing"]
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the crate in the Toad and Chicken pub.",
+        "location": "",
+        "solution": "The Toad and Chicken pub is located in Burthorpe."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the drawers of houses in Burthorpe.",
+        "location": "",
+        "solution": "Inside Hild's house in the north-east corner of Burthorpe."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the tents in the Imperial Guard camp in Burthorpe for some boxes.",
+        "location": "",
+        "solution": "Search in the tents in north-west corner of the camp."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Talk to Turael in Burthorpe.",
+        "location": "",
+        "solution": "Turael is located in the small house east of The Toad and Chicken inn."
       }
     ]
   },
@@ -156,6 +234,30 @@
         "clueHint": "Search for a crate on the ground floor of a house in Seers' Village.",
         "location": "",
         "solution": "Search inside Phantuwti Fanstuwi Farsight's house, located south of the pub in Seers' Village."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the chest in the left-hand tower of Camelot Castle.",
+        "location": "",
+        "solution": "Located on the 3rd floor of the western tower of Camelot."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search upstairs in the houses of Seers' Village for some drawers.",
+        "location": "",
+        "solution": "Located in the house with the spinning wheel. South of the Seers' Village bank."
+      }
+    ]
+  },
+  {
+    "x": 25,
+    "y": 9,
+    "easyClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Speak to Sir Kay in Camelot Castle.",
+        "location": "",
+        "solution": "Sir Kay can be found in the courtyard at Camelot Castle."
       }
     ]
   },
@@ -234,6 +336,18 @@
         "clueHint": "I wonder how many bronze swords he has handed out.",
         "solution": "Talk to Vannaka. He can be found in Edgeville Dungeon.",
         "location": "Edgeville Dungeon"
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the Coffin in Edgeville.",
+        "location": "",
+        "solution": "Search the coffin located by the Wilderness teleport lever."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Talk to the mother of a basement dwelling son.",
+        "location": "",
+        "solution": "Evil Dave's mother, Doris, is located in the house west of Edgeville bank."
       }
     ]
   },
@@ -306,6 +420,30 @@
     ]
   },
   {
+    "x": 36,
+    "y": 9,
+    "easyClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the crates in Canifis.",
+        "location": "",
+        "solution": "Search inside the shop, Rufus' Meat Emporium."
+      }
+    ]
+  },
+  {
+    "x": 20,
+    "y": 10,
+    "easyClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Talk to Ermin.",
+        "location": "",
+        "solution": "Ermin can be found on the 2nd floor of the tree house south-east of the Gnome Agility Course."
+      }
+    ]
+  },
+  {
     "x": 22,
     "y": 10,
     "easyClues": [
@@ -355,6 +493,30 @@
         "clueHint": "Jump for joy at the beehives.",
         "location": "Catherby beehives",
         "requiredItems": ["Desert Shirt", "Steel Axe", "Green Robe Bottoms"]
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the drawers in the upstairs of a house in Catherby.",
+        "location": "",
+        "solution": "Perdu's house in Catherby."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Speak to Arhein in Catherby.",
+        "location": "",
+        "solution": "Arhein is just south of the Catherby bank."
+      }
+    ]
+  },
+  {
+    "x": 26,
+    "y": 10,
+    "easyClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the drawers in Catherby's Archery shop.",
+        "location": "",
+        "solution": "Hickton's Archery Emporium in Catherby."
       }
     ]
   },
@@ -367,6 +529,41 @@
         "clueHint": "Search the boxes in a shop in Taverley.",
         "location": "",
         "solution": "The box inside Gaius' Two Handed Shop."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the boxes next to a chest that needs a crystal key",
+        "location": "Crystal chest in Taverley"
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the crates in the outhouse of the long building in Taverley.",
+        "location": "",
+        "solution": "Located in the small building attached by a fence to the main building. Climb over the stile."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search through some drawers found in Taverley's houses.",
+        "location": "",
+        "solution": "The south-eastern most house, south of Jatix's Herblore Shop."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Speak to Gaius in Taverley.",
+        "location": "",
+        "solution": "Gaius is found at the north-west corner in Taverley."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Speak to Jatix in Taverley.",
+        "location": "",
+        "solution": "Jatix is found in the middle of Taverley."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Speak to the Lady of the Lake.",
+        "location": "",
+        "solution": "Talk to the Lady of the Lake in Taverley."
       }
     ]
   },
@@ -379,6 +576,20 @@
         "clueHint": "I Cord",
         "solution": "Doric",
         "location": "North of Falador"
+      }
+    ],
+    "easyClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Speak to Doric, who lives north of Falador.",
+        "location": "",
+        "solution": "Doric is found north of Falador and east of the Taverley gate."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Speak to Rusty north of Falador.",
+        "location": "",
+        "solution": "Rusty can be found north-east of Falador on the way to the Mind altar."
       }
     ]
   },
@@ -399,6 +610,32 @@
         "clueHint": "Dig between some ominous stones in Falador.",
         "location": "Three standing stones inside a walled area. East of the northern Falador gate.",
         "itemsRequired": ["Spade"]
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the chests in the Dwarven Mine",
+        "location": "",
+        "solution": "The chest is on the western wall, where Hura's Crossbow Shop is, in the Dwarven Mine.",
+        "alternateChunks": [
+          {
+            "x": 29,
+            "y": 11,
+            "notes": "You may chose to unlock either chunk because of the dungeon unlock rule."
+          }
+        ]
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the crates in the Dwarven mine.",
+        "location": "",
+        "solution": "Search the east of the Ice Mountain ladder entrance in the Drogo's Mining Emporium.",
+        "alternateChunks": [
+          {
+            "x": 29,
+            "y": 11,
+            "notes": "You may chose to unlock either chunk because of the dungeon unlock rule."
+          }
+        ]
       }
     ]
   },
@@ -411,6 +648,20 @@
         "clueHint": "In a village of barbarians, I am the one who guards the village from up high.",
         "solution": "Talk to Hunding atop the tower on the east side of Barbarian Village.",
         "location": "Barbarian Village"
+      }
+    ],
+    "easyClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the chest in Barbarian Village.",
+        "location": "",
+        "solution": "The chest located in the house with a spinning wheel"
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the crates in the Barbarian Village helmet shop.",
+        "location": "",
+        "solution": "Peksa's Helmet Shop in Barbarian Village."
       }
     ]
   },
@@ -429,6 +680,26 @@
         "clueHint": "Rug Deter",
         "solution": "Gertrude",
         "location": "Outside Draynor Manor"
+      }
+    ],
+    "easyClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the crates in a bank in Varrock.",
+        "location": "",
+        "solution": "Search in the basement of the West Varrock bank."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the drawers in one of Gertrude's bedrooms.",
+        "location": "",
+        "solution": "Kanel's bedroom (southeastern room), outside of west Varrock."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Strength potions with red spiders' eggs? He is quite a herbalist.",
+        "location": "",
+        "solution": "Talk to Apothecary in South-western Varrock."
       }
     ]
   },
@@ -469,6 +740,46 @@
         "clueHint": "Do a jig in Varrock's rune store.",
         "location": "Varrock Rune Shop",
         "itemsRequired": ["Air Tiara", "Staff of Water"]
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the crates in Horvik's armoury.",
+        "location": "Horvik's in Varrock."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the single crate in Horvik's smithy in Varrock.",
+        "location": "Horvik's Smithy is found north-east of Varrock Square."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the drawers above Varrock's shops.",
+        "location": "",
+        "solution": "Located upstairs in Thessalia's Fine Clothes shop in Varrock."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the crates near a cart in Varrock.",
+        "location": "",
+        "solution": "South-east of Varrock Palace, south of the tree farming patch."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the drawers, upstairs in the bank to the East of Varrock.",
+        "location": "",
+        "solution": "East Varrock bank."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Speak to the bartender of the Blue Moon Inn in Varrock.",
+        "location": "",
+        "solution": "Talk to the bartender in Blue Moon Inn in Varrock."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Talk to the cook in the Blue Moon Inn in Varrock.",
+        "location": "",
+        "solution": "The Blue Moon Inn can be found by the southern entrance to Varrock."
       }
     ],
     "mediumClues": [
@@ -500,6 +811,12 @@
             "notes": "Uri can be spawned across these chunks."
           }
         ]
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the crates in the shed just north of East Ardougne.",
+        "location": "",
+        "solution": "The crates in the shed north of the northern Ardougne bank."
       }
     ]
   },
@@ -512,6 +829,11 @@
         "clueHint": "Clap on the top level of the mill, north of East Ardougne.",
         "location": "North of East Ardougne",
         "requiredItems": ["Blue Robe Top", "Tiara", "HAM Robe"]
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the crates in the guard house of the northern gate of East Ardougne.",
+        "location": "The guard house is north-east of the Handelmort Mansion."
       }
     ]
   },
@@ -536,6 +858,21 @@
         "clueHint": "Sir Share Red",
         "solution": "Hairdresser",
         "location": "Western Falador",
+        "alternateChunks": [
+          {
+            "x": 28,
+            "y": 11,
+            "notes": "The hairdresser will path around and sometimes enter either chunk."
+          }
+        ]
+      }
+    ],
+    "easyClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Talk to the barber in the Falador barber shop.",
+        "location": "",
+        "solution": "The Hairdresser can be found in the barber shop, north of the west Falador bank.",
         "alternateChunks": [
           {
             "x": 28,
@@ -585,6 +922,60 @@
         "type": "Cryptic",
         "clueHint": "I'd like to hear some music. Come and see me on the bridge in Falador Park.",
         "location": "Falador Park"
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the boxes of Falador's general store.",
+        "location": "Falador General Store"
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the crates in Falador General store.",
+        "location": "",
+        "solution": "The Falador General Store can be found by the northern entrance to the city."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the drawers upstairs in Falador's shield shop.",
+        "location": "",
+        "solution": "Cassie's Shield Shop at the northern Falador entrance."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Surrounded by white walls and gems.",
+        "location": "",
+        "solution": "Talk to Herquin, the gem store owner in Falador."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Talk to Ambassador Spanfipple in the White Knights Castle.",
+        "location": "",
+        "solution": "Ambassador Spanfipple can be found roaming on the 2nd floor of the White Knights' Castle."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Talk to Cassie in Falador.",
+        "location": "",
+        "solution": "Cassie is found just south-east of the northern Falador gate."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Talk to the barber in the Falador barber shop.",
+        "location": "",
+        "solution": "The Hairdresser can be found in the barber shop, north of the west Falador bank.",
+        "alternateChunks": [
+          {
+            "x": 27,
+            "y": 11,
+            "notes": "The hairdresser will path around and sometimes enter either chunk."
+          }
+        ]
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Talk to the Squire in the White Knights' castle in Falador.",
+        "location": "",
+        "solution": "The Squire is located in the courtyard of the White Knights' Castle."
       }
     ]
   },
@@ -607,6 +998,50 @@
         "clueHint": "Look in the ground floor crates of houses in Falador.",
         "location": "Falador East",
         "solution": "The house East of Falador East Bank."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the chests in the Dwarven Mine.",
+        "location": "",
+        "alternateChunks": [
+          {
+            "x": 29,
+            "y": 10,
+            "notes": "You may chose to unlock either chunk because of the dungeon unlock rule."
+          }
+        ],
+        "solution": "The chest is on the western wall, where Hura's Crossbow Shop is, in the Dwarven Mine."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the crates in the Dwarven mine.",
+        "location": "",
+        "solution": "Search the east of the Ice Mountain ladder entrance in the Drogo's Mining Emporium.",
+        "alternateChunks": [
+          {
+            "x": 29,
+            "y": 10,
+            "notes": "You may chose to unlock either chunk because of the dungeon unlock rule."
+          }
+        ]
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the drawers downstairs of houses in the eastern part of Falador.",
+        "location": "",
+        "solution": "House is located east of the eastern Falador bank and south of the fountain. The house is indicated by the cooking range icon on the minimap."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search through chests found in the upstairs of houses in eastern Falador.",
+        "location": "",
+        "solution": "The house is located south-west of the Falador Party Room. There are two chests in the room; search the northern chest."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Talk to a party-goer in Falador.",
+        "location": "",
+        "solution": "Lucy is the bartender on the 2nd floor of the Party Room."
       }
     ]
   },
@@ -646,6 +1081,12 @@
         "clueHint": "Belladonna, my dear. If only I had gloves, then I could hold you at last.",
         "solution": "Talk to the Tool leprechaun at Belladonna farming patch at Draynor Manor.",
         "location": "Draynor Manor"
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the crates in Draynor Manor.",
+        "location": "",
+        "solution": "Top floor of the manor."
       }
     ]
   },
@@ -696,6 +1137,17 @@
         "location": "South-east Varrock mine. Dig one square west of the small fern.",
         "itemsRequired": ["Spade"]
       }
+    ],
+    "easyClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Talk to Ali the Leaflet Dropper north of the Al Kharid mine.",
+        "location": "",
+        "alternateChunks": [
+          { "x": 33, "y": 12, "notes": "Ali can move between these chunks" }
+        ],
+        "solution": "Ali the Leaflet Dropper can be found roaming north of the Al Kharid mine."
+      }
     ]
   },
   {
@@ -707,6 +1159,11 @@
         "clueHint": "Clap in the main exam room in the Exam Centre.",
         "location": "Exam Centre",
         "requiredItems": ["White Apron", "Green Boots", "Leather Gloves"]
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the bush at the digsite centre.",
+        "location": "The bush is on the east side of the west pathway towards the Digsite from the Exam Centre."
       }
     ]
   },
@@ -724,6 +1181,18 @@
         "type": "Cryptic",
         "clueHint": "A crate found in the tower of a church is your next location.",
         "location": "Climb the ladder and search the crates on the 2nd floor in the church in East Ardougne."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the crates in East Ardougne's general store.",
+        "location": "",
+        "solution": "Located south of the Ardougne church."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the drawers found upstairs in East Ardougne's houses.",
+        "location": "",
+        "solution": "Upstairs of the pub north of the Ardougne Castle."
       }
     ]
   },
@@ -736,6 +1205,12 @@
         "clueHint": "Search the boxes just outside the Armour shop in East Ardougne.",
         "location": "",
         "solution": "Outside Zenesha's Plate Mail Body Shop."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the drawers on the ground floor of a building facing Ardougne's Market.",
+        "location": "",
+        "solution": "Inside Noella's house north of the market."
       }
     ]
   },
@@ -748,6 +1223,30 @@
         "clueHint": "Spin at the crossroads north of Rimmington.",
         "location": "North of Rimmington",
         "requiredItems": ["Leather Chaps", "Cream Robe Top", "Green Hat"]
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the drawers in Falador's chain mail shop.",
+        "location": "",
+        "solution": "Wayne's Chains - Chainmail Specialist store at the southern Falador walls."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Talk to Wayne at Wayne's Chains in Falador.",
+        "location": "",
+        "solution": "Wayne's shop is found directly south of the White Knights' Castle."
+      }
+    ]
+  },
+  {
+    "x": 29,
+    "y": 12,
+    "easyClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Speak to Sarah at Falador farm.",
+        "location": "",
+        "solution": "Talk to Sarah at Falador farm, north of Port Sarim."
       }
     ]
   },
@@ -781,6 +1280,18 @@
         "clueHint": "Dance at the crossroads north of Draynor.",
         "location": "Draynor crossroads",
         "itemsRequired": ["Iron Chainbody", "Sapphire Ring", "Longbow"]
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the drawers in a house in Draynor Village.",
+        "location": "",
+        "solution": "The drawer is located in the northernmost house in Draynor Village."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Talk to Morgan in his house at Draynor Village.",
+        "location": "",
+        "solution": "Morgan can be found in the house with the Quest map icon."
       }
     ]
   },
@@ -823,6 +1334,15 @@
         "clueHint": "Headbang in the mine north of Al Kharid.",
         "location": "Al Kharid mine",
         "itemsRequired": ["Desert Shirt", "Leather Boots", "Leather Gloves"]
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Talk to Ali the Leaflet Dropper north of the Al Kharid mine.",
+        "location": "",
+        "solution": "Ali the Leaflet Dropper can be found roaming north of the Al Kharid mine.",
+        "alternateChunks": [
+          { "x": 33, "y": 11, "notes": "Ali can move between these chunks." }
+        ]
       }
     ]
   },
@@ -860,6 +1380,24 @@
         "clueHint": "Shrug in the mine near Rimmington.",
         "location": "Rimmington mine",
         "itemsRequired": ["Gold Necklace", "Gold Ring", "Bronze Spear"]
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the crate in Rommiks crafting shop in Rimmington.",
+        "location": "",
+        "solution": "The crates in Rommik's Crafty Supplies in Rimmington."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the wheelbarrow in Rimmington mine.",
+        "location": "The Rimmington mining site is located north of Rimmington.",
+        "solution": ""
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search through some drawers in the upstairs of a house in Rimmington.",
+        "location": "",
+        "solution": "On the 2nd floor of the house north of Hetty the Witch's house in Rimmington."
       }
     ]
   },
@@ -892,6 +1430,30 @@
         "clueHint": "Search chests found in the upstairs of shops in Port Sarim.",
         "location": "",
         "solution": "Search the chest in the upstairs of Wydin's Food Store, on the east wall."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the crates in the Port Sarim Fishing shop.",
+        "location": "",
+        "solution": "Search the crates, by the door, in Gerrant's Fishy Business in Port Sarim."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the drawers in the house next to the Port Sarim mage shop.",
+        "location": "",
+        "solution": "House east of Betty's. Contains a cooking sink."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Talk to the bartender of the Rusty Anchor in Port Sarim.",
+        "location": "",
+        "solution": "The Bartender can be found in the Rusty Anchor Inn, which is located in the northern part of Port Sarim."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "The hand ain't listening.",
+        "location": "",
+        "solution": "Talk to The Face located by the manhole just north of the Port Sarim fishing shop."
       }
     ]
   },
@@ -924,6 +1486,12 @@
         "clueHint": "Search a wardrobe in Draynor.",
         "location": "",
         "solution": "Go to Aggie's house and search the wardrobe in northern wall."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Speak to Ned in Draynor Village.",
+        "location": "",
+        "solution": "Ned is found north or the Draynor bank."
       }
     ]
   },
@@ -964,6 +1532,30 @@
         "clueHint": "Search the boxes in the goblin house near Lumbridge.",
         "location": "",
         "solution": "The first house on the left when entering the city from the southern entrance."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the chest in the Duke of Lumbridge's bedroom.",
+        "location": "",
+        "solution": "The Duke's room is on the 2nd floor in Lumbridge Castle."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the crate in the left-hand tower of Lumbridge Castle.",
+        "location": "",
+        "solution": "Located on the 2nd floor of the southern tower at the Lumbridge Castle entrance."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Speak to Hans to solve the clue.",
+        "location": "",
+        "solution": "Hans can be found at Lumbridge Castle."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Talk to the Doomsayer.",
+        "location": "",
+        "solution": "The Doomsayer can be found just north of Lumbridge Castle entrance."
       }
     ]
   },
@@ -982,6 +1574,12 @@
         "clueHint": "Search the boxes in one of the tents in Al Kharid.",
         "location": "",
         "solution": "Search the crates in the tent east of the Silk trader."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the crates in the most north-western house in Al Kharid.",
+        "location": "",
+        "solution": "Search the crates in the house, marked with a Cooking range icon.png icon, south-east of the gem stall."
       }
     ],
     "mediumClues": [],
@@ -995,6 +1593,18 @@
     ]
   },
   {
+    "x": 34,
+    "y": 13,
+    "easyClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Someone watching the fights in the Duel Arena is your next destination.",
+        "location": "",
+        "solution": "Talk to Jeed, found on the upper floors, at the Duel Arena."
+      }
+    ]
+  },
+  {
     "x": 23,
     "y": 14,
     "easyClues": [
@@ -1002,6 +1612,24 @@
         "type": "Emote",
         "clueHint": "Panic on the pier where you catch the Fishing trawler.",
         "location": "North most dock in Port Khazard, east of the Fight Arena."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the crate near a cart in Port Khazard.",
+        "location": "",
+        "solution": "Search by the southern Khazard General Store in Port Khazard."
+      }
+    ]
+  },
+  {
+    "x": 29,
+    "y": 14,
+    "easyClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the bucket in the Port Sarim jail.",
+        "location": "",
+        "solution": "Tell Shantay in Shantay Pass that you're an outlaw."
       }
     ]
   },
@@ -1076,6 +1704,44 @@
         "clueHint": "An Earl",
         "solution": "Ranael",
         "location": "Al Kharid skirt shop"
+      }
+    ],
+    "easyClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the chests upstairs in Al Kharid Palace.",
+        "location": "",
+        "solution": "The chest is located in the north-east corner on the 2nd floor."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Speak to Ellis in Al Kharid.",
+        "location": "",
+        "solution": "Ellis is the tanner just north of the Al Kharid bank."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Talk to Zeke in Al Kharid.",
+        "location": "",
+        "solution": "Zeke is the owner of the scimitar shop in Al Kharid."
+      }
+    ]
+  },
+  {
+    "x": 22,
+    "y": 15,
+    "easyClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the crates in a house in Yanille that has a piano.",
+        "location": "",
+        "solution": "The house is located north-west of the bank."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Search the drawers in the ground floor of a shop in Yanille.",
+        "location": "",
+        "solution": "Search the drawers in Yanille's hunting shop."
       }
     ]
   },
