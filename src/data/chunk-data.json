@@ -23,6 +23,21 @@
     ]
   },
   {
+    "x": 2,
+    "y": 3,
+    "mediumClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Clap your hands north of Mount Karuulm. Spin before you talk to me.",
+        "location": "",
+        "alternateChunks": [
+          { "x": 2, "y": 4, "notes": "Uri may show up in either chunk." }
+        ],
+        "itemsRequired": ["Adamant Warhammer", "Mithril Boots", "Ring of Life"]
+      }
+    ]
+  },
+  {
     "x": 9,
     "y": 3,
     "mediumClues": [
@@ -75,6 +90,45 @@
         "type": "Challenge Scroll",
         "clueHint": "Miner Magnus",
         "location": "In the area with a mining icon."
+      },
+      {
+        "type": "Coordinates",
+        "clueHint": "22 degrees 30 minutes north, 03 degrees 01 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      },
+      {
+        "type": "Map",
+        "clueHint": "https://oldschool.runescape.wiki/images/c/cb/Map_clue_Miscellania.png?ee5fc",
+        "location": "",
+        "solution": "On Miscellania, one of the Fremennik Isles, just east of the castle."
+      }
+    ]
+  },
+  {
+    "x": 40,
+    "y": 3,
+    "mediumClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "23 degrees 01 minutes north, 41 degrees 33 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 2,
+    "y": 4,
+    "mediumClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Clap your hands north of Mount Karuulm. Spin before you talk to me.",
+        "location": "",
+        "alternateChunks": [
+          { "x": 2, "y": 3, "notes": "Uri may show up in either chunk." }
+        ],
+        "itemsRequired": ["Adamant Warhammer", "Mithril Boots", "Ring of Life"]
       }
     ]
   },
@@ -97,6 +151,22 @@
         "type": "Challenge Scroll",
         "clueHint": "Professor Gracklebone",
         "location": "Arceuus Library"
+      },
+      {
+        "type": "Emote",
+        "clueHint": "Yawn in the centre of Arceuus library. Nod your head before you talk to me.",
+        "location": "",
+        "itemsRequired": [
+          "Blue d'hide Vambraces",
+          "Adamant Boots",
+          "Adamant Dagger"
+        ]
+      },
+      {
+        "type": "Cipher",
+        "clueHint": "QSPGFTTPS HSBDLMFCPOF",
+        "location": "Arceuus Library",
+        "solution": "Professor Gracklebone"
       }
     ]
   },
@@ -133,6 +203,18 @@
         "type": "Challenge Scroll",
         "clueHint": "Lisse Isaakson",
         "location": "Neitiznot"
+      }
+    ]
+  },
+  {
+    "x": 1,
+    "y": 5,
+    "mediumClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "17 degrees 39 minutes north, 37 degrees 16 minutes west",
+        "location": "",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -175,6 +257,12 @@
         "type": "Challenge Scroll",
         "clueHint": "Dockmaster",
         "location": "Port Piscarilius, building north-east of the general store."
+      },
+      {
+        "type": "Cipher",
+        "clueHint": "ECRVCKP MJCNGF",
+        "location": "Port Piscarilius foodhall",
+        "solution": "Captain Khaled"
       }
     ]
   },
@@ -221,6 +309,12 @@
         "type": "Challenge Scroll",
         "clueHint": "Sigli the Huntsman",
         "location": "The entrance to Rellekka"
+      },
+      {
+        "type": "Coordinates",
+        "clueHint": "15 degrees 22 minutes north, 07 degrees 31 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -265,6 +359,22 @@
     ]
   },
   {
+    "x": 6,
+    "y": 7,
+    "mediumClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Beckon in the combat ring of Shayzien. Show your anger before you talk to me.",
+        "location": "",
+        "itemsRequired": [
+          "Adamant Platebody",
+          "Adamant Full Helm",
+          "Adamant Platelegs"
+        ]
+      }
+    ]
+  },
+  {
     "x": 8,
     "y": 7,
     "easyClues": [
@@ -305,6 +415,42 @@
         "clueHint": "Go to this building to be illuminated, and check the drawers while you are there.",
         "location": "",
         "solution": "Kill a Rellekka marketplace guard to obtain the key. Go to the 2nd floor of the Lighthouse."
+      }
+    ]
+  },
+  {
+    "x": 22,
+    "y": 7,
+    "mediumClues": [
+      {
+        "type": "Map",
+        "clueHint": "https://oldschool.runescape.wiki/images/4/4c/Map_clue_Lighthouse_peninsula.png?eaa10",
+        "location": "",
+        "solution": "Road between Rellekka and the Lighthouse."
+      }
+    ]
+  },
+  {
+    "x": 24,
+    "y": 7,
+    "mediumClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "14 degrees 54 minutes north, 9 degrees 13 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 5,
+    "y": 8,
+    "mediumClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "12 degrees 39 minutes north, 30 degrees 07 minutes west",
+        "location": "",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -388,6 +534,42 @@
     ]
   },
   {
+    "x": 18,
+    "y": 8,
+    "mediumClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "11 degrees 33 minutes north, 02 degrees 24 minutes west",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 21,
+    "y": 8,
+    "mediumClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Cheer in the Barbarian Agility Arena. Headbang before you talk to me.",
+        "location": "",
+        "itemsRequired": ["Steel Platebody", "Maple Shortbow", "Team Cape"]
+      }
+    ]
+  },
+  {
+    "x": 23,
+    "y": 8,
+    "mediumClues": [
+      {
+        "type": "Map",
+        "clueHint": "https://oldschool.runescape.wiki/images/a/a3/Map_clue_North_Seers.png?18cb0",
+        "location": "",
+        "solution": "North of Seers' Village, along the path towards Rellekka."
+      }
+    ]
+  },
+  {
     "x": 24,
     "y": 8,
     "easyClues": [
@@ -432,8 +614,7 @@
       {
         "type": "Emote",
         "clueHint": "Cheer at the games room.",
-        "location": "The basement of the Games Room in Burthorpe.",
-        "requiredItems": ["Wear nothing"]
+        "location": "The basement of the Games Room in Burthorpe."
       },
       {
         "type": "Cryptic",
@@ -493,6 +674,12 @@
         "clueHint": "Go to the village being attacked by trolls, search the drawers in one of the houses.",
         "location": "",
         "solution": "Go to Dunstan's house in the north-east corner of Burthorpe. Kill Penda in The Toad and Chicken to obtain the key."
+      },
+      {
+        "type": "Coordinates",
+        "clueHint": "11 degrees 41 minutes north, 14 degrees 58 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -508,6 +695,18 @@
     ]
   },
   {
+    "x": 35,
+    "y": 8,
+    "mediumClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "11 degrees 18 minutes north, 30 degrees 54 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
     "x": 36,
     "y": 8,
     "mediumClues": [
@@ -515,6 +714,24 @@
         "type": "Challenge Scroll",
         "clueHint": "Old crone",
         "location": "In her house"
+      },
+      {
+        "type": "Emote",
+        "clueHint": "Panic by the mausoleum in Morytania. Wave before you speak to me.",
+        "location": "",
+        "itemsRequired": ["Mithril Plate Skirt", "Maple Longbow"]
+      }
+    ]
+  },
+  {
+    "x": 37,
+    "y": 8,
+    "mediumClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "12 degrees 28 minutes north, 34 degrees 37 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -563,6 +780,18 @@
         "type": "Challenge Scroll",
         "clueHint": "Gnome Coach",
         "location": "Gnome Ball field"
+      },
+      {
+        "type": "Coordinates",
+        "clueHint": "09 degrees 35 minutes north, 01 degrees 50 minutes west",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      },
+      {
+        "type": "Coordinates",
+        "clueHint": "11 degrees 05 minutes north, 00 degrees 45 minutes west",
+        "location": "",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -592,6 +821,12 @@
         "type": "Challenge Scroll",
         "clueHint": "Otto Godblessed",
         "location": "South of the Barbarian Outpost, in Otto's Grotto."
+      },
+      {
+        "type": "Coordinates",
+        "clueHint": "09 degrees 33 minutes north, 02 degrees 15 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -603,6 +838,26 @@
         "type": "Map",
         "clueHint": "https://oldschool.runescape.wiki/images/b/b2/Map_clue_Galahad.png?554e8",
         "location": "One tile west of the north door of Galahad's house, west of McGrubor's Wood. Fairy ring code A*L*S is very close, squeeze through the gate northeast of the fairy ring (around the building.)"
+      }
+    ],
+    "mediumClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "10 degrees 45 minutes north, 04 degrees 31 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 23,
+    "y": 9,
+    "mediumClues": [
+      {
+        "type": "Map",
+        "clueHint": "https://oldschool.runescape.wiki/images/3/30/Map_clue_McGrubors.png?0a25a",
+        "location": "",
+        "solution": "If approaching from outside, squeeze through the broken fence by the northern half of the hut in the centre and search the crate south of the house."
       }
     ]
   },
@@ -635,6 +890,16 @@
         "clueHint": "In a town where everyone has perfect vision, seek some locked drawers in a house that sits opposite a workshop.",
         "location": "The drawers is in Seers' Village in the house south of the Elemental Workshop entrance.",
         "solution": "Kill any chicken to obtain a key."
+      },
+      {
+        "type": "Emote",
+        "clueHint": "Clap in Seers court house. Spin before you talk to me.",
+        "location": "",
+        "itemsRequired": [
+          "Adamant Halberd",
+          "Diamond Ring",
+          "Mystic Robe Bottom"
+        ]
       }
     ]
   },
@@ -692,6 +957,14 @@
             "notes": "Hot and cold clues have an area you can dig in. You can dig in either chunk."
           }
         ]
+      }
+    ],
+    "mediumClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "09 degrees 48 minutes north, 17 degrees 39 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -770,6 +1043,12 @@
         "type": "Challenge Scroll",
         "clueHint": "Evil Dave",
         "location": "Under his mother's house in Edgeville"
+      },
+      {
+        "type": "Emote",
+        "clueHint": "Cheer in the Edgeville general store. Dance before you talk to me.",
+        "location": "",
+        "itemsRequired": ["Brown Apron", "Leather Boots", "Leather Gloves"]
       }
     ]
   },
@@ -883,6 +1162,18 @@
         "clueHint": "Speak to Ulizius.",
         "location": "",
         "solution": "Ulizius is the monk who guards the gate into Mort Myre Swamp."
+      },
+      {
+        "type": "Coordinates",
+        "clueHint": "11 degrees 03 minutes north, 31 degrees 20 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      },
+      {
+        "type": "Cipher",
+        "clueHint": "GUHCHO",
+        "location": "Under the temple",
+        "solution": "Drezel"
       }
     ]
   },
@@ -909,6 +1200,16 @@
         "clueHint": "Speak to Roavar.",
         "location": "",
         "solution": "Talk to Roavar in the Canifis tavern."
+      },
+      {
+        "type": "Emote",
+        "clueHint": "Dance in the centre of Canifis. Bow before you talk to me.",
+        "location": "",
+        "itemsRequired": [
+          "Green Robe Top",
+          "Mithril Platelegs",
+          "Iron 2h Sword"
+        ]
       }
     ]
   },
@@ -939,6 +1240,12 @@
         "type": "Challenge Scroll",
         "clueHint": "Brimstail",
         "location": "In the cave west of the Stronghold Slayer Cave entrance in the Tree Gnome Stronghold."
+      },
+      {
+        "type": "Coordinates",
+        "clueHint": "08 degrees 33 minutes north, 01 degrees 39 minutes west",
+        "location": "",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -985,6 +1292,16 @@
         "type": "Challenge Scroll",
         "clueHint": "Nieve/Steve",
         "location": "The slayer master in Gnome Stronghold."
+      },
+      {
+        "type": "Emote",
+        "clueHint": "Cry on top of the western tree in the Gnome Agility Arena. Indicate 'no' before you talk to me.",
+        "location": "",
+        "itemsRequired": [
+          "Steel Kiteshield",
+          "Ring of Forging",
+          "Green d'hide Chaps"
+        ]
       }
     ]
   },
@@ -1076,6 +1393,18 @@
         "location": "",
         "solution": "Arhein is just south of the Catherby bank."
       }
+    ],
+    "mediumClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Shrug in Catherby bank. Yawn before you talk to me.",
+        "location": "",
+        "itemsRequired": [
+          "Maple Longbow",
+          "Green d'hide Chaps",
+          "Iron Med Helm"
+        ]
+      }
     ]
   },
   {
@@ -1100,6 +1429,21 @@
         "type": "Challenge Scroll",
         "clueHint": "Hickton",
         "location": "Hickton's Archery Emporium in Catherby. Second house east of the bank."
+      },
+      {
+        "type": "Emote",
+        "clueHint": "Cry in the Catherby Ranging shop. Bow before you talk to me.",
+        "location": "Blue Boots,Hard Leather Body,Silver Sickle"
+      },
+      {
+        "type": "Emote",
+        "clueHint": "Cry on the shore of Catherby beach. Laugh before you talk to me.",
+        "location": "",
+        "itemsRequired": [
+          "Adamant Sq Shield",
+          "Bone Dagger",
+          "Mithril Platebody"
+        ]
       }
     ]
   },
@@ -1147,6 +1491,14 @@
         "clueHint": "Speak to the Lady of the Lake.",
         "location": "",
         "solution": "Talk to the Lady of the Lake in Taverley."
+      }
+    ],
+    "mediumClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "07 degrees 33 minutes north, 15 degrees 00 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -1271,6 +1623,18 @@
         "clueHint": "Search the crates in the Barbarian Village helmet shop.",
         "location": "",
         "solution": "Peksa's Helmet Shop in Barbarian Village."
+      }
+    ],
+    "mediumClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Spin on the bridge by the Barbarian Village. Salute before you talk to me.",
+        "location": "",
+        "itemsRequired": [
+          "Purple Gloves",
+          "Steel Kiteshield",
+          "Mithril Full Helm"
+        ]
       }
     ]
   },
@@ -1437,6 +1801,30 @@
     ]
   },
   {
+    "x": 34,
+    "y": 10,
+    "mediumClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Beckon in the Digsite, near the eastern winch. Bow before you talk to me.",
+        "location": "",
+        "itemsRequired": ["Green Hat", "Snakeskin Boots", "Iron Pickaxe"]
+      }
+    ]
+  },
+  {
+    "x": 19,
+    "y": 11,
+    "mediumClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "06 degrees 31 minutes north, 01 degrees 46 minutes west",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
     "x": 20,
     "y": 11,
     "mediumClues": [
@@ -1445,6 +1833,22 @@
         "clueHint": "Me If",
         "location": "Just outside the gates of Tree Gnome Stronghold.",
         "solution": "Femi"
+      }
+    ]
+  },
+  {
+    "x": 21,
+    "y": 11,
+    "mediumClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Cheer in the Ogre Pen in the Training Camp. Show you are angry before you talk to me.",
+        "location": "",
+        "itemsRequired": [
+          "Green d'hide Body",
+          "Green d'hide Chaps",
+          "Steel Sq Shield"
+        ]
       }
     ]
   },
@@ -1652,6 +2056,12 @@
         "clueHint": "Talk to the Squire in the White Knights' castle in Falador.",
         "location": "",
         "solution": "The Squire is located in the courtyard of the White Knights' Castle."
+      },
+      {
+        "type": "Music",
+        "clueHint": "I'd like to hear some music. Come and see me on the bridge in Falador Park, and play: <some music>",
+        "location": "Falador Park",
+        "solution": "Play <some music> for Cecilia"
       }
     ],
     "mediumClues": [
@@ -1677,6 +2087,22 @@
         "clueHint": "Squire",
         "location": "Falador Castle Courtyard"
       },
+      {
+        "type": "Music",
+        "clueHint": "I'd like to hear some music. Come and see me on the bridge in Falador Park, and play: <some music>",
+        "location": "Falador Park",
+        "solution": "Play <some music> for Cecilia"
+      }
+    ],
+    "hardClues": [
+      {
+        "type": "Music",
+        "clueHint": "I'd like to hear some music. Come and see me on the bridge in Falador Park, and play: <some music>",
+        "location": "Falador Park",
+        "solution": "Play <some music> for Cecilia"
+      }
+    ],
+    "eliteClues": [
       {
         "type": "Music",
         "clueHint": "I'd like to hear some music. Come and see me on the bridge in Falador Park, and play: <some music>",
@@ -1814,6 +2240,14 @@
         "location": "",
         "solution": "Top floor of the manor."
       }
+    ],
+    "mediumClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "06 degrees 58 minutes north, 21 degrees 16 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
     ]
   },
   {
@@ -1839,6 +2273,14 @@
         "type": "Map",
         "clueHint": "https://oldschool.runescape.wiki/images/3/36/Map_clue_Champions_guild.png?3bdf1",
         "location": "Locate the single tree that is west of the Champions' Guild, outside Varrock. Dig two squares to the east of it.",
+        "itemsRequired": ["Spade"]
+      }
+    ],
+    "mediumClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "05 degrees 43 minutes north, 23 degrees 05 minutes east",
+        "location": "",
         "itemsRequired": ["Spade"]
       }
     ]
@@ -1915,6 +2357,14 @@
         "location": "South-east Varrock mine. Dig one square west of the small fern.",
         "itemsRequired": ["Spade"]
       }
+    ],
+    "mediumClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "06 degrees 41 minutes north, 27 degrees 15 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
     ]
   },
   {
@@ -1939,6 +2389,18 @@
         "clueHint": "The dead, red dragon watches over this chest. He must really dig the view.",
         "location": "Search the chest underneath the Red Dragon's head in the Exam Centre.",
         "solution": "Kill a barbarian in Barbarian Village or Barbarian Outpost to receive the key."
+      }
+    ]
+  },
+  {
+    "x": 35,
+    "y": 11,
+    "mediumClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "07 degrees 05 minutes north, 30 degrees 56 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -2109,6 +2571,30 @@
     ]
   },
   {
+    "x": 26,
+    "y": 12,
+    "mediumClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "04 degrees 13 minutes north, 12 degrees 45 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 27,
+    "y": 12,
+    "mediumClues": [
+      {
+        "type": "Map",
+        "clueHint": "https://oldschool.runescape.wiki/images/8/8e/Map_clue_hobgoblin_peninsula.png?aba92",
+        "location": "",
+        "solution": "West of the Crafting Guild. Dig north of the sandpile at the tip of the peninsula."
+      }
+    ]
+  },
+  {
     "x": 28,
     "y": 12,
     "easyClues": [
@@ -2268,6 +2754,18 @@
     ]
   },
   {
+    "x": 35,
+    "y": 12,
+    "mediumClues": [
+      {
+        "type": "Map",
+        "clueHint": "https://oldschool.runescape.wiki/images/3/31/Map_clue_Mort_Myre.png?8ad0b",
+        "location": "",
+        "solution": "South of the path to Mort'ton."
+      }
+    ]
+  },
+  {
     "x": 37,
     "y": 12,
     "mediumClues": [
@@ -2275,6 +2773,19 @@
         "type": "Challenge Scroll",
         "clueHint": "Strange Old Man",
         "location": "Digging in the Barrows mounds."
+      }
+    ]
+  },
+  {
+    "x": 20,
+    "y": 13,
+    "hardClues": [],
+    "mediumClues": [
+      {
+        "type": "Map",
+        "clueHint": "https://oldschool.runescape.wiki/images/5/51/Map_clue_Lava_chaos_altar.png?2c13c",
+        "location": "",
+        "solution": "By the entrance to the Ourania Cave."
       }
     ]
   },
@@ -2322,6 +2833,30 @@
         "clueHint": "Find a crate close to the monks that like to paaarty!",
         "location": "",
         "solution": "The crate is in the east side of the Kandarin Monastery."
+      },
+      {
+        "type": "Map",
+        "clueHint": "https://oldschool.runescape.wiki/images/c/cb/Map_clue_Clocktower.png?7fd42",
+        "location": "",
+        "solution": "Search the crate by the Clock Tower, south-west of East Ardougne."
+      }
+    ]
+  },
+  {
+    "x": 23,
+    "y": 13,
+    "mediumClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "02 degrees 50 minutes north, 06 degrees 20 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      },
+      {
+        "type": "Map",
+        "clueHint": "https://oldschool.runescape.wiki/images/8/82/Map_clue_Tower_of_Life.png?99b21",
+        "location": "",
+        "solution": "Just south of East Ardougne (straight south of town square), north of the Tower of Life, near the Necromancer Tower. Dig two spaces north of the smaller crate that Bonafido is leaning on."
       }
     ]
   },
@@ -2333,7 +2868,13 @@
         "type": "Challenge Scroll",
         "clueHint": "Sir Percival",
         "location": "Blow the Holy Grail magic whistle to enter the Fisher Realm, or enter from fairy code B*J*R",
-        "itemsRequired": ["Magic Whistle", " Dramen Staff"]
+        "itemsRequired": ["Magic Whistle", "Dramen Staff"]
+      },
+      {
+        "type": "Coordinates",
+        "clueHint": "01 degrees 26 minutes north, 08 degrees 01 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -2346,6 +2887,35 @@
         "clueHint": "Speak to Hajedy.",
         "location": "",
         "solution": "Hajedy is found by the cart, located just south of the Brimhaven docks."
+      }
+    ]
+  },
+  {
+    "x": 26,
+    "y": 13,
+    "mediumClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Jump for joy in the TzHaar sword shop. Shrug before you talk to me.",
+        "location": "",
+        "alternateChunks": [
+          {
+            "x": 26,
+            "y": 14,
+            "notes": "TzHaar fight pits can be accessed from either chunk."
+          }
+        ],
+        "itemsRequired": [
+          "Steel Longsword",
+          "Blue d'hide Body",
+          "Mystic Gloves"
+        ]
+      },
+      {
+        "type": "Coordinates",
+        "clueHint": "02 degrees 16 minutes north, 12 degrees 07 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -2377,6 +2947,12 @@
         "alternateChunks": [
           { "x": 28, "y": 13, "notes": "Taria can go between chunks." }
         ]
+      },
+      {
+        "type": "Map",
+        "clueHint": "https://oldschool.runescape.wiki/images/d/d0/Map_clue_Chemist_house.png?efe67",
+        "location": "",
+        "solution": "Just west of the Chemist's house in Rimmington. South of Falador, west of Port Sarim."
       }
     ]
   },
@@ -2540,6 +3116,34 @@
         "type": "Challenge Scroll",
         "clueHint": "Wise Old Man",
         "location": "In his house"
+      },
+      {
+        "type": "Emote",
+        "clueHint": "Cry in the Draynor Village jail. Jump for joy before you talk to me.",
+        "location": "",
+        "itemsRequired": [
+          "Adamant Sword",
+          "Adamant Plateskirt",
+          "Sapphire Amulet"
+        ]
+      },
+      {
+        "type": "Map",
+        "clueHint": "https://oldschool.runescape.wiki/images/e/ed/Map_clue_Draynor_willows.png?bb604",
+        "location": "",
+        "solution": "South of Draynor Village bank, by the fishing spot."
+      }
+    ]
+  },
+  {
+    "x": 31,
+    "y": 13,
+    "mediumClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "02 degrees 48 minutes north, 22 degrees 30 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -2649,6 +3253,12 @@
         "type": "Challenge Scroll",
         "clueHint": "Father Aereck",
         "location": "Found in the church in Lumbridge."
+      },
+      {
+        "type": "Cipher",
+        "clueHint": "HQNM LZM STSNQ",
+        "location": "Lumbridge",
+        "solution": "Iron Man tutor"
       }
     ]
   },
@@ -2761,6 +3371,28 @@
     ]
   },
   {
+    "x": 20,
+    "y": 14,
+    "mediumClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Think in the centre of the Observatory. Spin before you talk to me.",
+        "location": "",
+        "itemsRequired": [
+          "Mithril Chainbody",
+          "Green d'hide Chaps",
+          "Ruby Amulet"
+        ]
+      },
+      {
+        "type": "Coordinates",
+        "clueHint": "00 degrees 05 minutes south, 01 degrees 13 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
     "x": 21,
     "y": 14,
     "mediumClues": [
@@ -2800,6 +3432,18 @@
     ]
   },
   {
+    "x": 24,
+    "y": 14,
+    "mediumClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "00 degrees 18 minutes south, 09 degrees 28 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
     "x": 25,
     "y": 14,
     "mediumClues": [
@@ -2823,6 +3467,29 @@
     ]
   },
   {
+    "x": 26,
+    "y": 14,
+    "mediumClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Jump for joy in the TzHaar sword shop. Shrug before you talk to me.",
+        "location": "",
+        "itemsRequired": [
+          "Steel Longsword",
+          "Blue d'hide Body",
+          "Mystic Gloves"
+        ],
+        "alternateChunks": [
+          {
+            "x": 26,
+            "y": 13,
+            "notes": "TzHaar fight pits can be accessed from either chunk."
+          }
+        ]
+      }
+    ]
+  },
+  {
     "x": 27,
     "y": 14,
     "mediumClues": [
@@ -2831,6 +3498,24 @@
         "clueHint": "Halt Us",
         "location": "The owner of the banana plantation on Musa Point (Karamja).",
         "solution": "Luthas"
+      },
+      {
+        "type": "Coordinates",
+        "clueHint": "00 degrees 13 minutes south, 13 degrees 58 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 28,
+    "y": 14,
+    "mediumClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "00 degrees 31 minutes south, 17 degrees 43 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -2905,6 +3590,12 @@
         "clueHint": "Probably filled with wizards socks.",
         "location": "",
         "solution": "Kill one of the wizards for the key. Search the drawers in the basement of the Wizards' Tower south of Draynor Village."
+      },
+      {
+        "type": "Cipher",
+        "clueHint": "USBJCPSO",
+        "location": "The 2nd floor of the Wizards' Tower",
+        "solution": "Wizard Traiborn"
       }
     ]
   },
@@ -2924,6 +3615,20 @@
         "location": "",
         "solution": "Father Urhney's house is found in the western end of the Lumbridge Swamp."
       }
+    ],
+    "mediumClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Dance in the dark caves beneath Lumbridge Swamp. Blow a kiss before you talk to me.",
+        "location": "",
+        "itemsRequired": ["Air Staff", "Bronze Full Helm", "Amulet of Power"]
+      },
+      {
+        "type": "Coordinates",
+        "clueHint": "00 degrees 20 minutes south, 23 degrees 15 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
     ]
   },
   {
@@ -2942,6 +3647,12 @@
         "type": "Challenge Scroll",
         "clueHint": "Fairy Godfather",
         "location": "Zanaris"
+      },
+      {
+        "type": "Coordinates",
+        "clueHint": "00 degrees 30 minutes north, 24 degrees 16 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -2991,6 +3702,18 @@
     ]
   },
   {
+    "x": 20,
+    "y": 15,
+    "mediumClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Yawn in the Castle Wars lobby. Shrug before you talk to me.",
+        "location": "",
+        "itemsRequired": ["Mithril Scimitar", "Ruby Amulet", "Team Cape"]
+      }
+    ]
+  },
+  {
     "x": 22,
     "y": 15,
     "easyClues": [
@@ -3024,6 +3747,12 @@
         "clueHint": "In a town where wizards are known to gather, search upstairs in a large house to the north.",
         "location": "Go upstairs in the house and search the chest.",
         "solution": "Travel to Yanille and head to the house north-west of the bank. Kill a man nearby to receive a key."
+      },
+      {
+        "type": "Emote",
+        "clueHint": "Jump for joy in Yanille bank. Dance a jig before you talk to me.",
+        "location": "",
+        "itemsRequired": ["Brown Apron", "Adamant Med Helm", "Snakeskin Chaps"]
       }
     ]
   },
@@ -3041,6 +3770,12 @@
         "clueHint": "Speak to Hazelmere.",
         "location": "",
         "solution": "Hazelmere is located east of Yanille. The code C*L*S will take you directly next to his house."
+      },
+      {
+        "type": "Coordinates",
+        "clueHint": "01 degrees 35 minutes south, 07 degrees 28 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -3053,6 +3788,18 @@
         "clueHint": "In a village made of bamboo, look for some crates under one of the houses.",
         "location": "",
         "solution": "Search the crate by the house at the northern point of the broken jungle fence in Tai Bwo Wannai."
+      }
+    ]
+  },
+  {
+    "x": 27,
+    "y": 15,
+    "mediumClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "01 degrees 18 minutes south, 14 degrees 15 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -3089,6 +3836,38 @@
         "solution": "Talk to Shantay at the Shantay Pass south of Al Kharid.",
         "location": "Shantay Pass"
       }
+    ],
+    "mediumClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Dance a jig under Shantay's Awning. Bow before you talk to me.",
+        "location": "",
+        "itemsRequired": ["Bruise Blue Snelm", "Air Staff", "Bronze Sq Shield"]
+      }
+    ]
+  },
+  {
+    "x": 36,
+    "y": 15,
+    "mediumClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "02 degrees 43 minutes south, 33 degrees 26 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 18,
+    "y": 16,
+    "mediumClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "03 degrees 07 minutes south, 03 degrees 41 minutes west",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
     ]
   },
   {
@@ -3105,6 +3884,34 @@
         "type": "Challenge Scroll",
         "clueHint": "Gabooty",
         "location": "Centre of Tai Bwo Wannai."
+      },
+      {
+        "type": "Emote",
+        "clueHint": "Beckon in Tai Bwo Wannai. Clap before you talk to me.",
+        "location": "",
+        "itemsRequired": [
+          "Green d'hide Chaps",
+          "Ring of Dueling",
+          "Mithril Med Helm"
+        ]
+      }
+    ]
+  },
+  {
+    "x": 26,
+    "y": 16,
+    "mediumClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "03 degrees 35 minutes south, 13 degrees 35 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      },
+      {
+        "type": "Coordinates",
+        "clueHint": "04 degrees 00 minutes south, 12 degrees 46 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -3117,6 +3924,18 @@
         "clueHint": "This crate is mine, all mine, even if it is in the middle of the desert.",
         "location": "",
         "solution": "Centre of the Desert Mining Camp. Search the crates."
+      }
+    ]
+  },
+  {
+    "x": 22,
+    "y": 17,
+    "mediumClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "05 degrees 20 minutes south, 04 degrees 28 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -3140,6 +3959,12 @@
         "type": "Challenge Scroll",
         "clueHint": "Ali the Kebab seller",
         "location": "Pollnivneach"
+      },
+      {
+        "type": "Cipher",
+        "clueHint": "BMJ UIF LFCBC TFMMFS",
+        "location": "Pollnivneach",
+        "solution": "Ali the Kebab seller"
       }
     ]
   },
@@ -3151,6 +3976,18 @@
         "type": "Challenge Scroll",
         "clueHint": "Brother Tranquility",
         "location": "Mos Le'Harmless"
+      }
+    ]
+  },
+  {
+    "x": 22,
+    "y": 18,
+    "mediumClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "08 degrees 11 minutes south, 04 degrees 48 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
