@@ -12,6 +12,36 @@
     ]
   },
   {
+    "x": 28,
+    "y": 2,
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "24 degrees 22 minutes north, 17 degrees 15 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      },
+      {
+        "type": "Coordinates",
+        "clueHint": "25 degrees 03 minutes north, 17 degrees 05 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 29,
+    "y": 2,
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "24 degrees 58 minutes north, 18 degrees 43 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
     "x": 31,
     "y": 2,
     "mediumClues": [
@@ -19,6 +49,32 @@
         "type": "Challenge Scroll",
         "clueHint": "Mandrith",
         "location": "Outside the Wilderness Resource Area gate."
+      }
+    ],
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "24 degrees 56 minutes north, 22 degrees 28 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      },
+      {
+        "type": "Coordinates",
+        "clueHint": "25 degrees 03 minutes north, 23 degrees 24 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 33,
+    "y": 2,
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "24 degrees 24 minutes north, 26 degrees 24 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -103,6 +159,68 @@
         "location": "",
         "solution": "On Miscellania, one of the Fremennik Isles, just east of the castle."
       }
+    ],
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "23 degrees 03 minutes north, 02 degrees 01 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 22,
+    "y": 3,
+    "hardClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Sequin Dirge",
+        "location": "",
+        "solution": "Queen Sigrid"
+      }
+    ]
+  },
+  {
+    "x": 25,
+    "y": 3,
+    "hardClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Baker Climb",
+        "location": "",
+        "solution": "Brambickle"
+      }
+    ]
+  },
+  {
+    "x": 29,
+    "y": 3,
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "21 degrees 24 minutes north, 17 degrees 54 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      },
+      {
+        "type": "Coordinates",
+        "clueHint": "22 degrees 35 minutes north, 19 degrees 18 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 33,
+    "y": 3,
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "22 degrees 45 minutes north, 26 degrees 33 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
     ]
   },
   {
@@ -112,6 +230,14 @@
       {
         "type": "Coordinates",
         "clueHint": "23 degrees 01 minutes north, 41 degrees 33 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ],
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "23 degrees 00 minutes north, 41 degrees 33 minutes east",
         "location": "",
         "itemsRequired": ["Spade"]
       }
@@ -129,6 +255,18 @@
           { "x": 2, "y": 3, "notes": "Uri may show up in either chunk." }
         ],
         "itemsRequired": ["Adamant Warhammer", "Mithril Boots", "Ring of Life"]
+      }
+    ]
+  },
+  {
+    "x": 4,
+    "y": 4,
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "19 degrees 24 minutes north, 30 degrees 37 minutes west",
+        "location": "",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -207,6 +345,54 @@
     ]
   },
   {
+    "x": 28,
+    "y": 4,
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "20 degrees 33 minutes north, 15 degrees 48 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 31,
+    "y": 4,
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "20 degrees 05 minutes north, 21 degrees 52 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 32,
+    "y": 4,
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "19 degrees 43 minutes north, 25 degrees 07 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 40,
+    "y": 4,
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "20 degrees 45 minutes north, 41 degrees 35 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
     "x": 1,
     "y": 5,
     "mediumClues": [
@@ -267,6 +453,90 @@
     ]
   },
   {
+    "x": 24,
+    "y": 5,
+    "hardClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Dr Warden Funk",
+        "location": "",
+        "solution": "Drunken Dwarf"
+      },
+      {
+        "type": "Anagram",
+        "clueHint": "He Do Pose. It Is Cultrrl, Mk?",
+        "location": "",
+        "solution": "Riki the sculptor's model"
+      },
+      {
+        "type": "Coordinates",
+        "clueHint": "17 degrees 50 minutes north, 08 degrees 30 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 28,
+    "y": 5,
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "18 degrees 22 minutes north, 16 degrees 33 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 30,
+    "y": 5,
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "18 degrees 50 minutes north, 20 degrees 26 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 31,
+    "y": 5,
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "19 degrees 09 minutes north, 21 degrees 58 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 33,
+    "y": 5,
+    "hardClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "19 degrees 00 minutes north, 27 degrees 13 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 5,
+    "y": 6,
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "16 degrees 48 minutes north, 30 degrees 01 minutes west",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
     "x": 7,
     "y": 6,
     "easyClues": [
@@ -287,6 +557,24 @@
         "clueHint": "Talk to Charles at Port Piscarilius.",
         "location": "",
         "solution": "Charles is found by Veos' ship in Port Piscarilius."
+      }
+    ]
+  },
+  {
+    "x": 18,
+    "y": 6,
+    "hardClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Arr! So I am a crust, and?",
+        "location": "",
+        "solution": "Ramara du Croissant"
+      },
+      {
+        "type": "Coordinates",
+        "clueHint": "16 degrees 45 minutes north, 03 degrees 05 minutes west",
+        "location": "",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -313,6 +601,72 @@
       {
         "type": "Coordinates",
         "clueHint": "15 degrees 22 minutes north, 07 degrees 31 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 26,
+    "y": 6,
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "16 degrees 31 minutes north, 12 degrees 54 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 27,
+    "y": 6,
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "16 degrees 03 minutes north, 14 degrees 07 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 29,
+    "y": 6,
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "16 degrees 43 minutes north, 19 degrees 13 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 31,
+    "y": 6,
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "16 degrees 07 minutes north, 22 degrees 45 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 33,
+    "y": 6,
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "16 degrees 35 minutes north, 27 degrees 01 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      },
+      {
+        "type": "Coordinates",
+        "clueHint": "16 degrees 43 minutes north, 26 degrees 56 minutes east",
         "location": "",
         "itemsRequired": ["Spade"]
       }
@@ -443,6 +797,18 @@
     ]
   },
   {
+    "x": 30,
+    "y": 7,
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "13 degrees 46 minutes north, 21 degrees 01 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
     "x": 5,
     "y": 8,
     "mediumClues": [
@@ -488,6 +854,14 @@
             "notes": "Konoo will path around and sometimes enter either chunk."
           }
         ]
+      }
+    ],
+    "hardClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "My Mangle Lal",
+        "location": "",
+        "solution": "Lammy Langle"
       }
     ]
   },
@@ -681,6 +1055,14 @@
         "location": "",
         "itemsRequired": ["Spade"]
       }
+    ],
+    "hardClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Rat Mat Within",
+        "location": "",
+        "solution": "Martin Thwait"
+      }
     ]
   },
   {
@@ -691,6 +1073,14 @@
         "type": "Challenge Scroll",
         "clueHint": "Dark mage",
         "location": "The Abyss"
+      }
+    ],
+    "hardClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Dekagram",
+        "location": "",
+        "solution": "Dark mage"
       }
     ]
   },
@@ -730,6 +1120,18 @@
       {
         "type": "Coordinates",
         "clueHint": "12 degrees 28 minutes north, 34 degrees 37 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 4,
+    "y": 9,
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "10 degrees 03 minutes north, 32 degrees 13 minutes west",
         "location": "",
         "itemsRequired": ["Spade"]
       }
@@ -792,6 +1194,14 @@
         "clueHint": "11 degrees 05 minutes north, 00 degrees 45 minutes west",
         "location": "",
         "itemsRequired": ["Spade"]
+      }
+    ],
+    "hardClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "C On Game Hoc",
+        "location": "",
+        "solution": "Gnome Coach"
       }
     ]
   },
@@ -929,6 +1339,18 @@
     ]
   },
   {
+    "x": 26,
+    "y": 9,
+    "hardClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "An Paint Tonic",
+        "location": "",
+        "solution": "Captain Ninto"
+      }
+    ]
+  },
+  {
     "x": 27,
     "y": 9,
     "easyClues": [
@@ -1013,7 +1435,8 @@
         "clueHint": "Oracle",
         "location": "The peak of Ice Mountain west of Edgeville."
       }
-    ]
+    ],
+    "hardClues": []
   },
   {
     "x": 30,
@@ -1049,6 +1472,14 @@
         "clueHint": "Cheer in the Edgeville general store. Dance before you talk to me.",
         "location": "",
         "itemsRequired": ["Brown Apron", "Leather Boots", "Leather Gloves"]
+      }
+    ],
+    "hardClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Veil Veda",
+        "location": "",
+        "solution": "Evil Dave"
       }
     ]
   },
@@ -1145,6 +1576,14 @@
         "location": "",
         "solution": "It's in the western building at the Rag and Bone Man I's site near the limestone quarry east of Varrock. Dig south of the box of bones in the smaller building.",
         "itemsRequired": ["Spade"]
+      }
+    ],
+    "hardClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Land Doomd",
+        "location": "",
+        "solution": "Odd Old Man"
       }
     ]
   },
@@ -1598,6 +2037,21 @@
           }
         ]
       }
+    ],
+    "hardClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Copper Ore Crypts",
+        "location": "",
+        "solution": "Prospector Percy",
+        "alternateChunks": [
+          {
+            "x": 29,
+            "y": 11,
+            "notes": "Motherlode can be accessed from both chunks."
+          }
+        ]
+      }
     ]
   },
   {
@@ -1809,6 +2263,18 @@
         "clueHint": "Beckon in the Digsite, near the eastern winch. Bow before you talk to me.",
         "location": "",
         "itemsRequired": ["Green Hat", "Snakeskin Boots", "Iron Pickaxe"]
+      }
+    ]
+  },
+  {
+    "x": 35,
+    "y": 10,
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "08 degrees 03 minutes north, 31 degrees 16 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -2195,6 +2661,21 @@
           }
         ]
       }
+    ],
+    "hardClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Copper Ore Crypts",
+        "location": "",
+        "solution": "Prospector Percy",
+        "alternateChunks": [
+          {
+            "x": 29,
+            "y": 10,
+            "notes": "Motherlode can be accessed from both chunks."
+          }
+        ]
+      }
     ]
   },
   {
@@ -2402,6 +2883,14 @@
         "location": "",
         "itemsRequired": ["Spade"]
       }
+    ],
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "05 degrees 37 minutes north, 31 degrees 15 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
     ]
   },
   {
@@ -2424,6 +2913,18 @@
             "notes": "Eluned will be here pre-completion of Song of the Elves."
           }
         ]
+      }
+    ]
+  },
+  {
+    "x": 18,
+    "y": 12,
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "04 degrees 41 minutes north, 03 degrees 09 minutes west",
+        "location": "",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -2539,6 +3040,14 @@
         "location": "",
         "solution": "Inside Noella's house north of the market."
       }
+    ],
+    "hardClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "A Zen She",
+        "location": "",
+        "solution": "Zenesha"
+      }
     ]
   },
   {
@@ -2577,6 +3086,14 @@
       {
         "type": "Coordinates",
         "clueHint": "04 degrees 13 minutes north, 12 degrees 45 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ],
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "03 degrees 18 minutes north, 12 degrees 31 minutes east",
         "location": "",
         "itemsRequired": ["Spade"]
       }
@@ -2774,6 +3291,38 @@
         "clueHint": "Strange Old Man",
         "location": "Digging in the Barrows mounds."
       }
+    ],
+    "hardClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Dragons Lament",
+        "location": "",
+        "solution": "Strange Old Man"
+      }
+    ]
+  },
+  {
+    "x": 40,
+    "y": 12,
+    "hardClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Darn Drake",
+        "location": "",
+        "solution": "Daer Krand"
+      }
+    ]
+  },
+  {
+    "x": 16,
+    "y": 13,
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "01 degrees 24 minutes north, 08 degrees 05 minutes west",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
     ]
   },
   {
@@ -2840,6 +3389,14 @@
         "location": "",
         "solution": "Search the crate by the Clock Tower, south-west of East Ardougne."
       }
+    ],
+    "hardClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Motherboard",
+        "location": "",
+        "solution": "Brother Omad"
+      }
     ]
   },
   {
@@ -2873,6 +3430,14 @@
       {
         "type": "Coordinates",
         "clueHint": "01 degrees 26 minutes north, 08 degrees 01 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ],
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "02 degrees 48 minutes north, 08 degrees 05 minutes east",
         "location": "",
         "itemsRequired": ["Spade"]
       }
@@ -3133,6 +3698,20 @@
         "location": "",
         "solution": "South of Draynor Village bank, by the fishing spot."
       }
+    ],
+    "hardClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Slide Woman",
+        "location": "",
+        "solution": "Wise Old Man"
+      },
+      {
+        "type": "Coordinates",
+        "clueHint": "01 degrees 30 minutes north, 20 degrees 01 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
     ]
   },
   {
@@ -3260,6 +3839,20 @@
         "location": "Lumbridge",
         "solution": "Iron Man tutor"
       }
+    ],
+    "hardClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Blue Grim Guided",
+        "location": "",
+        "solution": "Lumbridge Guide"
+      },
+      {
+        "type": "Anagram",
+        "clueHint": "Do Say More",
+        "location": "",
+        "solution": "Doomsayer"
+      }
     ]
   },
   {
@@ -3298,6 +3891,18 @@
         "clueHint": "Ace Match Elm",
         "location": "North of the glider in Al Kharid, outside of the town. Camulet not required.",
         "solution": "Cam the Camel"
+      },
+      {
+        "type": "Anagram",
+        "clueHint": "Me Am The Calc",
+        "location": "",
+        "solution": "Cam the Camel"
+      },
+      {
+        "type": "Anagram",
+        "clueHint": "Them Cal Came",
+        "location": "",
+        "solution": "Cam the Camel"
       }
     ]
   },
@@ -3310,6 +3915,36 @@
         "clueHint": "Someone watching the fights in the Duel Arena is your next destination.",
         "location": "",
         "solution": "Talk to Jeed, found on the upper floors, at the Duel Arena."
+      }
+    ]
+  },
+  {
+    "x": 35,
+    "y": 13,
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "02 degrees 39 minutes north, 29 degrees 58 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 37,
+    "y": 13,
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "02 degrees 48 minutes north, 34 degrees 33 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      },
+      {
+        "type": "Coordinates",
+        "clueHint": "02 degrees 58 minutes north, 34 degrees 30 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -3333,6 +3968,14 @@
             "notes": "After completion of the Song of the Elves quest, she moves to Prifddinas."
           }
         ]
+      }
+    ],
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "00 degrees 00 minutes north, 07 degrees 13 minutes west",
+        "location": "",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -3412,6 +4055,14 @@
         "clueHint": "Spirit Tree",
         "location": "Tree Gnome Village"
       }
+    ],
+    "hardClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "By Look",
+        "location": "",
+        "solution": "Bolkoy"
+      }
     ]
   },
   {
@@ -3449,7 +4100,7 @@
     "mediumClues": [
       {
         "type": "Challenge Scroll",
-        "clueHint": "Cap'n Izzy No-Beard's parrot",
+        "clueHint": "'s parrot",
         "location": "Brimhaven"
       },
       {
@@ -3463,6 +4114,14 @@
         "clueHint": "Speak to Kangai Mau.",
         "location": "",
         "solution": "Kangai Mau is found in the Shrimp and Parrot in Brimhaven."
+      }
+    ],
+    "hardClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "O Birdz A Zany En Pc",
+        "location": "",
+        "solution": "Cap'n Izzy No-Beard"
       }
     ]
   },
@@ -3540,6 +4199,14 @@
           { "x": 20, "y": 10, "notes": "Refer to \"location\"" }
         ]
       }
+    ],
+    "hardClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Red Art Tans",
+        "location": "",
+        "solution": "Trader Stan"
+      }
     ]
   },
   {
@@ -3597,6 +4264,14 @@
         "location": "The 2nd floor of the Wizards' Tower",
         "solution": "Wizard Traiborn"
       }
+    ],
+    "hardClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Profs Lose Wrong Pie",
+        "location": "",
+        "solution": "Professor Onglewip"
+      }
     ]
   },
   {
@@ -3653,6 +4328,14 @@
         "clueHint": "00 degrees 30 minutes north, 24 degrees 16 minutes east",
         "location": "",
         "itemsRequired": ["Spade"]
+      }
+    ],
+    "hardClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "I Faffy Run",
+        "location": "",
+        "solution": "Fairy Nuff"
       }
     ]
   },
@@ -3871,6 +4554,42 @@
     ]
   },
   {
+    "x": 20,
+    "y": 16,
+    "hardClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Gulag Run",
+        "location": "",
+        "solution": "Uglug Nar"
+      }
+    ]
+  },
+  {
+    "x": 21,
+    "y": 16,
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "04 degrees 03 minutes south, 03 degrees 11 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 22,
+    "y": 16,
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "04 degrees 05 minutes south, 04 degrees 24 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
     "x": 25,
     "y": 16,
     "mediumClues": [
@@ -3916,6 +4635,30 @@
     ]
   },
   {
+    "x": 28,
+    "y": 16,
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "04 degrees 16 minutes south, 16 degrees 16 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 31,
+    "y": 16,
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "03 degrees 45 minutes south, 22 degrees 45 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
     "x": 33,
     "y": 16,
     "mediumClues": [
@@ -3952,6 +4695,42 @@
     ]
   },
   {
+    "x": 25,
+    "y": 17,
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "05 degrees 50 minutes south, 10 degrees 05 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 27,
+    "y": 17,
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "06 degrees 11 minutes south, 15 degrees 07 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 31,
+    "y": 17,
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "06 degrees 00 minutes south, 21 degrees 48 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
     "x": 34,
     "y": 17,
     "mediumClues": [
@@ -3977,6 +4756,14 @@
         "clueHint": "Brother Tranquility",
         "location": "Mos Le'Harmless"
       }
+    ],
+    "hardClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Quit Horrible Tyrant",
+        "location": "",
+        "solution": "Brother Tranquility"
+      }
     ]
   },
   {
@@ -3988,6 +4775,54 @@
         "clueHint": "08 degrees 11 minutes south, 04 degrees 48 minutes east",
         "location": "",
         "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 25,
+    "y": 18,
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "08 degrees 26 minutes south, 10 degrees 28 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 26,
+    "y": 18,
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "07 degrees 43 minutes south, 12 degrees 26 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 28,
+    "y": 18,
+    "hardClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "08 degrees 05 minutes south, 15 degrees 56 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 35,
+    "y": 18,
+    "hardClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "I Eat Its Chart Hints Do U",
+        "location": "",
+        "solution": "Shiratti the Custodian"
       }
     ]
   },
@@ -4024,6 +4859,14 @@
         "type": "Challenge Scroll",
         "clueHint": "Awowogei",
         "location": "Ape Atoll"
+      }
+    ],
+    "hardClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Woo An Egg Kiwi",
+        "location": "",
+        "solution": "King Awowogei"
       }
     ]
   }
