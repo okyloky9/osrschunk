@@ -1206,7 +1206,7 @@
         "itemsRequired": ["Mithril plateskirt", "Maple longbow"]
       }
     ],
-    "hardClues": [
+    "eliteClues": [
       {
         "type": "Anagram",
         "clueHint": "Cool Nerd",
@@ -4196,18 +4196,6 @@
         "type": "Anagram",
         "clueHint": "Ace Match Elm",
         "location": "North of the glider in Al Kharid, outside of the town. Camulet not required.",
-        "solution": "Cam the Camel"
-      },
-      {
-        "type": "Anagram",
-        "clueHint": "Me Am The Calc",
-        "location": "",
-        "solution": "Cam the Camel"
-      },
-      {
-        "type": "Anagram",
-        "clueHint": "Them Cal Came",
-        "location": "",
         "solution": "Cam the Camel"
       }
     ],
