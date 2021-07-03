@@ -48,3 +48,17 @@ export function createClassString(object: {
 export function capitalizeFirstLetter(str: string): string {
   return `${str.charAt(0).toUpperCase()}${str.substr(1)}`;
 }
+
+export function memo(callback: Function) {
+  const cache = new Map();
+
+  return (...args: any[]) => {
+    const key = JSON.stringify(args);
+    if (cache.has(key)) return cache.get(key);
+
+    const value = callback(...args);
+    cache.set(key, value);
+
+    return value;
+  };
+}
