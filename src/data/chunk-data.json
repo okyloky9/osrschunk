@@ -4551,6 +4551,14 @@
         "location": "",
         "solution": "Search the crate in the Lumbridge basement."
       }
+    ],
+    "eliteClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Majors Lava Bads Air",
+        "location": "North-east Dorgesh-Kaan, middle floor, just south of the house with the quest symbol. (You must complete Another Slice of H.A.M. before attempting).",
+        "solution": "Ambassador Alvijar"
+      }
     ]
   },
   {
@@ -4760,6 +4768,14 @@
         "type": "Challenge Scroll",
         "clueHint": "Oronwen",
         "location": "Crafting store in Lletya"
+      }
+    ],
+    "eliteClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "No Owner",
+        "location": "Lletya Seamstress shop in Lletya.",
+        "solution": "Oronwen"
       }
     ]
   },
