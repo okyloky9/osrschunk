@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactTooltip from 'react-tooltip';
 
+import { ClueIcon, ItemIcon } from '.';
 import { Clue, ClueDifficulty } from '../models';
-import ClueIcon from './ClueIcon';
 
 const ClueTable: React.FC<{
   clues: Clue[] | undefined;
@@ -174,7 +174,9 @@ const ClueTable: React.FC<{
                         disabled={copied}
                       />
                     ) : (
-                      itemsRequired?.join(', ')
+                      itemsRequired?.map((item, index) => (
+                        <ItemIcon item={item} key={index} />
+                      ))
                     )}
                   </td>
 
