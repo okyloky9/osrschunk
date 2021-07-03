@@ -372,6 +372,14 @@
         "location": "",
         "solution": "Talk to Mawnis Burowgar in Neitiznot."
       }
+    ],
+    "eliteClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Snakes So I Sail",
+        "location": "Neitiznot",
+        "solution": "Lisse Isaakson"
+      }
     ]
   },
   {
@@ -619,6 +627,21 @@
         "location": "",
         "itemsRequired": ["Spade"]
       }
+    ],
+    "eliteClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Unleash Night Mist",
+        "location": "Rellekka",
+        "alternateChunks": [
+          {
+            "x": 23,
+            "y": 7,
+            "notes": "Sigli will path around and sometimes enter either chunk."
+          }
+        ],
+        "solution": "Sigli the Huntsman"
+      }
     ]
   },
   {
@@ -761,6 +784,14 @@
         "location": "",
         "solution": "Kill a hill giant to obtain a the key. Search the crate on the 3rd floor of Osten's shop in Shayzien."
       }
+    ],
+    "eliteClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Our Own Needs",
+        "location": "Infirmary in the Shayzien Encampment.",
+        "solution": "Nurse Wooned"
+      }
     ]
   },
   {
@@ -863,6 +894,25 @@
         "clueHint": "https://oldschool.runescape.wiki/images/4/4c/Map_clue_Lighthouse_peninsula.png?eaa10",
         "location": "",
         "solution": "Road between Rellekka and the Lighthouse."
+      }
+    ]
+  },
+  {
+    "x": 23,
+    "y": 7,
+    "eliteClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Unleash Night Mist",
+        "location": "Rellekka",
+        "alternateChunks": [
+          {
+            "x": 23,
+            "y": 6,
+            "notes": "Sigli will path around and sometimes enter either chunk."
+          }
+        ],
+        "solution": "Sigli the Huntsman"
       }
     ]
   },
@@ -4840,6 +4890,14 @@
         "clueHint": "https://oldschool.runescape.wiki/images/f/f2/Map_clue_Yanille_anvil.png?253bb",
         "location": "South of Yanille bank. Behind the house with an anvil.",
         "itemsRequired": ["Spade"]
+      }
+    ],
+    "eliteClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Or Zinc Fumes Ward",
+        "location": "Downstairs in the Wizards' Guild (requires 66 Magic to enter, boosted).",
+        "solution": "Wizard Frumscone"
       }
     ]
   },
