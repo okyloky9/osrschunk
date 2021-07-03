@@ -41,6 +41,21 @@ const ClueTable: React.FC<{
     updateClues([...clues]);
   }
 
+  const clueStepTypes = [
+    'Anagram',
+    'Charlie the Tramp',
+    'Cipher',
+    'Coordinates',
+    'Cryptic',
+    'Emote',
+    'Map',
+    'Music',
+  ];
+
+  if (['Elite', 'Master'].includes(difficulty)) {
+    clueStepTypes.push('Sherlock');
+  }
+
   return (clues && clues.length) || editing ? (
     <>
       <h2>
@@ -86,16 +101,7 @@ const ClueTable: React.FC<{
                         }
                         disabled={copied}
                       >
-                        {[
-                          'Anagram',
-                          'Charlie the Tramp',
-                          'Cipher',
-                          'Coordinates',
-                          'Cryptic',
-                          'Emote',
-                          'Map',
-                          'Music',
-                        ].map((option) => (
+                        {clueStepTypes.map((option) => (
                           <option key={option}>{option}</option>
                         ))}
                       </select>
