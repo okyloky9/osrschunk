@@ -4789,33 +4789,6 @@
         "location": "",
         "itemsRequired": ["Spade"]
       }
-    ],
-    "hardClues": [
-      {
-        "type": "Anagram",
-        "clueHint": "I Faffy Run",
-        "location": "",
-        "solution": "Fairy Nuff"
-      },
-      {
-        "type": "Cryptic",
-        "clueHint": "CKP 0224",
-        "location": "",
-        "solution": "Dig 2 steps south and 2 steps west of the centre of the fairy ring. Fairy Ring Code C*K*P",
-        "itemsRequired": ["Spade"]
-      },
-      {
-        "type": "Cipher",
-        "clueHint": "GBJSZ RVFFO",
-        "location": "",
-        "solution": "Fairy Queen"
-      },
-      {
-        "type": "Cipher",
-        "clueHint": "HCKTA IQFHCVJGT",
-        "location": "",
-        "solution": "Fairy Godfather"
-      }
     ]
   },
   {
