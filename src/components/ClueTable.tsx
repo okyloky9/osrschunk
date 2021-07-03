@@ -88,7 +88,6 @@ const ClueTable: React.FC<{
                       >
                         {[
                           'Anagram',
-                          'Challenge Scroll',
                           'Charlie the Tramp',
                           'Cipher',
                           'Coordinates',
@@ -96,7 +95,6 @@ const ClueTable: React.FC<{
                           'Emote',
                           'Map',
                           'Music',
-                          'Puzzle Box',
                         ].map((option) => (
                           <option key={option}>{option}</option>
                         ))}

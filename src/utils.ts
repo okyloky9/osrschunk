@@ -1,24 +1,12 @@
-import type { Chunk, Clue } from './models';
+import type { Chunk } from './models';
 
 export function clueCountsForChunk(chunk: Chunk | undefined) {
-  function addMediumChallengeScrolls(clues: Clue[] | undefined) {
-    const _clues = clues ? [...clues] : [];
-
-    if (!chunk || !chunk.mediumClues) return _clues;
-
-    _clues.push(
-      ...chunk.mediumClues.filter(({ type }) => type === 'Challenge Scroll')
-    );
-
-    return _clues;
-  }
-
   return {
     beginner: chunk?.beginnerClues?.length || 0,
     easy: chunk?.easyClues?.length || 0,
     medium: chunk?.mediumClues?.length || 0,
-    hard: addMediumChallengeScrolls(chunk?.hardClues).length || 0,
-    elite: addMediumChallengeScrolls(chunk?.eliteClues).length || 0,
+    hard: chunk?.hardClues?.length || 0,
+    elite: chunk?.eliteClues?.length || 0,
     master: chunk?.masterClues?.length || 0,
   };
 }

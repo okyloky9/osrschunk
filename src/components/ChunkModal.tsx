@@ -23,20 +23,6 @@ const ChunkModal: React.FC<{
     } as Chunk);
   }
 
-  function addMediumChallengeScrolls(clues: Clue[] | undefined) {
-    const _clues = clues ? [...clues] : [];
-
-    if (!chunk.mediumClues) return _clues;
-
-    _clues.push(
-      ...chunk.mediumClues
-        .filter(({ type }) => type === 'Challenge Scroll')
-        .map((clue) => ({ ...clue, copied: true }))
-    );
-
-    return _clues;
-  }
-
   return (
     <div id="chunk-modal">
       <h1>
@@ -79,7 +65,7 @@ const ChunkModal: React.FC<{
 
       <div>
         <ClueTable
-          clues={addMediumChallengeScrolls(chunk?.hardClues)}
+          clues={chunk?.hardClues}
           difficulty="Hard"
           updateClues={
             editMode ? (clues: Clue[]) => updateClues('Hard', clues) : undefined
@@ -89,7 +75,7 @@ const ChunkModal: React.FC<{
 
       <div>
         <ClueTable
-          clues={addMediumChallengeScrolls(chunk?.eliteClues)}
+          clues={chunk?.eliteClues}
           difficulty="Elite"
           updateClues={
             editMode
