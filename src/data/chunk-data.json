@@ -107,7 +107,7 @@
         "alternateChunks": [
           { "x": 2, "y": 4, "notes": "Uri may show up in either chunk." }
         ],
-        "itemsRequired": ["Adamant Warhammer", "Mithril Boots", "Ring of Life"]
+        "itemsRequired": ["Adamant warhammer", "Mithril boots", "Ring of life"]
       }
     ]
   },
@@ -311,7 +311,7 @@
         "alternateChunks": [
           { "x": 2, "y": 3, "notes": "Uri may show up in either chunk." }
         ],
-        "itemsRequired": ["Adamant Warhammer", "Mithril Boots", "Ring of Life"]
+        "itemsRequired": ["Adamant warhammer", "Mithril boots", "Ring of life"]
       }
     ]
   },
@@ -352,9 +352,9 @@
         "clueHint": "Yawn in the centre of Arceuus library. Nod your head before you talk to me.",
         "location": "",
         "itemsRequired": [
-          "Blue d'hide Vambraces",
-          "Adamant Boots",
-          "Adamant Dagger"
+          "Blue d'hide vambraces",
+          "Adamant boots",
+          "Adamant dagger"
         ]
       },
       {
@@ -693,9 +693,9 @@
         "clueHint": "Laugh in Jokul's tent in the Mountain Camp. Beware of double agents!",
         "location": "",
         "itemsRequired": [
-          "Rune Full Helm",
-          "Blue d'hide Chaps",
-          "Fire Battlestaff"
+          "Rune full helm",
+          "Blue d'hide chaps",
+          "Fire battlestaff"
         ]
       }
     ]
@@ -739,9 +739,9 @@
         "clueHint": "Yawn in the rogues' general store. Beware of double agents!",
         "location": "",
         "itemsRequired": [
-          "Adamant Sq Shield",
-          "Rune Pickaxe",
-          "Blue d'hide Vambraces"
+          "Adamant sq shield",
+          "Rune pickaxe",
+          "Blue d'hide vambraces"
         ]
       }
     ]
@@ -804,7 +804,7 @@
         "type": "Cryptic",
         "clueHint": "Dig by the Giant's Den entrance, looking out over Lake Molch.",
         "location": "South-east of Lake Molch. Just south of the Shayzien rowboat, outside the dungeon entrance.",
-        "requiredItems": ["Spade"]
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -845,9 +845,9 @@
         "clueHint": "Beckon in the combat ring of Shayzien. Show your anger before you talk to me.",
         "location": "",
         "itemsRequired": [
-          "Adamant Platebody",
-          "Adamant Full Helm",
-          "Adamant Platelegs"
+          "Adamant platebody",
+          "Adamant full helm",
+          "Adamant platelegs"
         ]
       }
     ]
@@ -861,9 +861,9 @@
         "clueHint": "Salute in the centre of the mess hall. Beware of double agents!",
         "location": "",
         "itemsRequired": [
-          "Rune Halberd",
-          "Rune Platebody",
-          "Amulet of Strength"
+          "Rune halberd",
+          "Rune platebody",
+          "Amulet of strength"
         ]
       }
     ]
@@ -923,7 +923,7 @@
         "type": "Emote",
         "clueHint": "Bow at the top of the lighthouse. Beware of double agents!",
         "location": "",
-        "itemsRequired": ["Blue d'hide Body", "Blue d'hide Vambraces"]
+        "itemsRequired": ["Blue d'hide body", "Blue d'hide vambraces"]
       }
     ]
   },
@@ -983,9 +983,9 @@
         "clueHint": "Shrug in the Zamorak temple found in the Eastern Wilderness. Beware of double agents!",
         "location": "",
         "itemsRequired": [
-          "Rune Platelegs",
-          "Iron Platebody",
-          "Blue d'hide Vambraces"
+          "Rune platelegs",
+          "Iron platebody",
+          "Blue d'hide vambraces"
         ]
       }
     ]
@@ -1116,7 +1116,7 @@
         "type": "Emote",
         "clueHint": "Cheer in the Barbarian Agility Arena. Headbang before you talk to me.",
         "location": "",
-        "itemsRequired": ["Steel Platebody", "Maple Shortbow", "Team Cape"]
+        "itemsRequired": ["Steel platebody", "Maple shortbow", "Team cape"]
       }
     ],
     "hardClues": [
@@ -1148,7 +1148,7 @@
         "type": "Emote",
         "clueHint": "Laugh at the crossroads south of the Sinclair Mansion.",
         "location": "South of Sinclair Mansion",
-        "requiredItems": ["Leather Cowl", "Iron Scimitar", "Blue Wizard Robe"]
+        "itemsRequired": ["Leather Cowl", "Iron Scimitar", "Blue Wizard Robe"]
       },
       {
         "type": "Cryptic",
@@ -1313,7 +1313,7 @@
         "type": "Emote",
         "clueHint": "Panic by the mausoleum in Morytania. Wave before you speak to me.",
         "location": "",
-        "itemsRequired": ["Mithril Plate Skirt", "Maple Longbow"]
+        "itemsRequired": ["Mithril plateskirt", "Maple longbow"]
       }
     ]
   },
@@ -1552,9 +1552,9 @@
         "clueHint": "Clap in Seers court house. Spin before you talk to me.",
         "location": "",
         "itemsRequired": [
-          "Adamant Halberd",
-          "Diamond Ring",
-          "Mystic Robe Bottom"
+          "Adamant halberd",
+          "Diamond ring",
+          "Mystic robe bottom"
         ]
       }
     ],
@@ -1612,7 +1612,7 @@
         "type": "Emote",
         "clueHint": "Panic by the pilot on White Wolf Mountain. Beware of double agents!",
         "location": "",
-        "itemsRequired": ["Mithril Platelegs", "Ring of Life", "Rune Axe"]
+        "itemsRequired": ["Mithril platelegs", "Ring of life", "Rune axe"]
       }
     ]
   },
@@ -1624,7 +1624,7 @@
         "type": "Emote",
         "clueHint": "Cheer at the Druids' Circle.",
         "location": "Taverley",
-        "requiredItems": ["Blue Wizard Hat", "Bronze 2H Sword", "HAM Boots"]
+        "itemsRequired": ["Blue wizard hat", "Bronze 2h sword", "Ham boots"]
       }
     ]
   },
@@ -1637,7 +1637,7 @@
         "clueHint": "Atop Ice Mountain",
         "solution": "Dig atop Ice Mountain.",
         "location": "Ice Mountain",
-        "itemsRequired": ["Spade", "Strange Device"],
+        "itemsRequired": ["Spade", "Strange device"],
         "alternateChunks": [
           {
             "x": 29,
@@ -1673,7 +1673,7 @@
         "clueHint": "Atop Ice Mountain",
         "solution": "Dig atop Ice Mountain.",
         "location": "Ice Mountain",
-        "itemsRequired": ["Spade", "Strange Device"],
+        "itemsRequired": ["Spade", "Strange device"],
         "alternateChunks": [
           {
             "x": 28,
@@ -1758,7 +1758,7 @@
         "type": "Emote",
         "clueHint": "Cheer in the Edgeville general store. Dance before you talk to me.",
         "location": "",
-        "itemsRequired": ["Brown Apron", "Leather Boots", "Leather Gloves"]
+        "itemsRequired": ["Brown apron", "Leather boots", "Leather gloves"]
       }
     ],
     "hardClues": [
@@ -1807,7 +1807,7 @@
         "type": "Emote",
         "clueHint": "Dance at the entrance to the Grand Exchange.",
         "location": "Grand Exchange",
-        "itemsRequired": ["Pink Skirt", "Pink Robe Top", "Body Tiara"]
+        "itemsRequired": ["Pink skirt", "Pink robe top", "Body tiara"]
       }
     ]
   },
@@ -1819,13 +1819,13 @@
         "type": "Emote",
         "clueHint": "Spin in the Varrock Castle courtyard.",
         "location": "Varrock Castle courtyard",
-        "requiredItems": ["Coif", "Black Axe", "Ruby Ring"]
+        "itemsRequired": ["Coif", "Black Axe", "Ruby Ring"]
       },
       {
         "type": "Emote",
         "clueHint": "Yawn in the Varrock library.",
         "location": "Varrock Castle library",
-        "requiredItems": ["HAM Robe", "Green Robe Top", "Iron Warhammer"]
+        "itemsRequired": ["HAM Robe", "Green Robe Top", "Iron Warhammer"]
       },
       {
         "type": "Cryptic",
@@ -1884,7 +1884,7 @@
         "type": "Emote",
         "clueHint": "Wave along the south fence of the Lumber Yard.",
         "location": "Lumber Yard",
-        "requiredItems": ["Hardleather Body", "Leather Chaps", "Bronze Axe"]
+        "itemsRequired": ["Hardleather Body", "Leather Chaps", "Bronze Axe"]
       }
     ],
     "hardClues": [
@@ -1903,7 +1903,7 @@
         "type": "Emote",
         "clueHint": "Panic in the Limestone Mine.",
         "location": "Limestone Mine East of Lumber Yard",
-        "requiredItems": ["Bronze Platelegs", "Steel Med Helm", "Steel Pickaxe"]
+        "itemsRequired": ["Bronze Platelegs", "Steel Med Helm", "Steel Pickaxe"]
       }
     ],
     "mediumClues": [
@@ -2109,9 +2109,9 @@
         "clueHint": "Dance a jig by the entrance to the Fishing Guild.",
         "location": "Fishing Guild",
         "itemsRequired": [
-          "Bronze Chainbody",
-          "Sapphire Amulet",
-          "Emerald Ring"
+          "Bronze chainbody",
+          "Sapphire amulet",
+          "Emerald ring"
         ],
         "alternateChunks": [
           {
@@ -2196,13 +2196,13 @@
         "type": "Emote",
         "clueHint": "Blow raspberries outside the entrance to Keep Le Faye.",
         "location": "Keep Le Faye",
-        "requiredItems": ["Coif", "Iron Platebody", "Leather Gloves"]
+        "itemsRequired": ["Coif", "Iron Platebody", "Leather Gloves"]
       },
       {
         "type": "Emote",
         "clueHint": "Jump for joy at the beehives.",
         "location": "Catherby beehives",
-        "requiredItems": ["Desert Shirt", "Steel Axe", "Green Robe Bottoms"]
+        "itemsRequired": ["Desert Shirt", "Steel Axe", "Green Robe Bottoms"]
       },
       {
         "type": "Cryptic",
@@ -2764,9 +2764,9 @@
         "clueHint": "Dance a jig by the entrance to the Fishing Guild.",
         "location": "Fishing Guild",
         "itemsRequired": [
-          "Bronze Chainbody",
-          "Sapphire Amulet",
-          "Emerald Ring"
+          "Bronze chainbody",
+          "Sapphire amulet",
+          "Emerald ring"
         ],
         "alternateChunks": [
           {
@@ -2805,7 +2805,7 @@
         "type": "Emote",
         "clueHint": "Clap on the top level of the mill, north of East Ardougne.",
         "location": "North of East Ardougne",
-        "requiredItems": ["Blue Robe Top", "Tiara", "HAM Robe"]
+        "itemsRequired": ["Blue Robe Top", "Tiara", "HAM Robe"]
       },
       {
         "type": "Cryptic",
@@ -2822,7 +2822,7 @@
         "type": "Emote",
         "clueHint": "Bow outside the entrance to the Legends' Guild.",
         "location": "Legends' Guild",
-        "requiredItems": ["Emerald Amulet", "Iron Platelegs", "Oak Longbow"]
+        "itemsRequired": ["Emerald Amulet", "Iron Platelegs", "Oak Longbow"]
       }
     ],
     "hardClues": [
@@ -3048,7 +3048,7 @@
         "type": "Emote",
         "clueHint": "Dance in the Party Room.",
         "location": "Falador Party Room",
-        "requiredItems": [
+        "itemsRequired": [
           "Steel Full Helm",
           "Steel Platebody",
           "Iron Plateskirt"
@@ -3341,7 +3341,7 @@
         "type": "Emote",
         "clueHint": "Clap in the main exam room in the Exam Centre.",
         "location": "Exam Centre",
-        "requiredItems": ["White Apron", "Green Boots", "Leather Gloves"]
+        "itemsRequired": ["White Apron", "Green Boots", "Leather Gloves"]
       },
       {
         "type": "Cryptic",
@@ -3497,7 +3497,7 @@
         "type": "Emote",
         "clueHint": "Blow a raspberry at the monkey cage in Ardougne Zoo.",
         "location": "Ardougne Zoo",
-        "requiredItems": ["Studded Body", "Bronze Platelegs", "Staff"]
+        "itemsRequired": ["Studded Body", "Bronze Platelegs", "Staff"]
       },
       {
         "type": "Cryptic",
@@ -3661,7 +3661,7 @@
         "type": "Emote",
         "clueHint": "Spin at the crossroads north of Rimmington.",
         "location": "North of Rimmington",
-        "requiredItems": ["Leather Chaps", "Cream Robe Top", "Green Hat"]
+        "itemsRequired": ["Leather Chaps", "Cream Robe Top", "Green Hat"]
       },
       {
         "type": "Cryptic",
@@ -3742,7 +3742,7 @@
         "type": "Emote",
         "clueHint": "Think in the middle of the wheat field by the lumbridge mill.",
         "location": "Lumbridge wheat field",
-        "requiredItems": [
+        "itemsRequired": [
           "Blue Robe Top",
           "Turquoise Robe Bottoms",
           "Oak Shortbow"
@@ -4328,9 +4328,9 @@
         "clueHint": "Cry in the Draynor Village jail. Jump for joy before you talk to me.",
         "location": "",
         "itemsRequired": [
-          "Adamant Sword",
-          "Adamant Plateskirt",
-          "Sapphire Amulet"
+          "Adamant sword",
+          "Adamant plateskirt",
+          "Sapphire amulet"
         ]
       },
       {
@@ -4529,7 +4529,7 @@
         "type": "Emote",
         "clueHint": "Bow in the ticket office of the Duel Arena.",
         "location": "Duel Arena",
-        "requiredItems": ["Coif", "Iron Chainbody", "Leather Chaps"]
+        "itemsRequired": ["Coif", "Iron Chainbody", "Leather Chaps"]
       },
       {
         "type": "Cryptic",
@@ -5000,7 +5000,7 @@
         "type": "Emote",
         "clueHint": "Clap on the causeway to the Wizards' Tower.",
         "location": "Wizards' Tower bridge",
-        "requiredItems": ["White Apron", "Emerald Ring", "Iron Med Helm"]
+        "itemsRequired": ["White Apron", "Emerald Ring", "Iron Med Helm"]
       },
       {
         "type": "Cryptic",
@@ -5095,7 +5095,7 @@
         "type": "Emote",
         "clueHint": "Dance in the shack in Lumbridge Swamp.",
         "location": "East Lumbridge Swamp",
-        "requiredItems": ["Bronze Dagger", "Iron Full Helm", "Gold Ring"]
+        "itemsRequired": ["Bronze Dagger", "Iron Full Helm", "Gold Ring"]
       }
     ],
     "mediumClues": [
@@ -5334,7 +5334,7 @@
         "type": "Emote",
         "clueHint": "Wave on Mudskipper Point.",
         "location": "Mudskipper Point",
-        "requiredItems": ["Black Cape", "Steel Mace", "Leather Chaps"]
+        "itemsRequired": ["Black Cape", "Steel Mace", "Leather Chaps"]
       }
     ],
     "hardClues": [
