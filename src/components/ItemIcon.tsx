@@ -1,12 +1,25 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import { memo } from '../utils';
 
 const ItemIcon: React.FC<{ item: string }> = ({ item }) => {
   const wikiPage = `https://oldschool.runescape.wiki/w/${encodeURI(item)}`;
 
-  const [icons, setIcons] = useState<string[]>();
+  const [icons, setIcons] = useState<string[]>([]);
+  const [iconInterval, setIconInterval] = useState<number>();
 
+  const iconToShowRef = useRef(0);
+  const [iconToShow, _setIconToShow] = useState(iconToShowRef.current);
+  const setIconToShow = (i: number) => {
+    iconToShowRef.current = i;
+    _setIconToShow(i);
+  };
+
+  function nextIcon() {
+    setIconToShow((iconToShowRef.current + 1) % icons.length);
+  }
+
+  // get the icon(s)
   useEffect(() => {
     if (Object.keys(itemSets).includes(item)) {
       const items = itemSets[item as any];
@@ -28,13 +41,37 @@ const ItemIcon: React.FC<{ item: string }> = ({ item }) => {
     }
   }, [item]);
 
+  // set or clear the interval
+  useEffect(() => {
+    if (icons.length > 1 && !iconInterval) {
+      const _iconInterval = setInterval(() => {
+        nextIcon();
+      }, 1000) as any as number;
+
+      setIconInterval(_iconInterval);
+    } else if (icons.length <= 1 && iconInterval) {
+      clearInterval(iconInterval);
+      setIconInterval(undefined);
+      setIconToShow(0);
+    }
+  }, [icons, iconInterval]);
+
+  // cleanup interval on component unmount
+  useEffect(() => {
+    return () => {
+      if (iconInterval) clearInterval(iconInterval);
+    };
+  }, [iconInterval]);
+
+  // if no icons, show the item name
+  if (icons.length === 0) {
+    return <>{item}</>;
+  }
+
+  // show the icon(s)
   return (
     <a href={wikiPage} target="_blank">
-      {icons ? (
-        <img src={`data:image/png;base64, ${icons[0]}`} title={item} />
-      ) : (
-        item
-      )}
+      <img src={`data:image/png;base64, ${icons[iconToShow]}`} title={item} />
     </a>
   );
 };
