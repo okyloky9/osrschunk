@@ -71,6 +71,14 @@
         "location": "Outside the Wilderness Resource Area.",
         "solution": "Mandrith"
       }
+    ],
+    "masterClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Dim Tharn",
+        "location": "Outside the Wilderness Resource Area.",
+        "solution": "Mandrith"
+      }
     ]
   },
   {
@@ -82,6 +90,14 @@
         "clueHint": "24 degrees 24 minutes north, 26 degrees 24 minutes east",
         "location": "",
         "itemsRequired": ["Spade"]
+      }
+    ],
+    "masterClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Ded War",
+        "location": "Inside Rogues' Castle",
+        "solution": "Edward"
       }
     ]
   },
@@ -191,6 +207,21 @@
         "location": "",
         "solution": "Talk to Miner Magnus east of the fairy ring (code C*I*P)."
       }
+    ],
+    "masterClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Forlun",
+        "location": "Miscellania and Etceteria Dungeon",
+        "solution": "Runolf",
+        "alternateChunks": [
+          {
+            "x": 22,
+            "y": 3,
+            "notes": "This cave can be entered from either chunk."
+          }
+        ]
+      }
     ]
   },
   {
@@ -209,6 +240,21 @@
         "location": "",
         "solution": "Dig on Etceteria next to the evergreen tree in front of the castle walls.",
         "itemsRequired": ["Spade"]
+      }
+    ],
+    "masterClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Forlun",
+        "location": "Miscellania and Etceteria Dungeon",
+        "alternateChunks": [
+          {
+            "x": 21,
+            "y": 3,
+            "notes": "This cave can be entered from either chunk."
+          }
+        ],
+        "solution": "Runolf"
       }
     ]
   },
@@ -976,6 +1022,15 @@
         "clueHint": "12 degrees 39 minutes north, 30 degrees 07 minutes west",
         "location": "",
         "itemsRequired": ["Spade"]
+      }
+    ],
+    "eliteClues": [],
+    "masterClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Brucie Catnap",
+        "location": "Great Kourend",
+        "solution": "Captain Bruce"
       }
     ]
   },
@@ -5026,6 +5081,14 @@
         "location": "",
         "solution": "Talk to Zul-Cheray in a house near the sacrificial boat at Zul-Andra."
       }
+    ],
+    "masterClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Car If Ices",
+        "location": "Zul-Andra, on the dock near Priestess Zul-Gwenwynig.",
+        "solution": "Sacrifice"
+      }
     ]
   },
   {
@@ -5391,6 +5454,18 @@
         "clueHint": "Dance at the cat-doored pyramid in Sophanem. Beware of double agents!",
         "location": "",
         "itemsRequired": ["Amulet of glory", "Adamant 2h sword", "Ring of life"]
+      }
+    ]
+  },
+  {
+    "x": 25,
+    "y": 21,
+    "masterClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Duo Plug",
+        "location": "Graveyard on Ape Atoll, south of Awowogei's throne room.",
+        "solution": "Dugopul"
       }
     ]
   }
