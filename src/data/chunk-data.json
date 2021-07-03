@@ -50,13 +50,6 @@
   {
     "x": 31,
     "y": 2,
-    "mediumClues": [
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Mandrith",
-        "location": "Outside the Wilderness Resource Area gate."
-      }
-    ],
     "hardClues": [
       {
         "type": "Coordinates",
@@ -141,11 +134,6 @@
         "clueHint": "R Slicer",
         "location": "Arceuus essence mine",
         "solution": "Clerris"
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Clerris",
-        "location": "Arceuus essence mine"
       }
     ]
   },
@@ -158,24 +146,12 @@
         "clueHint": "A Heart",
         "location": "Soul altar on Zeah",
         "solution": "Aretha"
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Aretha",
-        "location": "Soul altar"
       }
     ]
   },
   {
     "x": 15,
     "y": 3,
-    "mediumClues": [
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Oneiromancer",
-        "location": "Near the astral rune ruins"
-      }
-    ],
     "eliteClues": [
       {
         "type": "Anagram",
@@ -189,11 +165,6 @@
     "x": 21,
     "y": 3,
     "mediumClues": [
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Miner Magnus",
-        "location": "In the area with a mining icon."
-      },
       {
         "type": "Coordinates",
         "clueHint": "22 degrees 30 minutes north, 03 degrees 01 minutes east",
@@ -354,16 +325,6 @@
         "solution": "Horphis"
       },
       {
-        "type": "Challenge Scroll",
-        "clueHint": "Horphis",
-        "location": "Arceuus Library"
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Professor Gracklebone",
-        "location": "Arceuus Library"
-      },
-      {
         "type": "Emote",
         "clueHint": "Yawn in the centre of Arceuus library. Nod your head before you talk to me.",
         "location": "",
@@ -398,24 +359,12 @@
         "clueHint": "Clash Ion",
         "location": "Most north-eastern point of Port Piscarilius, north of the fishing shop.",
         "solution": "Nicholas"
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Nicholas",
-        "location": "Most north-eastern point of Port Piscarilius, north of the fishing shop."
       }
     ]
   },
   {
     "x": 18,
     "y": 4,
-    "mediumClues": [
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Lisse Isaakson",
-        "location": "Neitiznot"
-      }
-    ],
     "hardClues": [
       {
         "type": "Cryptic",
@@ -495,14 +444,6 @@
         "location": "South-eastern corner of Arceuus in the General Store.",
         "solution": "Regath"
       }
-    ],
-    "mediumClues": [
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Regath",
-        "location": "South-eastern corner of Arceuus in the General Store.",
-        "solution": ""
-      }
     ]
   },
   {
@@ -514,16 +455,6 @@
         "clueHint": "Tamed Rocks",
         "location": "Port Piscarilius, building north-east of the general store.",
         "solution": "Dockmaster"
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Captain Khaled",
-        "location": "Port Piscarilius foodhall"
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Dockmaster",
-        "location": "Port Piscarilius, building north-east of the general store."
       },
       {
         "type": "Cipher",
@@ -683,16 +614,6 @@
         "solution": "Brundt the Chieftain"
       },
       {
-        "type": "Challenge Scroll",
-        "clueHint": "Brundt the Chieftain",
-        "location": "Rellekka, inside the main hall."
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Sigli the Huntsman",
-        "location": "The entrance to Rellekka"
-      },
-      {
         "type": "Coordinates",
         "clueHint": "15 degrees 22 minutes north, 07 degrees 31 minutes east",
         "location": "",
@@ -833,16 +754,6 @@
         "clueHint": "Pacinng a taie",
         "location": "East of the War Tent in the Shayzien Encampment.",
         "solution": "Captain Ginea"
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Captain Ginea",
-        "location": "Near the Shayzien infirmary"
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Nurse Wooned",
-        "location": "In the Shayzien infirmary"
       },
       {
         "type": "Cryptic",
@@ -1027,11 +938,6 @@
         "clueHint": "Uesnkrl Nrieddo",
         "location": "The Cloak and Stagger tavern in Shayzien.",
         "solution": "Drunken soldier"
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Drunken Soldier",
-        "location": "The Cloak and Stagger tavern in Shayzien."
       }
     ]
   },
@@ -1087,11 +993,6 @@
         "clueHint": "I Am Sir",
         "location": "Marisi is a farmer found in the allotment patch located within Hosidius.",
         "solution": "Marisi"
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Marisi",
-        "location": "Marisi is a farmer found in the allotment patch located within Hosidius."
       }
     ]
   },
@@ -1242,21 +1143,6 @@
         "solution": "Dunstan"
       },
       {
-        "type": "Challenge Scroll",
-        "clueHint": "Dunstan",
-        "location": "Anvil in north-eastern Burthorpe."
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Eohric",
-        "location": "Burthorpe Castle, top floor."
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Martin Thwait",
-        "location": "Rogue's Den"
-      },
-      {
         "type": "Cryptic",
         "clueHint": "Go to the village being attacked by trolls, search the drawers in one of the houses.",
         "location": "",
@@ -1281,13 +1167,6 @@
   {
     "x": 30,
     "y": 8,
-    "mediumClues": [
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Dark mage",
-        "location": "The Abyss"
-      }
-    ],
     "hardClues": [
       {
         "type": "Anagram",
@@ -1320,11 +1199,6 @@
     "x": 36,
     "y": 8,
     "mediumClues": [
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Old crone",
-        "location": "In her house"
-      },
       {
         "type": "Emote",
         "clueHint": "Panic by the mausoleum in Morytania. Wave before you speak to me.",
@@ -1414,16 +1288,6 @@
     "y": 9,
     "mediumClues": [
       {
-        "type": "Challenge Scroll",
-        "clueHint": "Gnome ball referee",
-        "location": "Gnome Ball field"
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Gnome Coach",
-        "location": "Gnome Ball field"
-      },
-      {
         "type": "Coordinates",
         "clueHint": "09 degrees 35 minutes north, 01 degrees 50 minutes west",
         "location": "",
@@ -1474,11 +1338,6 @@
         "clueHint": "Goblets Odd Toes",
         "location": "South of the Barbarian Outpost, in Otto's Grotto.",
         "solution": "Otto Godblessed"
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Otto Godblessed",
-        "location": "South of the Barbarian Outpost, in Otto's Grotto."
       },
       {
         "type": "Coordinates",
@@ -1608,11 +1467,6 @@
         "clueHint": "Kay Sir",
         "location": "The courtyard in Camelot Castle.",
         "solution": "Sir Kay"
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Sir Kay",
-        "location": "The courtyard in Camelot Castle."
       }
     ]
   },
@@ -1727,11 +1581,6 @@
         "clueHint": "Are Col",
         "location": "The peak of Ice Mountain west of Edgeville.",
         "solution": "Oracle"
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Oracle",
-        "location": "The peak of Ice Mountain west of Edgeville."
       }
     ],
     "hardClues": [
@@ -1773,11 +1622,6 @@
       }
     ],
     "mediumClues": [
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Evil Dave",
-        "location": "Under his mother's house in Edgeville"
-      },
       {
         "type": "Emote",
         "clueHint": "Cheer in the Edgeville general store. Dance before you talk to me.",
@@ -1866,11 +1710,6 @@
         "solution": "King Roald"
       },
       {
-        "type": "Challenge Scroll",
-        "clueHint": "King Roald",
-        "location": "Ground floor of Varrock Palace."
-      },
-      {
         "type": "Cryptic",
         "clueHint": "You'll need to look for a town with a central fountain. Look for a locked chest in the town's chapel.",
         "location": "Search the chest by the stairs in the Varrock church, east of the palace.",
@@ -1952,11 +1791,6 @@
     "x": 35,
     "y": 9,
     "mediumClues": [
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Drezel",
-        "location": "Under the temple"
-      },
       {
         "type": "Cryptic",
         "clueHint": "Speak to Ulizius.",
@@ -2048,11 +1882,6 @@
         "solution": "Nieve"
       },
       {
-        "type": "Challenge Scroll",
-        "clueHint": "Brimstail",
-        "location": "In the cave west of the Stronghold Slayer Cave entrance in the Tree Gnome Stronghold."
-      },
-      {
         "type": "Coordinates",
         "clueHint": "08 degrees 33 minutes north, 01 degrees 39 minutes west",
         "location": "",
@@ -2093,16 +1922,6 @@
         "alternateChunks": [
           { "x": 29, "y": 14, "notes": "Refer to \"location\"" }
         ]
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Guard Vemmeldo",
-        "location": "In the bank of the Gnome Stronghold"
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Nieve/Steve",
-        "location": "The slayer master in Gnome Stronghold."
       },
       {
         "type": "Emote",
@@ -2204,11 +2023,6 @@
         "clueHint": "Peak Reflex",
         "location": "Flax field south of Seers' Village.",
         "solution": "Flax keeper"
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Flax keeper",
-        "location": "Flax field south of Seers' Village."
       }
     ],
     "hardClues": [
@@ -2279,11 +2093,6 @@
         "clueHint": "Thickno",
         "location": "Hickton's Archery Emporium in Catherby. Second house east of the bank.",
         "solution": "Hickton"
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Hickton",
-        "location": "Hickton's Archery Emporium in Catherby. Second house east of the bank."
       },
       {
         "type": "Emote",
@@ -2446,20 +2255,6 @@
         "location": "",
         "solution": "Due east of Falador's north gate. Look for the (grapple) agility shortcut icon.",
         "itemsRequired": ["Spade"]
-      }
-    ],
-    "mediumClues": [
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Prospector Percy",
-        "location": "Motherlode Mine",
-        "alternateChunks": [
-          {
-            "x": 29,
-            "y": 11,
-            "notes": "Motherlode can be accessed from both chunks."
-          }
-        ]
       }
     ],
     "hardClues": [
@@ -2695,23 +2490,6 @@
         "clueHint": "El Ow",
         "location": "Varrock archery store",
         "solution": "Lowe"
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Baraek",
-        "location": "Varrock market"
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Charlie the Tramp",
-        "location": "Near Varrock entrance",
-        "alternateChunks": [
-          {
-            "x": 32,
-            "y": 11,
-            "notes": "Charlie will path around and sometimes enter either chunk."
-          }
-        ]
       }
     ],
     "hardClues": [
@@ -2821,11 +2599,6 @@
         "clueHint": "Nod Med",
         "location": "Behind the most north-western house in East Ardougne.",
         "solution": "Edmond"
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Edmond",
-        "location": "Behind the most north-western house in East Ardougne."
       }
     ]
   },
@@ -3033,16 +2806,6 @@
         "solution": "Squire"
       },
       {
-        "type": "Challenge Scroll",
-        "clueHint": "Kaylee",
-        "location": "Rising Sun Inn in Falador."
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Squire",
-        "location": "Falador Castle Courtyard"
-      },
-      {
         "type": "Music",
         "clueHint": "I'd like to hear some music. Come and see me on the bridge in Falador Park, and play: <some music>",
         "location": "Falador Park",
@@ -3143,18 +2906,6 @@
         "clueHint": "Peaty Pert",
         "location": "Falador Party Room",
         "solution": "Party Pete"
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Prospector Percy",
-        "location": "Motherlode Mine",
-        "alternateChunks": [
-          {
-            "x": 29,
-            "y": 10,
-            "notes": "Motherlode can be accessed from both chunks."
-          }
-        ]
       }
     ],
     "hardClues": [
@@ -3313,18 +3064,6 @@
           }
         ],
         "solution": "Charlie the Tramp"
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Charlie the Tramp",
-        "location": "Near Varrock entrance",
-        "alternateChunks": [
-          {
-            "x": 32,
-            "y": 10,
-            "notes": "Charlie will path around and sometimes enter either chunk."
-          }
-        ]
       }
     ]
   },
@@ -3434,25 +3173,6 @@
   {
     "x": 16,
     "y": 12,
-    "mediumClues": [
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Eluned",
-        "location": "Near Prifdinnas Dye shop",
-        "alternateChunks": [
-          {
-            "x": 16,
-            "y": 14,
-            "notes": "Eluned will be here pre-completion of Song of the Elves."
-          },
-          {
-            "x": 17,
-            "y": 14,
-            "notes": "Eluned will be here pre-completion of Song of the Elves."
-          }
-        ]
-      }
-    ],
     "hardClues": [
       {
         "type": "Cipher",
@@ -3508,16 +3228,6 @@
         "clueHint": "Hick Jet",
         "location": "West Ardougne centre square",
         "solution": "Jethick"
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Jethick",
-        "location": "West Ardougne centre square"
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Recruiter",
-        "location": "West Ardougne centre square"
       }
     ]
   },
@@ -3555,18 +3265,6 @@
         "clueHint": "Eek Zero Op",
         "location": "Ardougne Zoo",
         "solution": "Zoo keeper",
-        "alternateChunks": [
-          {
-            "x": 22,
-            "y": 13,
-            "notes": "Southernmost zookeeper will very rarely go close enough to this chunk."
-          }
-        ]
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Zoo keeper",
-        "location": "Ardougne Zoo",
         "alternateChunks": [
           {
             "x": 22,
@@ -3633,11 +3331,6 @@
         "clueHint": "Arc O Line",
         "location": "North Witchaven next to the row boat. After the Sea Slug quest, she is found wandering the coast.",
         "solution": "Caroline"
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Caroline",
-        "location": "North Witchaven next to the row boat. After the Sea Slug quest, she is found wandering the coast."
       }
     ]
   },
@@ -3888,13 +3581,6 @@
   {
     "x": 37,
     "y": 12,
-    "mediumClues": [
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Strange Old Man",
-        "location": "Digging in the Barrows mounds."
-      }
-    ],
     "hardClues": [
       {
         "type": "Anagram",
@@ -3965,28 +3651,6 @@
         ]
       },
       {
-        "type": "Challenge Scroll",
-        "clueHint": "Brother Kojo",
-        "location": "Clock Tower"
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Brother Omad",
-        "location": "Monastary"
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Zoo keeper",
-        "location": "Ardougne Zoo",
-        "alternateChunks": [
-          {
-            "x": 22,
-            "y": 12,
-            "notes": "Southernmost zookeeper will very rarely go close enough to this chunk."
-          }
-        ]
-      },
-      {
         "type": "Cryptic",
         "clueHint": "Find a crate close to the monks that like to paaarty!",
         "location": "",
@@ -4036,12 +3700,6 @@
     "x": 24,
     "y": 13,
     "mediumClues": [
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Sir Percival",
-        "location": "Blow the Holy Grail magic whistle to enter the Fisher Realm, or enter from fairy code B*J*R",
-        "itemsRequired": ["Magic whistle", "Dramen staff"]
-      },
       {
         "type": "Coordinates",
         "clueHint": "01 degrees 26 minutes north, 08 degrees 01 minutes east",
@@ -4171,14 +3829,6 @@
         ]
       },
       {
-        "type": "Challenge Scroll",
-        "clueHint": "Taria",
-        "location": "Rimmington bush patch",
-        "alternateChunks": [
-          { "x": 28, "y": 13, "notes": "Taria can go between chunks." }
-        ]
-      },
-      {
         "type": "Map",
         "clueHint": "https://oldschool.runescape.wiki/images/d/d0/Map_clue_Chemist_house.png?efe67",
         "location": "",
@@ -4224,14 +3874,6 @@
           { "x": 27, "y": 13, "notes": "Taria can go between chunks." }
         ],
         "solution": "Taria"
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Taria",
-        "location": "Rimmington bush patch",
-        "alternateChunks": [
-          { "x": 27, "y": 13, "notes": "Taria can go between chunks." }
-        ]
       }
     ]
   },
@@ -4296,11 +3938,6 @@
         "clueHint": "A Basic Anti Pot",
         "location": "Port Sarim docks",
         "solution": "Captain Tobias"
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Captain Tobias",
-        "location": "Port Sarim docks"
       }
     ],
     "hardClues": [
@@ -4350,11 +3987,6 @@
       }
     ],
     "mediumClues": [
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Wise Old Man",
-        "location": "In his house"
-      },
       {
         "type": "Emote",
         "clueHint": "Cry in the Draynor Village jail. Jump for joy before you talk to me.",
@@ -4489,31 +4121,6 @@
         "solution": "Hans"
       },
       {
-        "type": "Challenge Scroll",
-        "clueHint": "Iron Man tutor",
-        "location": "North of Lumbridge Castle entrance"
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Ambassador Alvijar",
-        "location": "Dorgesh-Kaan"
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Cook",
-        "location": "Lumbridge Castle"
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Doomsayer",
-        "location": "Outside Lumbridge Castle"
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Father Aereck",
-        "location": "Found in the church in Lumbridge."
-      },
-      {
         "type": "Cipher",
         "clueHint": "HQNM LZM STSNQ",
         "location": "Lumbridge",
@@ -4582,13 +4189,6 @@
         "clueHint": "Search the crates in the most north-western house in Al Kharid.",
         "location": "",
         "solution": "Search the crates in the house, marked with a Cooking range icon.png icon, south-east of the gem stall."
-      }
-    ],
-    "mediumClues": [
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Cam the Camel",
-        "location": "Near the Al Kharid entrance"
       }
     ],
     "hardClues": [
@@ -4665,25 +4265,6 @@
   {
     "x": 16,
     "y": 14,
-    "mediumClues": [
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Eluned",
-        "location": "Northeast of Tyras Camp",
-        "alternateChunks": [
-          {
-            "x": 17,
-            "y": 14,
-            "notes": "Eluned teleports around between two locations."
-          },
-          {
-            "x": 16,
-            "y": 12,
-            "notes": "After completion of the Song of the Elves quest, she moves to Prifddinas."
-          }
-        ]
-      }
-    ],
     "hardClues": [
       {
         "type": "Coordinates",
@@ -4720,25 +4301,6 @@
   {
     "x": 17,
     "y": 14,
-    "mediumClues": [
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Eluned",
-        "location": "Southwest of Lletya",
-        "alternateChunks": [
-          {
-            "x": 16,
-            "y": 14,
-            "notes": "Eluned teleports around between two locations."
-          },
-          {
-            "x": 16,
-            "y": 12,
-            "notes": "After completion of the Song of the Elves quest, she moves to Prifddinas."
-          }
-        ]
-      }
-    ],
     "hardClues": [
       {
         "type": "Cipher",
@@ -4763,13 +4325,6 @@
   {
     "x": 18,
     "y": 14,
-    "mediumClues": [
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Oronwen",
-        "location": "Crafting store in Lletya"
-      }
-    ],
     "eliteClues": [
       {
         "type": "Anagram",
@@ -4817,16 +4372,6 @@
         "clueHint": "Goblin Kern",
         "location": "Tree Gnome Village, next to the Spirit Tree.",
         "solution": "King Bolren"
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Bolkoy",
-        "location": "Tree Gnome Village general store"
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Spirit Tree",
-        "location": "Tree Gnome Village"
       }
     ],
     "hardClues": [
@@ -4885,11 +4430,6 @@
     "x": 25,
     "y": 14,
     "mediumClues": [
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "'s parrot",
-        "location": "Brimhaven"
-      },
       {
         "type": "Cryptic",
         "clueHint": "Search the upstairs drawers of a house in a village where pirates are known to have a good time.",
@@ -5073,11 +4613,6 @@
     ],
     "mediumClues": [
       {
-        "type": "Challenge Scroll",
-        "clueHint": "Wizard Traiborn",
-        "location": "The 2nd floor of the Wizards' Tower"
-      },
-      {
         "type": "Cryptic",
         "clueHint": "Probably filled with wizards socks.",
         "location": "",
@@ -5156,11 +4691,6 @@
     ],
     "mediumClues": [
       {
-        "type": "Challenge Scroll",
-        "clueHint": "Fairy Godfather",
-        "location": "Zanaris"
-      },
-      {
         "type": "Coordinates",
         "clueHint": "00 degrees 30 minutes north, 24 degrees 16 minutes east",
         "location": "",
@@ -5232,11 +4762,6 @@
         "clueHint": "R Ak Mi",
         "location": "Al Kharid kebab shop just south of the furnace.",
         "solution": "Karim"
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Karim",
-        "location": "Al Kharid kebab shop just south of the furnace."
       }
     ]
   },
@@ -5303,11 +4828,6 @@
         "solution": "Dominic Onion"
       },
       {
-        "type": "Challenge Scroll",
-        "clueHint": "Dominic Onion",
-        "location": "Nightmare Zone"
-      },
-      {
         "type": "Cryptic",
         "clueHint": "In a town where wizards are known to gather, search upstairs in a large house to the north.",
         "location": "Go upstairs in the house and search the chest.",
@@ -5339,11 +4859,6 @@
     "x": 23,
     "y": 15,
     "mediumClues": [
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Hazelmere",
-        "location": "South of Phort Khazard on his island"
-      },
       {
         "type": "Cryptic",
         "clueHint": "Speak to Hazelmere.",
@@ -5406,13 +4921,6 @@
   {
     "x": 32,
     "y": 15,
-    "mediumClues": [
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Weird Old Man",
-        "location": "Outside the Northern entrance to the Kalphite Lair."
-      }
-    ],
     "hardClues": [
       {
         "type": "Cipher",
@@ -5537,11 +5045,6 @@
         "clueHint": "Got A Boy",
         "location": "Centre of Tai Bwo Wannai.",
         "solution": "Gabooty"
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Gabooty",
-        "location": "Centre of Tai Bwo Wannai."
       },
       {
         "type": "Emote",
@@ -5698,11 +5201,6 @@
     "y": 17,
     "mediumClues": [
       {
-        "type": "Challenge Scroll",
-        "clueHint": "Ali the Kebab seller",
-        "location": "Pollnivneach"
-      },
-      {
         "type": "Cipher",
         "clueHint": "BMJ UIF LFCBC TFMMFS",
         "location": "Pollnivneach",
@@ -5713,13 +5211,6 @@
   {
     "x": 39,
     "y": 17,
-    "mediumClues": [
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Brother Tranquility",
-        "location": "Mos Le'Harmless"
-      }
-    ],
     "hardClues": [
       {
         "type": "Anagram",
@@ -5812,11 +5303,6 @@
         "clueHint": "Calamari Made Mud",
         "location": "Next to a spa in the Corsair Cove.",
         "solution": "Madame Caldarium"
-      },
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Madame Caldarium",
-        "location": "Next to a spa in the Corsair Cove."
       }
     ]
   },
@@ -5835,13 +5321,6 @@
   {
     "x": 25,
     "y": 20,
-    "mediumClues": [
-      {
-        "type": "Challenge Scroll",
-        "clueHint": "Awowogei",
-        "location": "Ape Atoll"
-      }
-    ],
     "hardClues": [
       {
         "type": "Anagram",
