@@ -16,7 +16,15 @@ for (const chunk of chunkData) {
     const clues = chunk[key];
 
     if (clues) {
-      for (const clue of clues) {
+      for (const [clueIndex, clue] of clues.entries()) {
+        if (clue.clueHint) clue.clueHint = clue.clueHint.trim();
+        if (!clue.clueHint) {
+          console.log(
+            `'${difficulty}' clue ${clueIndex} missing 'clueHint' in chunk (${chunk.x}, ${chunk.y}).`
+          );
+        }
+
+        if (clue.location) clue.location = clue.location.trim();
         if (!clue.location) delete clue.location;
 
         if (!clue.itemsRequired || !clue.itemsRequired.length) {
