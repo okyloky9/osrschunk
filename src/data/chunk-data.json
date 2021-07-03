@@ -1982,9 +1982,9 @@
         "clueHint": "Dance in the centre of Canifis. Bow before you talk to me.",
         "location": "",
         "itemsRequired": [
-          "Green Robe Top",
-          "Mithril Platelegs",
-          "Iron 2h Sword"
+          "Green robe top",
+          "Mithril platelegs",
+          "Iron 2h sword"
         ]
       }
     ]
@@ -2085,9 +2085,9 @@
         "clueHint": "Cry on top of the western tree in the Gnome Agility Arena. Indicate 'no' before you talk to me.",
         "location": "",
         "itemsRequired": [
-          "Steel Kiteshield",
-          "Ring of Forging",
-          "Green d'hide Chaps"
+          "Steel kiteshield",
+          "Ring of forging",
+          "Green d'hide chaps"
         ]
       }
     ],
@@ -2128,9 +2128,9 @@
         "clueHint": "Blow a raspberry in the Fishing Guild bank. Beware of double agents!",
         "location": "",
         "itemsRequired": [
-          "Elemental Shield",
-          "Blue d'hide Chaps",
-          "Rune Warhammer"
+          "Elemental shield",
+          "Blue d'hide chaps",
+          "Rune warhammer"
         ]
       }
     ]
@@ -2223,9 +2223,9 @@
         "clueHint": "Shrug in Catherby bank. Yawn before you talk to me.",
         "location": "",
         "itemsRequired": [
-          "Maple Longbow",
-          "Green d'hide Chaps",
-          "Iron Med Helm"
+          "Maple longbow",
+          "Green d'hide chaps",
+          "Iron med helm"
         ]
       }
     ]
@@ -2263,9 +2263,9 @@
         "clueHint": "Cry on the shore of Catherby beach. Laugh before you talk to me.",
         "location": "",
         "itemsRequired": [
-          "Adamant Sq Shield",
-          "Bone Dagger",
-          "Mithril Platebody"
+          "Adamant sq shield",
+          "Bone dagger",
+          "Mithril platebody"
         ]
       }
     ],
@@ -2490,9 +2490,9 @@
         "clueHint": "Spin on the bridge by the Barbarian Village. Salute before you talk to me.",
         "location": "",
         "itemsRequired": [
-          "Purple Gloves",
-          "Steel Kiteshield",
-          "Mithril Full Helm"
+          "Purple gloves",
+          "Steel kiteshield",
+          "Mithril full helm"
         ]
       }
     ],
@@ -2748,9 +2748,9 @@
         "clueHint": "Cheer in the Ogre Pen in the Training Camp. Show you are angry before you talk to me.",
         "location": "",
         "itemsRequired": [
-          "Green d'hide Body",
-          "Green d'hide Chaps",
-          "Steel Sq Shield"
+          "Green d'hide body",
+          "Green d'hide chaps",
+          "Steel sq shield"
         ]
       }
     ]
@@ -2916,9 +2916,9 @@
         "clueHint": "Wave in the Falador gem store.",
         "location": "Falador gem store",
         "itemsRequired": [
-          "Mithril Pickaxe",
-          "Black Platebody",
-          "Iron Kiteshield"
+          "Mithril pickaxe",
+          "Black platebody",
+          "Iron kiteshield"
         ]
       },
       {
@@ -3049,9 +3049,9 @@
         "clueHint": "Dance in the Party Room.",
         "location": "Falador Party Room",
         "itemsRequired": [
-          "Steel Full Helm",
-          "Steel Platebody",
-          "Iron Plateskirt"
+          "Steel full helm",
+          "Steel platebody",
+          "Iron plateskirt"
         ]
       },
       {
@@ -3743,9 +3743,9 @@
         "clueHint": "Think in the middle of the wheat field by the lumbridge mill.",
         "location": "Lumbridge wheat field",
         "itemsRequired": [
-          "Blue Robe Top",
-          "Turquoise Robe Bottoms",
-          "Oak Shortbow"
+          "Blue robe top",
+          "Turquoise robe bottoms",
+          "Oak shortbow"
         ]
       },
       {
@@ -4075,9 +4075,9 @@
           }
         ],
         "itemsRequired": [
-          "Steel Longsword",
-          "Blue d'hide Body",
-          "Mystic Gloves"
+          "Steel longsword",
+          "Blue d'hide body",
+          "Mystic gloves"
         ]
       },
       {
@@ -4732,9 +4732,9 @@
         "clueHint": "Think in the centre of the Observatory. Spin before you talk to me.",
         "location": "",
         "itemsRequired": [
-          "Mithril Chainbody",
-          "Green d'hide Chaps",
-          "Ruby Amulet"
+          "Mithril chainbody",
+          "Green d'hide chaps",
+          "Ruby amulet"
         ]
       },
       {
@@ -4865,9 +4865,9 @@
         "clueHint": "Jump for joy in the TzHaar sword shop. Shrug before you talk to me.",
         "location": "",
         "itemsRequired": [
-          "Steel Longsword",
-          "Blue d'hide Body",
-          "Mystic Gloves"
+          "Steel longsword",
+          "Blue d'hide body",
+          "Mystic gloves"
         ],
         "alternateChunks": [
           {
@@ -5492,9 +5492,9 @@
         "clueHint": "Beckon in Tai Bwo Wannai. Clap before you talk to me.",
         "location": "",
         "itemsRequired": [
-          "Green d'hide Chaps",
-          "Ring of Dueling",
-          "Mithril Med Helm"
+          "Green d'hide chaps",
+          "Ring of dueling",
+          "Mithril med helm"
         ]
       }
     ]
