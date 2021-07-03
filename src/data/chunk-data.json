@@ -70,6 +70,14 @@
         "location": "",
         "itemsRequired": ["Spade"]
       }
+    ],
+    "eliteClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Dr Hitman",
+        "location": "Outside the Wilderness Resource Area.",
+        "solution": "Mandrith"
+      }
     ]
   },
   {
@@ -166,6 +174,14 @@
         "type": "Challenge Scroll",
         "clueHint": "Oneiromancer",
         "location": "Near the astral rune ruins"
+      }
+    ],
+    "eliteClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Career In Moon",
+        "location": "Astral altar on Lunar Isle.",
+        "solution": "Oneiromancer"
       }
     ]
   },
@@ -1315,6 +1331,14 @@
         "location": "",
         "itemsRequired": ["Mithril plateskirt", "Maple longbow"]
       }
+    ],
+    "hardClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Cool Nerd",
+        "location": "East of the Slayer Tower.",
+        "solution": "Old Crone"
+      }
     ]
   },
   {
@@ -2097,6 +2121,14 @@
         "clueHint": "'Small shoe.' Often found with rod on mushroom.",
         "location": "",
         "solution": "Talk to any Gnome trainer in the Agility area of the Tree Gnome Stronghold."
+      }
+    ],
+    "eliteClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Ladder Memo Guv",
+        "location": "Bank east of the Stronghold Slayer Cave.",
+        "solution": "Guard Vemmeldo"
       }
     ]
   },
@@ -4568,6 +4600,14 @@
         "type": "Anagram",
         "clueHint": "Them Cal Came",
         "location": "",
+        "solution": "Cam the Camel"
+      }
+    ],
+    "eliteClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Machete Clam",
+        "location": "Just outside the gates of the Duel Arena, Camulet not required.",
         "solution": "Cam the Camel"
       }
     ]
