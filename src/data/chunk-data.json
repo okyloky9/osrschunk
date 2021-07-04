@@ -1,5 +1,18 @@
 [
   {
+    "x": 23,
+    "y": 0,
+    "masterClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "2 musical birds. Dig in front of the spinning light.",
+        "location": "",
+        "solution": "Dig in front of the spinning light in Ping and Pong's room inside the Iceberg.",
+        "itemsRequired": ["Clockwork suit"]
+      }
+    ]
+  },
+  {
     "x": 20,
     "y": 1,
     "eliteClues": [
@@ -883,6 +896,19 @@
         "type": "Coordinates",
         "clueHint": "18 degrees 05 minutes north, 12 degrees 05 minutes east",
         "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 27,
+    "y": 5,
+    "masterClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "A massive battle rages beneath so be careful when you dig by the large broken crossbow.",
+        "location": "",
+        "solution": "North-east of the God Wars Dungeon entrance, climb the rocky handholds and dig by the large crossbow.",
         "itemsRequired": ["Spade"]
       }
     ]
@@ -2283,7 +2309,17 @@
         "type": "Emote",
         "clueHint": "Bow upstairs in the Edgeville Monastery.",
         "location": "",
-        "itemsRequired": ["God book"]
+        "itemsRequired": ["God book"],
+        "solution": ""
+      }
+    ],
+    "masterClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Anger Abbot Langley.",
+        "location": "",
+        "solution": "Speak to Abbot Langley while you have a negative prayer bonus.",
+        "itemsRequired": ["Ancient staff"]
       }
     ]
   },
@@ -2718,7 +2754,12 @@
         "type": "Emote",
         "clueHint": "Cheer in the Shadow dungeon.",
         "location": "",
-        "itemsRequired": ["Rune crossbow", "Climbing boots", "Mitre"]
+        "itemsRequired": [
+          "Rune crossbow",
+          "Climbing boots",
+          "Ring of invisibility",
+          "Mitre"
+        ]
       }
     ]
   },
@@ -4174,6 +4215,14 @@
         "location": "",
         "itemsRequired": ["Dragon spear", "Red d'hide chaps"]
       }
+    ],
+    "masterClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "A dwarf, approaching death, but very much in the light.",
+        "location": "",
+        "solution": "Thorgel at the entrance to the Death altar."
+      }
     ]
   },
   {
@@ -4283,6 +4332,14 @@
           "Dragonstone amulet",
           "Ring of forging"
         ]
+      }
+    ],
+    "masterClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "A chisel and hammer reside in his home, strange for one of magic. Impress him with your magical equipment.",
+        "location": "",
+        "solution": "Wizard Cromperty at the north-east corner of East Ardougne. Speak to him while wearing equipment adding up to at least +100 in magical attack bonus."
       }
     ]
   },
@@ -4967,6 +5024,14 @@
         "clueHint": "If a man carried my burden, he would break his back. I am not rich, but leave silver in my track. Speak to the keeper of my trail.",
         "location": "",
         "solution": "Speak to Gerrant in the fish shop in Port Sarim."
+      }
+    ],
+    "masterClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Anger those who adhere to Saradomin's edicts to prevent travel.",
+        "location": "",
+        "solution": "Port Sarim docks, try to charter a ship to Entrana with armour or weapons equipped."
       }
     ]
   },
