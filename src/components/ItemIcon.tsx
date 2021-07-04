@@ -189,6 +189,22 @@ for (let i = 1; i <= 5; i++) {
   runeHeraldicShieldItems.push(`Rune shield (h${i})`);
 }
 
+const slayerHelmVariants = [
+  'Black',
+  'Green',
+  'Red',
+  'Purple',
+  'Turqoise',
+  'Hydra',
+  'Twisted',
+];
+
+const slayerHelmItems = ['Slayer helmet'];
+
+for (const variant of slayerHelmVariants) {
+  slayerHelmItems.push(`${variant} slayer helmet`);
+}
+
 const itemSets = {
   'Bob shirt': bobShirtItems,
   Cloak: cloakItems,
@@ -200,6 +216,7 @@ const itemSets = {
   'Pirate bandana': pirateBandanaItems,
   'Rune heraldic armour#Full helm': runeHeraldicFullHelmItems,
   'Rune heraldic armour#Kiteshield': runeHeraldicShieldItems,
+  'Slayer helmet': slayerHelmItems,
   Stole: stoleItems,
   'Team cape': teamCapeItems,
 } as {
