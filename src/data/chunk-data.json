@@ -1,5 +1,41 @@
 [
   {
+    "x": 20,
+    "y": 1,
+    "eliteClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "26 degrees 43 minutes north, 01 degrees 22 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 37,
+    "y": 1,
+    "eliteClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "25 degrees 48 minutes north, 35 degrees 00 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 14,
+    "y": 2,
+    "eliteClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "23 degrees 48 minutes north, 11 degrees 43 minutes west",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
     "x": 26,
     "y": 2,
     "masterClues": [
@@ -8,6 +44,14 @@
         "clueHint": "A Elf Knows",
         "location": "Weiss",
         "solution": "Snowflake"
+      }
+    ],
+    "eliteClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "24 degrees 15 minutes north, 13 degrees 30 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -24,6 +68,22 @@
       {
         "type": "Coordinates",
         "clueHint": "25 degrees 03 minutes north, 17 degrees 05 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ],
+    "eliteClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "24 degrees 45 minutes north, 17 degrees 24 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ],
+    "masterClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "25 degrees 00 minutes north, 17 degrees 18 minutes east",
         "location": "",
         "itemsRequired": ["Spade"]
       }
@@ -70,6 +130,19 @@
         "clueHint": "Dr Hitman",
         "location": "Outside the Wilderness Resource Area.",
         "solution": "Mandrith"
+      },
+      {
+        "type": "Coordinates",
+        "clueHint": "24 degrees 07 minutes north, 23 degrees 22 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "More resources than I can handle, but in a very dangerous area. Can't wait to strike gold!",
+        "location": "",
+        "solution": "Dig in the centre of the three gold rocks in the Resource Area deep in the Wilderness.",
+        "itemsRequired": ["Spade"]
       }
     ],
     "masterClues": [
@@ -78,6 +151,12 @@
         "clueHint": "Dim Tharn",
         "location": "Outside the Wilderness Resource Area.",
         "solution": "Mandrith"
+      },
+      {
+        "type": "Coordinates",
+        "clueHint": "24 degrees 18 minutes north, 23 degrees 22 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -98,6 +177,12 @@
         "clueHint": "Ded War",
         "location": "Inside Rogues' Castle",
         "solution": "Edward"
+      },
+      {
+        "type": "Coordinates",
+        "clueHint": "24 degrees 22 minutes north, 27 degrees 00 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -110,6 +195,22 @@
         "clueHint": "Panic on the Wilderness volcano bridge. Beware of double agents!",
         "location": "",
         "itemsRequired": ["Headband", "Crozier"]
+      }
+    ],
+    "eliteClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "25 degrees 03 minutes north, 29 degrees 22 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ],
+    "masterClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "24 degrees 00 minutes north, 29 degrees 22 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -125,6 +226,18 @@
           { "x": 2, "y": 4, "notes": "Uri may show up in either chunk." }
         ],
         "itemsRequired": ["Adamant warhammer", "Mithril boots", "Ring of life"]
+      }
+    ]
+  },
+  {
+    "x": 4,
+    "y": 3,
+    "masterClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "22 degrees 24 minutes north, 31 degrees 11 minutes west",
+        "location": "",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -151,6 +264,14 @@
         "location": "Arceuus essence mine",
         "solution": "Clerris"
       }
+    ],
+    "masterClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "21 degrees 37 minutes north, 21 degrees 13 minutes west",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
     ]
   },
   {
@@ -163,6 +284,27 @@
         "location": "Soul altar on Zeah",
         "solution": "Aretha"
       }
+    ],
+    "eliteClues": [
+      {
+        "type": "Map",
+        "clueHint": "https://oldschool.runescape.wiki/images/e/e2/Map_clue_soul_altar.png?c4e82",
+        "location": "",
+        "solution": "Directly south of the soul altar.",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 14,
+    "y": 3,
+    "masterClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "21 degrees 56 minutes north, 10 degrees 56 minutes west",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
     ]
   },
   {
@@ -174,6 +316,18 @@
         "clueHint": "Career In Moon",
         "location": "Astral altar on Lunar Isle.",
         "solution": "Oneiromancer"
+      }
+    ]
+  },
+  {
+    "x": 19,
+    "y": 3,
+    "eliteClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Jump for joy at the Neitiznot rune rock.",
+        "location": "",
+        "itemsRequired": ["Rune boots", "Proselyte hauberk", "Dragonstone ring"]
       }
     ]
   },
@@ -286,6 +440,14 @@
         "location": "",
         "itemsRequired": ["Spade"]
       }
+    ],
+    "eliteClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Blow a kiss in the heart of the lava maze.",
+        "location": "",
+        "itemsRequired": ["Spotted cape", "Black d'hide chaps", "Rolling pin"]
+      }
     ]
   },
   {
@@ -308,6 +470,18 @@
       {
         "type": "Coordinates",
         "clueHint": "22 degrees 45 minutes north, 26 degrees 33 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 34,
+    "y": 3,
+    "eliteClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "22 degrees 54 minutes north, 29 degrees 01 minutes east",
         "location": "",
         "itemsRequired": ["Spade"]
       }
@@ -389,6 +563,18 @@
     ]
   },
   {
+    "x": 8,
+    "y": 4,
+    "masterClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "19 degrees 43 minutes north, 23 degrees 11 minutes west",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
     "x": 10,
     "y": 4,
     "easyClues": [
@@ -409,6 +595,26 @@
     ]
   },
   {
+    "x": 16,
+    "y": 4,
+    "eliteClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "20 degrees 11 minutes north, 07 degrees 41 minutes west",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ],
+    "masterClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "20 degrees 45 minutes north, 7 degrees 26 degrees west",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
     "x": 18,
     "y": 4,
     "hardClues": [
@@ -425,6 +631,54 @@
         "clueHint": "Snakes So I Sail",
         "location": "Neitiznot",
         "solution": "Lisse Isaakson"
+      },
+      {
+        "type": "Coordinates",
+        "clueHint": "19 degrees 56 minutes north, 02 degrees 31 minutes west",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      },
+      {
+        "type": "Coordinates",
+        "clueHint": "20 degrees 24 minutes north, 03 degrees 52 minutes west",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 24,
+    "y": 4,
+    "eliteClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "20 degrees 13 minutes north, 08 degrees 07 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 25,
+    "y": 4,
+    "eliteClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Green is the colour of my death as the winter-guise, I swoop towards the ground.",
+        "location": "",
+        "solution": "Players need to slide down to where Trollweiss grows on Trollweiss Mountain.",
+        "itemsRequired": ["Sled", "Spade"]
+      },
+      {
+        "type": "Emote",
+        "clueHint": "Panic at the area flowers meet snow.",
+        "location": "",
+        "itemsRequired": [
+          "Blue d'hide vambraces",
+          "Dragon spear",
+          "Rune plateskirt",
+          "Sled"
+        ]
       }
     ]
   },
@@ -435,6 +689,14 @@
       {
         "type": "Coordinates",
         "clueHint": "20 degrees 33 minutes north, 15 degrees 48 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ],
+    "masterClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "20 degrees 35 minutes north, 15 degrees 58 minutes east",
         "location": "",
         "itemsRequired": ["Spade"]
       }
@@ -462,6 +724,14 @@
         "location": "",
         "itemsRequired": ["Spade"]
       }
+    ],
+    "eliteClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "21 degrees 03 minutes north, 24 degrees 13 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
     ]
   },
   {
@@ -477,12 +747,33 @@
     ]
   },
   {
+    "x": 41,
+    "y": 4,
+    "eliteClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Does one really need a fire to stay warm here?",
+        "location": "",
+        "solution": "Located next to the fire near the Volcanic Mine entrance on the Fossil Island Volcano.",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
     "x": 1,
     "y": 5,
     "mediumClues": [
       {
         "type": "Coordinates",
         "clueHint": "17 degrees 39 minutes north, 37 degrees 16 minutes west",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ],
+    "masterClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "18 degrees 26 minutes north, 37 degrees 15 minutes west",
         "location": "",
         "itemsRequired": ["Spade"]
       }
@@ -519,6 +810,41 @@
     ]
   },
   {
+    "x": 21,
+    "y": 5,
+    "eliteClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "A ring of water surrounds 4 powerful rings, dig above the ladder located there.",
+        "location": "",
+        "itemsRequired": ["Spade"],
+        "alternateChunks": [
+          {
+            "x": 21,
+            "y": 7,
+            "notes": "Waterbirth Island Dungeon can be accessed from either chunk."
+          }
+        ],
+        "solution": "Dig by the ladder leading to the Dagannoth Kings' room in the Waterbirth Island Dungeon."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Three rule below and three sit at top. Come dig at my entrance.",
+        "location": "",
+        "solution": "Dig in front of the entrance to the Waterbirth Island Dungeon.",
+        "itemsRequired": ["Spade"]
+      }
+    ],
+    "masterClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "18 degrees 03 minutes north, 03 degrees 03 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
     "x": 24,
     "y": 5,
     "hardClues": [
@@ -550,12 +876,36 @@
     ]
   },
   {
+    "x": 26,
+    "y": 5,
+    "eliteClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "18 degrees 05 minutes north, 12 degrees 05 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
     "x": 28,
     "y": 5,
     "hardClues": [
       {
         "type": "Coordinates",
         "clueHint": "18 degrees 22 minutes north, 16 degrees 33 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 29,
+    "y": 5,
+    "eliteClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "17 degrees 58 minutes north, 19 degrees 05 minutes east",
         "location": "",
         "itemsRequired": ["Spade"]
       }
@@ -592,6 +942,18 @@
       {
         "type": "Anagram",
         "clueHint": "19 degrees 00 minutes north, 27 degrees 13 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 4,
+    "y": 6,
+    "masterClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "16 degrees 41 minutes north, 30 degrees 54 minutes west",
         "location": "",
         "itemsRequired": ["Spade"]
       }
@@ -655,6 +1017,15 @@
         "location": "",
         "solution": "Arnold Lydspor"
       }
+    ],
+    "eliteClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "The beasts retreat, for their Queen is gone; the song of this town still plays on. Dig near the birthplace of a blade, be careful not to melt your spade.",
+        "location": "",
+        "solution": "Dig in front of the small furnace in the Piscatoris Fishing Colony.",
+        "itemsRequired": ["Spade"]
+      }
     ]
   },
   {
@@ -704,6 +1075,14 @@
           "Fire battlestaff"
         ]
       }
+    ],
+    "eliteClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "16 degrees 09 minutes north, 10 degrees 33 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
     ]
   },
   {
@@ -727,6 +1106,18 @@
         "clueHint": "16 degrees 03 minutes north, 14 degrees 07 minutes east",
         "location": "",
         "itemsRequired": ["Spade"]
+      }
+    ],
+    "eliteClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Yawn at the top of Trollheim.",
+        "location": "",
+        "itemsRequired": [
+          "Lava battlestaff",
+          "Black d'hide vambraces",
+          "Mind shield"
+        ]
       }
     ]
   },
@@ -837,8 +1228,15 @@
         "clueHint": "Our Own Needs",
         "location": "Infirmary in the Shayzien Encampment.",
         "solution": "Nurse Wooned"
+      },
+      {
+        "type": "Emote",
+        "clueHint": "Shrug in the Shayzien command tent.",
+        "location": "",
+        "itemsRequired": ["Mystic robe bottom", "Rune kitshield", "Bob shirt"]
       }
-    ]
+    ],
+    "hardClues": []
   },
   {
     "x": 6,
@@ -928,6 +1326,22 @@
         "clueHint": "Bow at the top of the lighthouse. Beware of double agents!",
         "location": "",
         "itemsRequired": ["Blue d'hide body", "Blue d'hide vambraces"]
+      }
+    ],
+    "eliteClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "A ring of water surrounds 4 powerful rings, dig above the ladder located there.",
+        "location": "",
+        "itemsRequired": ["Spade"],
+        "alternateChunks": [
+          {
+            "x": 21,
+            "y": 5,
+            "notes": "Waterbirth Island Dungeon can be accessed from either chunk."
+          }
+        ],
+        "solution": "Dig by the ladder leading to the Dagannoth Kings' room in the Waterbirth Island Dungeon."
       }
     ]
   },
@@ -1031,6 +1445,12 @@
         "clueHint": "Brucie Catnap",
         "location": "Great Kourend",
         "solution": "Captain Bruce"
+      },
+      {
+        "type": "Anagram",
+        "clueHint": "Twenty Cure Iron",
+        "location": "",
+        "solution": "New Recruit Tony"
       }
     ]
   },
@@ -1198,6 +1618,35 @@
         "location": "Found in the cave on the path towards the Death Plateau west of Burthorpe.",
         "solution": "Saba"
       }
+    ],
+    "masterClues": [],
+    "eliteClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Dig in the middle of the Warriors' Guild entrance hall",
+        "location": "",
+        "solution": "Dig in the middle of the entrance hall.",
+        "itemsRequired": ["Spade"]
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "I am the one who watches the giants. The giants in turn watch me. I watch with two while they watch with one. Come seek where I may be.",
+        "location": "",
+        "solution": "Speak to Kamfreena on the top floor of the Warriors' Guild."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "W marks the spot.",
+        "location": "",
+        "solution": "Dig in the middle of the Warriors' Guild entrance hall.",
+        "itemsRequired": ["Spade"]
+      },
+      {
+        "type": "Emote",
+        "clueHint": "Salute in the warriors' guild bank.",
+        "location": "",
+        "itemsRequired": ["Black salamander"]
+      }
     ]
   },
   {
@@ -1286,6 +1735,23 @@
         "solution": "Dig 7 steps north and 4 steps east of the centre of the fairy ring.",
         "itemsRequired": ["Spade"]
       }
+    ],
+    "eliteClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Dig where the forces of Zamorak and Saradomin collide.",
+        "location": "",
+        "solution": "Dig next to the law rift in the Abyss, in the north-east section.",
+        "itemsRequired": ["Spade"]
+      }
+    ],
+    "masterClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "12 degrees 45 minutes north, 20 degrees 09 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
     ]
   },
   {
@@ -1297,6 +1763,14 @@
         "clueHint": "11 degrees 18 minutes north, 30 degrees 54 minutes east",
         "location": "",
         "itemsRequired": ["Spade"]
+      }
+    ],
+    "eliteClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Headbang at the top of the Slayer Tower.",
+        "location": "",
+        "itemsRequired": ["Seercull", "Helm of neitiznot", "Combat bracelet"]
       }
     ]
   },
@@ -1333,6 +1807,26 @@
     ]
   },
   {
+    "x": 38,
+    "y": 8,
+    "eliteClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "12 degrees 35 minutes north, 36 degrees 20 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ],
+    "masterClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "12 degrees 35 minutes north, 36 degrees 22 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
     "x": 39,
     "y": 8,
     "hardClues": [
@@ -1345,6 +1839,18 @@
     ]
   },
   {
+    "x": 41,
+    "y": 8,
+    "eliteClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "12 degrees 31 minutes north, 43 degrees 11 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
     "x": 4,
     "y": 9,
     "hardClues": [
@@ -1353,6 +1859,26 @@
         "clueHint": "10 degrees 03 minutes north, 32 degrees 13 minutes west",
         "location": "",
         "itemsRequired": ["Spade"]
+      }
+    ],
+    "eliteClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "10 degrees 52 minutes south, 30 degrees 54 minutes west",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 7,
+    "y": 9,
+    "masterClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Slam Duster Grail",
+        "location": "",
+        "solution": "Guildmaster Lars"
       }
     ]
   },
@@ -1374,6 +1900,18 @@
         "itemsRequired": ["Spade"],
         "solution": "Talk to Konoo who is digging saltpetre in Hosidius."
       }
+    ],
+    "eliteClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Salute by the Charcoal Burners.",
+        "location": "",
+        "itemsRequired": [
+          "Farmer's strawhat",
+          "Shayzien body (5)",
+          "Pyromancer robes"
+        ]
+      }
     ]
   },
   {
@@ -1385,6 +1923,14 @@
         "clueHint": "Monk's residence in the far west. See robe storage device.",
         "solution": "Search the drawers in the south tent of the monk's camp.",
         "location": "West of the Hosidius mine"
+      }
+    ],
+    "eliteClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "10 degrees 54 minutes north, 20 degrees 50 minutes west",
+        "location": "",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -1464,6 +2010,14 @@
         "location": "",
         "solution": "Otto Godblessed"
       }
+    ],
+    "eliteClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Jump for joy in the Ancient Cavern.",
+        "location": "",
+        "itemsRequired": ["Granite shield", "Splitbark body", ""]
+      }
     ]
   },
   {
@@ -1504,7 +2058,7 @@
         "solution": "If approaching from outside, squeeze through the broken fence by the northern half of the hut in the centre and search the crate south of the house."
       }
     ],
-    "eliteClues": [{ "type": "Anagram", "clueHint": "", "location": "" }]
+    "eliteClues": []
   },
   {
     "x": 24,
@@ -1553,6 +2107,13 @@
         "clueHint": "You have all of the elements available to solve this clue. Fortunately you do not have to go as far as to stand in a draft.",
         "location": "",
         "solution": "Search the crate, just west of the Air elementals, inside the Elemental Workshop."
+      }
+    ],
+    "eliteClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Even the seers say this clue goes right over their heads.",
+        "location": ""
       }
     ]
   },
@@ -1609,6 +2170,20 @@
         "clueHint": "Cheer at the Druids' Circle.",
         "location": "Taverley",
         "itemsRequired": ["Blue wizard hat", "Bronze 2h sword", "Ham boots"]
+      }
+    ],
+    "eliteClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "A Guthixian ring lies between two peaks. Search the stones and you'll find what you seek.",
+        "location": "",
+        "solution": "Search the stones several steps west of the Guthixian stone circle in Taverley."
+      },
+      {
+        "type": "Emote",
+        "clueHint": "Laugh by the fountain of heroes.",
+        "location": "",
+        "itemsRequired": ["Splitbark legs", "Dragon boots", "Rune longsword"]
       }
     ]
   },
@@ -1702,6 +2277,14 @@
         "location": "",
         "solution": "Speak to Oziach in Edgeville."
       }
+    ],
+    "eliteClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Bow upstairs in the Edgeville Monastery.",
+        "location": "",
+        "itemsRequired": ["God book"]
+      }
     ]
   },
   {
@@ -1759,7 +2342,32 @@
           {
             "x": 32,
             "y": 9,
-            "notes": "The moss giants can be accessed from either chunk."
+            "notes": "The moss giants can be accessed from these chunks."
+          },
+          {
+            "x": 30,
+            "y": 10,
+            "notes": "The moss giants can be accessed from these chunks."
+          }
+        ]
+      }
+    ],
+    "eliteClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "You were 3 and I was the 6th. Come speak to me.",
+        "location": "",
+        "solution": "Speak to Vannaka in Edgeville Dungeon.",
+        "alternateChunks": [
+          {
+            "x": 30,
+            "y": 10,
+            "notes": "Edgeville Dungeon can be accessed by these chunks."
+          },
+          {
+            "x": 32,
+            "y": 9,
+            "notes": "Edgeville Dungeon can be accessed by these chunks."
           }
         ]
       }
@@ -1832,7 +2440,12 @@
           {
             "x": 30,
             "y": 9,
-            "notes": "The moss giants can be accessed from either chunk."
+            "notes": "The moss giants can be accessed from these chunks."
+          },
+          {
+            "x": 30,
+            "y": 10,
+            "notes": "The moss giants can be accessed from these chunks."
           }
         ],
         "itemsRequired": ["Spade"]
@@ -1842,6 +2455,26 @@
         "clueHint": "Surprising? I bet he is...",
         "location": "",
         "solution": "Talk to Sir Prysin in Varrock Palace."
+      }
+    ],
+    "eliteClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "You were 3 and I was the 6th. Come speak to me.",
+        "location": "",
+        "solution": "Speak to Vannaka in Edgeville Dungeon.",
+        "alternateChunks": [
+          {
+            "x": 30,
+            "y": 9,
+            "notes": "Edgeville Dungeon can be accessed by these chunks."
+          },
+          {
+            "x": 30,
+            "y": 10,
+            "notes": "Edgeville Dungeon can be accessed by these chunks."
+          }
+        ]
       }
     ]
   },
@@ -1951,6 +2584,14 @@
           "Iron 2h sword"
         ]
       }
+    ],
+    "eliteClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "His bark is worse than his bite.",
+        "location": "",
+        "solution": "Speak to Barker at Canifis's Barkers' Haberdashery."
+      }
     ]
   },
   {
@@ -1961,6 +2602,18 @@
         "type": "Emote",
         "clueHint": "Panic in the heart of the Haunted Woods. Beware of double agents!",
         "location": ""
+      }
+    ]
+  },
+  {
+    "x": 9,
+    "y": 10,
+    "masterClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "08 degrees 01 minutes north, 20 degrees 58 minutes west",
+        "location": "",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -2058,6 +2711,18 @@
     ]
   },
   {
+    "x": 21,
+    "y": 10,
+    "eliteClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Cheer in the Shadow dungeon.",
+        "location": "",
+        "itemsRequired": ["Rune crossbow", "Climbing boots", "Mitre"]
+      }
+    ]
+  },
+  {
     "x": 22,
     "y": 10,
     "easyClues": [
@@ -2145,6 +2810,13 @@
         "clueHint": "Complete a Sherlock task.",
         "location": ""
       }
+    ],
+    "masterClues": [
+      {
+        "type": "Sherlock",
+        "clueHint": "Complete a Sherlock task.",
+        "location": ""
+      }
     ]
   },
   {
@@ -2186,6 +2858,14 @@
           "Green d'hide chaps",
           "Iron med helm"
         ]
+      }
+    ],
+    "eliteClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "I burn between heroes and legends.",
+        "location": "",
+        "solution": "Speak to the candle maker in Catherby."
       }
     ]
   },
@@ -2229,6 +2909,14 @@
         "clueHint": "I watch the sea. I watch you fish. I watch your tree.",
         "location": "",
         "solution": "Speak to Ellena at Catherby fruit tree patch."
+      }
+    ],
+    "masterClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "08 degrees 11 minutes north, 12 degrees 30 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -2443,6 +3131,46 @@
         "location": "",
         "solution": "Dig at Barbarian Village, next to the Stronghold of Security.",
         "itemsRequired": ["Spade"]
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "My giant guardians below the market streets would be fans of rock and roll, if only they could grab hold of it. Dig near my green bubbles!",
+        "location": "",
+        "alternateChunks": [
+          {
+            "x": 32,
+            "y": 9,
+            "notes": "The moss giants can be accessed from these chunks."
+          },
+          {
+            "x": 30,
+            "y": 9,
+            "notes": "The moss giants can be accessed from these chunks."
+          }
+        ],
+        "itemsRequired": ["Spade"],
+        "solution": "Dig near the cauldron by moss giants under Varrock Sewers."
+      }
+    ],
+    "eliteClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "You were 3 and I was the 6th. Come speak to me.",
+        "location": "",
+        "itemsRequired": [""],
+        "alternateChunks": [
+          {
+            "x": 30,
+            "y": 9,
+            "notes": "Edgeville Dungeon can be accessed by these chunks."
+          },
+          {
+            "x": 32,
+            "y": 9,
+            "notes": "Edgeville Dungeon can be accessed by these chunks."
+          }
+        ],
+        "solution": "Speak to Vannaka in Edgeville Dungeon."
       }
     ]
   },
@@ -2612,6 +3340,14 @@
         "location": "",
         "solution": "Speak to Wilough, next to the fur merchant in Varrock Square."
       }
+    ],
+    "eliteClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Varrock is where I reside, not the land of the dead, but I am so old, I should be there instead. Let's hope your reward is as good as it says, just 1 gold one and you can have it read.",
+        "location": "",
+        "solution": "Talk to Gypsy Aris, west of Varrock Square."
+      }
     ]
   },
   {
@@ -2633,6 +3369,26 @@
       {
         "type": "Coordinates",
         "clueHint": "08 degrees 03 minutes north, 31 degrees 16 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 37,
+    "y": 10,
+    "eliteClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "08 degrees 15 minutes north, 35 degrees 24 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ],
+    "masterClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "07 degrees 37 minutes north, 35 degrees 18 minutes east",
         "location": "",
         "itemsRequired": ["Spade"]
       }
@@ -2761,6 +3517,32 @@
         "clueHint": "https://oldschool.runescape.wiki/images/7/7e/Map_clue_Picnic_tables.png?788d4",
         "location": "The picnic tables south of the Legends' Guild, north-east of East Ardougne. south of fairy ring B*L*R",
         "itemsRequired": ["Spade"]
+      }
+    ],
+    "eliteClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "06 degrees 35 minutes north, 09 degrees 07 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      },
+      {
+        "type": "Emote",
+        "clueHint": "Bow on the ground floor of the Legends' guild.",
+        "location": "",
+        "itemsRequired": [
+          "Cape of legends",
+          "Dragon battleaxe",
+          "Amulet of glory"
+        ]
+      }
+    ],
+    "masterClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Mus Kil Reader",
+        "location": "",
+        "solution": "Radimus Erkle"
       }
     ]
   },
@@ -3060,6 +3842,14 @@
           }
         ]
       }
+    ],
+    "eliteClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Speak to a Wyse man.",
+        "location": "",
+        "solution": "Talk to Wyson the gardener at Falador Park."
+      }
     ]
   },
   {
@@ -3332,6 +4122,14 @@
         "location": "",
         "itemsRequired": ["Spade"]
       }
+    ],
+    "masterClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "05 degrees 13 minutes north, 04 degrees 16 minutes west",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
     ]
   },
   {
@@ -3361,6 +4159,20 @@
         "clueHint": "Hick Jet",
         "location": "West Ardougne centre square",
         "solution": "Jethick"
+      }
+    ],
+    "eliteClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Stop crying! Talk to the head.",
+        "location": "",
+        "solution": "Talk to the Head Mourner in the Mourner Headquarters in West Ardougne."
+      },
+      {
+        "type": "Emote",
+        "clueHint": "Spin in West Ardougne Church.",
+        "location": "",
+        "itemsRequired": ["Dragon spear", "Red d'hide chaps"]
       }
     ]
   },
@@ -3453,6 +4265,25 @@
         "location": "",
         "solution": "Zenesha"
       }
+    ],
+    "eliteClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Dobson is my last name, and with gardening I seek fame.",
+        "location": "",
+        "solution": "Horacio, located in the garden of the Handelmort Mansion in East Ardougne.",
+        "itemsRequired": [""]
+      },
+      {
+        "type": "Emote",
+        "clueHint": "Laugh in front of the gem store in Ardougne market.",
+        "location": "",
+        "itemsRequired": [
+          "Castle wars bracelet",
+          "Dragonstone amulet",
+          "Ring of forging"
+        ]
+      }
     ]
   },
   {
@@ -3465,6 +4296,14 @@
         "location": "North Witchaven next to the row boat. After the Sea Slug quest, she is found wandering the coast.",
         "solution": "Caroline"
       }
+    ],
+    "masterClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "03 degrees 50 minutes north, 09 degrees 07 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
     ]
   },
   {
@@ -3476,6 +4315,18 @@
         "clueHint": "Try not to step on any aquatic nasties while searching this crate.",
         "location": "",
         "solution": "Search the crate in Bailey's house on the Fishing Platform."
+      }
+    ],
+    "eliteClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Dance on the Fishing Platform.",
+        "location": "",
+        "itemsRequired": [
+          "Barrows gloves",
+          "Amulet of glory",
+          "Dragon med helm"
+        ]
       }
     ]
   },
@@ -3494,6 +4345,14 @@
       {
         "type": "Coordinates",
         "clueHint": "03 degrees 18 minutes north, 12 degrees 31 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ],
+    "masterClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "03 degrees 26 minutes north, 12 degrees 18 minutes east",
         "location": "",
         "itemsRequired": ["Spade"]
       }
@@ -3696,6 +4555,15 @@
         "location": "",
         "solution": "South of the path to Mort'ton."
       }
+    ],
+    "eliteClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Right on the blessed border, cursed by the evil ones. On the spot inaccessible by both; I will be waiting. The bugs' imminent possession holds the answer.",
+        "location": "",
+        "solution": "Dig right under the fairy ring located west of Filliman's grotto.",
+        "itemsRequired": ["Spade"]
+      }
     ]
   },
   {
@@ -3720,6 +4588,18 @@
         "clueHint": "Dragons Lament",
         "location": "",
         "solution": "Strange Old Man"
+      }
+    ]
+  },
+  {
+    "x": 38,
+    "y": 12,
+    "masterClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "04 degrees 58 minutes north, 36 degrees 56 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -3750,6 +4630,14 @@
         "clueHint": "There is no 'worthier' lord.",
         "location": "",
         "solution": "Speak to Lord Iorwerth in the elven camp near Prifddinas."
+      }
+    ],
+    "masterClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "01 degrees 30 minutes north, 08 degrees 11 minutes west",
+        "location": "",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -4298,6 +5186,12 @@
         "clueHint": "Majors Lava Bads Air",
         "location": "North-east Dorgesh-Kaan, middle floor, just south of the house with the quest symbol. (You must complete Another Slice of H.A.M. before attempting).",
         "solution": "Ambassador Alvijar"
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "A reck you say; let's pray there aren't any ghosts.",
+        "location": "",
+        "solution": "Speak to Father Aereck in Lumbridge."
       }
     ]
   },
@@ -4361,7 +5255,28 @@
         "type": "Coordinates",
         "clueHint": "02 degrees 39 minutes north, 29 degrees 58 minutes east",
         "location": "",
-        "itemsRequired": ["Spade"]
+        "itemsRequired": ["Spade"],
+        "solution": ""
+      }
+    ],
+    "eliteClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Dig under Razorlor's toad batta.",
+        "location": "",
+        "solution": "Dig on the toad batta spawn in Tarn's Lair."
+      }
+    ]
+  },
+  {
+    "x": 36,
+    "y": 13,
+    "masterClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Mal in Tau",
+        "location": "",
+        "solution": "Luminata"
       }
     ]
   },
@@ -4380,6 +5295,27 @@
         "clueHint": "02 degrees 58 minutes north, 34 degrees 30 minutes east",
         "location": "",
         "itemsRequired": ["Spade"]
+      }
+    ],
+    "eliteClues": [
+      {
+        "type": "Map",
+        "clueHint": "https://oldschool.runescape.wiki/images/8/85/Map_clue_Burgh_de_Rott_furnace.png?fca9c",
+        "location": "",
+        "solution": "East of the Burgh de Rott furnace.",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 38,
+    "y": 13,
+    "masterClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Mold La Ran",
+        "location": "",
+        "solution": "Old Man Ral"
       }
     ]
   },
@@ -4458,6 +5394,26 @@
         "clueHint": "00 degrees 18 minutes south, 02 degrees 35 minutes west",
         "location": "",
         "itemsRequired": ["Spade"]
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Has no one told you it is rude to ask a lady her age?",
+        "location": "",
+        "solution": "Speak to Mawrth in Lletya"
+      }
+    ],
+    "masterClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Rue Go",
+        "location": "",
+        "solution": "Goreu"
+      },
+      {
+        "type": "Anagram",
+        "clueHint": "Yawns Gy",
+        "location": "",
+        "solution": "Ysgawyn"
       }
     ]
   },
@@ -4517,6 +5473,18 @@
     ]
   },
   {
+    "x": 22,
+    "y": 14,
+    "eliteClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Headbang in the Fight Arena pub.",
+        "location": "",
+        "itemsRequired": ["Pirate bandana", "Magic longbow", "Dragon necklace"]
+      }
+    ]
+  },
+  {
     "x": 23,
     "y": 14,
     "easyClues": [
@@ -4530,6 +5498,15 @@
         "clueHint": "Search the crate near a cart in Port Khazard.",
         "location": "",
         "solution": "Search by the southern Khazard General Store in Port Khazard."
+      }
+    ],
+    "eliteClues": [
+      {
+        "type": "Map",
+        "clueHint": "https://oldschool.runescape.wiki/images/2/2a/Map_clue_Mogre_Camp.png?25cfd",
+        "location": "",
+        "solution": "Inside the mudskipper cave west of the Mogre Camp.",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -4904,6 +5881,39 @@
     ]
   },
   {
+    "x": 15,
+    "y": 15,
+    "masterClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "01 degrees 54 minutes south, 08 degrees 54 minutes west",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 16,
+    "y": 15,
+    "eliteClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Observing someone in a swamp, under the telescope lies treasure.",
+        "location": "",
+        "solution": "Dig by the telescope in the island where Broken Handz can be found.",
+        "itemsRequired": ["Spade"]
+      }
+    ],
+    "masterClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "02 degrees 09 minutes south, 06 degrees 58 minutes west",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
     "x": 20,
     "y": 15,
     "mediumClues": [
@@ -4912,6 +5922,15 @@
         "clueHint": "Yawn in the Castle Wars lobby. Shrug before you talk to me.",
         "location": "",
         "itemsRequired": ["Mithril scimitar", "Ruby amulet", "Team cape"]
+      }
+    ],
+    "eliteClues": [
+      {
+        "type": "Map",
+        "clueHint": "https://oldschool.runescape.wiki/images/8/81/Map_clue_Castle_Wars.png?aabae",
+        "location": "",
+        "solution": "North east of Castle Wars, just west of fairy ring C*I*Q",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -4972,6 +5991,12 @@
         "clueHint": "Or Zinc Fumes Ward",
         "location": "Downstairs in the Wizards' Guild (requires 66 Magic to enter, boosted).",
         "solution": "Wizard Frumscone"
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "'See you in your dreams' said the vegetable man.",
+        "location": "",
+        "solution": "Speak to Dominic Onion at the Nightmare Zone teleport spot."
       }
     ]
   },
@@ -5080,6 +6105,15 @@
         "location": "",
         "itemsRequired": ["Bruise blue snelm", "Air staff", "Bronze sq shield"]
       }
+    ],
+    "eliteClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Desert insects is what I see, Taking care of them was my responsibility. Your solution is found by digging near me.",
+        "location": "",
+        "solution": "Dig next to the entomologist, in the Kalphite Cave east of Shantay Pass.",
+        "itemsRequired": ["Spade"]
+      }
     ]
   },
   {
@@ -5119,6 +6153,15 @@
         "clueHint": "Car If Ices",
         "location": "Zul-Andra, on the dock near Priestess Zul-Gwenwynig.",
         "solution": "Sacrifice"
+      }
+    ],
+    "eliteClues": [
+      {
+        "type": "Map",
+        "clueHint": "https://oldschool.runescape.wiki/images/2/26/Map_clue_Zul-Andra.png?ce05c",
+        "location": "",
+        "solution": "East of the small building in Zul-Andra, next to the tree.",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -5262,6 +6305,39 @@
         "location": "",
         "itemsRequired": ["Spade"]
       }
+    ],
+    "masterClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "6 minutes east",
+        "location": "",
+        "solution": "03 degrees 09 minutes south, 43 degrees 2",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 18,
+    "y": 17,
+    "eliteClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "06 degrees 28 minutes south, 03 degrees 48 minutes west",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 21,
+    "y": 17,
+    "eliteClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "05 degrees 39 minutes south, 02 degrees 13 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
     ]
   },
   {
@@ -5357,6 +6433,18 @@
     ]
   },
   {
+    "x": 33,
+    "y": 17,
+    "eliteClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "05 degrees 24 minutes south, 26 degrees 56 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
     "x": 34,
     "y": 17,
     "mediumClues": [
@@ -5377,6 +6465,18 @@
         "clueHint": "Quit Horrible Tyrant",
         "location": "",
         "solution": "Brother Tranquility"
+      }
+    ]
+  },
+  {
+    "x": 14,
+    "y": 18,
+    "eliteClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "08 degrees 30 minutes south, 10 degrees 48 minutes west",
+        "location": "",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -5435,6 +6535,39 @@
     ]
   },
   {
+    "x": 34,
+    "y": 18,
+    "eliteClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "I live in a deserted crack collecting soles.",
+        "location": "",
+        "solution": "Enter the crack west of Nardah rug merchant, and talk to the genie.",
+        "itemsRequired": ["Rope", "Light sources"]
+      }
+    ],
+    "masterClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Ten Wigs On",
+        "location": "",
+        "solution": "Wingstone",
+        "alternateChunks": [
+          {
+            "x": 35,
+            "y": 18,
+            "notes": "Wingstone wanders between these chunks."
+          },
+          {
+            "x": 34,
+            "y": 19,
+            "notes": "Wingstone wanders between these chunks."
+          }
+        ]
+      }
+    ]
+  },
+  {
     "x": 35,
     "y": 18,
     "hardClues": [
@@ -5443,6 +6576,38 @@
         "clueHint": "I Eat Its Chart Hints Do U",
         "location": "",
         "solution": "Shiratti the Custodian"
+      }
+    ],
+    "masterClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Ten Wigs On",
+        "location": "",
+        "solution": "Wingstone",
+        "alternateChunks": [
+          {
+            "x": 34,
+            "y": 18,
+            "notes": "Wingstone wanders between these chunks."
+          },
+          {
+            "x": 34,
+            "y": 19,
+            "notes": "Wingstone wanders between these chunks."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "x": 20,
+    "y": 19,
+    "masterClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Rip Maul",
+        "location": "",
+        "solution": "Primula"
       }
     ]
   },
@@ -5467,6 +6632,18 @@
     ]
   },
   {
+    "x": 32,
+    "y": 19,
+    "eliteClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "10 degrees 05 minutes south, 24 degrees 31 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
     "x": 34,
     "y": 19,
     "hardClues": [
@@ -5475,6 +6652,38 @@
         "clueHint": "Cheer at the top of the agility pyramid. Beware of double agents!",
         "location": "",
         "itemsRequired": ["Mystic robe top", "Rune shield (h1)"]
+      }
+    ],
+    "masterClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Ten Wigs On",
+        "location": "",
+        "solution": "Wingstone",
+        "alternateChunks": [
+          {
+            "x": 34,
+            "y": 18,
+            "notes": "Wingstone wanders between these chunks."
+          },
+          {
+            "x": 35,
+            "y": 18,
+            "notes": "Wingstone wanders between these chunks."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "x": 41,
+    "y": 19,
+    "eliteClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "09 degrees 46 minutes south, 43 degrees 22 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -5487,6 +6696,14 @@
         "clueHint": "Woo An Egg Kiwi",
         "location": "",
         "solution": "King Awowogei"
+      }
+    ],
+    "eliteClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "With a name like that, you'd expect a little more than just a few scimitars.",
+        "location": "",
+        "solution": "Speak to Daga on Ape Atoll."
       }
     ]
   },
@@ -5509,6 +6726,24 @@
     ]
   },
   {
+    "x": 24,
+    "y": 21,
+    "eliteClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "14 degrees 15 minutes south, 08 degrees 01 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      },
+      {
+        "type": "Map",
+        "clueHint": "https://oldschool.runescape.wiki/images/6/68/Map_clue_ape_atoll_shack.png?47f13",
+        "location": "",
+        "solution": "In the south-west coast of Ape Atoll, there is a little shack where the crate is located."
+      }
+    ]
+  },
+  {
     "x": 25,
     "y": 21,
     "masterClues": [
@@ -5517,6 +6752,38 @@
         "clueHint": "Duo Plug",
         "location": "Graveyard on Ape Atoll, south of Awowogei's throne room.",
         "solution": "Dugopul"
+      }
+    ]
+  },
+  {
+    "x": 27,
+    "y": 21,
+    "eliteClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "13 degrees 45 minutes south, 15 degrees 30 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ],
+    "masterClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "13 degrees 33 minutes south, 15 degrees 26 minutes east",
+        "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 23,
+    "y": 22,
+    "eliteClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "You must be 100 to play with me.",
+        "location": "",
+        "solution": "Speak to the Veteran boat squire at Pest Control."
       }
     ]
   }
