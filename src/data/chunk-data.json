@@ -118,6 +118,22 @@
         "location": "Level 50 Wilderness, near Wilderness Agility Course; south-west of Deep Wilderness Dungeon entrance and west of the Mage Arena.",
         "itemsRequired": ["Spade"]
       }
+    ],
+    "masterClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Faint sounds of 'Arr', fire giants found deep, the eastern tip of a lake, are the rewards you could reap.",
+        "location": "",
+        "solution": "Dig south of the pillar at the end of the Deep Wilderness Dungeon.",
+        "itemsRequired": ["Spade"]
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Guthix left his mark in a fiery lake, dig at the tip of it.",
+        "location": "",
+        "solution": "Dig at the tip of the lava lake that is shaped like a Guthixian symbol, west of the Mage Arena.",
+        "itemsRequired": ["Spade"]
+      }
     ]
   },
   {
@@ -170,6 +186,18 @@
         "clueHint": "24 degrees 18 minutes north, 23 degrees 22 minutes east",
         "location": "",
         "itemsRequired": ["Spade"]
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "One of several rhyming brothers, in business attire with an obsession for paper work.",
+        "location": "",
+        "solution": "Speak to Piles in the Resource Area."
+      },
+      {
+        "type": "Emote",
+        "clueHint": "Clap in the magic axe hut. Beware of double agents.",
+        "location": "",
+        "itemsRequired": ["Flared trousers", "Lockpick"]
       }
     ]
   },
@@ -461,6 +489,15 @@
         "location": "",
         "itemsRequired": ["Spotted cape", "Black d'hide chaps", "Rolling pin"]
       }
+    ],
+    "masterClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Great demons, dragons, and spiders protect this blue rock, beneath which, you may find what you seek.",
+        "location": "",
+        "solution": "Dig by the runite rock in the Lava Maze Dungeon.",
+        "itemsRequired": ["Spade"]
+      }
     ]
   },
   {
@@ -484,6 +521,15 @@
         "type": "Coordinates",
         "clueHint": "22 degrees 45 minutes north, 26 degrees 33 minutes east",
         "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ],
+    "masterClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Pentagrams and demons, burnt bones and remains, I wonder what the blood contains.",
+        "location": "",
+        "solution": "Dig under the blood rune spawn next to the Demonic Ruins.",
         "itemsRequired": ["Spade"]
       }
     ]
@@ -548,6 +594,18 @@
     ]
   },
   {
+    "x": 5,
+    "y": 4,
+    "masterClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "She's small but can build both literally and figuratively, as long as you have their favour",
+        "location": "",
+        "solution": "Speak to Lovada south of the Lovakengj blast mine."
+      }
+    ]
+  },
+  {
     "x": 7,
     "y": 4,
     "mediumClues": [
@@ -572,6 +630,20 @@
         "clueHint": "QSPGFTTPS HSBDLMFCPOF",
         "location": "Arceuus Library",
         "solution": "Professor Gracklebone"
+      }
+    ],
+    "masterClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Darkness wanders around me, but fills my mind with knowledge.",
+        "location": "",
+        "solution": "Speak to Biblia on the Arceuus Library's top floor."
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Shhhh!",
+        "location": "",
+        "solution": "Speak to Logosia in the Arceuus Library's ground floor."
       }
     ]
   },
@@ -898,6 +970,15 @@
         "location": "",
         "itemsRequired": ["Spade"]
       }
+    ],
+    "masterClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Dig in front of the icy arena where 1 of 4 was fought.",
+        "location": "",
+        "solution": "Where you fought Kamil from Desert Treasure, dig north-east of the first small rock just past the wolves.",
+        "itemsRequired": ["Spade"]
+      }
     ]
   },
   {
@@ -910,6 +991,25 @@
         "location": "",
         "solution": "North-east of the God Wars Dungeon entrance, climb the rocky handholds and dig by the large crossbow.",
         "itemsRequired": ["Spade"]
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "I lie beneath the first descent to the holy encampment.",
+        "location": "",
+        "solution": "Dig immediately after climbing down the first set of rocks towards Saradomin's Encampment within the God Wars Dungeon. Two ropes are needed; one to enter the dungeon and another to enter Saradomin's Encampment (not required if you've used once before already).",
+        "itemsRequired": ["Spade"]
+      },
+      {
+        "type": "Cryptic",
+        "clueHint": "Kill the spiritual, magic and godly whilst representing their own god",
+        "location": "",
+        "solution": "Kill a spiritual mage in the God Wars Dungeon"
+      },
+      {
+        "type": "Emote",
+        "clueHint": "Blow a kiss outside K'ril Tsutsaroth's chamber. Beware of double agents! Equip a Zamorak full helm and the shadow sword.",
+        "location": "",
+        "itemsRequired": ["Shadow sword", "Zamorak full helm"]
       }
     ]
   },
@@ -1294,6 +1394,14 @@
           "Amulet of strength"
         ]
       }
+    ],
+    "masterClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "This place sure is a mess.",
+        "location": "",
+        "solution": "Ewesey is located in the Hosidius mess hall."
+      }
     ]
   },
   {
@@ -1645,7 +1753,24 @@
         "solution": "Saba"
       }
     ],
-    "masterClues": [],
+    "masterClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Ghommal wishes to be impressed by how strong your equipment is.",
+        "location": "",
+        "solution": "Speak to Ghommal with a total Melee Strength bonus of 100 or more."
+      },
+      {
+        "type": "Emote",
+        "clueHint": "Blow a raspberry at the bank of the Warriors' guild. Beware of double agents!",
+        "location": "",
+        "itemsRequired": [
+          "Dragon battleaxe",
+          "Dragon defender",
+          "Slayer helmet"
+        ]
+      }
+    ],
     "eliteClues": [
       {
         "type": "Cryptic",
@@ -1741,6 +1866,15 @@
         "clueHint": "Rat Mat Within",
         "location": "",
         "solution": "Martin Thwait"
+      }
+    ],
+    "masterClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Fiendish cooks probably won’t dig the dirty dishes.",
+        "location": "",
+        "solution": "Dig by the fire in the Rogues' Den.",
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -2642,6 +2776,18 @@
     ]
   },
   {
+    "x": 39,
+    "y": 9,
+    "masterClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Robin wishes to see your finest ranged equipment.",
+        "location": "",
+        "solution": "Robin at the inn in Port Phasmatys. Speak to him while wearing equipment adding up to 182 ranged attack bonus or over (toxic blowpipes cannot be used for this clue.)"
+      }
+    ]
+  },
+  {
     "x": 9,
     "y": 10,
     "masterClues": [
@@ -2650,6 +2796,18 @@
         "clueHint": "08 degrees 01 minutes north, 20 degrees 58 minutes west",
         "location": "",
         "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 16,
+    "y": 10,
+    "masterClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Beckon by a collection of crystalline maple trees. Beware of double agents!",
+        "location": "",
+        "itemsRequired": ["Bryophyta's staff", "Nature tiara"]
       }
     ]
   },
@@ -2759,7 +2917,17 @@
           "Climbing boots",
           "Ring of invisibility",
           "Mitre"
-        ]
+        ],
+        "solution": ""
+      }
+    ],
+    "masterClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "The far north-eastern corner where 1 of 4 was defeated, the shadows still linger.",
+        "location": "",
+        "solution": "Dig on the north-eastern-most corner of the Shadow Dungeon.",
+        "itemsRequired": ["Ring of visibility", "Spade"]
       }
     ]
   },
@@ -3013,6 +3181,14 @@
         "clueHint": "07 degrees 33 minutes north, 15 degrees 00 minutes east",
         "location": "",
         "itemsRequired": ["Spade"]
+      }
+    ],
+    "masterClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "My life was spared but these voices remain, now guarding these iron gates is my bane.",
+        "location": "",
+        "solution": "Speak to the Key Master in Cerberus' Lair."
       }
     ]
   },
@@ -3389,6 +3565,15 @@
         "location": "",
         "solution": "Talk to Gypsy Aris, west of Varrock Square."
       }
+    ],
+    "masterClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Under a giant robotic bird that cannot fly.",
+        "location": "",
+        "solution": "Dig next to the terrorbird display in the south exhibit of Varrock Museum's basement.",
+        "itemsRequired": ["Spade"]
+      }
     ]
   },
   {
@@ -3443,6 +3628,19 @@
         "type": "Coordinates",
         "clueHint": "05 degrees 18 minutes north, 6 degrees 48 minutes west",
         "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
+    "x": 17,
+    "y": 11,
+    "masterClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Elvish onions.",
+        "location": "",
+        "solution": "Dig in the onion patch east of the allotment patches in the east part of Prifddinas.",
         "itemsRequired": ["Spade"]
       }
     ]
@@ -3597,7 +3795,8 @@
         "location": "",
         "solution": "On Entrana, search the southern drawer in the house with the cooking range on the western side of the island."
       }
-    ]
+    ],
+    "masterClues": []
   },
   {
     "x": 27,
@@ -3780,6 +3979,15 @@
         "clueHint": "I'd like to hear some music. Come and see me on the bridge in Falador Park, and play: <some music>",
         "location": "Falador Park",
         "solution": "Play <some music> for Cecilia"
+      }
+    ],
+    "masterClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Hopefully this set of armour will help you to keep surviving.",
+        "location": "",
+        "solution": "Speak to Sir Vyvin while wearing white platebody and white platelegs",
+        "itemsRequired": ["White platebody", "White platelegs"]
       }
     ]
   },
@@ -4020,6 +4228,14 @@
           }
         ],
         "solution": "Charlie the Tramp"
+      }
+    ],
+    "masterClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Where safe to speak, the man who offers the pouch of smallest size wishes to see your alignment.",
+        "location": "",
+        "solution": "Speak to the Mage of Zamorak in the Zamorakian chapel south of Aubury's Rune Shop in East Varrock while wearing three items aligned to Zamorak."
       }
     ]
   },
@@ -4695,6 +4911,12 @@
         "clueHint": "01 degrees 30 minutes north, 08 degrees 11 minutes west",
         "location": "",
         "itemsRequired": ["Spade"]
+      },
+      {
+        "type": "Emote",
+        "clueHint": "Bow in the Iorwerth Camp. Beware of double agents!",
+        "location": "",
+        "itemsRequired": ["Cystal bow"]
       }
     ]
   },
@@ -4882,6 +5104,21 @@
           }
         ],
         "solution": "Karamja Volcano can be accessed from either chunk."
+      }
+    ],
+    "masterClues": [
+      {
+        "type": "Emote",
+        "clueHint": "Cry in the Tzhaar gem store. Beware of the double agents!",
+        "location": "",
+        "itemsRequired": ["Fire cape", "Toktz-xil-ul"],
+        "alternateChunks": [
+          {
+            "x": 26,
+            "y": 14,
+            "notes": "Karamja Volcano can be accessed from either chunk."
+          }
+        ]
       }
     ]
   },
@@ -5257,6 +5494,14 @@
         "clueHint": "A reck you say; let's pray there aren't any ghosts.",
         "location": "",
         "solution": "Speak to Father Aereck in Lumbridge."
+      }
+    ],
+    "masterClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Here, there are tears, but nobody is crying. Speak to the guardian and show off your alignment to balance.",
+        "location": "",
+        "solution": "Talk to Juna while wearing three Guthix-affiliated items."
       }
     ]
   },
@@ -5664,6 +5909,21 @@
         "location": "",
         "solution": "Inside Karamja Volcano, dig directly underneath the red spiders' eggs respawn.",
         "itemsRequired": ["Spade"],
+        "alternateChunks": [
+          {
+            "x": 26,
+            "y": 13,
+            "notes": "Karamja Volcano can be accessed from either chunk."
+          }
+        ]
+      }
+    ],
+    "masterClues": [
+      {
+        "type": "Anagram",
+        "clueHint": "Cry in the Tzhaar gem store. Beware of the double agents!",
+        "location": "",
+        "itemsRequired": ["Fire cape", "Toktz-xil-ul"],
         "alternateChunks": [
           {
             "x": 26,
@@ -6467,6 +6727,15 @@
         "type": "Coordinates",
         "clueHint": "05 degrees 07 minutes south, 13 degrees 26 minutes east",
         "location": "",
+        "itemsRequired": ["Spade"]
+      }
+    ],
+    "masterClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "South of a river in a town surrounded by the undead, what lies beneath the furnace?",
+        "location": "",
+        "solution": "Dig in front of the Shilo Village furnace.",
         "itemsRequired": ["Spade"]
       }
     ]
