@@ -205,15 +205,12 @@ for (const variant of slayerHelmVariants) {
   slayerHelmItems.push(`${variant} slayer helmet`);
 }
 
-const fireCapeVariants = [
-  'Fire max',
-  'Infernal'
-];
+const fireCapeVariants = ['Fire', 'Infernal', 'Fire max', 'Infernal max'];
 
-const fireCapeItems = ['Fire cape'];
+const fireCapeItems = [];
 
 for (const variant of fireCapeVariants) {
-  fireCapeItems.push(`${variant} cape`);
+  fireCapeItems.push(`${variant} cape (Normal)`);
 }
 
 const itemSets = {
