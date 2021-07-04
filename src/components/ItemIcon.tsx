@@ -123,13 +123,13 @@ const colors = [
   'Pink',
   'Green',
 ];
-const headbandItems = [];
+const headbandItems: string[] = [];
 
 for (const color of colors) {
   headbandItems.push(`${color} headband`);
 }
 
-const teamCapeItems = [];
+const teamCapeItems: string[] = [];
 
 for (let i = 1; i <= 50; i++) {
   teamCapeItems.push(`Team-${i} cape`);
@@ -180,6 +180,14 @@ const bobShirtItems = [
   "Bob's red shirt",
 ];
 
+const runeHeraldicFullHelmItems: string[] = [];
+const runeHeraldicShieldItems: string[] = [];
+
+for (let i = 1; i <= 5; i++) {
+  runeHeraldicFullHelmItems.push(`Rune helm (h${i})`);
+  runeHeraldicShieldItems.push(`Rune shield (h${i})`);
+}
+
 const itemSets = {
   'Bob shirt': bobShirtItems,
   Cloak: cloakItems,
@@ -189,6 +197,8 @@ const itemSets = {
   'Light sources': lightSourceItems,
   Mitre: mitreItems,
   'Pirate bandana': pirateBandanaItems,
+  'Rune heraldic armour#Full helm': runeHeraldicFullHelmItems,
+  'Rune heraldic armour#Kiteshield': runeHeraldicShieldItems,
   Stole: stoleItems,
   'Team cape': teamCapeItems,
 } as {
