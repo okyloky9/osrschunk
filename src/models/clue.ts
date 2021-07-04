@@ -1,11 +1,19 @@
 type Clue = {
   type: string;
+  difficulty?: string;
   clueHint: string;
   solution?: string;
-  location: string;
+  location?: string;
   itemsRequired?: string[];
   alternateChunks?: { x: number; y: number; notes: string }[];
-  copied?: boolean;
+  creatures?: {
+    name: string;
+    chunks: {
+      x: number;
+      y: number;
+      notes: string;
+    }[];
+  }[];
 };
 
 export default Clue;

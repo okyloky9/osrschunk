@@ -87,7 +87,6 @@ const ClueTable: React.FC<{
                 location,
                 solution,
                 type,
-                copied,
               } = clue;
 
               return (
@@ -100,7 +99,7 @@ const ClueTable: React.FC<{
                         onChange={(e) =>
                           updateClue(index, { ...clue, type: e.target.value })
                         }
-                        disabled={copied}
+                        // disabled={copied}
                       >
                         {clueStepTypes.map((option) => (
                           <option key={option}>{option}</option>
@@ -122,7 +121,7 @@ const ClueTable: React.FC<{
                             clueHint: e.target.value,
                           })
                         }
-                        disabled={copied}
+                        // disabled={copied}
                       />
                     ) : (
                       <ClueHint hint={clueHint} />
@@ -140,7 +139,7 @@ const ClueTable: React.FC<{
                             solution: e.target.value,
                           })
                         }
-                        disabled={copied}
+                        // disabled={copied}
                       />
                     ) : (
                       solution
@@ -158,7 +157,7 @@ const ClueTable: React.FC<{
                             location: e.target.value,
                           })
                         }
-                        disabled={copied}
+                        // disabled={copied}
                       />
                     ) : (
                       location
@@ -176,7 +175,7 @@ const ClueTable: React.FC<{
                             itemsRequired: e.target.value.split(','),
                           })
                         }
-                        disabled={copied}
+                        // disabled={copied}
                       />
                     ) : (
                       itemsRequired?.map((item, index) => (
@@ -223,7 +222,7 @@ const ClueTable: React.FC<{
                                       x: Number.parseInt(e.target.value, 10),
                                     })
                                   }
-                                  disabled={copied}
+                                  // disabled={copied}
                                 />
                                 ,{' '}
                                 <input
@@ -237,7 +236,7 @@ const ClueTable: React.FC<{
                                       y: Number.parseInt(e.target.value, 10),
                                     })
                                   }
-                                  disabled={copied}
+                                  // disabled={copied}
                                 />
                                 <br />
                                 <input
@@ -248,7 +247,7 @@ const ClueTable: React.FC<{
                                       notes: e.target.value,
                                     })
                                   }
-                                  disabled={copied}
+                                  // disabled={copied}
                                 />
                               </div>
 
@@ -266,7 +265,7 @@ const ClueTable: React.FC<{
                                       alternateChunks: _alternateChunks,
                                     });
                                   }}
-                                  disabled={copied}
+                                  // disabled={copied}
                                 >
                                   X
                                 </button>
@@ -299,7 +298,7 @@ const ClueTable: React.FC<{
                               alternateChunks: _alternateChunks,
                             });
                           }}
-                          disabled={copied}
+                          // disabled={copied}
                         >
                           +
                         </button>
@@ -330,7 +329,7 @@ const ClueTable: React.FC<{
                       <button
                         type="button"
                         onClick={() => deleteClue(index)}
-                        disabled={copied}
+                        // disabled={copied}
                       >
                         X
                       </button>
