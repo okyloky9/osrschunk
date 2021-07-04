@@ -83,11 +83,11 @@ const ClueTable: React.FC<{
               const {
                 alternateChunks,
                 clueHint,
+                creatures,
                 itemsRequired,
                 location,
                 solution,
                 type,
-                copied,
               } = clue;
 
               return (
@@ -100,7 +100,7 @@ const ClueTable: React.FC<{
                         onChange={(e) =>
                           updateClue(index, { ...clue, type: e.target.value })
                         }
-                        disabled={copied}
+                        disabled={!!creatures}
                       >
                         {clueStepTypes.map((option) => (
                           <option key={option}>{option}</option>
@@ -122,7 +122,7 @@ const ClueTable: React.FC<{
                             clueHint: e.target.value,
                           })
                         }
-                        disabled={copied}
+                        disabled={!!creatures}
                       />
                     ) : (
                       <ClueHint hint={clueHint} />
@@ -140,7 +140,7 @@ const ClueTable: React.FC<{
                             solution: e.target.value,
                           })
                         }
-                        disabled={copied}
+                        disabled={!!creatures}
                       />
                     ) : (
                       solution
@@ -158,7 +158,7 @@ const ClueTable: React.FC<{
                             location: e.target.value,
                           })
                         }
-                        disabled={copied}
+                        disabled={!!creatures}
                       />
                     ) : (
                       location
@@ -176,7 +176,7 @@ const ClueTable: React.FC<{
                             itemsRequired: e.target.value.split(','),
                           })
                         }
-                        disabled={copied}
+                        disabled={!!creatures}
                       />
                     ) : (
                       itemsRequired?.map((item, index) => (
@@ -223,7 +223,7 @@ const ClueTable: React.FC<{
                                       x: Number.parseInt(e.target.value, 10),
                                     })
                                   }
-                                  disabled={copied}
+                                  disabled={!!creatures}
                                 />
                                 ,{' '}
                                 <input
@@ -237,7 +237,7 @@ const ClueTable: React.FC<{
                                       y: Number.parseInt(e.target.value, 10),
                                     })
                                   }
-                                  disabled={copied}
+                                  disabled={!!creatures}
                                 />
                                 <br />
                                 <input
@@ -248,7 +248,7 @@ const ClueTable: React.FC<{
                                       notes: e.target.value,
                                     })
                                   }
-                                  disabled={copied}
+                                  disabled={!!creatures}
                                 />
                               </div>
 
@@ -266,7 +266,7 @@ const ClueTable: React.FC<{
                                       alternateChunks: _alternateChunks,
                                     });
                                   }}
-                                  disabled={copied}
+                                  disabled={!!creatures}
                                 >
                                   X
                                 </button>
@@ -299,7 +299,7 @@ const ClueTable: React.FC<{
                               alternateChunks: _alternateChunks,
                             });
                           }}
-                          disabled={copied}
+                          disabled={!!creatures}
                         >
                           +
                         </button>
@@ -330,7 +330,7 @@ const ClueTable: React.FC<{
                       <button
                         type="button"
                         onClick={() => deleteClue(index)}
-                        disabled={copied}
+                        disabled={!!creatures}
                       >
                         X
                       </button>

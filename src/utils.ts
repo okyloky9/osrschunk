@@ -1,12 +1,20 @@
-import type { Chunk } from './models';
+import type { Chunk, Clue } from './models';
+
+import killCreatureClueData from './data/kill-creature-clue-data.json';
 
 export function clueCountsForChunk(chunk: Chunk | undefined) {
+  const killCreatureEliteClues = chunk
+    ? getKillCreatureCluesForChunk(chunk).filter(
+        (clue) => clue.difficulty === 'Elite'
+      )
+    : [];
+
   return {
     beginner: chunk?.beginnerClues?.length || 0,
     easy: chunk?.easyClues?.length || 0,
     medium: chunk?.mediumClues?.length || 0,
     hard: chunk?.hardClues?.length || 0,
-    elite: chunk?.eliteClues?.length || 0,
+    elite: (chunk?.eliteClues?.length || 0) + killCreatureEliteClues.length,
     master: chunk?.masterClues?.length || 0,
   };
 }
@@ -19,6 +27,40 @@ export function chunkHasClues(chunk: Chunk | undefined): boolean {
   }
 
   return false;
+}
+
+export function getKillCreatureCluesForChunk(chunk: Chunk): Clue[] {
+  return killCreatureClueData
+    .filter((clue) => {
+      for (const creature of clue.creatures) {
+        for (const creatureChunk of creature.chunks) {
+          if (creatureChunk.x === chunk.x && creatureChunk.y === chunk.y)
+            return true;
+        }
+      }
+
+      return false;
+    })
+    .map((clue) => {
+      const alternateChunks: any[] = [];
+
+      for (const creature of clue.creatures) {
+        for (const creatureChunk of creature.chunks.filter(
+          (c) => c.x !== chunk.x || c.y !== chunk.y
+        )) {
+          alternateChunks.push({
+            x: creatureChunk.x,
+            y: creatureChunk.y,
+            notes: `${creature.name} can be found ${creatureChunk.location}.`,
+          });
+        }
+      }
+
+      return {
+        ...clue,
+        alternateChunks,
+      };
+    });
 }
 
 export function createClassString(object: {
