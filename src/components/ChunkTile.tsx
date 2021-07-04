@@ -125,6 +125,7 @@ const ChunkTile: React.FC<{
     <td
       className={createClassString({
         'no-clues': !chunkHasClues(chunk),
+        locked: !mapChunk.unlocked,
       })}
       ref={tdRef}
     >

@@ -108,6 +108,14 @@
 
       z-index: 1;
 
+      &.locked {
+        background: rgba(0, 0, 0, 0.6);
+
+        .chunk-tile > div {
+          background-color: transparent;
+        }
+      }
+
       &:hover {
         background: rgba(0, 255, 0, 0.4);
       }
@@ -120,7 +128,7 @@
 
         > div {
           display: inline-block;
-          background-color: rgba(0, 0, 0, 0.7);
+          background-color: rgba(0, 0, 0, 0.6);
         }
       }
     }
