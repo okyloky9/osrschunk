@@ -5213,7 +5213,7 @@
         "location": "",
         "itemsRequired": [
           "Iban's staff",
-          "Mystic rob top (dark)",
+          "Mystic robe top (dark)",
           "Mystic robe bottom (dark)"
         ]
       }
@@ -5745,7 +5745,12 @@
         "clueHint": "Do a jig at the barrow's chest. Beware of double agents!",
         "location": "",
         "solution": "Any set of Barrows equipment.",
-        "itemsRequired": ["Barrows head piece","Barrows body piece","Barrows leg piece","Barrows weapon"]
+        "itemsRequired": [
+          "Barrows head piece",
+          "Barrows body piece",
+          "Barrows leg piece",
+          "Barrows weapon"
+        ]
       }
     ]
   },

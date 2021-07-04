@@ -239,7 +239,7 @@ const dragonPickAxeItems = [
   'Crystal pickaxe (Active)',
 ];
 
-const ibansStaffItems = ["Iban's staff (Regular)", "Iban's staff (u"];
+const ibansStaffItems = ["Iban's staff (Regular)", "Iban's staff (u)"];
 
 const barrowsHeadPieceItems = [
   "Ahrim's hood (Undamaged)",
