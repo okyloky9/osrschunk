@@ -3,7 +3,9 @@ import { useEffect, useRef, useState } from 'react';
 import { memo } from '../utils';
 
 const ItemIcon: React.FC<{ item: string }> = ({ item }) => {
-  const wikiPage = `https://oldschool.runescape.wiki/w/${encodeURI(item)}`;
+  const wikiPage = `https://oldschool.runescape.wiki/w/${encodeURI(
+    item.replaceAll(' ', '_')
+  )}`;
 
   const [icons, setIcons] = useState<string[]>([]);
   const [iconInterval, setIconInterval] = useState<number>();
