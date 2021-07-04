@@ -110,6 +110,10 @@
 
       &.locked {
         background: rgba(0, 0, 0, 0.6);
+
+        .chunk-tile > div {
+          background-color: transparent;
+        }
       }
 
       &:hover {
