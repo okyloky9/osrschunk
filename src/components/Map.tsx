@@ -1,4 +1,4 @@
-import { useContext, useEffect, useRef, useState } from 'react';
+import { useCallback, useContext, useEffect, useRef, useState } from 'react';
 import { MapInteractionCSS } from 'react-map-interaction';
 import { toast } from 'react-toastify';
 
@@ -8,8 +8,6 @@ import { ToggleSwitch } from './forms';
 import { ClueDifficulty, MapChunk } from '../models';
 import { capitalizeFirstLetter, createClassString } from '../utils';
 import { ChunkDataContext } from '../data';
-
-const SETTINGS_KEY = 'SETTINGS';
 
 function initMapChunks(width: number, height: number): MapChunk[][] {
   const mapChunks: MapChunk[][] = [];
@@ -26,6 +24,9 @@ function initMapChunks(width: number, height: number): MapChunk[][] {
 }
 
 export default function Map() {
+  const SETTINGS_KEY = 'SETTINGS';
+  const UNLOCKED_CHUNKS_KEY = 'UNLOCKED_CHUNKS';
+
   // map dimensions (in chunks)
   const width = 43;
   const height = 25;
@@ -36,6 +37,9 @@ export default function Map() {
     clearLocalStorageChunkData,
     saveChunkDataToLocalStorage,
   } = useContext(ChunkDataContext);
+
+  // loading ref
+  const loadingRef = useRef(true);
 
   // modal ref
   const modal = useRef<ModalHandle>(null);
@@ -86,6 +90,28 @@ export default function Map() {
     _setChunkLockUnlockMode(m);
   };
 
+  // save settings on changes
+  useEffect(() => {
+    localStorage.setItem(
+      SETTINGS_KEY,
+      JSON.stringify({
+        showCoords,
+        showClues,
+        showClueCounts,
+        clueDifficultiesToShow,
+        highlightChunksWithoutClues,
+        editMode,
+      })
+    );
+  }, [
+    showCoords,
+    showClues,
+    showClueCounts,
+    clueDifficultiesToShow,
+    highlightChunksWithoutClues,
+    editMode,
+  ]);
+
   // when edit mode is toggled
   useEffect(() => {
     if (editMode && !autoSaveInterval) {
@@ -106,6 +132,36 @@ export default function Map() {
       setAutoSaveInterval(undefined);
     }
   }, [editMode, autoSaveInterval]);
+
+  // when map chunk is selected or deselected
+  useEffect(() => {
+    if (!modal.current) return;
+
+    if (selectedMapChunk) {
+      modal.current.open();
+    } else {
+      modal.current.close();
+    }
+  }, [modal, selectedMapChunk]);
+
+  // when a chunk's unlocked state is toggled
+  useEffect(() => {
+    if (loadingRef.current) return;
+
+    if (allChunksUnlocked(mapChunks)) {
+      localStorage.removeItem(UNLOCKED_CHUNKS_KEY);
+      return;
+    }
+
+    const unlocked = mapChunks
+      .reduce((unlocks, chunkRow) => {
+        unlocks.push(...chunkRow.filter((chunk) => chunk.unlocked));
+        return unlocks;
+      }, [])
+      .map((chunk) => ({ x: chunk.x, y: chunk.y }));
+
+    localStorage.setItem(UNLOCKED_CHUNKS_KEY, JSON.stringify(unlocked));
+  }, [mapChunks]);
 
   // on load
   useEffect(() => {
@@ -131,69 +187,45 @@ export default function Map() {
       setHighlightChunksWithoutClues(settings.highlightChunksWithoutClues);
       setEditMode(settings.editMode);
     }
+
+    // load unlocked chunks from local storage
+    const unlockedChunksJson = localStorage.getItem(UNLOCKED_CHUNKS_KEY);
+    if (unlockedChunksJson) {
+      const unlockedChunks = JSON.parse(unlockedChunksJson);
+
+      for (const chunkRow of mapChunksRef.current) {
+        for (const chunk of chunkRow) {
+          chunk.unlocked = false;
+        }
+      }
+
+      for (const chunk of unlockedChunks) {
+        mapChunksRef.current[chunk.y][chunk.x] = { ...chunk, unlocked: true };
+      }
+
+      setMapChunks(mapChunksRef.current);
+    }
+
+    loadingRef.current = false;
   }, []);
 
-  // save settings on changes
-  useEffect(() => {
-    localStorage.setItem(
-      SETTINGS_KEY,
-      JSON.stringify({
-        showCoords,
-        showClues,
-        showClueCounts,
-        clueDifficultiesToShow,
-        highlightChunksWithoutClues,
-        editMode,
-      })
-    );
-  }, [
-    showCoords,
-    showClues,
-    showClueCounts,
-    clueDifficultiesToShow,
-    highlightChunksWithoutClues,
-    editMode,
-  ]);
-
-  // min scale calculations
-  const minWidthScale = windowDimensions.width / (width * 192);
-  const minHeightScale = windowDimensions.height / (height * 192);
-
-  const minScale =
-    minWidthScale > minHeightScale ? minWidthScale : minHeightScale;
-
-  // view state
-  const [view, setView] = useState({
-    scale: minScale,
-    translation: { x: 0, y: 0 },
-  });
-
-  // when map chunk is selected or deselected
-  useEffect(() => {
-    if (!modal.current) return;
-
-    if (selectedMapChunk) {
-      modal.current.open();
-    } else {
-      modal.current.close();
+  // functions for chunk locking/unlocking
+  function allChunksUnlocked(_mapChunks: MapChunk[][]) {
+    for (const chunkRow of _mapChunks) {
+      for (const chunk of chunkRow) {
+        if (!chunk.unlocked) {
+          return false;
+        }
+      }
     }
-  }, [modal, selectedMapChunk]);
+
+    return true;
+  }
 
   function toggleAllChunksLockState() {
     const _mapChunks: MapChunk[][] = [];
 
-    let allUnlocked = true;
-
-    for (const chunkRow of mapChunks) {
-      for (const chunk of chunkRow) {
-        if (!chunk.unlocked) {
-          allUnlocked = false;
-          break;
-        }
-      }
-
-      if (!allUnlocked) break;
-    }
+    const allUnlocked = allChunksUnlocked(mapChunks);
 
     for (const chunkRow of mapChunks) {
       const _chunkRow: MapChunk[] = [];
@@ -232,13 +264,18 @@ export default function Map() {
     setMapChunks(_mapChunks);
   }
 
-  function onChunkClicked(mapChunk: MapChunk) {
-    if (chunkLockUnlockModeRef.current) {
-      toggleChunkLocking(mapChunk);
-    } else {
-      setSelectedMapChunk(mapChunk);
-    }
-  }
+  // min scale calculations
+  const minWidthScale = windowDimensions.width / (width * 192);
+  const minHeightScale = windowDimensions.height / (height * 192);
+
+  const minScale =
+    minWidthScale > minHeightScale ? minWidthScale : minHeightScale;
+
+  // view state
+  const [view, setView] = useState({
+    scale: minScale,
+    translation: { x: 0, y: 0 },
+  });
 
   // get current view scale
   const { scale } = view;
@@ -281,7 +318,13 @@ export default function Map() {
                 {row.map((mapChunk, x) => (
                   <ChunkTile
                     mapChunk={mapChunk}
-                    onClick={() => onChunkClicked(mapChunk)}
+                    onClick={() => {
+                      if (chunkLockUnlockModeRef.current) {
+                        toggleChunkLocking(mapChunk);
+                      } else {
+                        setSelectedMapChunk(mapChunk);
+                      }
+                    }}
                     key={`chunk-${x}-${y}-${mapChunk.unlocked}`}
                   />
                 ))}
