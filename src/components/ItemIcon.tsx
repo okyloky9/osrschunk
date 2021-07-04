@@ -3,8 +3,11 @@ import { useEffect, useRef, useState } from 'react';
 import { memo } from '../utils';
 
 const ItemIcon: React.FC<{ item: string }> = ({ item }) => {
+  const wikiPageName = Object.keys(wikiPageSpecialCases).includes(item)
+    ? wikiPageSpecialCases[item]
+    : item;
   const wikiPage = `https://oldschool.runescape.wiki/w/${encodeURI(
-    item.replaceAll(' ', '_')
+    wikiPageName.replaceAll(' ', '_')
   )}`;
 
   const [icons, setIcons] = useState<string[]>([]);
@@ -238,10 +241,50 @@ const dragonPickAxeItems = [
 
 const ibansStaffItems = ["Iban's staff (Regular)", "Iban's staff (u"];
 
+const barrowsHeadPieceItems = [
+  "Ahrim's hood (Undamaged)",
+  "Dharok's helm (Undamaged)",
+  "Guthan's helm (Undamaged)",
+  "Karil's coif (Undamaged)",
+  "Torag's helm (Undamaged)",
+  "Verac's helm (Undamaged)",
+];
+
+const barrowsBodyPieceItems = [
+  "Ahrim's robetop (Undamaged)",
+  "Dharok's platebody (Undamaged)",
+  "Guthan's platebody (Undamaged)",
+  "Karil's leathertop (Undamaged)",
+  "Torag's platebody (Undamaged)",
+  "Verac's brassard (Undamaged)",
+];
+
+const barrowsLegPieceItems = [
+  "Ahrim's robeskirt (Undamaged)",
+  "Dharok's platelegs (Undamaged)",
+  "Guthan's chainskirt (Undamaged)",
+  "Karil's leatherskirt	(Undamaged)",
+  "Torag's platelegs (Undamaged)",
+  "Verac's plateskirt	(Undamaged)",
+];
+
+const barrowsWeaponItems = [
+  "Ahrim's staff (Undamaged)",
+  "Dharok's greataxe (Undamaged)",
+  "Guthan's warspear (Undamaged)",
+  "Karil's crossbow (Undamaged)",
+  "Torag's hammers (Undamaged)",
+  "Verac's flail (Undamaged)",
+];
+
 const itemSets: {
   [name: string]: string[];
 } = {
   'Abyssal whip': abyssalWhipItems,
+  'Barrows body piece': barrowsBodyPieceItems,
+  'Barrows head piece': barrowsHeadPieceItems,
+  'Barrows leg piece': barrowsLegPieceItems,
+  'Barrows weapon': barrowsWeaponItems,
   'Bob shirt': bobShirtItems,
   Cloak: cloakItems,
   Crozier: crozierItems,
@@ -260,4 +303,11 @@ const itemSets: {
   Stole: stoleItems,
   'Team cape': teamCapeItems,
   'Zamorak godsword': zamorakGodswordItems,
+};
+
+const wikiPageSpecialCases: { [name: string]: string } = {
+  'Barrows head piece': 'Barrows equipment',
+  'Barrows body piece': 'Barrows equipment',
+  'Barrows leg piece': 'Barrows equipment',
+  'Barrows weapon': 'Barrows equipment',
 };
