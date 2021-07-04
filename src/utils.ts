@@ -30,16 +30,37 @@ export function chunkHasClues(chunk: Chunk | undefined): boolean {
 }
 
 export function getKillCreatureCluesForChunk(chunk: Chunk): Clue[] {
-  return killCreatureClueData.filter((clue) => {
-    for (const creature of clue.creatures) {
-      for (const creatureChunk of creature.chunks) {
-        if (creatureChunk.x === chunk.x && creatureChunk.y === chunk.y)
-          return true;
+  return killCreatureClueData
+    .filter((clue) => {
+      for (const creature of clue.creatures) {
+        for (const creatureChunk of creature.chunks) {
+          if (creatureChunk.x === chunk.x && creatureChunk.y === chunk.y)
+            return true;
+        }
       }
-    }
 
-    return false;
-  });
+      return false;
+    })
+    .map((clue) => {
+      const alternateChunks: any[] = [];
+
+      for (const creature of clue.creatures) {
+        for (const creatureChunk of creature.chunks.filter(
+          (c) => c.x !== chunk.x || c.y !== chunk.y
+        )) {
+          alternateChunks.push({
+            x: creatureChunk.x,
+            y: creatureChunk.y,
+            notes: `${creature.name} can be found ${creatureChunk.location}.`,
+          });
+        }
+      }
+
+      return {
+        ...clue,
+        alternateChunks,
+      };
+    });
 }
 
 export function createClassString(object: {

@@ -11,7 +11,7 @@ type Clue = {
     chunks: {
       x: number;
       y: number;
-      notes: string;
+      location: string;
     }[];
   }[];
 };
