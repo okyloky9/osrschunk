@@ -70,6 +70,7 @@ export default function Map() {
   });
   const [highlightChunksWithoutClues, setHighlightChunksWithoutClues] =
     useState(false);
+  const [chunkLockUnlockMode, setChunkLockUnlockMode] = useState(false);
   const [editMode, setEditMode] = useState(false);
 
   // when edit mode is toggled
@@ -306,8 +307,31 @@ export default function Map() {
 
               <div>
                 <ToggleSwitch
+                  checked={chunkLockUnlockMode}
+                  onChange={(e) => {
+                    setChunkLockUnlockMode(e.target.checked);
+
+                    if (e.target.checked) {
+                      setEditMode(false);
+                    }
+                  }}
+                >
+                  Chunk locking/unlocking mode
+                </ToggleSwitch>
+              </div>
+
+              <hr />
+
+              <div>
+                <ToggleSwitch
                   checked={editMode}
-                  onChange={(e) => setEditMode(e.target.checked)}
+                  onChange={(e) => {
+                    setEditMode(e.target.checked);
+
+                    if (e.target.checked) {
+                      setChunkLockUnlockMode(false);
+                    }
+                  }}
                 >
                   Data editing mode
                 </ToggleSwitch>
