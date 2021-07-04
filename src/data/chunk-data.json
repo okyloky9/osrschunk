@@ -6191,7 +6191,11 @@
         "type": "Emote",
         "clueHint": "Jig at Jiggig. Beware of double agents!",
         "location": "",
-        "itemsRequired": ["Rune spear", "Rune platelegs", "Rune helm (h1)"]
+        "itemsRequired": [
+          "Rune spear",
+          "Rune platelegs",
+          "Rune heraldic armour#Full helm"
+        ]
       }
     ]
   },
@@ -6530,7 +6534,7 @@
         "type": "Emote",
         "clueHint": "Beckon on the east coast of the Kharazi Jungle. Beware of double agents!",
         "location": "",
-        "itemsRequired": ["Rune shield (h1)", "Stole"]
+        "itemsRequired": ["Rune heraldic armour#Kiteshield", "Stole"]
       }
     ]
   },
@@ -6651,7 +6655,7 @@
         "type": "Emote",
         "clueHint": "Cheer at the top of the agility pyramid. Beware of double agents!",
         "location": "",
-        "itemsRequired": ["Mystic robe top", "Rune shield (h1)"]
+        "itemsRequired": ["Mystic robe top", "Rune heraldic armour#Kiteshield"]
       }
     ],
     "masterClues": [
