@@ -133,11 +133,60 @@ for (let i = 1; i <= 50; i++) {
   teamCapeItems.push(`Team-${i} cape`);
 }
 
+const lightSourceItems = [
+  'Lit torch',
+  'Lit candle',
+  'Lit black candle',
+  'Candle lantern (lit white)',
+  'Candle lantern (lit black)',
+  'Oil lamp (lit)',
+  'Oil lantern (lit)',
+  'Bullseye lantern (lit)',
+  'Sapphire lantern (lit)',
+  'Emerald lantern (lit)',
+  'Mining helmet (lit)',
+  'Kandarin headgear 1',
+  'Kandarin headgear 2',
+  'Kandarin headgear 3',
+  'Kandarin headgear 4',
+  'Firemaking cape',
+  'Max cape',
+  'Bruma torch',
+];
+
+const godBookItems = [
+  'Book of balance',
+  'Book of darkness',
+  'Book of law',
+  'Book of war',
+  'Holy book',
+  'Unholy book',
+];
+
+const pirateBandanaItems = [
+  'Pirate bandana (blue)',
+  'Pirate bandana (white)',
+  'Pirate bandana (brown)',
+  'Pirate bandana (red)',
+];
+
+const bobShirtItems = [
+  "Bob's black shirt",
+  "Bob's blue shirt",
+  "Bob's green shirt",
+  "Bob's purple shirt",
+  "Bob's red shirt",
+];
+
 const itemSets = {
+  'Bob shirt': bobShirtItems,
   Cloak: cloakItems,
   Crozier: crozierItems,
+  'God book': godBookItems,
   Headband: headbandItems,
+  'Light sources': lightSourceItems,
   Mitre: mitreItems,
+  'Pirate bandana': pirateBandanaItems,
   Stole: stoleItems,
   'Team cape': teamCapeItems,
 } as {
