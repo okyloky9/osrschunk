@@ -263,9 +263,9 @@ const barrowsLegPieceItems = [
   "Ahrim's robeskirt (Undamaged)",
   "Dharok's platelegs (Undamaged)",
   "Guthan's chainskirt (Undamaged)",
-  "Karil's leatherskirt	(Undamaged)",
+  "Karil's leatherskirt (Undamaged)",
   "Torag's platelegs (Undamaged)",
-  "Verac's plateskirt	(Undamaged)",
+  "Verac's plateskirt (Undamaged)",
 ];
 
 const barrowsWeaponItems = [
