@@ -30,7 +30,7 @@ const ItemIcon: React.FC<{ item: string }> = ({ item }) => {
         const _icons = [];
 
         for (const _item of items) {
-          const _icon = await getIcon(_item);
+          const _icon = await getIcon(undefined, _item);
           _icons.push(_icon);
         }
 
@@ -81,10 +81,10 @@ const ItemIcon: React.FC<{ item: string }> = ({ item }) => {
 export default ItemIcon;
 
 // memoized method for fetching an icon
-const getIcon = memo((item: string) => {
+const getIcon = memo((name: string, wiki_name: string) => {
   return fetch(
     `https://api.osrsbox.com/items?where=${encodeURI(
-      JSON.stringify({ name: item, duplicate: false })
+      JSON.stringify({ name, wiki_name, duplicate: false })
     )}`
   )
     .then((response) => response.json())
@@ -92,7 +92,7 @@ const getIcon = memo((item: string) => {
       if (data && data._items && data._items.length && data._items[0].icon) {
         return data._items[0].icon;
       } else {
-        console.log(`Could not find icon for "${item}".`);
+        console.log(`Could not find icon for "${name ? name : wiki_name}".`);
         return undefined;
       }
     });
@@ -136,22 +136,23 @@ for (let i = 1; i <= 50; i++) {
 }
 
 const lightSourceItems = [
-  'Lit torch',
-  'Lit candle',
-  'Lit black candle',
-  'Candle lantern (lit white)',
-  'Candle lantern (lit black)',
-  'Oil lamp (lit)',
-  'Oil lantern (lit)',
-  'Bullseye lantern (lit)',
-  'Sapphire lantern (lit)',
-  'Emerald lantern (lit)',
-  'Mining helmet (lit)',
+  'Torch (Lit)',
+  'Candle (Lit)',
+  'Black candle (Lit)',
+  'Candle lantern (Lit (white candle))',
+  'Candle lantern (Lit (black candle))',
+  'Oil lamp (Lit)',
+  'Oil lantern (Lit)',
+  'Bullseye lantern (Lit)',
+  'Sapphire lantern (Lit)',
+  'Emerald lantern (Lit)',
+  'Mining helmet (Lit)',
   'Kandarin headgear 1',
   'Kandarin headgear 2',
   'Kandarin headgear 3',
   'Kandarin headgear 4',
-  'Firemaking cape',
+  'Firemaking cape (Untrimmed)',
+  'Firemaking cape (Trimmed)',
   'Max cape',
   'Bruma torch',
 ];
