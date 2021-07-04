@@ -236,6 +236,8 @@ const dragonPickAxeItems = [
   'Crystal pickaxe (Active)',
 ];
 
+const ibansStaffItems = ["Iban's staff (Regular)", "Iban's staff (u"];
+
 const itemSets: {
   [name: string]: string[];
 } = {
@@ -248,6 +250,7 @@ const itemSets: {
   'Fire cape': fireCapeItems,
   'God book': godBookItems,
   Headband: headbandItems,
+  "Iban's staff": ibansStaffItems,
   'Light sources': lightSourceItems,
   Mitre: mitreItems,
   'Pirate bandana': pirateBandanaItems,
