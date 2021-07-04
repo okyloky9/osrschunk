@@ -207,17 +207,45 @@ for (const variant of slayerHelmVariants) {
 
 const fireCapeVariants = ['Fire', 'Infernal', 'Fire max', 'Infernal max'];
 
-const fireCapeItems = [];
+const fireCapeItems: string[] = [];
 
 for (const variant of fireCapeVariants) {
   fireCapeItems.push(`${variant} cape (Normal)`);
 }
 
-const itemSets = {
-  'Fire cape': fireCapeItems,
+const abyssalWhipItems = [
+  'Abyssal whip',
+  'Volcanic abyssal whip',
+  'Frozen abyssal whip',
+];
+
+const zamorakGodswordItems = ['Zamorak godsword', 'Zamorak godsword (or)'];
+
+const dragonAxeItems = [
+  'Dragon axe',
+  'Dragon axe (or)',
+  'Infernal axe (Charged)',
+  'Crystal axe (Active)',
+];
+
+const dragonPickAxeItems = [
+  'Dragon pickaxe',
+  'Dragon pickaxe (or)',
+  'Dragon pickaxe (upgraded)',
+  'Infernal pickaxe (Charged)',
+  'Crystal pickaxe (Active)',
+];
+
+const itemSets: {
+  [name: string]: string[];
+} = {
+  'Abyssal whip': abyssalWhipItems,
   'Bob shirt': bobShirtItems,
   Cloak: cloakItems,
   Crozier: crozierItems,
+  'Dragon axe': dragonAxeItems,
+  'Dragon pickaxe': dragonPickAxeItems,
+  'Fire cape': fireCapeItems,
   'God book': godBookItems,
   Headband: headbandItems,
   'Light sources': lightSourceItems,
@@ -228,6 +256,5 @@ const itemSets = {
   'Slayer helmet': slayerHelmItems,
   Stole: stoleItems,
   'Team cape': teamCapeItems,
-} as {
-  [name: string]: string[];
+  'Zamorak godsword': zamorakGodswordItems,
 };
