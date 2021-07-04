@@ -48,7 +48,6 @@ const ClueTable: React.FC<{
     'Coordinates',
     'Cryptic',
     'Emote',
-    'Hot/Cold',
     'Map',
     'Music',
   ];
