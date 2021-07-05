@@ -768,16 +768,6 @@
         "solution": "Horphis"
       },
       {
-        "type": "Emote",
-        "clueHint": "Yawn in the centre of Arceuus library. Nod your head before you talk to me.",
-        "location": "",
-        "itemsRequired": [
-          "Blue d'hide vambraces",
-          "Adamant boots",
-          "Adamant dagger"
-        ]
-      },
-      {
         "type": "Cipher",
         "clueHint": "QSPGFTTPS HSBDLMFCPOF",
         "location": "Arceuus Library",
