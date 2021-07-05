@@ -1,12 +1,18 @@
-import { useCallback, useContext, useEffect, useRef, useState } from 'react';
+import { useContext, useEffect, useRef, useState } from 'react';
 import { MapInteractionCSS } from 'react-map-interaction';
 import { toast } from 'react-toastify';
+import qs from 'qs';
 
 import { ChunkModal, ChunkTile, ClueIcon, Modal } from '.';
 import type { ModalHandle } from '.';
 import { ToggleSwitch } from './forms';
 import { ClueDifficulty, MapChunk } from '../models';
-import { capitalizeFirstLetter, createClassString } from '../utils';
+import {
+  capitalizeFirstLetter,
+  compressUnlockedChunks,
+  createClassString,
+  decompressUnlockedChunks,
+} from '../utils';
 import { ChunkDataContext } from '../data';
 
 function initMapChunks(width: number, height: number): MapChunk[][] {
@@ -188,11 +194,8 @@ export default function Map() {
       setEditMode(settings.editMode);
     }
 
-    // load unlocked chunks from local storage
-    const unlockedChunksJson = localStorage.getItem(UNLOCKED_CHUNKS_KEY);
-    if (unlockedChunksJson) {
-      const unlockedChunks = JSON.parse(unlockedChunksJson);
-
+    // load unlocked chunks from local storage (or URL)
+    function loadUnlockedChunks(unlockedChunks: { x: number; y: number }[]) {
       for (const chunkRow of mapChunksRef.current) {
         for (const chunk of chunkRow) {
           chunk.unlocked = false;
@@ -204,6 +207,24 @@ export default function Map() {
       }
 
       setMapChunks(mapChunksRef.current);
+    }
+
+    const query = qs.parse(window.location.search, { ignoreQueryPrefix: true });
+
+    if (query && query.u) {
+      const unlockedChunks = decompressUnlockedChunks(
+        width,
+        height,
+        query.u as string
+      );
+      loadUnlockedChunks(unlockedChunks);
+    } else {
+      const unlockedChunksJson = localStorage.getItem(UNLOCKED_CHUNKS_KEY);
+
+      if (unlockedChunksJson) {
+        const unlockedChunks = JSON.parse(unlockedChunksJson);
+        loadUnlockedChunks(unlockedChunks);
+      }
     }
 
     loadingRef.current = false;
@@ -244,7 +265,6 @@ export default function Map() {
   }
 
   function toggleChunkLocking(mapChunk: MapChunk) {
-    const _mapChunk = { ...mapChunk, unlocked: !mapChunk.unlocked };
     const _mapChunks: MapChunk[][] = [];
 
     for (const chunkRow of mapChunksRef.current) {
@@ -255,13 +275,51 @@ export default function Map() {
       );
 
       if (matchingChunkIndex >= 0) {
-        _chunkRow.splice(matchingChunkIndex, 1, _mapChunk);
+        const matchingChunk = _chunkRow[matchingChunkIndex];
+
+        _chunkRow.splice(matchingChunkIndex, 1, {
+          ...matchingChunk,
+          unlocked: !matchingChunk.unlocked,
+        });
       }
 
       _mapChunks.push(_chunkRow);
     }
 
     setMapChunks(_mapChunks);
+  }
+
+  function createShareableLink() {
+    const unlockedChunksJson = localStorage.getItem(UNLOCKED_CHUNKS_KEY);
+    if (unlockedChunksJson) {
+      const unlockedChunks = JSON.parse(unlockedChunksJson);
+      const compressed = compressUnlockedChunks(width, height, unlockedChunks);
+
+      const { location } = window;
+      const link = `${location.protocol}//${location.host}${location.pathname}?u=${compressed}`;
+
+      const textarea = document.createElement('textarea');
+      textarea.className = 'hidden';
+      textarea.value = link;
+
+      document.body.appendChild(textarea);
+      textarea.focus();
+      textarea.select();
+      document.execCommand('copy');
+
+      document.body.removeChild(textarea);
+
+      toast('📋 Copied shareable link to the clipboard!', { type: 'success' });
+    } else {
+      toast(
+        <>
+          ❌ Could not create sharable link.
+          <br />
+          You must create data to share first.
+        </>,
+        { type: 'error' }
+      );
+    }
   }
 
   // min scale calculations
@@ -438,15 +496,27 @@ export default function Map() {
               </div>
 
               {chunkLockUnlockMode && (
-                <div>
-                  <button
-                    className="info"
-                    type="button"
-                    onClick={toggleAllChunksLockState}
-                  >
-                    Lock/unlock all chunks
-                  </button>
-                </div>
+                <>
+                  <div>
+                    <button
+                      className="info"
+                      type="button"
+                      onClick={toggleAllChunksLockState}
+                    >
+                      Lock/unlock all chunks
+                    </button>
+                  </div>
+
+                  <div>
+                    <button
+                      className="success"
+                      type="button"
+                      onClick={createShareableLink}
+                    >
+                      Create shareable link
+                    </button>
+                  </div>
+                </>
               )}
 
               <hr />
