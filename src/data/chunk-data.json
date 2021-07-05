@@ -1132,11 +1132,6 @@
         "itemsRequired": ["Spade"]
       },
       {
-        "type": "Cryptic",
-        "clueHint": "Kill the spiritual, magic and godly whilst representing their own god",
-        "solution": "Kill a spiritual mage in the God Wars Dungeon"
-      },
-      {
         "type": "Emote",
         "clueHint": "Blow a kiss outside K'ril Tsutsaroth's chamber. Beware of double agents! Equip a Zamorak full helm and the shadow sword.",
         "itemsRequired": ["Shadow sword", "Zamorak full helm"]

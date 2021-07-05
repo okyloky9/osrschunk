@@ -246,5 +246,23 @@
       ]
     }
   ],
-  "masterClues": []
+  "masterClues": [
+    {
+      "type": "Cryptic",
+      "clueHint": "Kill the spiritual, magic and godly whilst representing their own god",
+      "solution": "Kill a spiritual mage in the God Wars Dungeon - 83 Slayer requirement. Be sure to wear armour corresponding to their god.",
+      "creatures": [
+        {
+          "name": "Spiritual mages",
+          "chunks": [
+            {
+              "x": 27,
+              "y": 5,
+              "location": "in the God War's Dungeon"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
