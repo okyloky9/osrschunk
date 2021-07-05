@@ -190,5 +190,63 @@
         ]
       }
     ]
+  },
+  {
+    "type": "Cryptic",
+    "difficulty": "Elite",
+    "clueHint": "Mix yellow with blue and add heat, make sure you bring protection.",
+    "solution": "Kill a green dragon or brutal green dragon. Players who have completed Dragon Slayer II can use the Myths' Guild basement to kill green dragons outside the Wilderness.",
+    "creatures": [
+      {
+        "name": "Green dragons",
+        "chunks": [
+          {
+            "x": 20,
+            "y": 19,
+            "location": "in the Myths' Guild basement"
+          },
+          {
+            "x": 31,
+            "y": 6,
+            "location": "north of the Graveyard of Shadows"
+          },
+          {
+            "x": 30,
+            "y": 4,
+            "location": "south of the Lava Maze"
+          },
+          {
+            "x": 34,
+            "y": 6,
+            "location": "south of Venenatis"
+          },
+          {
+            "x": 28,
+            "y": 7,
+            "location": "west of the Dark Warriors' Fortress"
+          },
+          {
+            "x": 33,
+            "y": 5,
+            "location": "in the Wilderness Slayer Cave"
+          },
+          {
+            "x": 32,
+            "y": 6,
+            "location": "in the Wilderness Slayer Cave"
+          }
+        ]
+      },
+      {
+        "name": "Brutal green dragons",
+        "chunks": [
+          {
+            "x": 21,
+            "y": 9,
+            "location": "in the Ancient Cavern"
+          }
+        ]
+      }
+    ]
   }
 ]
