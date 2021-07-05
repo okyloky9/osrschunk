@@ -119,12 +119,12 @@ const ChunkTile: React.FC<{
   }, [tdRef]);
 
   // get clue counts
-  const clueCounts = clueCountsForChunk(chunk);
+  const clueCounts = clueCountsForChunk(chunk || mapChunk);
 
   return (
     <td
       className={createClassString({
-        'no-clues': !chunkHasClues(chunk),
+        'no-clues': !chunkHasClues(chunk || mapChunk),
         locked: !mapChunk.unlocked,
       })}
       ref={tdRef}
