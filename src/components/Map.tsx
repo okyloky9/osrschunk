@@ -98,6 +98,8 @@ export default function Map() {
 
   // save settings on changes
   useEffect(() => {
+    if (loadingRef.current) return;
+
     localStorage.setItem(
       SETTINGS_KEY,
       JSON.stringify({
