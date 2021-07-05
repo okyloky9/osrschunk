@@ -1,252 +1,250 @@
-[
-  {
-    "type": "Cryptic",
-    "difficulty": "Elite",
-    "clueHint": "A demon's best friend holds the next step of this clue.",
-    "solution": "Kill a hellhound. Note: Killing Cerberus will count, but hellhounds inside the God Wars Dungeon will not count.",
-    "creatures": [
-      {
-        "name": "Hellhounds",
-        "chunks": [
-          {
-            "x": 7,
-            "y": 6,
-            "location": "in the Catacombs of Kourend"
-          },
-          {
-            "x": 8,
-            "y": 3,
-            "location": "in the Catacombs of Kourend"
-          },
-          {
-            "x": 4,
-            "y": 6,
-            "location": "in the Catacombs of Kourend"
-          },
-          {
-            "x": 6,
-            "y": 4,
-            "location": "in the Catacombs of Kourend"
-          },
-          {
-            "x": 27,
-            "y": 10,
-            "location": "in Taverley Dungeon"
-          },
-          {
-            "x": 2,
-            "y": 4,
-            "location": "in Karuulm Slayer Dungeon"
-          },
-          {
-            "x": 31,
-            "y": 2,
-            "location": "outside of the Wilderness Resource Area"
-          },
-          {
-            "x": 33,
-            "y": 5,
-            "location": "in the Wilderness Slayer Cave"
-          },
-          {
-            "x": 32,
-            "y": 6,
-            "location": "in the Wilderness Slayer Cave"
-          },
-          {
-            "x": 19,
-            "y": 10,
-            "location": "in the Stronghold Slayer Cave"
-          },
-          {
-            "x": 24,
-            "y": 12,
-            "location": "in Witchaven Dungeon"
-          }
-        ]
-      },
-      {
-        "name": "Cerberus",
-        "chunks": [
-          {
-            "x": 27,
-            "y": 10,
-            "location": "beneath the Taverley Dungeon"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "type": "Cryptic",
-    "difficulty": "Elite",
-    "clueHint": "Ghostly bones.",
-    "solution": "Kill an Ankou, which can be found on the 4th level of the Stronghold of Security, the Stronghold Slayer Cave, the Catacombs of Kourend, and The Forgotten Cemetery.",
-    "creatures": [
-      {
-        "name": "Ankou",
-        "chunks": [
-          {
-            "x": 30,
-            "y": 10,
-            "location": "on the 4th level of the Stronghold of Security"
-          },
-          {
-            "x": 19,
-            "y": 10,
-            "location": "in the Stronghold Slayer Cave"
-          },
-          {
-            "x": 7,
-            "y": 6,
-            "location": "in the Catacombs of Kourend"
-          },
-          {
-            "x": 8,
-            "y": 3,
-            "location": "in the Catacombs of Kourend"
-          },
-          {
-            "x": 4,
-            "y": 6,
-            "location": "in the Catacombs of Kourend"
-          },
-          {
-            "x": 6,
-            "y": 4,
-            "location": "in the Catacombs of Kourend"
-          },
-          {
-            "x": 28,
-            "y": 5,
-            "location": "in The Forgotten Cemetery"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "type": "Cryptic",
-    "difficulty": "Elite",
-    "clueHint": "In a while...",
-    "solution": "Kill a crocodile.",
-    "creatures": [
-      {
-        "name": "Crocodiles",
-        "chunks": [
-          {
-            "x": 32,
-            "y": 18,
-            "location": "along the River Elid"
-          },
-          {
-            "x": 33,
-            "y": 18,
-            "location": "along the River Elid"
-          },
-          {
-            "x": 34,
-            "y": 18,
-            "location": "along the River Elid"
-          },
-          {
-            "x": 32,
-            "y": 19,
-            "location": "along the River Elid"
-          },
-          {
-            "x": 33,
-            "y": 19,
-            "location": "along the River Elid"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "type": "Cryptic",
-    "difficulty": "Elite",
-    "clueHint": "Let's hope you don't meet a watery death when you encounter this fiend.",
-    "solution": "Kill a waterfiend.",
-    "creatures": [
-      {
-        "name": "Waterfiends",
-        "chunks": [
-          {
-            "x": 21,
-            "y": 9,
-            "location": "in the Ancient Cavern"
-          },
-          {
-            "x": 16,
-            "y": 12,
-            "location": "in Iorwerth Dungeon"
-          },
-          {
-            "x": 17,
-            "y": 7,
-            "location": "in the Kraken Cove"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "type": "Cryptic",
-    "difficulty": "Elite",
-    "clueHint": "Mix yellow with blue and add heat, make sure you bring protection.",
-    "solution": "Kill a green dragon or brutal green dragon. Players who have completed Dragon Slayer II can use the Myths' Guild basement to kill green dragons outside the Wilderness.",
-    "creatures": [
-      {
-        "name": "Green dragons",
-        "chunks": [
-          {
-            "x": 20,
-            "y": 19,
-            "location": "in the Myths' Guild basement"
-          },
-          {
-            "x": 31,
-            "y": 6,
-            "location": "north of the Graveyard of Shadows"
-          },
-          {
-            "x": 30,
-            "y": 4,
-            "location": "south of the Lava Maze"
-          },
-          {
-            "x": 34,
-            "y": 6,
-            "location": "south of Venenatis"
-          },
-          {
-            "x": 28,
-            "y": 7,
-            "location": "west of the Dark Warriors' Fortress"
-          },
-          {
-            "x": 33,
-            "y": 5,
-            "location": "in the Wilderness Slayer Cave"
-          },
-          {
-            "x": 32,
-            "y": 6,
-            "location": "in the Wilderness Slayer Cave"
-          }
-        ]
-      },
-      {
-        "name": "Brutal green dragons",
-        "chunks": [
-          {
-            "x": 21,
-            "y": 9,
-            "location": "in the Ancient Cavern"
-          }
-        ]
-      }
-    ]
-  }
-]
+{
+  "eliteClues": [
+    {
+      "type": "Cryptic",
+      "clueHint": "A demon's best friend holds the next step of this clue.",
+      "solution": "Kill a hellhound. Note: Killing Cerberus will count, but hellhounds inside the God Wars Dungeon will not count.",
+      "creatures": [
+        {
+          "name": "Hellhounds",
+          "chunks": [
+            {
+              "x": 7,
+              "y": 6,
+              "location": "in the Catacombs of Kourend"
+            },
+            {
+              "x": 8,
+              "y": 3,
+              "location": "in the Catacombs of Kourend"
+            },
+            {
+              "x": 4,
+              "y": 6,
+              "location": "in the Catacombs of Kourend"
+            },
+            {
+              "x": 6,
+              "y": 4,
+              "location": "in the Catacombs of Kourend"
+            },
+            {
+              "x": 27,
+              "y": 10,
+              "location": "in Taverley Dungeon"
+            },
+            {
+              "x": 2,
+              "y": 4,
+              "location": "in Karuulm Slayer Dungeon"
+            },
+            {
+              "x": 31,
+              "y": 2,
+              "location": "outside of the Wilderness Resource Area"
+            },
+            {
+              "x": 33,
+              "y": 5,
+              "location": "in the Wilderness Slayer Cave"
+            },
+            {
+              "x": 32,
+              "y": 6,
+              "location": "in the Wilderness Slayer Cave"
+            },
+            {
+              "x": 19,
+              "y": 10,
+              "location": "in the Stronghold Slayer Cave"
+            },
+            {
+              "x": 24,
+              "y": 12,
+              "location": "in Witchaven Dungeon"
+            }
+          ]
+        },
+        {
+          "name": "Cerberus",
+          "chunks": [
+            {
+              "x": 27,
+              "y": 10,
+              "location": "beneath the Taverley Dungeon"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Cryptic",
+      "clueHint": "Ghostly bones.",
+      "solution": "Kill an Ankou, which can be found on the 4th level of the Stronghold of Security, the Stronghold Slayer Cave, the Catacombs of Kourend, and The Forgotten Cemetery.",
+      "creatures": [
+        {
+          "name": "Ankou",
+          "chunks": [
+            {
+              "x": 30,
+              "y": 10,
+              "location": "on the 4th level of the Stronghold of Security"
+            },
+            {
+              "x": 19,
+              "y": 10,
+              "location": "in the Stronghold Slayer Cave"
+            },
+            {
+              "x": 7,
+              "y": 6,
+              "location": "in the Catacombs of Kourend"
+            },
+            {
+              "x": 8,
+              "y": 3,
+              "location": "in the Catacombs of Kourend"
+            },
+            {
+              "x": 4,
+              "y": 6,
+              "location": "in the Catacombs of Kourend"
+            },
+            {
+              "x": 6,
+              "y": 4,
+              "location": "in the Catacombs of Kourend"
+            },
+            {
+              "x": 28,
+              "y": 5,
+              "location": "in The Forgotten Cemetery"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Cryptic",
+      "clueHint": "In a while...",
+      "solution": "Kill a crocodile.",
+      "creatures": [
+        {
+          "name": "Crocodiles",
+          "chunks": [
+            {
+              "x": 32,
+              "y": 18,
+              "location": "along the River Elid"
+            },
+            {
+              "x": 33,
+              "y": 18,
+              "location": "along the River Elid"
+            },
+            {
+              "x": 34,
+              "y": 18,
+              "location": "along the River Elid"
+            },
+            {
+              "x": 32,
+              "y": 19,
+              "location": "along the River Elid"
+            },
+            {
+              "x": 33,
+              "y": 19,
+              "location": "along the River Elid"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Cryptic",
+      "clueHint": "Let's hope you don't meet a watery death when you encounter this fiend.",
+      "solution": "Kill a waterfiend.",
+      "creatures": [
+        {
+          "name": "Waterfiends",
+          "chunks": [
+            {
+              "x": 21,
+              "y": 9,
+              "location": "in the Ancient Cavern"
+            },
+            {
+              "x": 16,
+              "y": 12,
+              "location": "in Iorwerth Dungeon"
+            },
+            {
+              "x": 17,
+              "y": 7,
+              "location": "in the Kraken Cove"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Cryptic",
+      "clueHint": "Mix yellow with blue and add heat, make sure you bring protection.",
+      "solution": "Kill a green dragon or brutal green dragon. Players who have completed Dragon Slayer II can use the Myths' Guild basement to kill green dragons outside the Wilderness.",
+      "creatures": [
+        {
+          "name": "Green dragons",
+          "chunks": [
+            {
+              "x": 20,
+              "y": 19,
+              "location": "in the Myths' Guild basement"
+            },
+            {
+              "x": 31,
+              "y": 6,
+              "location": "north of the Graveyard of Shadows"
+            },
+            {
+              "x": 30,
+              "y": 4,
+              "location": "south of the Lava Maze"
+            },
+            {
+              "x": 34,
+              "y": 6,
+              "location": "south of Venenatis"
+            },
+            {
+              "x": 28,
+              "y": 7,
+              "location": "west of the Dark Warriors' Fortress"
+            },
+            {
+              "x": 33,
+              "y": 5,
+              "location": "in the Wilderness Slayer Cave"
+            },
+            {
+              "x": 32,
+              "y": 6,
+              "location": "in the Wilderness Slayer Cave"
+            }
+          ]
+        },
+        {
+          "name": "Brutal green dragons",
+          "chunks": [
+            {
+              "x": 21,
+              "y": 9,
+              "location": "in the Ancient Cavern"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "masterClues": []
+}

@@ -24,9 +24,8 @@ const ChunkModal: React.FC<{
     } as Chunk);
   }
 
-  const killCreatureEliteClues = getKillCreatureCluesForChunk(chunk).filter(
-    (clue) => clue.difficulty === 'Elite'
-  );
+  const killCreatureEliteClues = getKillCreatureCluesForChunk(chunk, 'elite');
+  const killCreatureMasterClues = getKillCreatureCluesForChunk(chunk, 'master');
 
   return (
     <div id="chunk-modal">
@@ -81,7 +80,7 @@ const ChunkModal: React.FC<{
       <div>
         <ClueTable
           clues={[
-            ...(chunk && chunk.eliteClues ? chunk?.eliteClues : []),
+            ...(chunk && chunk.eliteClues ? chunk.eliteClues : []),
             ...killCreatureEliteClues,
           ]}
           difficulty="Elite"
@@ -95,7 +94,10 @@ const ChunkModal: React.FC<{
 
       <div>
         <ClueTable
-          clues={chunk?.masterClues}
+          clues={[
+            ...(chunk && chunk.masterClues ? chunk.masterClues : []),
+            ...killCreatureMasterClues,
+          ]}
           difficulty="Master"
           updateClues={
             editMode

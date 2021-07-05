@@ -6,9 +6,11 @@ import killCreatureClueData from './data/kill-creature-clue-data.json';
 
 export function clueCountsForChunk(chunk: Chunk | undefined) {
   const killCreatureEliteClues = chunk
-    ? getKillCreatureCluesForChunk(chunk).filter(
-        (clue) => clue.difficulty === 'Elite'
-      )
+    ? getKillCreatureCluesForChunk(chunk, 'elite')
+    : [];
+
+  const killCreatureMasterClues = chunk
+    ? getKillCreatureCluesForChunk(chunk, 'master')
     : [];
 
   return {
@@ -17,7 +19,7 @@ export function clueCountsForChunk(chunk: Chunk | undefined) {
     medium: chunk?.mediumClues?.length || 0,
     hard: chunk?.hardClues?.length || 0,
     elite: (chunk?.eliteClues?.length || 0) + killCreatureEliteClues.length,
-    master: chunk?.masterClues?.length || 0,
+    master: (chunk?.masterClues?.length || 0) + killCreatureMasterClues.length,
   };
 }
 
@@ -31,9 +33,20 @@ export function chunkHasClues(chunk: Chunk | undefined): boolean {
   return false;
 }
 
-export function getKillCreatureCluesForChunk(chunk: Chunk): Clue[] {
-  return killCreatureClueData
+export function getKillCreatureCluesForChunk(
+  chunk: Chunk,
+  difficulty: string
+): Clue[] {
+  const clueData = (killCreatureClueData as any as { [clues: string]: Clue[] })[
+    `${difficulty}Clues`
+  ];
+
+  if (!clueData) return [];
+
+  return clueData
     .filter((clue) => {
+      if (!clue.creatures) return false;
+
       for (const creature of clue.creatures) {
         for (const creatureChunk of creature.chunks) {
           if (creatureChunk.x === chunk.x && creatureChunk.y === chunk.y)
@@ -44,6 +57,8 @@ export function getKillCreatureCluesForChunk(chunk: Chunk): Clue[] {
       return false;
     })
     .map((clue) => {
+      if (!clue.creatures) clue.creatures = [];
+
       const alternateChunks: any[] = [];
 
       for (const creature of clue.creatures) {
