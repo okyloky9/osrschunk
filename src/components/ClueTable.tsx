@@ -11,7 +11,7 @@ const ClueTable: React.FC<{
 }> = ({ clues, difficulty, updateClues }) => {
   const editing = !!updateClues;
 
-  const ClueHint = ({ hint }: { hint: string }) => {
+  const ClueHint = ({ hint }: { hint: string | undefined }) => {
     return hint && hint.startsWith('http') ? <img src={hint} /> : <>{hint}</>;
   };
 
