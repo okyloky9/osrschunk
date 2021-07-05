@@ -19,14 +19,22 @@ for (const chunk of chunkData) {
       for (const [clueIndex, clue] of clues.entries()) {
         if (clue.clueHint) clue.clueHint = clue.clueHint.trim();
         if (!clue.clueHint) {
-          console.log(
-            `'${difficulty}' clue ${clueIndex} missing 'clueHint' in chunk (${chunk.x}, ${chunk.y}).`
-          );
+          // all but Hot/Cold clues should have `clueHint`
+          if (clue.type !== 'Hot/Cold') {
+            console.log(
+              `'${difficulty}' clue ${clueIndex} missing 'clueHint' in chunk (${chunk.x}, ${chunk.y}).`
+            );
+          }
+          // remove the `clueHint` field for "Hot/Cold" clues
+          else {
+            delete clue.clueHint;
+          }
         }
 
         if (clue.location) clue.location = clue.location.trim();
         if (!clue.location) delete clue.location;
 
+        // if itemsRequired field is empty, remove it
         if (!clue.itemsRequired || !clue.itemsRequired.length) {
           delete clue.itemsRequired;
         }
