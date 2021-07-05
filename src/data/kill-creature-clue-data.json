@@ -124,5 +124,43 @@
         ]
       }
     ]
+  },
+  {
+    "type": "Cryptic",
+    "difficulty": "Elite",
+    "clueHint": "In a while...",
+    "solution": "Kill a crocodile.",
+    "creatures": [
+      {
+        "name": "Crocodile",
+        "chunks": [
+          {
+            "x": 32,
+            "y": 18,
+            "location": "along the River Elid"
+          },
+          {
+            "x": 33,
+            "y": 18,
+            "location": "along the River Elid"
+          },
+          {
+            "x": 34,
+            "y": 18,
+            "location": "along the River Elid"
+          },
+          {
+            "x": 32,
+            "y": 19,
+            "location": "along the River Elid"
+          },
+          {
+            "x": 33,
+            "y": 19,
+            "location": "along the River Elid"
+          }
+        ]
+      }
+    ]
   }
 ]
