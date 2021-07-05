@@ -992,7 +992,6 @@
       {
         "type": "Hot/Cold",
         "location": "West of the Battlefront.",
-        "solution": "",
         "itemsRequired": ["Spade", "Strange device"]
       }
     ]
@@ -1337,7 +1336,6 @@
       {
         "type": "Hot/Cold",
         "location": "Piscatoris Fishing Colony",
-        "solution": "",
         "itemsRequired": ["Spade", "Strange device"]
       }
     ]
@@ -2773,8 +2771,7 @@
       {
         "type": "Emote",
         "clueHint": "Bow upstairs in the Edgeville Monastery.",
-        "itemsRequired": ["God book"],
-        "solution": ""
+        "itemsRequired": ["God book"]
       }
     ],
     "masterClues": [
@@ -3237,8 +3234,7 @@
           "Climbing boots",
           "Ring of invisibility",
           "Mitre"
-        ],
-        "solution": ""
+        ]
       }
     ],
     "masterClues": [
@@ -3291,7 +3287,7 @@
       {
         "type": "Cryptic",
         "clueHint": "Search for a crate in a building in Hemenster.",
-        "solution": "House north of the Fishing Contest quest area, west of Grandpa Jack.\t"
+        "solution": "House north of the Fishing Contest quest area, west of Grandpa Jack."
       }
     ],
     "mediumClues": [
@@ -5265,8 +5261,7 @@
       {
         "type": "Hot/Cold",
         "location": "Southwestern part of Darkmeyer.",
-        "itemsRequired": ["Spade", "Strange device"],
-        "alternateChunks": []
+        "itemsRequired": ["Spade", "Strange device"]
       }
     ]
   },
@@ -5578,8 +5573,7 @@
       {
         "type": "Cryptic",
         "clueHint": "Search the wheelbarrow in Rimmington mine.",
-        "location": "The Rimmington mining site is located north of Rimmington.",
-        "solution": ""
+        "location": "The Rimmington mining site is located north of Rimmington."
       },
       {
         "type": "Cryptic",
@@ -5752,8 +5746,7 @@
       {
         "type": "Emote",
         "clueHint": "Show your anger at the Wise old man. Beware of double agents!",
-        "itemsRequired": ["Abyssal whip", "Cape of legends", "Spined chaps"],
-        "solution": ""
+        "itemsRequired": ["Abyssal whip", "Cape of legends", "Spined chaps"]
       },
       {
         "type": "Hot/Cold",
@@ -5956,8 +5949,7 @@
       {
         "type": "Coordinates",
         "clueHint": "02 degrees 39 minutes north, 29 degrees 58 minutes east",
-        "itemsRequired": ["Spade"],
-        "solution": ""
+        "itemsRequired": ["Spade"]
       }
     ],
     "eliteClues": [
