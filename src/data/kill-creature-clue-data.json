@@ -76,5 +76,53 @@
         ]
       }
     ]
+  },
+  {
+    "type": "Cryptic",
+    "difficulty": "Elite",
+    "clueHint": "Ghostly bones.",
+    "solution": "Kill an Ankou, which can be found on the 4th level of the Stronghold of Security, the Stronghold Slayer Cave, the Catacombs of Kourend, and The Forgotten Cemetery.",
+    "creatures": [
+      {
+        "name": "Ankou",
+        "chunks": [
+          {
+            "x": 30,
+            "y": 10,
+            "location": "on the 4th level of the Stronghold of Security"
+          },
+          {
+            "x": 19,
+            "y": 10,
+            "location": "in the Stronghold Slayer Cave"
+          },
+          {
+            "x": 7,
+            "y": 6,
+            "location": "in the Catacombs of Kourend"
+          },
+          {
+            "x": 8,
+            "y": 3,
+            "location": "in the Catacombs of Kourend"
+          },
+          {
+            "x": 4,
+            "y": 6,
+            "location": "in the Catacombs of Kourend"
+          },
+          {
+            "x": 6,
+            "y": 4,
+            "location": "in the Catacombs of Kourend"
+          },
+          {
+            "x": 28,
+            "y": 5,
+            "location": "in The Forgotten Cemetery"
+          }
+        ]
+      }
+    ]
   }
 ]
