@@ -1,0 +1,35 @@
+[
+  {
+    "type": "Cryptic",
+    "difficulty": "Elite",
+    "clueHint": "A demon's best friend holds the next step of this clue.",
+    "solution": "Kill a hellhound. Note: Killing Cerberus will count, but hellhounds inside the God Wars Dungeon will not count.",
+    "creatures": [
+      {
+        "name": "Hellhounds",
+        "chunks": [
+          {
+            "x": 7,
+            "y": 6,
+            "location": "in the Catacombs of Kourend"
+          },
+          {
+            "x": 27,
+            "y": 10,
+            "location": "in Taverley Dungeon"
+          }
+        ]
+      },
+      {
+        "name": "Cerberus",
+        "chunks": [
+          {
+            "x": 27,
+            "y": 10,
+            "location": "beneath the Taverley Dungeon"
+          }
+        ]
+      }
+    ]
+  }
+]

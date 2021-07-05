@@ -3,6 +3,7 @@ import { useContext } from 'react';
 import ClueTable from './ClueTable';
 import { ChunkDataContext } from '../data';
 import { Chunk, Clue, ClueDifficulty } from '../models';
+import { getKillCreatureCluesForChunk } from '../utils';
 
 const ChunkModal: React.FC<{
   chunkCoords: { x: number; y: number };
@@ -19,9 +20,13 @@ const ChunkModal: React.FC<{
   function updateClues(type: ClueDifficulty, clues: Clue[]) {
     setChunk(x, y, {
       ...chunk,
-      [`${type.toLowerCase()}Clues`]: clues.filter((clue) => !clue.copied),
+      [`${type.toLowerCase()}Clues`]: clues.filter((clue) => !clue.creatures),
     } as Chunk);
   }
+
+  const killCreatureEliteClues = getKillCreatureCluesForChunk(chunk).filter(
+    (clue) => clue.difficulty === 'Elite'
+  );
 
   return (
     <div id="chunk-modal">
@@ -75,7 +80,10 @@ const ChunkModal: React.FC<{
 
       <div>
         <ClueTable
-          clues={chunk?.eliteClues}
+          clues={[
+            ...(chunk && chunk.eliteClues ? chunk?.eliteClues : []),
+            ...killCreatureEliteClues,
+          ]}
           difficulty="Elite"
           updateClues={
             editMode

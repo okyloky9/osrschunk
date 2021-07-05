@@ -3,7 +3,12 @@ import { useEffect, useRef, useState } from 'react';
 import { memo } from '../utils';
 
 const ItemIcon: React.FC<{ item: string }> = ({ item }) => {
-  const wikiPage = `https://oldschool.runescape.wiki/w/${encodeURI(item)}`;
+  const wikiPageName = Object.keys(wikiPageSpecialCases).includes(item)
+    ? wikiPageSpecialCases[item]
+    : item;
+  const wikiPage = `https://oldschool.runescape.wiki/w/${encodeURI(
+    wikiPageName.replaceAll(' ', '_')
+  )}`;
 
   const [icons, setIcons] = useState<string[]>([]);
   const [iconInterval, setIconInterval] = useState<number>();
@@ -28,7 +33,7 @@ const ItemIcon: React.FC<{ item: string }> = ({ item }) => {
         const _icons = [];
 
         for (const _item of items) {
-          const _icon = await getIcon(_item);
+          const _icon = await getIcon(undefined, _item);
           _icons.push(_icon);
         }
 
@@ -79,10 +84,10 @@ const ItemIcon: React.FC<{ item: string }> = ({ item }) => {
 export default ItemIcon;
 
 // memoized method for fetching an icon
-const getIcon = memo((item: string) => {
+const getIcon = memo((name: string, wiki_name: string) => {
   return fetch(
     `https://api.osrsbox.com/items?where=${encodeURI(
-      JSON.stringify({ name: item, duplicate: false })
+      JSON.stringify({ name, wiki_name, duplicate: false })
     )}`
   )
     .then((response) => response.json())
@@ -90,7 +95,7 @@ const getIcon = memo((item: string) => {
       if (data && data._items && data._items.length && data._items[0].icon) {
         return data._items[0].icon;
       } else {
-        console.log(`Could not find icon for "${item}".`);
+        console.log(`Could not find icon for "${name ? name : wiki_name}".`);
         return undefined;
       }
     });
@@ -121,25 +126,188 @@ const colors = [
   'Pink',
   'Green',
 ];
-const headbandItems = [];
+const headbandItems: string[] = [];
 
 for (const color of colors) {
   headbandItems.push(`${color} headband`);
 }
 
-const teamCapeItems = [];
+const teamCapeItems: string[] = [];
 
 for (let i = 1; i <= 50; i++) {
   teamCapeItems.push(`Team-${i} cape`);
 }
 
-const itemSets = {
+const lightSourceItems = [
+  'Torch (Lit)',
+  'Candle (Lit)',
+  'Black candle (Lit)',
+  'Candle lantern (Lit (white candle))',
+  'Candle lantern (Lit (black candle))',
+  'Oil lamp (Lit)',
+  'Oil lantern (Lit)',
+  'Bullseye lantern (Lit)',
+  'Sapphire lantern (Lit)',
+  'Emerald lantern (Lit)',
+  'Mining helmet (Lit)',
+  'Kandarin headgear 1',
+  'Kandarin headgear 2',
+  'Kandarin headgear 3',
+  'Kandarin headgear 4',
+  'Firemaking cape (Untrimmed)',
+  'Firemaking cape (Trimmed)',
+  'Max cape',
+  'Bruma torch',
+];
+
+const godBookItems = [
+  'Book of balance',
+  'Book of darkness',
+  'Book of law',
+  'Book of war',
+  'Holy book',
+  'Unholy book',
+];
+
+const pirateBandanaItems = [
+  'Pirate bandana (blue)',
+  'Pirate bandana (white)',
+  'Pirate bandana (brown)',
+  'Pirate bandana (red)',
+];
+
+const bobShirtItems = [
+  "Bob's black shirt",
+  "Bob's blue shirt",
+  "Bob's green shirt",
+  "Bob's purple shirt",
+  "Bob's red shirt",
+];
+
+const runeHeraldicFullHelmItems: string[] = [];
+const runeHeraldicShieldItems: string[] = [];
+
+for (let i = 1; i <= 5; i++) {
+  runeHeraldicFullHelmItems.push(`Rune helm (h${i})`);
+  runeHeraldicShieldItems.push(`Rune shield (h${i})`);
+}
+
+const slayerHelmVariants = [
+  'Black',
+  'Green',
+  'Red',
+  'Purple',
+  'Turqoise',
+  'Hydra',
+  'Twisted',
+];
+
+const slayerHelmItems = ['Slayer helmet'];
+
+for (const variant of slayerHelmVariants) {
+  slayerHelmItems.push(`${variant} slayer helmet`);
+}
+
+const fireCapeVariants = ['Fire', 'Infernal', 'Fire max', 'Infernal max'];
+
+const fireCapeItems: string[] = [];
+
+for (const variant of fireCapeVariants) {
+  fireCapeItems.push(`${variant} cape (Normal)`);
+}
+
+const abyssalWhipItems = [
+  'Abyssal whip',
+  'Volcanic abyssal whip',
+  'Frozen abyssal whip',
+];
+
+const zamorakGodswordItems = ['Zamorak godsword', 'Zamorak godsword (or)'];
+
+const dragonAxeItems = [
+  'Dragon axe',
+  'Dragon axe (or)',
+  'Infernal axe (Charged)',
+  'Crystal axe (Active)',
+];
+
+const dragonPickAxeItems = [
+  'Dragon pickaxe',
+  'Dragon pickaxe (or)',
+  'Dragon pickaxe (upgraded)',
+  'Infernal pickaxe (Charged)',
+  'Crystal pickaxe (Active)',
+];
+
+const ibansStaffItems = ["Iban's staff (Regular)", "Iban's staff (u)"];
+
+const barrowsHeadPieceItems = [
+  "Ahrim's hood (Undamaged)",
+  "Dharok's helm (Undamaged)",
+  "Guthan's helm (Undamaged)",
+  "Karil's coif (Undamaged)",
+  "Torag's helm (Undamaged)",
+  "Verac's helm (Undamaged)",
+];
+
+const barrowsBodyPieceItems = [
+  "Ahrim's robetop (Undamaged)",
+  "Dharok's platebody (Undamaged)",
+  "Guthan's platebody (Undamaged)",
+  "Karil's leathertop (Undamaged)",
+  "Torag's platebody (Undamaged)",
+  "Verac's brassard (Undamaged)",
+];
+
+const barrowsLegPieceItems = [
+  "Ahrim's robeskirt (Undamaged)",
+  "Dharok's platelegs (Undamaged)",
+  "Guthan's chainskirt (Undamaged)",
+  "Karil's leatherskirt (Undamaged)",
+  "Torag's platelegs (Undamaged)",
+  "Verac's plateskirt (Undamaged)",
+];
+
+const barrowsWeaponItems = [
+  "Ahrim's staff (Undamaged)",
+  "Dharok's greataxe (Undamaged)",
+  "Guthan's warspear (Undamaged)",
+  "Karil's crossbow (Undamaged)",
+  "Torag's hammers (Undamaged)",
+  "Verac's flail (Undamaged)",
+];
+
+const itemSets: {
+  [name: string]: string[];
+} = {
+  'Abyssal whip': abyssalWhipItems,
+  'Barrows body piece': barrowsBodyPieceItems,
+  'Barrows head piece': barrowsHeadPieceItems,
+  'Barrows leg piece': barrowsLegPieceItems,
+  'Barrows weapon': barrowsWeaponItems,
+  'Bob shirt': bobShirtItems,
   Cloak: cloakItems,
   Crozier: crozierItems,
+  'Dragon axe': dragonAxeItems,
+  'Dragon pickaxe': dragonPickAxeItems,
+  'Fire cape': fireCapeItems,
+  'God book': godBookItems,
   Headband: headbandItems,
+  "Iban's staff": ibansStaffItems,
+  'Light sources': lightSourceItems,
   Mitre: mitreItems,
+  'Pirate bandana': pirateBandanaItems,
+  'Rune heraldic armour#Full helm': runeHeraldicFullHelmItems,
+  'Rune heraldic armour#Kiteshield': runeHeraldicShieldItems,
+  'Slayer helmet': slayerHelmItems,
   Stole: stoleItems,
   'Team cape': teamCapeItems,
-} as {
-  [name: string]: string[];
+  'Zamorak godsword': zamorakGodswordItems,
+};
+
+const wikiPageSpecialCases: { [name: string]: string } = {
+  'Barrows head piece': 'Barrows equipment',
+  'Barrows body piece': 'Barrows equipment',
+  'Barrows leg piece': 'Barrows equipment',
+  'Barrows weapon': 'Barrows equipment',
 };

@@ -1,15 +1,19 @@
 import { useContext, useEffect, useRef, useState } from 'react';
 import { MapInteractionCSS } from 'react-map-interaction';
 import { toast } from 'react-toastify';
+import qs from 'qs';
 
 import { ChunkModal, ChunkTile, ClueIcon, Modal } from '.';
 import type { ModalHandle } from '.';
 import { ToggleSwitch } from './forms';
 import { ClueDifficulty, MapChunk } from '../models';
-import { capitalizeFirstLetter, createClassString } from '../utils';
+import {
+  capitalizeFirstLetter,
+  compressUnlockedChunks,
+  createClassString,
+  decompressUnlockedChunks,
+} from '../utils';
 import { ChunkDataContext } from '../data';
-
-const SETTINGS_KEY = 'SETTINGS';
 
 function initMapChunks(width: number, height: number): MapChunk[][] {
   const mapChunks: MapChunk[][] = [];
@@ -26,6 +30,9 @@ function initMapChunks(width: number, height: number): MapChunk[][] {
 }
 
 export default function Map() {
+  const SETTINGS_KEY = 'SETTINGS';
+  const UNLOCKED_CHUNKS_KEY = 'UNLOCKED_CHUNKS';
+
   // map dimensions (in chunks)
   const width = 43;
   const height = 25;
@@ -37,11 +44,20 @@ export default function Map() {
     saveChunkDataToLocalStorage,
   } = useContext(ChunkDataContext);
 
+  // loading ref
+  const loadingRef = useRef(true);
+
   // modal ref
   const modal = useRef<ModalHandle>(null);
 
   // chunk map
-  const [mapChunks] = useState(initMapChunks(width, height));
+  const [mapChunks, _setMapChunks] = useState(initMapChunks(width, height));
+  const mapChunksRef = useRef(mapChunks);
+  const setMapChunks = (m: MapChunk[][]) => {
+    mapChunksRef.current = m;
+    _setMapChunks(m);
+  };
+
   const [selectedMapChunk, setSelectedMapChunk] = useState<MapChunk>();
 
   // window dimensions
@@ -70,7 +86,37 @@ export default function Map() {
   });
   const [highlightChunksWithoutClues, setHighlightChunksWithoutClues] =
     useState(false);
+
   const [editMode, setEditMode] = useState(false);
+
+  const [chunkLockUnlockMode, _setChunkLockUnlockMode] = useState(false);
+  const chunkLockUnlockModeRef = useRef(chunkLockUnlockMode);
+  const setChunkLockUnlockMode = (m: boolean) => {
+    chunkLockUnlockModeRef.current = m;
+    _setChunkLockUnlockMode(m);
+  };
+
+  // save settings on changes
+  useEffect(() => {
+    localStorage.setItem(
+      SETTINGS_KEY,
+      JSON.stringify({
+        showCoords,
+        showClues,
+        showClueCounts,
+        clueDifficultiesToShow,
+        highlightChunksWithoutClues,
+        editMode,
+      })
+    );
+  }, [
+    showCoords,
+    showClues,
+    showClueCounts,
+    clueDifficultiesToShow,
+    highlightChunksWithoutClues,
+    editMode,
+  ]);
 
   // when edit mode is toggled
   useEffect(() => {
@@ -92,6 +138,36 @@ export default function Map() {
       setAutoSaveInterval(undefined);
     }
   }, [editMode, autoSaveInterval]);
+
+  // when map chunk is selected or deselected
+  useEffect(() => {
+    if (!modal.current) return;
+
+    if (selectedMapChunk) {
+      modal.current.open();
+    } else {
+      modal.current.close();
+    }
+  }, [modal, selectedMapChunk]);
+
+  // when a chunk's unlocked state is toggled
+  useEffect(() => {
+    if (loadingRef.current) return;
+
+    if (allChunksUnlocked(mapChunks)) {
+      localStorage.removeItem(UNLOCKED_CHUNKS_KEY);
+      return;
+    }
+
+    const unlocked = mapChunks
+      .reduce((unlocks, chunkRow) => {
+        unlocks.push(...chunkRow.filter((chunk) => chunk.unlocked));
+        return unlocks;
+      }, [])
+      .map((chunk) => ({ x: chunk.x, y: chunk.y }));
+
+    localStorage.setItem(UNLOCKED_CHUNKS_KEY, JSON.stringify(unlocked));
+  }, [mapChunks]);
 
   // on load
   useEffect(() => {
@@ -117,29 +193,134 @@ export default function Map() {
       setHighlightChunksWithoutClues(settings.highlightChunksWithoutClues);
       setEditMode(settings.editMode);
     }
+
+    // load unlocked chunks from local storage (or URL)
+    function loadUnlockedChunks(unlockedChunks: { x: number; y: number }[]) {
+      for (const chunkRow of mapChunksRef.current) {
+        for (const chunk of chunkRow) {
+          chunk.unlocked = false;
+        }
+      }
+
+      for (const chunk of unlockedChunks) {
+        mapChunksRef.current[chunk.y][chunk.x] = { ...chunk, unlocked: true };
+      }
+
+      setMapChunks(mapChunksRef.current);
+    }
+
+    const query = qs.parse(window.location.search, { ignoreQueryPrefix: true });
+
+    if (query && query.u) {
+      const unlockedChunks = decompressUnlockedChunks(
+        width,
+        height,
+        query.u as string
+      );
+      loadUnlockedChunks(unlockedChunks);
+    } else {
+      const unlockedChunksJson = localStorage.getItem(UNLOCKED_CHUNKS_KEY);
+
+      if (unlockedChunksJson) {
+        const unlockedChunks = JSON.parse(unlockedChunksJson);
+        loadUnlockedChunks(unlockedChunks);
+      }
+    }
+
+    loadingRef.current = false;
   }, []);
 
-  // save settings on changes
-  useEffect(() => {
-    localStorage.setItem(
-      SETTINGS_KEY,
-      JSON.stringify({
-        showCoords,
-        showClues,
-        showClueCounts,
-        clueDifficultiesToShow,
-        highlightChunksWithoutClues,
-        editMode,
-      })
-    );
-  }, [
-    showCoords,
-    showClues,
-    showClueCounts,
-    clueDifficultiesToShow,
-    highlightChunksWithoutClues,
-    editMode,
-  ]);
+  // functions for chunk locking/unlocking
+  function allChunksUnlocked(_mapChunks: MapChunk[][]) {
+    for (const chunkRow of _mapChunks) {
+      for (const chunk of chunkRow) {
+        if (!chunk.unlocked) {
+          return false;
+        }
+      }
+    }
+
+    return true;
+  }
+
+  function toggleAllChunksLockState() {
+    const _mapChunks: MapChunk[][] = [];
+
+    const allUnlocked = allChunksUnlocked(mapChunks);
+
+    for (const chunkRow of mapChunks) {
+      const _chunkRow: MapChunk[] = [];
+
+      for (const chunk of chunkRow) {
+        _chunkRow.push({
+          ...chunk,
+          unlocked: !allUnlocked,
+        });
+      }
+
+      _mapChunks.push(_chunkRow);
+    }
+
+    setMapChunks(_mapChunks);
+  }
+
+  function toggleChunkLocking(mapChunk: MapChunk) {
+    const _mapChunks: MapChunk[][] = [];
+
+    for (const chunkRow of mapChunksRef.current) {
+      const _chunkRow = [...chunkRow];
+
+      const matchingChunkIndex = _chunkRow.findIndex(
+        (c) => c.x === mapChunk.x && c.y === mapChunk.y
+      );
+
+      if (matchingChunkIndex >= 0) {
+        const matchingChunk = _chunkRow[matchingChunkIndex];
+
+        _chunkRow.splice(matchingChunkIndex, 1, {
+          ...matchingChunk,
+          unlocked: !matchingChunk.unlocked,
+        });
+      }
+
+      _mapChunks.push(_chunkRow);
+    }
+
+    setMapChunks(_mapChunks);
+  }
+
+  function createShareableLink() {
+    const unlockedChunksJson = localStorage.getItem(UNLOCKED_CHUNKS_KEY);
+    if (unlockedChunksJson) {
+      const unlockedChunks = JSON.parse(unlockedChunksJson);
+      const compressed = compressUnlockedChunks(width, height, unlockedChunks);
+
+      const { location } = window;
+      const link = `${location.protocol}//${location.host}${location.pathname}?u=${compressed}`;
+
+      const textarea = document.createElement('textarea');
+      textarea.className = 'hidden';
+      textarea.value = link;
+
+      document.body.appendChild(textarea);
+      textarea.focus();
+      textarea.select();
+      document.execCommand('copy');
+
+      document.body.removeChild(textarea);
+
+      toast('📋 Copied shareable link to the clipboard!', { type: 'success' });
+    } else {
+      toast(
+        <>
+          ❌ Could not create sharable link.
+          <br />
+          You must create data to share first.
+        </>,
+        { type: 'error' }
+      );
+    }
+  }
 
   // min scale calculations
   const minWidthScale = windowDimensions.width / (width * 192);
@@ -153,17 +334,6 @@ export default function Map() {
     scale: minScale,
     translation: { x: 0, y: 0 },
   });
-
-  // when map chunk is selected or deselected
-  useEffect(() => {
-    if (!modal.current) return;
-
-    if (selectedMapChunk) {
-      modal.current.open();
-    } else {
-      modal.current.close();
-    }
-  }, [modal, selectedMapChunk]);
 
   // get current view scale
   const { scale } = view;
@@ -206,8 +376,14 @@ export default function Map() {
                 {row.map((mapChunk, x) => (
                   <ChunkTile
                     mapChunk={mapChunk}
-                    onClick={() => setSelectedMapChunk(mapChunk)}
-                    key={`chunk-${x}-${y}`}
+                    onClick={() => {
+                      if (chunkLockUnlockModeRef.current) {
+                        toggleChunkLocking(mapChunk);
+                      } else {
+                        setSelectedMapChunk(mapChunk);
+                      }
+                    }}
+                    key={`chunk-${x}-${y}-${mapChunk.unlocked}`}
                   />
                 ))}
               </tr>
@@ -306,8 +482,55 @@ export default function Map() {
 
               <div>
                 <ToggleSwitch
+                  checked={chunkLockUnlockMode}
+                  onChange={(e) => {
+                    setChunkLockUnlockMode(e.target.checked);
+
+                    if (e.target.checked) {
+                      setEditMode(false);
+                    }
+                  }}
+                >
+                  Chunk locking/unlocking mode
+                </ToggleSwitch>
+              </div>
+
+              {chunkLockUnlockMode && (
+                <>
+                  <div>
+                    <button
+                      className="info"
+                      type="button"
+                      onClick={toggleAllChunksLockState}
+                    >
+                      Lock/unlock all chunks
+                    </button>
+                  </div>
+
+                  <div>
+                    <button
+                      className="success"
+                      type="button"
+                      onClick={createShareableLink}
+                    >
+                      Create shareable link
+                    </button>
+                  </div>
+                </>
+              )}
+
+              <hr />
+
+              <div>
+                <ToggleSwitch
                   checked={editMode}
-                  onChange={(e) => setEditMode(e.target.checked)}
+                  onChange={(e) => {
+                    setEditMode(e.target.checked);
+
+                    if (e.target.checked) {
+                      setChunkLockUnlockMode(false);
+                    }
+                  }}
                 >
                   Data editing mode
                 </ToggleSwitch>
