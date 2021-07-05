@@ -1,7 +1,7 @@
 type Clue = {
   type: string;
   difficulty?: string;
-  clueHint: string;
+  clueHint?: string;
   solution?: string;
   location?: string;
   itemsRequired?: string[];
