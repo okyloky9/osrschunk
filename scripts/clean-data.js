@@ -17,7 +17,9 @@ for (const chunk of chunkData) {
 
     if (clues) {
       for (const [clueIndex, clue] of clues.entries()) {
+        // trim `clueHint` field
         if (clue.clueHint) clue.clueHint = clue.clueHint.trim();
+
         if (!clue.clueHint) {
           // all but Hot/Cold clues should have `clueHint`
           if (clue.type !== 'Hot/Cold') {
@@ -31,12 +33,22 @@ for (const chunk of chunkData) {
           }
         }
 
+        // trim `solution` field (or remove it if it's empty)
+        if (clue.solution) clue.solution = clue.solution.trim();
+        if (!clue.solution) delete clue.solution;
+
+        // trim `location` field (or remove it if it's empty)
         if (clue.location) clue.location = clue.location.trim();
         if (!clue.location) delete clue.location;
 
-        // if itemsRequired field is empty, remove it
+        // if `itemsRequired` field is empty, remove it
         if (!clue.itemsRequired || !clue.itemsRequired.length) {
           delete clue.itemsRequired;
+        }
+
+        // if `alternateChunks` field is empty, remove it
+        if (!clue.alternateChunks || !clue.alternateChunks.length) {
+          delete clue.alternateChunks;
         }
       }
     }
