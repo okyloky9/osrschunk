@@ -132,7 +132,7 @@
     "solution": "Kill a crocodile.",
     "creatures": [
       {
-        "name": "Crocodile",
+        "name": "Crocodiles",
         "chunks": [
           {
             "x": 32,
@@ -158,6 +158,34 @@
             "x": 33,
             "y": 19,
             "location": "along the River Elid"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "Cryptic",
+    "difficulty": "Elite",
+    "clueHint": "Let's hope you don't meet a watery death when you encounter this fiend.",
+    "solution": "Kill a waterfiend.",
+    "creatures": [
+      {
+        "name": "Waterfiends",
+        "chunks": [
+          {
+            "x": 21,
+            "y": 9,
+            "location": "in the Ancient Cavern"
+          },
+          {
+            "x": 16,
+            "y": 12,
+            "location": "in Iorwerth Dungeon"
+          },
+          {
+            "x": 17,
+            "y": 7,
+            "location": "in the Kraken Cove"
           }
         ]
       }
