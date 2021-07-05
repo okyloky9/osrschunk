@@ -46,13 +46,11 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Lunar Isle, inside the village.",
         "itemsRequired": ["Spade", "Strange device"]
       },
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Lunar Isle, north of the village.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -107,7 +105,6 @@
       },
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "West of the Wilderness Agility Course, level 54 Wilderness.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -202,7 +199,6 @@
       },
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "South-west of the Deserted Keep, level 49 Wilderness.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -282,7 +278,6 @@
       },
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Western entrance in Lovakengj's sulphur mine.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -294,13 +289,11 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Next to the bank in the Lovakengj blast mine.",
         "itemsRequired": ["Spade", "Strange device"]
       },
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Northern part of the Lovakengj blast mine.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -320,7 +313,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "North-west of the Arceuus Library.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -332,7 +324,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "West of the Dark Altar.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -357,13 +348,11 @@
       },
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "By the Arceuus essence mine.",
         "itemsRequired": ["Spade", "Strange device"]
       },
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "North-east of the Arceuus essence mine.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -421,7 +410,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Astral altar",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -433,7 +421,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "West Fremennik Isles mine.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -452,7 +439,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Central Fremennik Isles mine.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -501,7 +487,6 @@
       },
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Outside Miscellania's courtyard.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -539,7 +524,6 @@
       },
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Inside Etceteria's castle, in the southern staircase.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -688,13 +672,11 @@
       },
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Next to the lovakite furnace in Lovakengj.",
         "itemsRequired": ["Spade", "Strange device"]
       },
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Next to mithril rock in the Lovakengj mine.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -741,7 +723,6 @@
       },
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "By the entrance to the Arceuus church.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -784,7 +765,6 @@
       },
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Pirates' Cove",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -825,7 +805,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "West of the Jatizso mine entrance.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -844,7 +823,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "At the Rellekka Hunter area, near the hunter training icon.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -890,7 +868,6 @@
       },
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "South-east of the Chaos Temple, level 37 Wilderness.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -909,7 +886,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "East of the Wilderness canoe exit, level 35 Wilderness.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -952,7 +928,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "South of Callisto, level 38 Wilderness.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -987,7 +962,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "West of the Farming Guild.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -1017,7 +991,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "West of the Battlefront.",
         "solution": "",
         "itemsRequired": ["Spade", "Strange device"]
@@ -1030,7 +1003,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Overpass between Lovakengj and Shayzien.",
         "itemsRequired": ["Spade"]
       }
@@ -1218,7 +1190,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Inside the Ruins north of the Graveyard of Shadows, level 27 Wilderness.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -1237,7 +1208,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "North of Venenatis' nest, level 32 Wilderness.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -1249,7 +1219,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "East of Venenatis' nest, level 28 Wilderness.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -1279,7 +1248,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Within Lizardman Canyon, east of the ladder.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -1310,7 +1278,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "By the southern entrance to Arceuus.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -1322,7 +1289,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "South of the Piscarilius mine.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -1370,7 +1336,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Piscatoris Fishing Colony",
         "solution": "",
         "itemsRequired": ["Spade", "Strange device"]
@@ -1383,7 +1348,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Outside the fence in the south-western corner of Rellekka.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -1427,7 +1391,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "West of the Keldagrim entrance mine.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -1457,7 +1420,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "At the Mountain Camp.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -1539,7 +1501,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "East of the Corporeal Beast's lair, level 20 Wilderness.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -1618,13 +1579,11 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "South-east of the War Tent in the Shayzien Encampment.",
         "itemsRequired": ["Spade", "Strange device"]
       },
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "North of the bank, north of the Graveyard of Heroes, in Shayzien.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -1647,7 +1606,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Shayzien, east of the Combat Ring.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -1675,7 +1633,6 @@
       },
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "East of Mess hall.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -1701,7 +1658,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "South of the gravestone in Kingstown.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -1770,7 +1726,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "South-east of the Lighthouse.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -1808,7 +1763,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "North-west of the Sinclair Mansion, near the log balance shortcut.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -1820,7 +1774,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "The Troll arena, where the player fights Dad during the Troll Stronghold quest.",
         "itemsRequired": ["Spade", "Strange device", "Climbing boots"]
       }
@@ -1839,7 +1792,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "South-east of the Dark Warriors' Fortress, level 12 Wilderness.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -1877,7 +1829,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "South-west corner of the Kebos Swamp.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -1926,7 +1877,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "East of Watson's house.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -2007,7 +1957,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "North-west of Eagles' Peak.",
         "itemsRequired": ["Spade", "Strange device"],
         "alternateChunks": [
@@ -2033,7 +1982,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "North-west of Eagles' Peak.",
         "itemsRequired": ["Spade", "Strange device"],
         "alternateChunks": [
@@ -2046,7 +1994,6 @@
       },
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Eastern part of Piscatoris Hunter area, south-west of the Piscatoris falconry area.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -2068,7 +2015,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Inside the Barbarian Agility Course. Completion of Alfred Grimhand's Barcrawl is required.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -2137,7 +2083,6 @@
       },
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "North of the Warriors' Guild in Burthorpe.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -2271,7 +2216,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "North of the Grand Exchange, level 5 Wilderness.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -2316,7 +2260,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "South of the Mausoleum.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -2371,13 +2314,11 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Northern part of Dragontooth Island.",
         "itemsRequired": ["Spade", "Strange device"]
       },
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Southern part of Dragontooth Island.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -2467,7 +2408,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "solution": "North of the Tithe Farm.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -2517,7 +2457,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Grand Tree, just east of the terrorchick gnome enclosure.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -2561,7 +2500,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "South-east of Almera's house on Baxtorian Falls.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -2606,7 +2544,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "McGrubor's Wood",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -2665,7 +2602,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Between the Seers' Village bank and Camelot.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -2776,7 +2712,6 @@
       },
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "North of Miazrqa's tower, outside Goblin Village.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -3055,7 +2990,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "South of Lumber Yard, east of Assistant Serf.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -3157,7 +3091,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "West of Port Phasmatys, south-east of fairy ring.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -3228,7 +3161,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "South-west Tree Gnome Stronghold",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -3450,7 +3382,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Catherby, between the bank and the beehives, near small rock formation.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -3558,7 +3489,6 @@
       },
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "East of Jatix's Herblore Shop in Taverley.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -3671,7 +3601,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "West of Barbarian Village.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -3808,7 +3737,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Nort-east of Gertrude's house west of Varrock.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -3966,7 +3894,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Inside The Hollows, south of the bridge which was repaired in a quest.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -4038,7 +3965,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "South of the Tree Gnome Stronghold, north-east of the Outpost.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -4097,7 +4023,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "South of Fishing Guild",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -4462,7 +4387,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Outside the Falador Party Room.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -4601,7 +4525,6 @@
       },
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "South of the stone circle near Varrock's entrance.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -4705,7 +4628,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Inside the Mort Myre Swamp, north-west of the Nature Grotto.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -4729,7 +4651,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "North-east of Slepe.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -4741,7 +4662,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "North-west of Iorwerth Camp.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -4790,7 +4710,6 @@
       },
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "South-west of the crystal gate to Arandar.",
         "alternateChunks": [
           {
@@ -4809,7 +4728,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "South-west of the crystal gate to Arandar.",
         "itemsRequired": ["Spade", "Strange device"],
         "alternateChunks": [
@@ -4887,7 +4805,6 @@
       },
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "West Ardougne, near the staircase outside the Civic Office.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -5017,7 +4934,6 @@
       },
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Outside Witchaven, west of Jeb, Holgart, and Caroline.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -5083,7 +4999,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Outside the Crafting Guild cow pen.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -5124,7 +5039,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "In the cow pen north of Sarah's Farming Shop.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -5203,7 +5117,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "North of the pond between Lumbridge and Draynor Village.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -5245,7 +5158,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "West of Al Kharid mine.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -5281,7 +5193,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Next to Mage Training Arena.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -5353,7 +5264,6 @@
       },
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Southwestern part of Darkmeyer.",
         "itemsRequired": ["Spade", "Strange device"],
         "alternateChunks": []
@@ -5401,7 +5311,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "East of Iorwerth Camp.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -5421,7 +5330,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Grave of Scorpius",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -5433,7 +5341,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Khazard Battlefield, in the small ruins south of tracker gnome 2.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -5498,7 +5405,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "1st floor inside the Necromancer Tower. Easily accessed by using fairy ring code D*J*P.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -5553,7 +5459,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Brimhaven, east of the fruit tree patch.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -5696,7 +5601,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "In the centre of the Rimmington mine.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -5853,7 +5757,6 @@
       },
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "South of Draynor Village bank.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -6067,7 +5970,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "At Haunted Mine quest start.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -6106,7 +6008,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "In the north-east area of Burgh de Rott, by the reverse-L-shaped ruins.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -6158,7 +6059,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Near Tyras Camp.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -6213,7 +6113,6 @@
       { "type": "Anagram", "clueHint": "Yawns Gy", "solution": "Ysgawyn" },
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "In Lletya.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -6268,7 +6167,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Tree Gnome Village, near the general store icon.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -6287,7 +6185,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "South of the Fight Arena, north-west of the Nightmare Zone.",
         "itemsRequired": ["Spade", "Strange device"],
         "alternateChunks": [
@@ -6344,7 +6241,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "West of Brimhaven.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -6464,7 +6360,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Musa Point, banana plantation.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -6631,7 +6526,6 @@
       },
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Just north-west of the Lumbridge Fishing tutor.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -6760,7 +6654,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Directly west of the Castle Wars balloon.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -6845,7 +6738,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "South of the Fight Arena, north-west of the Nightmare Zone.",
         "itemsRequired": ["Spade", "Strange device"],
         "alternateChunks": [
@@ -6929,7 +6821,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Mudskipper Point, on the starfish in the south-west corner.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -6975,7 +6866,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "South-west of Shantay Pass.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -7034,7 +6924,6 @@
       },
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "The northern house at Zul-Andra.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -7065,7 +6954,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "West of Jiggig, east of the fairy ring B*K*P.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -7170,7 +7058,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Bedabin Camp, dig around the north tent.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -7193,7 +7080,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Northern area of Mos Le'Harmless, between the lakes.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -7235,7 +7121,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "South of Jiggig.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -7254,7 +7139,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "East of the gnome glider (Lemantolly Undri).",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -7273,7 +7157,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "South of Rantz, six steps west of the empty glass bottles.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -7350,7 +7233,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "West of the gnome glider.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -7385,7 +7267,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "West of Pollnivneach.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -7416,7 +7297,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Near Mos Le'Harmless southern bar.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -7439,7 +7319,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Outside the red chinchompa hunting ground entrance, south of the Hunting expert's hut.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -7458,13 +7337,11 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "West of the southeasternmost lake in Feldip Hills.",
         "itemsRequired": ["Spade", "Strange device"]
       },
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "South-east of the horseshoe shaped lake, near the hunter training icon.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -7483,7 +7360,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "South-western part of Kharazi Jungle.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -7506,7 +7382,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "North-eastern part of Kharazi Jungle.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -7559,7 +7434,6 @@
       },
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "West of Nardah genie cave.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -7635,7 +7509,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "North of Menaphos gate.",
         "itemsRequired": ["Spade", "Strange device"],
         "alternateChunks": [
@@ -7695,7 +7568,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "On the Isle of Souls, by the entrance to the mine.",
         "itemsRequired": ["Spade", "Strange device"]
       }
@@ -7725,7 +7597,6 @@
     "masterClues": [
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "North of Menaphos gate.",
         "itemsRequired": ["Spade", "Strange device"],
         "alternateChunks": [
@@ -7813,7 +7684,6 @@
       },
       {
         "type": "Hot/Cold",
-        "clueHint": "",
         "location": "Northern part of Crash Island.",
         "itemsRequired": ["Spade", "Strange device"]
       }
