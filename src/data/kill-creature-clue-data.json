@@ -488,6 +488,28 @@
           ]
         }
       ]
+    },
+    {
+      "type": "Cryptic",
+      "clueHint": "You will have to fly high where a sword cannot help you.",
+      "solution": "Kill an aviansie.",
+      "creatures": [
+        {
+          "name": "Aviansies",
+          "chunks": [
+            {
+              "x": 27,
+              "y": 5,
+              "location": "in the God Wars Dungeon"
+            },
+            {
+              "x": 29,
+              "y": 5,
+              "location": "in the Wilderness God Wars Dungeon"
+            }
+          ]
+        }
+      ]
     }
   ],
   "masterClues": [
