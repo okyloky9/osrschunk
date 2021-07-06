@@ -441,6 +441,53 @@
           ]
         }
       ]
+    },
+    {
+      "type": "Cryptic",
+      "clueHint": "You might have to turn over a few stones to progress.",
+      "solution": "Kill a rock crab and pick up the casket or clue that it drops.",
+      "creatures": [
+        {
+          "name": "Rock crabs",
+          "chunks": [
+            {
+              "x": 23,
+              "y": 5,
+              "location": "north of Rellekka"
+            },
+            {
+              "x": 24,
+              "y": 5,
+              "location": "north of Rellekka"
+            },
+            {
+              "x": 21,
+              "y": 5,
+              "location": "on Waterbirth Island"
+            },
+            {
+              "x": 0,
+              "y": 7,
+              "location": "west of Mount Quidamortem"
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "location": "west of Mount Quidamortem"
+            },
+            {
+              "x": 0,
+              "y": 9,
+              "location": "west of Mount Quidamortem"
+            },
+            {
+              "x": 24,
+              "y": 5,
+              "location": "in the Brine Rat Cavern"
+            }
+          ]
+        }
+      ]
     }
   ],
   "masterClues": [
