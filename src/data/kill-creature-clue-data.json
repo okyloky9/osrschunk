@@ -244,6 +244,39 @@
           ]
         }
       ]
+    },
+    {
+      "type": "Cryptic",
+      "clueHint": "Reflection is the weakness for these eyes of evil.",
+      "solution": "Kill a basilisk, which requires a mirror shield and 40 Slayer. Basilisk knights also count, requiring 60 Slayer and completion of The Fremennik Exiles.",
+      "itemsRequired": ["Mirror shield"],
+      "creatures": [
+        {
+          "name": "Basilisks",
+          "chunks": [
+            {
+              "x": 25,
+              "y": 7,
+              "location": "in the Fremennik Slayer Cave"
+            },
+            {
+              "x": 20,
+              "y": 1,
+              "location": "in Jormungand's Prison"
+            }
+          ]
+        },
+        {
+          "name": "Basilisk Knights",
+          "chunks": [
+            {
+              "x": 20,
+              "y": 1,
+              "location": "in Jormungand's Prison"
+            }
+          ]
+        }
+      ]
     }
   ],
   "masterClues": [
