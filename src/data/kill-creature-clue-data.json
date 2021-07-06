@@ -294,6 +294,34 @@
           ]
         }
       ]
+    },
+    {
+      "type": "Cryptic",
+      "clueHint": "Surround my bones in fire, ontop the wooden pyre. Finally lay me to rest, before my one last test.",
+      "solution": "Kill a confused barbarian or lost barbarian within the Ancient Cavern to receive mangled bones. Construct a pyre ship and burn the bones onto the pyre with logs, a tinderbox, and an axe. Kill the ferocious barbarian spirit that spawns to receive the next clue.",
+      "itemsRequired": ["Log (disambiguation)", "Tinderbox", "Axe"],
+      "creatures": [
+        {
+          "name": "Confused Barbarians",
+          "chunks": [
+            {
+              "x": 21,
+              "y": 9,
+              "location": "in the Ancient Cavern"
+            }
+          ]
+        },
+        {
+          "name": "Lost Barbarians",
+          "chunks": [
+            {
+              "x": 21,
+              "y": 9,
+              "location": "in the Ancient Cavern"
+            }
+          ]
+        }
+      ]
     }
   ],
   "masterClues": [

@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from 'react';
 
 import { memo } from '../utils';
 
+import loadingGif from '../images/loading.gif';
+
 const ItemIcon: React.FC<{ item: string }> = ({ item }) => {
   const wikiPageName = Object.keys(wikiPageSpecialCases).includes(item)
     ? wikiPageSpecialCases[item]
@@ -70,7 +72,7 @@ const ItemIcon: React.FC<{ item: string }> = ({ item }) => {
 
   // if no icons, show the item name
   if (icons.length === 0) {
-    return <>{item}</>;
+    return <img className="loading-icon" src={loadingGif} />;
   }
 
   // show the icon(s)
@@ -277,9 +279,41 @@ const barrowsWeaponItems = [
   "Verac's flail (Undamaged)",
 ];
 
+const logItems = [
+  'Logs (Normal)',
+  'Oak logs',
+  'Willow logs',
+  'Teak logs',
+  'Arctic pine logs',
+  'Maple logs',
+  'Mahogany logs',
+  'Yew logs',
+  'Magic logs',
+  'Redwood logs',
+  'Achey tree logs',
+];
+
+const axeItems = [
+  'Bronze axe',
+  'Iron axe',
+  'Steel axe',
+  'Black axe',
+  'Mithril axe',
+  'Adamant axe',
+  'Rune axe',
+  'Blessed axe',
+  'Gilded axe',
+  'Dragon axe',
+  'Dragon axe (or)',
+  'Infernal axe (Charged)',
+  'Crystal axe (Active)',
+  '3rd age axe',
+];
+
 const itemSets: {
   [name: string]: string[];
 } = {
+  Axe: axeItems,
   'Abyssal whip': abyssalWhipItems,
   'Barrows body piece': barrowsBodyPieceItems,
   'Barrows head piece': barrowsHeadPieceItems,
@@ -295,6 +329,7 @@ const itemSets: {
   Headband: headbandItems,
   "Iban's staff": ibansStaffItems,
   'Light sources': lightSourceItems,
+  'Log (disambiguation)': logItems,
   Mitre: mitreItems,
   'Pirate bandana': pirateBandanaItems,
   'Rune heraldic armour#Full helm': runeHeraldicFullHelmItems,
