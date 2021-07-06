@@ -277,6 +277,23 @@
           ]
         }
       ]
+    },
+    {
+      "type": "Cryptic",
+      "clueHint": "Scattered coins and gems fill the floor. The chest you seek is in the north-east.",
+      "solution": "Kill the King Black Dragon for a key (elite), and then open the closed chest in the north-east corner of the lair.",
+      "creatures": [
+        {
+          "name": "King Black Dragon",
+          "chunks": [
+            {
+              "x": 29,
+              "y": 3,
+              "location": "in the King Black Dragon Lair"
+            }
+          ]
+        }
+      ]
     }
   ],
   "masterClues": [
