@@ -3,7 +3,7 @@ import { useContext } from 'react';
 import ClueTable from './ClueTable';
 import { ChunkDataContext } from '../data';
 import { Chunk, Clue, ClueDifficulty } from '../models';
-import { getKillCreatureCluesForChunk } from '../utils';
+import { chunkHasClues, getKillCreatureCluesForChunk } from '../utils';
 
 const ChunkModal: React.FC<{
   chunkCoords: { x: number; y: number };
@@ -32,6 +32,10 @@ const ChunkModal: React.FC<{
       <h1>
         Chunk ({x}, {y})
       </h1>
+
+      {!editMode && !chunkHasClues(chunk) && (
+        <div>This chunk has no clue steps.</div>
+      )}
 
       <div>
         <ClueTable
