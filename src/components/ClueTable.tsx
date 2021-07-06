@@ -12,7 +12,11 @@ const ClueTable: React.FC<{
   const editing = !!updateClues;
 
   const ClueHint = ({ hint }: { hint: string | undefined }) => {
-    return hint && hint.startsWith('http') ? <img src={hint} /> : <>{hint}</>;
+    return hint && hint.startsWith('http') ? (
+      <img src={hint} />
+    ) : (
+      <span className="clue-hint">{hint}</span>
+    );
   };
 
   function updateClue(index: number, clue: Clue) {
