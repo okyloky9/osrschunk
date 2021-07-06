@@ -86,6 +86,7 @@ export default function Map() {
   });
   const [highlightChunksWithoutClues, setHighlightChunksWithoutClues] =
     useState(false);
+  const [hideChunksWithoutClues, setHideChunksWithoutClues] = useState(false);
 
   const [editMode, setEditMode] = useState(false);
 
@@ -121,6 +122,7 @@ export default function Map() {
         showClueCounts,
         clueDifficultiesToShow,
         highlightChunksWithoutClues,
+        hideChunksWithoutClues,
         editMode,
       })
     );
@@ -130,6 +132,7 @@ export default function Map() {
     showClueCounts,
     clueDifficultiesToShow,
     highlightChunksWithoutClues,
+    hideChunksWithoutClues,
     editMode,
   ]);
 
@@ -206,6 +209,7 @@ export default function Map() {
       setShowClueCounts(settings.showClueCounts);
       setClueDifficultiesToShow(settings.clueDifficultiesToShow);
       setHighlightChunksWithoutClues(settings.highlightChunksWithoutClues);
+      setHideChunksWithoutClues(settings.hideChunksWithoutClues);
       setEditMode(settings.editMode);
     }
 
@@ -368,6 +372,7 @@ export default function Map() {
               {}
             ),
             'highlight-chunks-without-clues': highlightChunksWithoutClues,
+            'hide-chunks-without-clues': hideChunksWithoutClues,
             'has-locked-chunks': !allChunksUnlocked,
             'zoomed-in': scale > 1,
           })}
@@ -472,11 +477,30 @@ export default function Map() {
               <div>
                 <ToggleSwitch
                   checked={highlightChunksWithoutClues}
-                  onChange={(e) =>
-                    setHighlightChunksWithoutClues(e.target.checked)
-                  }
+                  onChange={(e) => {
+                    setHighlightChunksWithoutClues(e.target.checked);
+
+                    if (e.target.checked) {
+                      setHideChunksWithoutClues(false);
+                    }
+                  }}
                 >
                   Highlight chunks without clues
+                </ToggleSwitch>
+              </div>
+
+              <div>
+                <ToggleSwitch
+                  checked={hideChunksWithoutClues}
+                  onChange={(e) => {
+                    setHideChunksWithoutClues(e.target.checked);
+
+                    if (e.target.checked) {
+                      setHighlightChunksWithoutClues(false);
+                    }
+                  }}
+                >
+                  Hide chunks without clues
                 </ToggleSwitch>
               </div>
 

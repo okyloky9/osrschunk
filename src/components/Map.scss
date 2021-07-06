@@ -93,10 +93,21 @@
     }
   }
 
+  &.hide-chunks-without-clues tr td.no-clues {
+    background: #000000;
+
+    border: 1px solid #000000;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.6);
+    }
+  }
+
   // unlocked chunks without clues
   &.has-locked-chunks.highlight-chunks-without-clues
     tr
-    td.no-clues:not(.locked) {
+    td.no-clues:not(.locked),
+  &.has-locked-chunks.hide-chunks-without-clues tr td.no-clues:not(.locked) {
     background: none;
 
     &:hover {
