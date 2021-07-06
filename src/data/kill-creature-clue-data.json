@@ -394,6 +394,53 @@
           ]
         }
       ]
+    },
+    {
+      "type": "Cryptic",
+      "clueHint": "You'll have to plug your nose if you use this source of herbs.",
+      "solution": "Kill an aberrant spectre or deviant spectre and pick up the clue or casket that it drops.",
+      "creatures": [
+        {
+          "name": "Aberrant spectre",
+          "chunks": [
+            {
+              "x": 35,
+              "y": 8,
+              "location": "in the Slayer Tower"
+            },
+            {
+              "x": 19,
+              "y": 10,
+              "location": "in the Stronghold Slayer Cave"
+            }
+          ]
+        },
+        {
+          "name": "Deviant spectre",
+          "chunks": [
+            {
+              "x": 7,
+              "y": 6,
+              "location": "in the Catacombs of Kourend"
+            },
+            {
+              "x": 8,
+              "y": 3,
+              "location": "in the Catacombs of Kourend"
+            },
+            {
+              "x": 4,
+              "y": 6,
+              "location": "in the Catacombs of Kourend"
+            },
+            {
+              "x": 6,
+              "y": 4,
+              "location": "in the Catacombs of Kourend"
+            }
+          ]
+        }
+      ]
     }
   ],
   "masterClues": [
