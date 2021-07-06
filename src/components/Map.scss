@@ -93,6 +93,17 @@
     }
   }
 
+  // unlocked chunks without clues
+  &.has-locked-chunks.highlight-chunks-without-clues
+    tr
+    td.no-clues:not(.locked) {
+    background: none;
+
+    &:hover {
+      background: rgba(0, 255, 0, 0.4);
+    }
+  }
+
   // table rows & cells
   tr {
     height: 192px;

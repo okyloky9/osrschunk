@@ -96,6 +96,19 @@ export default function Map() {
     _setChunkLockUnlockMode(m);
   };
 
+  // check if all chunks are unlocked
+  const allChunksUnlocked = (() => {
+    for (const chunkRow of mapChunks) {
+      for (const chunk of chunkRow) {
+        if (!chunk.unlocked) {
+          return false;
+        }
+      }
+    }
+
+    return true;
+  })();
+
   // save settings on changes
   useEffect(() => {
     if (loadingRef.current) return;
@@ -156,7 +169,7 @@ export default function Map() {
   useEffect(() => {
     if (loadingRef.current) return;
 
-    if (allChunksUnlocked(mapChunks)) {
+    if (allChunksUnlocked) {
       localStorage.removeItem(UNLOCKED_CHUNKS_KEY);
       return;
     }
@@ -233,22 +246,8 @@ export default function Map() {
   }, []);
 
   // functions for chunk locking/unlocking
-  function allChunksUnlocked(_mapChunks: MapChunk[][]) {
-    for (const chunkRow of _mapChunks) {
-      for (const chunk of chunkRow) {
-        if (!chunk.unlocked) {
-          return false;
-        }
-      }
-    }
-
-    return true;
-  }
-
   function toggleAllChunksLockState() {
     const _mapChunks: MapChunk[][] = [];
-
-    const allUnlocked = allChunksUnlocked(mapChunks);
 
     for (const chunkRow of mapChunks) {
       const _chunkRow: MapChunk[] = [];
@@ -256,7 +255,7 @@ export default function Map() {
       for (const chunk of chunkRow) {
         _chunkRow.push({
           ...chunk,
-          unlocked: !allUnlocked,
+          unlocked: !allChunksUnlocked,
         });
       }
 
@@ -369,6 +368,7 @@ export default function Map() {
               {}
             ),
             'highlight-chunks-without-clues': highlightChunksWithoutClues,
+            'has-locked-chunks': !allChunksUnlocked,
             'zoomed-in': scale > 1,
           })}
         >
