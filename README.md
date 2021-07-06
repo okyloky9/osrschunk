@@ -1,4 +1,4 @@
-# OSRS Chunk Map (WIP)
+# OSRS Chunk Map
 
 This is a tool for viewing what clues are available within each map chunk of Old School RuneScape.
 
