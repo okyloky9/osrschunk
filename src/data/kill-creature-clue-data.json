@@ -322,6 +322,78 @@
           ]
         }
       ]
+    },
+    {
+      "type": "Cryptic",
+      "clueHint": "You'll get licked.",
+      "solution": "Kill a bloodveld. Mutated variants do work. Bloodvelds in the God Wars Dungeon do work.",
+      "creatures": [
+        {
+          "name": "Bloodvelds",
+          "chunks": [
+            {
+              "x": 27,
+              "y": 5,
+              "location": "in the God Wars Dungeon"
+            },
+            {
+              "x": 29,
+              "y": 5,
+              "location": "in the Wilderness God Wars Dungeon"
+            },
+            {
+              "x": 35,
+              "y": 8,
+              "location": "in the Slayer Tower"
+            },
+            {
+              "x": 19,
+              "y": 10,
+              "location": "in the Stronghold Slayer Cave"
+            },
+            {
+              "x": 38,
+              "y": 12,
+              "location": "in the Meiyerditch Laboratories"
+            }
+          ]
+        },
+        {
+          "name": "Mutated Bloodvelds",
+          "chunks": [
+            {
+              "x": 16,
+              "y": 12,
+              "location": "in Iorwerth Dungeon"
+            },
+            {
+              "x": 7,
+              "y": 6,
+              "location": "in the Catacombs of Kourend"
+            },
+            {
+              "x": 8,
+              "y": 3,
+              "location": "in the Catacombs of Kourend"
+            },
+            {
+              "x": 4,
+              "y": 6,
+              "location": "in the Catacombs of Kourend"
+            },
+            {
+              "x": 6,
+              "y": 4,
+              "location": "in the Catacombs of Kourend"
+            },
+            {
+              "x": 38,
+              "y": 12,
+              "location": "in the Meiyerditch Laboratories"
+            }
+          ]
+        }
+      ]
     }
   ],
   "masterClues": [
@@ -336,7 +408,7 @@
             {
               "x": 27,
               "y": 5,
-              "location": "in the God War's Dungeon"
+              "location": "in the God Wars Dungeon"
             }
           ]
         }
