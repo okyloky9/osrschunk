@@ -7085,8 +7085,7 @@
     "masterClues": [
       {
         "type": "Coordinates",
-        "clueHint": "6 minutes east",
-        "solution": "03 degrees 09 minutes south, 43 degrees 2",
+        "clueHint": "03 degrees 09 minutes south, 43 degrees 26 minutes east",
         "itemsRequired": ["Spade"]
       }
     ]
