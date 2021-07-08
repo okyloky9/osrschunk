@@ -310,7 +310,9 @@ const ClueTable: React.FC<{
                       </>
                     ) : (
                       alternateChunks?.map((alt, index) => (
-                        <React.Fragment key={`alt-chunk-${alt.x}-${alt.y}`}>
+                        <React.Fragment
+                          key={`alt-chunk-${alt.x}-${alt.y}-${alt.notes}`}
+                        >
                           <span
                             className="alternate-chunk"
                             data-class="alternate-chunk-tooltip"
