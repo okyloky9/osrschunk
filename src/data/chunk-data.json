@@ -6478,7 +6478,7 @@
       {
         "type": "Emote",
         "clueHint": "Dance in the dark caves beneath Lumbridge Swamp. Blow a kiss before you talk to me.",
-        "itemsRequired": ["Air staff", "Bronze full helm", "Amulet of power"]
+        "itemsRequired": ["Staff of air", "Bronze full helm", "Amulet of power"]
       },
       {
         "type": "Coordinates",
@@ -6839,7 +6839,11 @@
       {
         "type": "Emote",
         "clueHint": "Dance a jig under Shantay's Awning. Bow before you talk to me.",
-        "itemsRequired": ["Bruise blue snelm", "Air staff", "Bronze sq shield"]
+        "itemsRequired": [
+          "Bruise blue snelm",
+          "Staff of air",
+          "Bronze sq shield"
+        ]
       }
     ],
     "eliteClues": [
