@@ -12,6 +12,19 @@
       border: 1px solid #ddd;
       padding: 8px;
 
+      .stash-unit-type {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+
+        .stash-unit-icon {
+          width: 36px;
+          height: auto;
+
+          padding-right: 4px;
+        }
+      }
+
       &.chunk-coords {
         color: #2a59bd;
       }

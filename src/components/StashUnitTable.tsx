@@ -1,10 +1,22 @@
 import { ItemIcon } from '.';
 import type { StashUnit } from '../models';
 
+import bushStashIcon from '../images/icons/STASH_unit_(bush).png';
+import crateStashIcon from '../images/icons/STASH_unit_(crate).png';
+import holeStashIcon from '../images/icons/STASH_unit_(hole).png';
+import rockStashIcon from '../images/icons/STASH_unit_(rock).png';
+
 const StashUnitTable: React.FC<{ units?: StashUnit[] }> = ({ units }) => {
   if (!units || !units.length) {
     return <></>;
   }
+
+  const stashIcons: { [x: string]: string } = {
+    Bush: bushStashIcon,
+    Crate: crateStashIcon,
+    Hole: holeStashIcon,
+    Rock: rockStashIcon,
+  };
 
   return (
     <div className="stash-unit-table">
@@ -23,7 +35,12 @@ const StashUnitTable: React.FC<{ units?: StashUnit[] }> = ({ units }) => {
           {units.map(({ difficulty, type, location, items, chunk }) => (
             <tr key={location}>
               <td>{difficulty}</td>
-              <td>{type}</td>
+              <td>
+                <div className="stash-unit-type">
+                  <img className="stash-unit-icon" src={stashIcons[type]} />
+                  <div>{type}</div>
+                </div>
+              </td>
               <td>{location}</td>
               <td>
                 {items.map((item, index) => (
