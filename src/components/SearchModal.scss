@@ -15,4 +15,9 @@
 
     justify-content: space-between;
   }
+
+  > div {
+    width: 100%;
+    overflow-x: auto;
+  }
 }

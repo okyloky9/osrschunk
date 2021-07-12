@@ -1,0 +1,25 @@
+.stash-unit-table {
+  h2 {
+    font-size: 18px;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+
+    td,
+    th {
+      border: 1px solid #ddd;
+      padding: 8px;
+
+      &.chunk-coords {
+        color: #2a59bd;
+      }
+    }
+  }
+
+  .loading-icon {
+    height: 32px;
+    width: auto;
+  }
+}

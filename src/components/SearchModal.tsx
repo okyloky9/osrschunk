@@ -1,12 +1,11 @@
 import { useCallback, useEffect, useState } from 'react';
 import { useDebounce } from 'use-debounce';
 
-import type { Chunk, Clue } from '../models';
+import { ClueTable, StashUnitTable } from '.';
+import type { Chunk, Clue, StashUnit } from '../models';
 import chunkJson from '../data/chunk-data.json';
 import killCreatureClueJson from '../data/kill-creature-clue-data.json';
 import stashUnitJson from '../data/stash-unit-data.json';
-
-import { ClueTable } from '.';
 
 const SearchModal: React.FC = () => {
   const searchClueHintsId = 'search-clue-hints';
@@ -19,6 +18,8 @@ const SearchModal: React.FC = () => {
 
   const [debouncedClueQuery] = useDebounce(clueQuery, debounceTime);
   const [debouncedItemQuery] = useDebounce(itemQuery, debounceTime);
+
+  const [stashUnits, setStashUnits] = useState<StashUnit[]>([]);
 
   const [beginnerClues, setBeginnerClues] = useState<Clue[]>([]);
   const [easyClues, setEasyClues] = useState<Clue[]>([]);
@@ -131,6 +132,8 @@ const SearchModal: React.FC = () => {
   }, []);
 
   const searchItems = useCallback((query: string) => {
+    const _stashUnits: StashUnit[] = [];
+
     const cluesOfEachDifficulty: { [x: string]: Clue[] } = {};
     for (const difficulty of clueDifficulties) {
       cluesOfEachDifficulty[difficulty] = [];
@@ -168,6 +171,14 @@ const SearchModal: React.FC = () => {
     }
 
     if (query && query.length >= 3) {
+      for (const chunk of stashUnitJson) {
+        for (const unit of chunk.stashUnits) {
+          if (unit.items.find((item) => item.toLowerCase().includes(query))) {
+            _stashUnits.push({ ...unit, chunk: { x: chunk.x, y: chunk.y } });
+          }
+        }
+      }
+
       for (const chunk of chunkJson) {
         for (const difficulty of clueDifficulties) {
           cluesOfEachDifficulty[difficulty].push(
@@ -176,6 +187,8 @@ const SearchModal: React.FC = () => {
         }
       }
     }
+
+    setStashUnits(_stashUnits);
 
     for (const [index, setter] of clueSetters.entries()) {
       setter(cluesOfEachDifficulty[clueDifficulties[index]]);
@@ -225,6 +238,10 @@ const SearchModal: React.FC = () => {
           </div>
         </div>
       </form>
+
+      <div>
+        <StashUnitTable units={stashUnits} />
+      </div>
 
       <div>
         <ClueTable clues={beginnerClues} difficulty="Beginner" search />

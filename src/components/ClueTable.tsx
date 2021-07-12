@@ -5,7 +5,7 @@ import { ClueIcon, ItemIcon } from '.';
 import { Clue, ClueDifficulty } from '../models';
 
 const ClueTable: React.FC<{
-  clues: Clue[] | undefined;
+  clues?: Clue[];
   difficulty: ClueDifficulty;
   search?: boolean;
   updateClues?: (clues: Clue[]) => void;

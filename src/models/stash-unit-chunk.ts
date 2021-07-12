@@ -1,12 +1,9 @@
+import type { StashUnit } from '.';
+
 type StashUnitChunk = {
   x: number;
   y: number;
-  stashUnits: {
-    difficulty: string;
-    type: string;
-    location: string;
-    items: string[];
-  }[];
+  stashUnits: StashUnit[];
 };
 
 export default StashUnitChunk;
