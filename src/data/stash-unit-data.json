@@ -28,5 +28,17 @@
         "items": ["Leather boots", "Bronze axe"]
       }
     ]
+  },
+  {
+    "x": 32,
+    "y": 14,
+    "stashUnits": [
+      {
+        "difficulty": "Easy",
+        "type": "Hole",
+        "location": "Near a shed in Lumbridge Swamp (entrance to Zanaris)",
+        "items": ["Bronze dagger", "Iron full helm", "Gold ring"]
+      }
+    ]
   }
 ]
