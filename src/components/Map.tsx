@@ -675,6 +675,12 @@ export default function Map() {
         )}
       </div>
 
+      <div className="controls pin-top-right margin">
+        <button onClick={() => {}} aria-label="Show search">
+          <FontAwesomeIcon icon="search" />
+        </button>
+      </div>
+
       <div className="controls pin-bottom-left margin">
         <button
           onClick={() => infoModal.current?.open()}

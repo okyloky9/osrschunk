@@ -1,0 +1,32 @@
+[
+  {
+    "x": 32,
+    "y": 10,
+    "stashUnits": [
+      {
+        "difficulty": "Beginner",
+        "type": "Bush",
+        "location": "Gypsy Aris's tent (Varrock)",
+        "items": ["Gold ring", "Gold necklace"]
+      },
+      {
+        "difficulty": "Beginner",
+        "type": "Bush",
+        "location": "Iffie Nitter in Varrock (Thessalia's Fine Clothes)",
+        "items": ["Chef's hat", "Red cape"]
+      }
+    ]
+  },
+  {
+    "x": 32,
+    "y": 13,
+    "stashUnits": [
+      {
+        "difficulty": "Beginner",
+        "type": "Bush",
+        "location": "Bob's Brilliant Axes in Lumbridge",
+        "items": ["Leather boots", "Bronze axe"]
+      }
+    ]
+  }
+]

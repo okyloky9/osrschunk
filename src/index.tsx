@@ -21,9 +21,11 @@ library.add(faArrowLeft, faArrowRight, faQuestion, faSearch, faTimes);
 ReactDOM.render(
   <React.StrictMode>
     <ChunkDataProvider>
+      <StashUnitDataProvider>
         <Map />
 
         <ToastContainer autoClose={3000} />
+      </StashUnitDataProvider>
     </ChunkDataProvider>
   </React.StrictMode>,
   document.getElementById('root')
