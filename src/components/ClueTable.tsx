@@ -62,7 +62,7 @@ const ClueTable: React.FC<{
   }
 
   return (clues && clues.length) || editing ? (
-    <>
+    <div className="clue-table">
       <h2>
         <ClueIcon difficulty={difficulty} />
         <span>{difficulty} Clues</span>
@@ -353,7 +353,7 @@ const ClueTable: React.FC<{
           Add {difficulty.toLowerCase()} clue
         </button>
       )}
-    </>
+    </div>
   ) : (
     <></>
   );

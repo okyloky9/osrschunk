@@ -1,4 +1,4 @@
-export default function InfoModal() {
+const InfoModal: React.FC = () => {
   return (
     <div id="info-modal">
       <h1>OSRS Chunk Map</h1>
@@ -71,4 +71,6 @@ export default function InfoModal() {
       </p>
     </div>
   );
-}
+};
+
+export default InfoModal;

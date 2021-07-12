@@ -4,7 +4,14 @@ import { MapInteractionCSS } from 'react-map-interaction';
 import { toast } from 'react-toastify';
 import qs from 'qs';
 
-import { ChunkModal, ChunkTile, ClueIcon, InfoModal, Modal } from '.';
+import {
+  ChunkModal,
+  ChunkTile,
+  ClueIcon,
+  InfoModal,
+  Modal,
+  SearchModal,
+} from '.';
 import type { ModalHandle } from '.';
 import { ToggleSwitch } from './forms';
 import type { ClueDifficulty, View } from '../models';
@@ -30,8 +37,7 @@ function initMapChunks(width: number, height: number): MapChunk[][] {
 
   return mapChunks;
 }
-
-export default function Map() {
+const Map: React.FC = () => {
   const SETTINGS_KEY = 'SETTINGS';
   const UNLOCKED_CHUNKS_KEY = 'UNLOCKED_CHUNKS';
   const ZOOM_AND_PAN_KEY = 'ZOOM_AND_PAN';
@@ -53,6 +59,7 @@ export default function Map() {
 
   // modals ref
   const chunkModal = useRef<ModalHandle>(null);
+  const searchModal = useRef<ModalHandle>(null);
   const infoModal = useRef<ModalHandle>(null);
 
   // chunk map
@@ -676,7 +683,10 @@ export default function Map() {
       </div>
 
       <div className="controls pin-top-right margin">
-        <button onClick={() => {}} aria-label="Show search">
+        <button
+          onClick={() => searchModal.current?.open()}
+          aria-label="Show search"
+        >
           <FontAwesomeIcon icon="search" />
         </button>
       </div>
@@ -706,9 +716,15 @@ export default function Map() {
         )}
       </Modal>
 
+      <Modal ref={searchModal}>
+        <SearchModal />
+      </Modal>
+
       <Modal onClose={dismissInfoModal} ref={infoModal}>
         <InfoModal />
       </Modal>
     </>
   );
-}
+};
+
+export default Map;
