@@ -32,6 +32,7 @@ function initMapChunks(width: number, height: number): MapChunk[][] {
 export default function Map() {
   const SETTINGS_KEY = 'SETTINGS';
   const UNLOCKED_CHUNKS_KEY = 'UNLOCKED_CHUNKS';
+  const INFO_MODAL_KEY = 'INFO_MODAL';
 
   // map dimensions (in chunks)
   const width = 43;
@@ -47,8 +48,9 @@ export default function Map() {
   // loading ref
   const loadingRef = useRef(true);
 
-  // modal ref
-  const modal = useRef<ModalHandle>(null);
+  // modals ref
+  const chunkModal = useRef<ModalHandle>(null);
+  const infoModal = useRef<ModalHandle>(null);
 
   // chunk map
   const [mapChunks, _setMapChunks] = useState(initMapChunks(width, height));
@@ -159,14 +161,14 @@ export default function Map() {
 
   // when map chunk is selected or deselected
   useEffect(() => {
-    if (!modal.current) return;
+    if (!chunkModal.current) return;
 
     if (selectedMapChunk) {
-      modal.current.open();
+      chunkModal.current.open();
     } else {
-      modal.current.close();
+      chunkModal.current.close();
     }
-  }, [modal, selectedMapChunk]);
+  }, [chunkModal, selectedMapChunk]);
 
   // when a chunk's unlocked state is toggled
   useEffect(() => {
@@ -186,6 +188,16 @@ export default function Map() {
 
     localStorage.setItem(UNLOCKED_CHUNKS_KEY, JSON.stringify(unlocked));
   }, [mapChunks]);
+
+  // show info modal (if it's the first time opening the app)
+  useEffect(() => {
+    if (!infoModal.current) return;
+
+    const showModal = localStorage.getItem(INFO_MODAL_KEY);
+    if (!showModal) {
+      infoModal.current?.open();
+    }
+  }, [infoModal]);
 
   // on load
   useEffect(() => {
@@ -248,6 +260,10 @@ export default function Map() {
 
     loadingRef.current = false;
   }, []);
+
+  function dismissInfoModal() {
+    localStorage.setItem(INFO_MODAL_KEY, 'shown');
+  }
 
   // functions for chunk locking/unlocking
   function toggleAllChunksLockState() {
@@ -627,6 +643,7 @@ export default function Map() {
           </div>
         ) : (
           <button
+            id="sidebar-button"
             onClick={() => setShowSideBar(true)}
             aria-label="Show sidebar"
           >
@@ -645,10 +662,87 @@ export default function Map() {
         </button>
       </div>
 
-      <Modal onClose={() => setSelectedMapChunk(undefined)} ref={modal}>
+      <div className="controls pin-top-right margin">
+        <button onClick={() => infoModal.current?.open()}>?</button>
+      </div>
+
+      <Modal onClose={() => setSelectedMapChunk(undefined)} ref={chunkModal}>
         {selectedMapChunk && (
           <ChunkModal chunkCoords={selectedMapChunk} editMode={editMode} />
         )}
+      </Modal>
+
+      <Modal onClose={dismissInfoModal} ref={infoModal}>
+        <div className="info-modal">
+          <h1>OSRS Chunk Map</h1>
+          <p>
+            This is a tool for viewing what clues are available within each map
+            chunk of Old School RuneScape.
+          </p>
+          <h2>Features</h2>
+          <ul>
+            <li>Click and move your mouse to pan.</li>
+            <li>Use your mouse's scroll wheel to zoom in and out.</li>
+            <li>Click on a chunk to show the clue data for that chunk.</li>
+            <li>
+              Turn on "Chunk locking/unlocking mode" then click a chunk to
+              toggle whether it is locked or unlocked.
+              <ul>
+                <li>
+                  Use the "Lock/unlock all chunks" button to toggle the state of
+                  all chunks.
+                </li>
+                <li>Unlocked chunks will be saved locally.</li>
+                <li>
+                  Press "Create shareable link" to create a link that you can
+                  share with others.
+                </li>
+                <li>
+                  Opening a shared link will NOT overwrite your local data
+                  UNLESS you start making changes.
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              Turn on "Data editing mode" via the sidebar to make corrections or
+              additions. Edits are saved locally.
+              <ul>
+                <li>
+                  If you would like to submit a correction or addition to the
+                  data, use the "Export chunk-data.json" button and upload the
+                  file attached to a{' '}
+                  <a
+                    href="https://github.com/okyloky9/osrschunk/issues/new"
+                    target="_blank"
+                  >
+                    new issue
+                  </a>
+                  .
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <h2>Contributing</h2>
+
+          <p>
+            The source code for this project can be found{' '}
+            <a href="https://github.com/okyloky9/osrschunk" target="_blank">
+              here
+            </a>
+            .
+          </p>
+          <p>
+            If you see a mistake or would like to request a feature, please{' '}
+            <a
+              href="https://github.com/okyloky9/osrschunk/issues/new"
+              target="_blank"
+            >
+              let us know
+            </a>
+            .
+          </p>
+        </div>
       </Modal>
     </>
   );

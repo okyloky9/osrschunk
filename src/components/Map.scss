@@ -157,6 +157,12 @@
   }
 }
 
+#sidebar-button {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
 #sidebar {
   height: 100vh;
 
@@ -183,6 +189,20 @@
     .toggle-switch img {
       position: relative;
       top: 7px;
+    }
+  }
+}
+
+.info-modal {
+  ul {
+    margin-block-start: 0.5em;
+
+    li {
+      margin-block-start: 0.2em;
+
+      ul {
+        margin-block-start: 0;
+      }
     }
   }
 }

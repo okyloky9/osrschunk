@@ -15,7 +15,7 @@ If you see a mistake or would like to request a feature, please [let us know](ht
 ## Features
 
 - Click and move your mouse to pan.
-- Use your mouse's scroll wheel to zoom in and out
+- Use your mouse's scroll wheel to zoom in and out.
 - Click on a chunk to show the clue data for that chunk.
 - Turn on "Chunk locking/unlocking mode" then click a chunk to toggle whether it is locked or unlocked.
   - Use the "Lock/unlock all chunks" button to toggle the state of all chunks.
