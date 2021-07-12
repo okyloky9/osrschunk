@@ -3,6 +3,7 @@ import { useDebounce } from 'use-debounce';
 
 import type { Chunk, Clue } from '../models';
 import chunkJson from '../data/chunk-data.json';
+import killCreatureClueJson from '../data/kill-creature-clue-data.json';
 import stashUnitJson from '../data/stash-unit-data.json';
 
 import { ClueTable } from '.';
@@ -25,13 +26,6 @@ const SearchModal: React.FC = () => {
   const [hardClues, setHardClues] = useState<Clue[]>([]);
   const [eliteClues, setEliteClues] = useState<Clue[]>([]);
   const [masterClues, setMasterClues] = useState<Clue[]>([]);
-
-  const [killCreatureEliteClues, setKillCreatureEliteClues] = useState<Clue[]>(
-    []
-  );
-  const [killCreatureMasterClues, setKillCreatureMasterClues] = useState<
-    Clue[]
-  >([]);
 
   const clueDifficulties = [
     'beginner',
@@ -83,11 +77,49 @@ const SearchModal: React.FC = () => {
       return matchingClues;
     }
 
+    function transformCreatureClue(creatureClue: Clue): Clue {
+      return {
+        ...creatureClue,
+        alternateChunks: creatureClue.creatures?.reduce(
+          (chunks, creature) => [
+            ...chunks,
+            ...creature.chunks
+              .map((chunk) => ({ x: chunk.x, y: chunk.y }))
+              .filter(
+                (chunk) =>
+                  !chunks.find(
+                    (alreadyAddedChunk) =>
+                      alreadyAddedChunk.x === chunk.x &&
+                      alreadyAddedChunk.y === chunk.y
+                  )
+              ),
+          ],
+          [] as any[]
+        ),
+      };
+    }
+
     if (query) {
       for (const chunk of chunkJson) {
         for (const difficulty of clueDifficulties) {
           cluesOfEachDifficulty[difficulty].push(
             ...filterClues(chunk, difficulty)
+          );
+        }
+      }
+
+      for (const creatureClue of killCreatureClueJson.eliteClues) {
+        if (creatureClue.clueHint.toLowerCase().includes(query)) {
+          cluesOfEachDifficulty['elite'].push(
+            transformCreatureClue(creatureClue)
+          );
+        }
+      }
+
+      for (const creatureClue of killCreatureClueJson.masterClues) {
+        if (creatureClue.clueHint.toLowerCase().includes(query)) {
+          cluesOfEachDifficulty['master'].push(
+            transformCreatureClue(creatureClue)
           );
         }
       }
@@ -149,19 +181,11 @@ const SearchModal: React.FC = () => {
       </div>
 
       <div>
-        <ClueTable
-          clues={[...eliteClues, ...killCreatureEliteClues]}
-          difficulty="Elite"
-          search
-        />
+        <ClueTable clues={eliteClues} difficulty="Elite" search />
       </div>
 
       <div>
-        <ClueTable
-          clues={[...masterClues, ...killCreatureMasterClues]}
-          difficulty="Master"
-          search
-        />
+        <ClueTable clues={masterClues} difficulty="Master" search />
       </div>
     </div>
   );
