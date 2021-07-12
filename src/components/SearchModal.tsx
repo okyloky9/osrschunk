@@ -129,6 +129,8 @@ const SearchModal: React.FC = () => {
     for (const [index, setter] of clueSetters.entries()) {
       setter(cluesOfEachDifficulty[clueDifficulties[index]]);
     }
+
+    setStashUnits([]);
   }, []);
 
   const searchItems = useCallback((query: string) => {
