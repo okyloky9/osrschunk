@@ -99,7 +99,7 @@ const SearchModal: React.FC = () => {
       };
     }
 
-    if (query) {
+    if (query && query.length >= 3) {
       for (const chunk of chunkJson) {
         for (const difficulty of clueDifficulties) {
           cluesOfEachDifficulty[difficulty].push(
@@ -130,9 +130,65 @@ const SearchModal: React.FC = () => {
     }
   }, []);
 
+  const searchItems = useCallback((query: string) => {
+    const cluesOfEachDifficulty: { [x: string]: Clue[] } = {};
+    for (const difficulty of clueDifficulties) {
+      cluesOfEachDifficulty[difficulty] = [];
+    }
+
+    function filterClues(chunk: Chunk, difficulty: string): Clue[] {
+      const key = `${difficulty}Clues`;
+      const cluesOfDifficulty = (chunk as any as { [x: string]: Clue[] })[key];
+
+      const matchingClues = cluesOfDifficulty
+        ? cluesOfDifficulty
+            .filter(
+              ({ clueHint, itemsRequired }) =>
+                itemsRequired &&
+                itemsRequired.find((item) =>
+                  item.toLowerCase().includes(query)
+                ) &&
+                !(
+                  clueHint &&
+                  cluesOfEachDifficulty[difficulty].find(
+                    (clue) => clue.clueHint === clueHint
+                  )
+                )
+            )
+            .map((clue) => ({
+              ...clue,
+              alternateChunks: [
+                { x: chunk.x, y: chunk.y },
+                ...(clue.alternateChunks ? clue.alternateChunks : []),
+              ],
+            }))
+        : [];
+
+      return matchingClues;
+    }
+
+    if (query && query.length >= 3) {
+      for (const chunk of chunkJson) {
+        for (const difficulty of clueDifficulties) {
+          cluesOfEachDifficulty[difficulty].push(
+            ...filterClues(chunk, difficulty)
+          );
+        }
+      }
+    }
+
+    for (const [index, setter] of clueSetters.entries()) {
+      setter(cluesOfEachDifficulty[clueDifficulties[index]]);
+    }
+  }, []);
+
   useEffect(() => {
-    searchClues(debouncedClueQuery.toLowerCase().trim());
-  }, [debouncedClueQuery]);
+    if (debouncedItemQuery) {
+      searchItems(debouncedItemQuery.toLowerCase().trim());
+    } else {
+      searchClues(debouncedClueQuery.toLowerCase().trim());
+    }
+  }, [debouncedClueQuery, debouncedItemQuery]);
 
   return (
     <div id="search-modal">
@@ -148,7 +204,10 @@ const SearchModal: React.FC = () => {
               id={searchClueHintsId}
               type="text"
               value={clueQuery}
-              onChange={(e) => setClueQuery(e.target.value)}
+              onChange={(e) => {
+                setItemQuery('');
+                setClueQuery(e.target.value);
+              }}
             />
           </div>
 
@@ -158,7 +217,10 @@ const SearchModal: React.FC = () => {
               id={searchItemsId}
               type="text"
               value={itemQuery}
-              onChange={(e) => setItemQuery(e.target.value)}
+              onChange={(e) => {
+                setClueQuery('');
+                setItemQuery(e.target.value);
+              }}
             />
           </div>
         </div>
