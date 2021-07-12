@@ -7,8 +7,9 @@ import { Clue, ClueDifficulty } from '../models';
 const ClueTable: React.FC<{
   clues: Clue[] | undefined;
   difficulty: ClueDifficulty;
+  search?: boolean;
   updateClues?: (clues: Clue[]) => void;
-}> = ({ clues, difficulty, updateClues }) => {
+}> = ({ clues, difficulty, search, updateClues }) => {
   const editing = !!updateClues;
 
   const ClueHint = ({ hint }: { hint: string | undefined }) => {
@@ -76,7 +77,7 @@ const ClueTable: React.FC<{
             <th>Solution</th>
             <th>Location</th>
             <th>Items</th>
-            <th>Alternate Chunks</th>
+            <th>{!search && 'Alternate'} Chunks</th>
             {editing && <th>Delete</th>}
           </tr>
         </thead>
@@ -196,7 +197,7 @@ const ClueTable: React.FC<{
                         {alternateChunks?.map((alt, altIndex) => {
                           function updateAlt(
                             i: number,
-                            a: { x: number; y: number; notes: string }
+                            a: { x: number; y: number; notes?: string }
                           ) {
                             const _alternateChunks = [
                               ...(alternateChunks as any[]),
@@ -322,7 +323,8 @@ const ClueTable: React.FC<{
                           >
                             ({alt.x}, {alt.y})
                           </span>
-                          <ReactTooltip />
+
+                          {!search && <ReactTooltip />}
 
                           {alternateChunks.length > 1 &&
                             index < alternateChunks.length - 1 && <>, </>}

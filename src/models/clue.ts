@@ -4,7 +4,7 @@ type Clue = {
   solution?: string;
   location?: string;
   itemsRequired?: string[];
-  alternateChunks?: { x: number; y: number; notes: string }[];
+  alternateChunks?: { x: number; y: number; notes?: string }[];
   creatures?: {
     name: string;
     chunks: {

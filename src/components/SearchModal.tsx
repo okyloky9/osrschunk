@@ -52,22 +52,35 @@ const SearchModal: React.FC = () => {
   ];
 
   const searchClues = useCallback((query: string) => {
+    const cluesOfEachDifficulty: { [x: string]: Clue[] } = {};
+    for (const difficulty of clueDifficulties) {
+      cluesOfEachDifficulty[difficulty] = [];
+    }
+
     function filterClues(chunk: Chunk, difficulty: string): Clue[] {
       const key = `${difficulty}Clues`;
       const cluesOfDifficulty = (chunk as any as { [x: string]: Clue[] })[key];
 
       const matchingClues = cluesOfDifficulty
-        ? cluesOfDifficulty.filter(
-            ({ clueHint }) => clueHint && clueHint.toLowerCase().includes(query)
-          )
+        ? cluesOfDifficulty
+            .filter(
+              ({ clueHint }) =>
+                clueHint &&
+                clueHint.toLowerCase().includes(query) &&
+                !cluesOfEachDifficulty[difficulty].find(
+                  (clue) => clue.clueHint === clueHint
+                )
+            )
+            .map((clue) => ({
+              ...clue,
+              alternateChunks: [
+                { x: chunk.x, y: chunk.y },
+                ...(clue.alternateChunks ? clue.alternateChunks : []),
+              ],
+            }))
         : [];
 
       return matchingClues;
-    }
-
-    const cluesOfEachDifficulty: { [x: string]: Clue[] } = {};
-    for (const difficulty of clueDifficulties) {
-      cluesOfEachDifficulty[difficulty] = [];
     }
 
     if (query) {
@@ -98,7 +111,7 @@ const SearchModal: React.FC = () => {
 
         <div className="inputs">
           <div>
-            <label htmlFor={searchClueHintsId}>Clue Hint</label>:{' '}
+            <label htmlFor={searchClueHintsId}>Clue</label>:{' '}
             <input
               id={searchClueHintsId}
               type="text"
@@ -120,25 +133,26 @@ const SearchModal: React.FC = () => {
       </form>
 
       <div>
-        <ClueTable clues={beginnerClues} difficulty="Beginner" />
+        <ClueTable clues={beginnerClues} difficulty="Beginner" search />
       </div>
 
       <div>
-        <ClueTable clues={easyClues} difficulty="Easy" />
+        <ClueTable clues={easyClues} difficulty="Easy" search />
       </div>
 
       <div>
-        <ClueTable clues={mediumClues} difficulty="Medium" />
+        <ClueTable clues={mediumClues} difficulty="Medium" search />
       </div>
 
       <div>
-        <ClueTable clues={hardClues} difficulty="Hard" />
+        <ClueTable clues={hardClues} difficulty="Hard" search />
       </div>
 
       <div>
         <ClueTable
           clues={[...eliteClues, ...killCreatureEliteClues]}
           difficulty="Elite"
+          search
         />
       </div>
 
@@ -146,6 +160,7 @@ const SearchModal: React.FC = () => {
         <ClueTable
           clues={[...masterClues, ...killCreatureMasterClues]}
           difficulty="Master"
+          search
         />
       </div>
     </div>
