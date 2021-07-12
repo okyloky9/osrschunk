@@ -6,7 +6,8 @@ import qs from 'qs';
 import { ChunkModal, ChunkTile, ClueIcon, Modal } from '.';
 import type { ModalHandle } from '.';
 import { ToggleSwitch } from './forms';
-import { ClueDifficulty, MapChunk } from '../models';
+import type { ClueDifficulty, View } from '../models';
+import { MapChunk } from '../models';
 import {
   capitalizeFirstLetter,
   compressUnlockedChunks,
@@ -32,6 +33,7 @@ function initMapChunks(width: number, height: number): MapChunk[][] {
 export default function Map() {
   const SETTINGS_KEY = 'SETTINGS';
   const UNLOCKED_CHUNKS_KEY = 'UNLOCKED_CHUNKS';
+  const ZOOM_AND_PAN_KEY = 'ZOOM_AND_PAN';
   const INFO_MODAL_KEY = 'INFO_MODAL';
 
   // map dimensions (in chunks)
@@ -70,6 +72,27 @@ export default function Map() {
 
   // interval(s)
   const [autoSaveInterval, setAutoSaveInterval] = useState<number>();
+
+  // min scale calculations
+  const minWidthScale = windowDimensions.width / (width * 192);
+  const minHeightScale = windowDimensions.height / (height * 192);
+
+  const minScale =
+    minWidthScale > minHeightScale ? minWidthScale : minHeightScale;
+
+  // view state
+  const [view, _setView] = useState<View>({
+    scale: minScale,
+    translation: { x: 0, y: 0 },
+  });
+  const viewRef = useRef(view);
+  const setView = (v: View) => {
+    viewRef.current = v;
+    _setView(v);
+  };
+
+  // get current view scale
+  const { scale } = view;
 
   // settings
   const [showSidebar, setShowSideBar] = useState(false);
@@ -211,6 +234,13 @@ export default function Map() {
 
     window.addEventListener('resize', handleResize);
 
+    // save zoom and pan when page is closed
+    function handleUnload() {
+      localStorage.setItem(ZOOM_AND_PAN_KEY, JSON.stringify(viewRef.current));
+    }
+
+    window.addEventListener('beforeunload', handleUnload);
+
     // load settings from local storage
     const settingsJson = localStorage.getItem(SETTINGS_KEY);
     if (settingsJson) {
@@ -223,6 +253,13 @@ export default function Map() {
       setHighlightChunksWithoutClues(settings.highlightChunksWithoutClues);
       setHideChunksWithoutClues(settings.hideChunksWithoutClues);
       setEditMode(settings.editMode);
+    }
+
+    // load zoom and pan from local storage
+    const zoomAndPanJson = localStorage.getItem(ZOOM_AND_PAN_KEY);
+    if (zoomAndPanJson) {
+      const zoomAndPan = JSON.parse(zoomAndPanJson);
+      setView(zoomAndPan);
     }
 
     // load unlocked chunks from local storage (or URL)
@@ -342,22 +379,6 @@ export default function Map() {
       );
     }
   }
-
-  // min scale calculations
-  const minWidthScale = windowDimensions.width / (width * 192);
-  const minHeightScale = windowDimensions.height / (height * 192);
-
-  const minScale =
-    minWidthScale > minHeightScale ? minWidthScale : minHeightScale;
-
-  // view state
-  const [view, setView] = useState({
-    scale: minScale,
-    translation: { x: 0, y: 0 },
-  });
-
-  // get current view scale
-  const { scale } = view;
 
   return (
     <>
