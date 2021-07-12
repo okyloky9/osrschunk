@@ -676,7 +676,10 @@ export default function Map() {
       </div>
 
       <div className="controls pin-bottom-left margin">
-        <button onClick={() => infoModal.current?.open()}>
+        <button
+          onClick={() => infoModal.current?.open()}
+          aria-label="Show app info"
+        >
           <FontAwesomeIcon icon="question" />
         </button>
       </div>

@@ -67,7 +67,7 @@ export default forwardRef<
         <span
           role="button"
           className="modal-close"
-          aria-label="close"
+          aria-label="Close modal"
           onClick={close}
         >
           <span>
