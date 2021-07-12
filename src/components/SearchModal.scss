@@ -1,0 +1,23 @@
+#search-modal {
+  overflow-y: auto;
+
+  h1 {
+    margin-block-start: 0.15em;
+  }
+
+  .search-by {
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  .inputs {
+    display: flex;
+
+    justify-content: space-between;
+  }
+
+  > div {
+    width: 100%;
+    overflow-x: auto;
+  }
+}

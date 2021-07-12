@@ -7,6 +7,7 @@ import {
   useState,
 } from 'react';
 import { createPortal } from 'react-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { createClassString } from '../utils';
 
@@ -66,10 +67,12 @@ export default forwardRef<
         <span
           role="button"
           className="modal-close"
-          aria-label="close"
+          aria-label="Close modal"
           onClick={close}
         >
-          <span>x</span>
+          <span>
+            <FontAwesomeIcon icon="times" />
+          </span>
         </span>
 
         <div className="modal-body">{children}</div>

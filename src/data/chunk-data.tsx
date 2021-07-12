@@ -1,7 +1,7 @@
 import React, { createContext, ReactNode, useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
 
-import Chunk from '../models/chunk';
+import type Chunk from '../models/chunk';
 import chunkJson from './chunk-data.json';
 
 const ChunkDataContext = createContext<{
@@ -14,6 +14,8 @@ const ChunkDataContext = createContext<{
 
 const ChunkDataProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const LOCAL_STORAGE_KEY = 'CHUNKS';
+
+  const [chunkData, setChunkData] = useState(chunkArrayToMap(chunkJson));
 
   function coords(x: number, y: number): string {
     return `${x},${y}`;
@@ -75,8 +77,6 @@ const ChunkDataProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
     localStorage.removeItem(LOCAL_STORAGE_KEY);
     setChunkData(chunkArrayToMap(chunkJson));
   }
-
-  const [chunkData, setChunkData] = useState(chunkArrayToMap(chunkJson));
 
   useEffect(() => {
     if (localStorage.getItem(LOCAL_STORAGE_KEY)) {

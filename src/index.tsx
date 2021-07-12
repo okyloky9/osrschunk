@@ -1,12 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { ToastContainer } from 'react-toastify';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import {
+  faArrowLeft,
+  faArrowRight,
+  faQuestion,
+  faSearch,
+  faTimes,
+} from '@fortawesome/free-solid-svg-icons';
 
 import { Map } from './components';
 import { ChunkDataProvider } from './data';
 import reportWebVitals from './reportWebVitals';
 
 import './Styles.scss';
+
+library.add(faArrowLeft, faArrowRight, faQuestion, faSearch, faTimes);
 
 ReactDOM.render(
   <React.StrictMode>

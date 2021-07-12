@@ -3227,8 +3227,8 @@
         "itemsRequired": [
           "Rune crossbow",
           "Climbing boots",
-          "Ring of invisibility",
-          "Mitre"
+          "Mitre",
+          "Ring of visibility"
         ]
       }
     ],
@@ -4892,7 +4892,7 @@
         "type": "Emote",
         "clueHint": "Laugh in front of the gem store in Ardougne market.",
         "itemsRequired": [
-          "Castle wars bracelet",
+          "Castle wars bracelet(3)",
           "Dragonstone amulet",
           "Ring of forging"
         ]

@@ -158,20 +158,27 @@
 }
 
 #sidebar-button {
+  border-top: none;
+  border-left: none;
+
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 
 #sidebar {
+  position: relative;
+
   height: 100vh;
 
   background: rgba(0, 0, 0, 0.8);
   color: #ffffff;
 
+  z-index: 10;
+
   form {
     height: calc(100% - 24px);
-    overflow-y: scroll;
+    overflow-y: auto;
 
     padding: 12px;
 
@@ -189,20 +196,6 @@
     .toggle-switch img {
       position: relative;
       top: 7px;
-    }
-  }
-}
-
-.info-modal {
-  ul {
-    margin-block-start: 0.5em;
-
-    li {
-      margin-block-start: 0.2em;
-
-      ul {
-        margin-block-start: 0;
-      }
     }
   }
 }
