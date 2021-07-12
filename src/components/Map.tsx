@@ -1,4 +1,5 @@
 import { useContext, useEffect, useRef, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { MapInteractionCSS } from 'react-map-interaction';
 import { toast } from 'react-toastify';
 import qs from 'qs';
@@ -441,10 +442,11 @@ export default function Map() {
           <div id="sidebar">
             <div className="controls pin-top-left">
               <button
+                id="sidebar-button"
                 onClick={() => setShowSideBar(false)}
                 aria-label="Hide sidebar"
               >
-                &lt;
+                <FontAwesomeIcon icon="arrow-left" />
               </button>
             </div>
 
@@ -668,9 +670,15 @@ export default function Map() {
             onClick={() => setShowSideBar(true)}
             aria-label="Show sidebar"
           >
-            &gt;
+            <FontAwesomeIcon icon="arrow-right" />
           </button>
         )}
+      </div>
+
+      <div className="controls pin-bottom-left margin">
+        <button onClick={() => infoModal.current?.open()}>
+          <FontAwesomeIcon icon="question" />
+        </button>
       </div>
 
       <div className="controls pin-bottom-right margin">
@@ -681,10 +689,6 @@ export default function Map() {
         >
           zoom out
         </button>
-      </div>
-
-      <div className="controls pin-top-right margin">
-        <button onClick={() => infoModal.current?.open()}>?</button>
       </div>
 
       <Modal onClose={() => setSelectedMapChunk(undefined)} ref={chunkModal}>
