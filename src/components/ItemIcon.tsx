@@ -140,6 +140,8 @@ for (let i = 1; i <= 50; i++) {
   teamCapeItems.push(`Team-${i} cape`);
 }
 
+teamCapeItems.push('Team cape i', 'Team cape x', 'Team cape zero');
+
 const lightSourceItems = [
   'Torch (Lit)',
   'Candle (Lit)',
