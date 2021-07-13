@@ -57,7 +57,7 @@ export default forwardRef<
 
   return createPortal(
     isOpen ? (
-      <FocusTrap>
+      <FocusTrap focusTrapOptions={{ initialFocus: false }}>
         <div
           className={createClassString({
             modal: true,
