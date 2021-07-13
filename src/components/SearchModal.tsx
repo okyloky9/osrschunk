@@ -192,8 +192,28 @@ const SearchModal: React.FC = () => {
       }
     }
 
+    // sort stash units by difficulty
+    const stashUnitOrdering: { [x: string]: number } = {
+      Beginner: 0,
+      Easy: 1,
+      Medium: 2,
+      Hard: 3,
+      Elite: 4,
+      Master: 5,
+    };
+
+    _stashUnits.sort((a, b) => {
+      const aOrder = stashUnitOrdering[a.difficulty];
+      const bOrder = stashUnitOrdering[b.difficulty];
+
+      if (aOrder === bOrder) return 0;
+      return aOrder > bOrder ? 1 : -1;
+    });
+
+    // set stash units
     setStashUnits(_stashUnits);
 
+    // set clue steps
     for (const [index, setter] of clueSetters.entries()) {
       setter(cluesOfEachDifficulty[clueDifficulties[index]]);
     }
