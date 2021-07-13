@@ -1,5 +1,41 @@
 [
   {
+    "x": 24,
+    "y": 8,
+    "stashUnits": [
+      {
+        "difficulty": "Easy",
+        "type": "Rock",
+        "location": "Road junction south of Sinclair Mansion (north-west of Camelot)",
+        "items": ["Leather cowl", "Iron scimitar", "Blue wizard robe"]
+      }
+    ]
+  },
+  {
+    "x": 27,
+    "y": 9,
+    "stashUnits": [
+      {
+        "difficulty": "Easy",
+        "type": "Rock",
+        "location": "Taverley Stone Circle (by the southernmost dolmen)",
+        "items": ["Blue wizard hat", "Bronze 2h sword", "Ham boots"]
+      }
+    ]
+  },
+  {
+    "x": 31,
+    "y": 9,
+    "stashUnits": [
+      {
+        "difficulty": "Easy",
+        "type": "Bush",
+        "location": "South of the Grand Exchange (next to the southern entrance)",
+        "items": ["Pink skirt", "Pink robe top", "Body tiara"]
+      }
+    ]
+  },
+  {
     "x": 32,
     "y": 9,
     "stashUnits": [
@@ -8,6 +44,42 @@
         "type": "Crate",
         "location": "Varrock Palace Library (in the south-east corner)",
         "items": ["Green robe top", "Ham robe", "Iron warhammer"]
+      }
+    ]
+  },
+  {
+    "x": 33,
+    "y": 9,
+    "stashUnits": [
+      {
+        "difficulty": "Easy",
+        "type": "Bush",
+        "location": "Near the Sawmill operator's booth (outside the Lumber Yard)",
+        "items": ["Hardleather body", "Leather chaps", "Bronze axe"]
+      }
+    ]
+  },
+  {
+    "x": 34,
+    "y": 9,
+    "stashUnits": [
+      {
+        "difficulty": "Easy",
+        "type": "Rock",
+        "location": "Limestone mine (Silvarea mine, east of the Lumber Yard)",
+        "items": ["Bronze platelegs", "Steel pickaxe", "Steel med helm"]
+      }
+    ]
+  },
+  {
+    "x": 22,
+    "y": 10,
+    "stashUnits": [
+      {
+        "difficulty": "Easy",
+        "type": "Hole",
+        "location": "Outside the Fishing Guild (by the entrance)",
+        "items": ["Emerald ring", "Sapphire amulet", "Bronze chainbody"]
       }
     ]
   },
@@ -44,6 +116,30 @@
         "type": "Bush",
         "location": "Iffie Nitter in Varrock (Thessalia's Fine Clothes)",
         "items": ["Chef's hat", "Red cape"]
+      },
+      {
+        "difficulty": "Easy",
+        "type": "Crate",
+        "location": "Aubury's shop in Varrock (inside)",
+        "items": ["Air tiara", "Staff of water"]
+      },
+      {
+        "difficulty": "Easy",
+        "type": "Bush",
+        "location": "Outside Varrock Palace courtyard (next to the entrance)",
+        "items": ["Black axe", "Coif", "Ruby ring"]
+      }
+    ]
+  },
+  {
+    "x": 23,
+    "y": 11,
+    "stashUnits": [
+      {
+        "difficulty": "Easy",
+        "type": "Crate",
+        "location": "Upstairs in Ardougne windmill (top floor of the windmill, East Ardougne)",
+        "items": ["Blue robe top", "Ham robe", "Tiara"]
       }
     ]
   },
@@ -56,6 +152,18 @@
         "type": "Bush",
         "location": "Outside the Legends' Guild gates (east)",
         "items": ["Iron platelegs", "Emerald amulet", "Oak longbow"]
+      }
+    ]
+  },
+  {
+    "x": 28,
+    "y": 11,
+    "stashUnits": [
+      {
+        "difficulty": "Easy",
+        "type": "Bush",
+        "location": "Near Herquin's Gems shop in Falador (outside)",
+        "items": ["Mithril pickaxe", "Black platebody", "Iron kiteshield"]
       }
     ]
   },
@@ -96,6 +204,18 @@
     ]
   },
   {
+    "x": 22,
+    "y": 12,
+    "stashUnits": [
+      {
+        "difficulty": "Easy",
+        "type": "Bush",
+        "location": "Near the parrots in Ardougne Zoo (near Parroty Pete)",
+        "items": ["Studded body", "Bronze platelegs", "Staff"]
+      }
+    ]
+  },
+  {
     "x": 28,
     "y": 12,
     "stashUnits": [
@@ -116,6 +236,42 @@
         "type": "Bush",
         "location": "Crossroads north of Draynor Village",
         "items": ["Iron chainbody", "Sapphire ring", "Longbow"]
+      }
+    ]
+  },
+  {
+    "x": 31,
+    "y": 12,
+    "stashUnits": [
+      {
+        "difficulty": "Easy",
+        "type": "Hole",
+        "location": "Wheat field near the Lumbridge windmill (inside the wheatfield south-west of the Mill Lane Mill)",
+        "items": ["Blue robe top", "Turquoise robe bottoms", "Oak shortbow"]
+      }
+    ]
+  },
+  {
+    "x": 33,
+    "y": 12,
+    "stashUnits": [
+      {
+        "difficulty": "Easy",
+        "type": "Rock",
+        "location": "Al Kharid scorpion mine",
+        "items": ["Desert shirt", "Leather gloves", "Leather boots"]
+      }
+    ]
+  },
+  {
+    "x": 28,
+    "y": 13,
+    "stashUnits": [
+      {
+        "difficulty": "Easy",
+        "type": "Rock",
+        "location": "Rimmington mine (centre)",
+        "items": ["Gold necklace", "Gold ring", "Bronze spear"]
       }
     ]
   },
@@ -168,6 +324,18 @@
     ]
   },
   {
+    "x": 30,
+    "y": 14,
+    "stashUnits": [
+      {
+        "difficulty": "Easy",
+        "type": "Crate",
+        "location": "On the bridge to the Misthalin Wizards' Tower",
+        "items": ["Iron med helm", "Emerald ring", "White apron"]
+      }
+    ]
+  },
+  {
     "x": 32,
     "y": 14,
     "stashUnits": [
@@ -176,6 +344,18 @@
         "type": "Hole",
         "location": "Near a shed in Lumbridge Swamp (entrance to Zanaris)",
         "items": ["Bronze dagger", "Iron full helm", "Gold ring"]
+      }
+    ]
+  },
+  {
+    "x": 28,
+    "y": 15,
+    "stashUnits": [
+      {
+        "difficulty": "Easy",
+        "type": "Hole",
+        "location": "Mudskipper Point (south-west of the fairy ring)",
+        "items": ["Black cape", "Leather chaps", "Steel mace"]
       }
     ]
   }
