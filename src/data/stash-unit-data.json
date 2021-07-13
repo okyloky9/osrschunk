@@ -114,6 +114,18 @@
     ]
   },
   {
+    "x": 30,
+    "y": 10,
+    "stashUnits": [
+      {
+        "difficulty": "Medium",
+        "type": "Bush",
+        "location": "East of Barbarian Village bridge",
+        "items": ["Purple gloves", "Steel kiteshield", "Mithril full helm"]
+      }
+    ]
+  },
+  {
     "x": 32,
     "y": 10,
     "stashUnits": [
@@ -356,6 +368,18 @@
         "type": "Hole",
         "location": "Near a shed in Lumbridge Swamp (entrance to Zanaris)",
         "items": ["Bronze dagger", "Iron full helm", "Gold ring"]
+      }
+    ]
+  },
+  {
+    "x": 20,
+    "y": 15,
+    "stashUnits": [
+      {
+        "difficulty": "Medium",
+        "type": "Crate",
+        "location": "Castle Wars bank",
+        "items": ["Ruby amulet", "Mithril scimitar", "Team cape"]
       }
     ]
   },
