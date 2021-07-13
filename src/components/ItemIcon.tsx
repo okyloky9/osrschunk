@@ -118,7 +118,7 @@ for (const god of gods) {
   stoleItems.push(`${god} stole`);
 }
 
-const colors = [
+const headbandColors = [
   'Red',
   'Black',
   'Brown',
@@ -128,10 +128,28 @@ const colors = [
   'Pink',
   'Green',
 ];
+
 const headbandItems: string[] = [];
 
-for (const color of colors) {
+for (const color of headbandColors) {
   headbandItems.push(`${color} headband`);
+}
+
+const boaterItems: string[] = [];
+
+const boaterColors = [
+  'Red',
+  'Orange',
+  'Green',
+  'Blue',
+  'Black',
+  'Pink',
+  'Purple',
+  'White',
+];
+
+for (const color of boaterColors) {
+  boaterItems.push(`${color} boater`);
 }
 
 const teamCapeItems: string[] = [];
@@ -321,6 +339,7 @@ const itemSets: {
   'Barrows head piece': barrowsHeadPieceItems,
   'Barrows leg piece': barrowsLegPieceItems,
   'Barrows weapon': barrowsWeaponItems,
+  Boater: boaterItems,
   'Bob shirt': bobShirtItems,
   Cloak: cloakItems,
   Crozier: crozierItems,
