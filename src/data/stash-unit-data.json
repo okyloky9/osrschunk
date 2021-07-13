@@ -84,6 +84,18 @@
     ]
   },
   {
+    "x": 20,
+    "y": 10,
+    "stashUnits": [
+      {
+        "difficulty": "Medium",
+        "type": "Crate",
+        "location": "Gnome Stronghold balancing rope (top of platform in the Gnome Stronghold Agility Course)",
+        "items": ["Steel kiteshield", "Green d'hide chaps", "Ring of forging"]
+      }
+    ]
+  },
+  {
     "x": 22,
     "y": 10,
     "stashUnits": [
@@ -110,6 +122,24 @@
         "type": "Hole",
         "location": "Outside Keep Le Faye (west of the entrance, north of Legends' Guild)",
         "items": ["Coif", "Iron platebody", "Leather gloves"]
+      },
+      {
+        "difficulty": "Medium",
+        "type": "Bush",
+        "location": "Outside Catherby bank",
+        "items": ["Maple longbow", "Green d'hide chaps", "Iron med helm"]
+      }
+    ]
+  },
+  {
+    "x": 26,
+    "y": 10,
+    "stashUnits": [
+      {
+        "difficulty": "Medium",
+        "type": "Bush",
+        "location": "Outside Harry's Fishing Shop in Catherby",
+        "items": ["Adamant sq shield", "Bone dagger", "Mithril platebody"]
       }
     ]
   },
@@ -152,6 +182,18 @@
         "type": "Bush",
         "location": "Outside Varrock Palace courtyard (next to the entrance)",
         "items": ["Black axe", "Coif", "Ruby ring"]
+      }
+    ]
+  },
+  {
+    "x": 34,
+    "y": 10,
+    "stashUnits": [
+      {
+        "difficulty": "Medium",
+        "type": "Rock",
+        "location": "Digsite (just south of the eastern winch)",
+        "items": ["Green hat", "Snakeskin boots", "Iron pickaxe"]
       }
     ]
   },
@@ -348,6 +390,18 @@
     ]
   },
   {
+    "x": 20,
+    "y": 14,
+    "stashUnits": [
+      {
+        "difficulty": "Medium",
+        "type": "Crate",
+        "location": "Observatory",
+        "items": ["Mithril chainbody", "Green d'hide chaps", "Ruby amulet"]
+      }
+    ]
+  },
+  {
     "x": 30,
     "y": 14,
     "stashUnits": [
@@ -392,6 +446,18 @@
         "type": "Hole",
         "location": "Mudskipper Point (south-west of the fairy ring)",
         "items": ["Black cape", "Leather chaps", "Steel mace"]
+      }
+    ]
+  },
+  {
+    "x": 33,
+    "y": 15,
+    "stashUnits": [
+      {
+        "difficulty": "Medium",
+        "type": "Crate",
+        "location": "Shantay Pass",
+        "items": ["Bruise blue snelm", "Staff of air", "Bronze sq shield"]
       }
     ]
   }
