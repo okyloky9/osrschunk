@@ -36,6 +36,18 @@
     ]
   },
   {
+    "x": 32,
+    "y": 7,
+    "stashUnits": [
+      {
+        "difficulty": "Hard",
+        "type": "Rock",
+        "location": "Chaos Temple in the south-eastern Wilderness (inside, eastern wall)",
+        "items": ["Rune platelegs", "Iron platebody", "Blue d'hide vambraces"]
+      }
+    ]
+  },
+  {
     "x": 21,
     "y": 8,
     "stashUnits": [
