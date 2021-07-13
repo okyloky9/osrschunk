@@ -47,7 +47,11 @@ const StashUnitTable: React.FC<{ units?: StashUnit[] }> = ({ units }) => {
                   <div>{type}</div>
                 </div>
               </td>
-              <td>{location}</td>
+              <td
+                dangerouslySetInnerHTML={{
+                  __html: location.replaceAll('\n', '<br />'),
+                }}
+              />
               <td>
                 {items.map((item, index) => (
                   <ItemIcon item={item} key={index} />
