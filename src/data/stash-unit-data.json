@@ -12,6 +12,24 @@
     ]
   },
   {
+    "x": 25,
+    "y": 10,
+    "stashUnits": [
+      {
+        "difficulty": "Easy",
+        "type": "Bush",
+        "location": "Catherby beehive field (in the south-east corner of beehives)",
+        "items": ["Desert shirt", "Green robe bottoms", "Steel axe"]
+      },
+      {
+        "difficulty": "Easy",
+        "type": "Hole",
+        "location": "Outside Keep Le Faye (west of the entrance, north of Legends' Guild)",
+        "items": ["Coif", "Iron platebody", "Leather gloves"]
+      }
+    ]
+  },
+  {
     "x": 32,
     "y": 10,
     "stashUnits": [
@@ -66,6 +84,30 @@
     ]
   },
   {
+    "x": 34,
+    "y": 11,
+    "stashUnits": [
+      {
+        "difficulty": "Easy",
+        "type": "Bush",
+        "location": "Outside the Digsite Exam Centre (next to the urn)",
+        "items": ["White apron", "Green boots", "Leather gloves"]
+      }
+    ]
+  },
+  {
+    "x": 28,
+    "y": 12,
+    "stashUnits": [
+      {
+        "difficulty": "Easy",
+        "type": "Rock",
+        "location": "Road junction north of Rimmington",
+        "items": ["Green hat", "Cream robe top", "Leather chaps"]
+      }
+    ]
+  },
+  {
     "x": 30,
     "y": 12,
     "stashUnits": [
@@ -110,6 +152,18 @@
         "type": "Bush",
         "location": "Bob's Brilliant Axes in Lumbridge",
         "items": ["Leather boots", "Bronze axe"]
+      }
+    ]
+  },
+  {
+    "x": 33,
+    "y": 13,
+    "stashUnits": [
+      {
+        "difficulty": "Easy",
+        "type": "Crate",
+        "location": "Mubariz's room at the Duel Arena (inside the ticket office, west of the Duel Arena)",
+        "items": ["Iron chainbody", "Leather chaps", "Coif"]
       }
     ]
   },
