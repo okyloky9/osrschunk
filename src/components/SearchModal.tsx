@@ -30,6 +30,7 @@ const SearchModal: React.FC = () => {
   const [eliteClues, setEliteClues] = useState<Clue[]>([]);
   const [masterClues, setMasterClues] = useState<Clue[]>([]);
 
+  // difficulties
   const clueDifficulties = [
     'beginner',
     'easy',
@@ -39,6 +40,7 @@ const SearchModal: React.FC = () => {
     'master',
   ];
 
+  // setters for difficulties
   const clueSetters = [
     setBeginnerClues,
     setEasyClues,
@@ -48,6 +50,7 @@ const SearchModal: React.FC = () => {
     setMasterClues,
   ];
 
+  // memoized search by clue hint
   const searchClues = useCallback((query: string) => {
     const cluesOfEachDifficulty: { [x: string]: Clue[] } = {};
     for (const difficulty of clueDifficulties) {
@@ -128,13 +131,16 @@ const SearchModal: React.FC = () => {
       }
     }
 
+    // set clue step results
     for (const [index, setter] of clueSetters.entries()) {
       setter(cluesOfEachDifficulty[clueDifficulties[index]]);
     }
 
+    // clear stash unit results
     setStashUnits([]);
   }, []);
 
+  // memoized search by item name
   const searchItems = useCallback((query: string) => {
     const _stashUnits: StashUnit[] = [];
 
@@ -210,10 +216,10 @@ const SearchModal: React.FC = () => {
       return aOrder > bOrder ? 1 : -1;
     });
 
-    // set stash units
+    // set stash unit results
     setStashUnits(_stashUnits);
 
-    // set clue steps
+    // set clue step results
     for (const [index, setter] of clueSetters.entries()) {
       setter(cluesOfEachDifficulty[clueDifficulties[index]]);
     }
