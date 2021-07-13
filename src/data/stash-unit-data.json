@@ -18,6 +18,42 @@
     ]
   },
   {
+    "x": 24,
+    "y": 11,
+    "stashUnits": [
+      {
+        "difficulty": "Easy",
+        "type": "Bush",
+        "location": "Outside the Legends' Guild gates (east)",
+        "items": ["Iron platelegs", "Emerald amulet", "Oak longbow"]
+      }
+    ]
+  },
+  {
+    "x": 29,
+    "y": 13,
+    "stashUnits": [
+      {
+        "difficulty": "Easy",
+        "type": "Crate",
+        "location": "Near the Entrana ferry in Port Sarim",
+        "items": ["Coif", "Steel plateskirt", "Sapphire necklace"]
+      }
+    ]
+  },
+  {
+    "x": 30,
+    "y": 13,
+    "stashUnits": [
+      {
+        "difficulty": "Easy",
+        "type": "Hole",
+        "location": "Draynor Village market (next to a bench)",
+        "items": ["Studded chaps", "Iron kiteshield", "Steel longsword"]
+      }
+    ]
+  },
+  {
     "x": 32,
     "y": 13,
     "stashUnits": [
