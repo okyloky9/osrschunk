@@ -1,6 +1,18 @@
 [
   {
     "x": 32,
+    "y": 9,
+    "stashUnits": [
+      {
+        "difficulty": "Easy",
+        "type": "Crate",
+        "location": "Varrock Palace Library (in the south-east corner)",
+        "items": ["Green robe top", "Ham robe", "Iron warhammer"]
+      }
+    ]
+  },
+  {
+    "x": 32,
     "y": 10,
     "stashUnits": [
       {
@@ -30,6 +42,18 @@
     ]
   },
   {
+    "x": 29,
+    "y": 11,
+    "stashUnits": [
+      {
+        "difficulty": "Easy",
+        "type": "Bush",
+        "location": "Outside the Falador Party Room (by the entrance)",
+        "items": ["Steel full helm", "Steel platebody", "Iron plateskirt"]
+      }
+    ]
+  },
+  {
     "x": 30,
     "y": 11,
     "stashUnits": [
@@ -38,6 +62,18 @@
         "type": "Rock",
         "location": "Draynor Manor by the fountain (south)",
         "items": ["Iron platebody", "Studded chaps", "Bronze full helm"]
+      }
+    ]
+  },
+  {
+    "x": 30,
+    "y": 12,
+    "stashUnits": [
+      {
+        "difficulty": "Easy",
+        "type": "Bush",
+        "location": "Crossroads north of Draynor Village",
+        "items": ["Iron chainbody", "Sapphire ring", "Longbow"]
       }
     ]
   },
