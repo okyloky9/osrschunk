@@ -1565,7 +1565,7 @@
       {
         "type": "Emote",
         "clueHint": "Shrug in the Shayzien command tent.",
-        "itemsRequired": ["Mystic robe bottom", "Rune kitshield", "Bob shirt"]
+        "itemsRequired": ["Mystic robe bottom", "Rune kiteshield", "Bob shirt"]
       }
     ],
     "hardClues": [],
@@ -2371,7 +2371,7 @@
         "itemsRequired": [
           "Farmer's strawhat",
           "Shayzien body (5)",
-          "Pyromancer robes"
+          "Pyromancer robe"
         ]
       }
     ]
