@@ -37,7 +37,11 @@ const StashUnitTable: React.FC<{ units?: StashUnit[] }> = ({ units }) => {
               <td>{difficulty}</td>
               <td>
                 <div className="stash-unit-type">
-                  <img className="stash-unit-icon" src={stashIcons[type]} />
+                  <img
+                    className="stash-unit-icon"
+                    src={stashIcons[type]}
+                    aria-hidden
+                  />
                   <div>{type}</div>
                 </div>
               </td>

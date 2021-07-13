@@ -72,7 +72,7 @@ const ItemIcon: React.FC<{ item: string }> = ({ item }) => {
 
   // if no icons, show the item name
   if (icons.length === 0) {
-    return <img className="loading-icon" src={loadingGif} />;
+    return <img className="loading-icon" src={loadingGif} aria-hidden />;
   }
 
   // show the icon(s)
