@@ -24,6 +24,30 @@
     ]
   },
   {
+    "x": 5,
+    "y": 7,
+    "stashUnits": [
+      {
+        "difficulty": "Medium",
+        "type": "Crate",
+        "location": "North of the Shayzien Combat Ring",
+        "items": ["Adamant platebody", "Adamant full helm", "Adamant platelegs"]
+      }
+    ]
+  },
+  {
+    "x": 21,
+    "y": 8,
+    "stashUnits": [
+      {
+        "difficulty": "Medium",
+        "type": "Bush",
+        "location": "Barbarian Outpost obstacle course (centre)",
+        "items": ["Steel platebody", "Maple shortbow", "Team cape"]
+      }
+    ]
+  },
+  {
     "x": 24,
     "y": 8,
     "stashUnits": [
@@ -44,6 +68,18 @@
         "type": "Hole",
         "location": "Mausoleum off the Morytania coast (west of Fenkenstrain's Castle)\n(Push the memorial west of the allotment patch in Morytania, north-west of alq)",
         "items": ["Mithril plateskirt", "Maple longbow"]
+      }
+    ]
+  },
+  {
+    "x": 24,
+    "y": 9,
+    "stashUnits": [
+      {
+        "difficulty": "Medium",
+        "type": "Bush",
+        "location": "Outside the Seers' Village courthouse",
+        "items": ["Adamant halberd", "Mystic robe bottom", "Diamond ring"]
       }
     ]
   },
@@ -188,6 +224,12 @@
         "type": "Bush",
         "location": "Outside Harry's Fishing Shop in Catherby",
         "items": ["Adamant sq shield", "Bone dagger", "Mithril platebody"]
+      },
+      {
+        "difficulty": "Medium",
+        "type": "Crate",
+        "location": "Hickton's Archery Emporium (located in Catherby, inside)",
+        "items": ["Blue boots", "Hardleather body", "Silver sickle"]
       }
     ]
   },
@@ -242,6 +284,18 @@
         "type": "Rock",
         "location": "Digsite (just south of the eastern winch)",
         "items": ["Green hat", "Snakeskin boots", "Iron pickaxe"]
+      }
+    ]
+  },
+  {
+    "x": 21,
+    "y": 11,
+    "stashUnits": [
+      {
+        "difficulty": "Medium",
+        "type": "Hole",
+        "location": "Ogre cage in the Ardougne Training Camp (inside)",
+        "items": ["Green d'hide body", "Green d'hide chaps", "Steel sq shield"]
       }
     ]
   },
@@ -378,6 +432,24 @@
     ]
   },
   {
+    "x": 26,
+    "y": 13,
+    "stashUnits": [
+      {
+        "difficulty": "Medium",
+        "type": "Hole",
+        "location": "TzHaar weapons store (TzHaar-Hur-Tel's Equipment Store just outside Mor Ul Rek)",
+        "items": ["Steel longsword", "Blue d'hide body", "Mystic gloves"],
+        "alternateChunks": [
+          {
+            "x": 26,
+            "y": 14
+          }
+        ]
+      }
+    ]
+  },
+  {
     "x": 28,
     "y": 13,
     "stashUnits": [
@@ -410,6 +482,12 @@
         "type": "Hole",
         "location": "Draynor Village market (next to a bench)",
         "items": ["Studded chaps", "Iron kiteshield", "Steel longsword"]
+      },
+      {
+        "difficulty": "Medium",
+        "type": "Bush",
+        "location": "Outside Draynor Village jail (near the entrance)",
+        "items": ["Adamant sword", "Sapphire amulet", "Adamant plateskirt"]
       }
     ]
   },
@@ -462,6 +540,18 @@
     ]
   },
   {
+    "x": 31,
+    "y": 14,
+    "stashUnits": [
+      {
+        "difficulty": "Medium",
+        "type": "Rock",
+        "location": "Lumbridge Swamp Caves (inside, by the western cave exit)",
+        "items": ["Staff of air", "Bronze full helm", "Amulet of power"]
+      }
+    ]
+  },
+  {
     "x": 32,
     "y": 14,
     "stashUnits": [
@@ -482,6 +572,34 @@
         "type": "Crate",
         "location": "Castle Wars bank",
         "items": ["Ruby amulet", "Mithril scimitar", "Team cape"]
+      }
+    ]
+  },
+  {
+    "x": 22,
+    "y": 15,
+    "stashUnits": [
+      {
+        "difficulty": "Medium",
+        "type": "Rock",
+        "location": "Outside Yanille bank (by the entrance to the Wizards' Guild)",
+        "items": ["Brown apron", "Adamant med helm", "Snakeskin chaps"]
+      }
+    ]
+  },
+  {
+    "x": 26,
+    "y": 15,
+    "stashUnits": [
+      {
+        "difficulty": "Medium",
+        "type": "Crate",
+        "location": "South of the shrine in Tai Bwo Wannai Village (west of the hardwood grove)",
+        "items": [
+          "Green d'hide chaps",
+          "Ring of dueling(8)",
+          "Mithril med helm"
+        ]
       }
     ]
   },
