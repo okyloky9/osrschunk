@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { useDebounce } from 'use-debounce';
 
 import { ClueTable, StashUnitTable } from '.';
@@ -12,6 +12,8 @@ const SearchModal: React.FC = () => {
   const searchItemsId = 'search-items';
 
   const debounceTime = 300;
+
+  const clueQueryInput = useRef<HTMLInputElement>(null);
 
   const [clueQuery, setClueQuery] = useState('');
   const [itemQuery, setItemQuery] = useState('');
@@ -205,6 +207,13 @@ const SearchModal: React.FC = () => {
     }
   }, [debouncedClueQuery, debouncedItemQuery]);
 
+  // focus first input on modal open
+  useEffect(() => {
+    if (!clueQueryInput.current) return;
+
+    clueQueryInput.current.focus();
+  }, [clueQueryInput]);
+
   return (
     <div id="search-modal">
       <h1>Search Clue Steps &amp; STASH Units</h1>
@@ -223,6 +232,7 @@ const SearchModal: React.FC = () => {
                 setItemQuery('');
                 setClueQuery(e.target.value);
               }}
+              ref={clueQueryInput}
             />
           </div>
 
