@@ -30,6 +30,18 @@
     ]
   },
   {
+    "x": 30,
+    "y": 11,
+    "stashUnits": [
+      {
+        "difficulty": "Easy",
+        "type": "Rock",
+        "location": "Draynor Manor by the fountain (south)",
+        "items": ["Iron platebody", "Studded chaps", "Bronze full helm"]
+      }
+    ]
+  },
+  {
     "x": 29,
     "y": 13,
     "stashUnits": [
