@@ -7,6 +7,7 @@ import {
   useState,
 } from 'react';
 import { createPortal } from 'react-dom';
+import FocusTrap from 'focus-trap-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { createClassString } from '../utils';
@@ -56,27 +57,38 @@ export default forwardRef<
 
   return createPortal(
     isOpen ? (
-      <div
-        className={createClassString({
-          modal: true,
-          'modal-fade': fade,
-        })}
-      >
-        <div className="modal-overlay" onClick={close} />
-
-        <span
-          role="button"
-          className="modal-close"
-          aria-label="Close modal"
-          onClick={close}
+      <FocusTrap>
+        <div
+          className={createClassString({
+            modal: true,
+            'modal-fade': fade,
+          })}
         >
-          <span>
-            <FontAwesomeIcon icon="times" />
-          </span>
-        </span>
+          <div className="modal-overlay" onClick={close} />
 
-        <div className="modal-body">{children}</div>
-      </div>
+          <span
+            role="button"
+            className="modal-close"
+            aria-label="Close modal"
+            onClick={close}
+            onKeyUp={(e) => {
+              const keyCode = e.which || e.keyCode;
+
+              // if spacebar or enter are pressed
+              if ([13, 32].includes(keyCode)) {
+                close();
+              }
+            }}
+            tabIndex={0}
+          >
+            <span>
+              <FontAwesomeIcon icon="times" />
+            </span>
+          </span>
+
+          <div className="modal-body">{children}</div>
+        </div>
+      </FocusTrap>
     ) : null,
     modalElement
   );
