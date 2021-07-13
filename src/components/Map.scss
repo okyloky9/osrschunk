@@ -119,16 +119,32 @@
   tr {
     height: 192px;
 
+    &:first-child td {
+      border-top: none;
+    }
+
+    &:last-child td {
+      border-bottom: none;
+    }
+
     td {
       width: 192px;
       box-sizing: border-box;
 
-      border: 1px solid rgba(0, 0, 0, 0.6);
+      border: 0.5px solid rgba(0, 0, 0, 0.6);
 
       color: #ffffff;
       vertical-align: top;
 
       z-index: 1;
+
+      &:first-child {
+        border-left: none;
+      }
+
+      &:last-child {
+        border-right: none;
+      }
 
       &.locked {
         background: rgba(0, 0, 0, 0.6);
