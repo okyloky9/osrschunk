@@ -1,5 +1,29 @@
 [
   {
+    "x": 2,
+    "y": 4,
+    "stashUnits": [
+      {
+        "difficulty": "Medium",
+        "type": "Hole",
+        "location": "North of Mount Karuulm",
+        "items": ["Adamant warhammer", "Mithril boots", "Ring of life"]
+      }
+    ]
+  },
+  {
+    "x": 7,
+    "y": 4,
+    "stashUnits": [
+      {
+        "difficulty": "Medium",
+        "type": "Crate",
+        "location": "Entrance of the Arceuus library (ground floor, centre east)",
+        "items": ["Blue d'hide vambraces", "Adamant boots", "Adamant dagger"]
+      }
+    ]
+  },
+  {
     "x": 24,
     "y": 8,
     "stashUnits": [
@@ -12,6 +36,18 @@
     ]
   },
   {
+    "x": 36,
+    "y": 8,
+    "stashUnits": [
+      {
+        "difficulty": "Medium",
+        "type": "Hole",
+        "location": "Mausoleum off the Morytania coast (west of Fenkenstrain's Castle)\n(Push the memorial west of the allotment patch in Morytania, north-west of alq)",
+        "items": ["Mithril plateskirt", "Maple longbow"]
+      }
+    ]
+  },
+  {
     "x": 27,
     "y": 9,
     "stashUnits": [
@@ -20,6 +56,18 @@
         "type": "Rock",
         "location": "Taverley Stone Circle (by the southernmost dolmen)",
         "items": ["Blue wizard hat", "Bronze 2h sword", "Ham boots"]
+      }
+    ]
+  },
+  {
+    "x": 30,
+    "y": 9,
+    "stashUnits": [
+      {
+        "difficulty": "Medium",
+        "type": "Bush",
+        "location": "North of Evil Dave's house in Edgeville (outside the Edgeville General Store)",
+        "items": ["Brown apron", "Leather boots", "Leather gloves"]
       }
     ]
   },
