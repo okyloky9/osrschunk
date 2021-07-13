@@ -72,6 +72,18 @@
     ]
   },
   {
+    "x": 36,
+    "y": 9,
+    "stashUnits": [
+      {
+        "difficulty": "Medium",
+        "type": "Rock",
+        "location": "Centre of Canifis",
+        "items": ["Green robe top", "Mithril platelegs", "Iron 2h sword"]
+      }
+    ]
+  },
+  {
     "x": 22,
     "y": 10,
     "stashUnits": [
