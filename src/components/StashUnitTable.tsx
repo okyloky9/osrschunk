@@ -24,11 +24,13 @@ const StashUnitTable: React.FC<{ units?: StashUnit[] }> = ({ units }) => {
 
       <table>
         <thead>
-          <th>Type</th>
-          <th>Appearance</th>
-          <th>Location</th>
-          <th>Items</th>
-          <th>Chunk</th>
+          <tr>
+            <th>Type</th>
+            <th>Appearance</th>
+            <th>Location</th>
+            <th>Items</th>
+            <th>Chunk</th>
+          </tr>
         </thead>
 
         <tbody>
