@@ -12,6 +12,19 @@ const InfoModal: React.FC = () => {
         <li>Use your mouse's scroll wheel to zoom in and out.</li>
         <li>Click on a chunk to show the clue data for that chunk.</li>
         <li>
+          Click on the search icon in the top right to open the search modal.
+          <ul>
+            <li>
+              You can search for clue steps by their clue text or by what items
+              are required.
+            </li>
+            <li>
+              You can search for STASH units by what items can be stored in
+              them.
+            </li>
+          </ul>
+        </li>
+        <li>
           Turn on "Chunk locking/unlocking mode" then click a chunk to toggle
           whether it is locked or unlocked.
           <ul>

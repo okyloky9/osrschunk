@@ -2,13 +2,15 @@
 
 This is a tool for viewing what clues are available within each map chunk of Old School RuneScape.
 
-![The map of Gielinor](./screenshots/Map-1.png)
+![The map of Gielinor showing what clue steps are available in each chunk](./screenshots/Map-1.png)
 
 ![Sidebar showing settings](./screenshots/Map-2.png)
 
 ![Chunk locking/unlocking mode](./screenshots/Map-3.png)
 
 ![Clue data for a chunk](/screenshots/Modal-1.png)
+
+![Searching clue steps and STASH units](/screenshots/Search-1.png)
 
 If you see a mistake or would like to request a feature, please [let us know](https://github.com/okyloky9/osrschunk/issues/new).
 
@@ -17,6 +19,9 @@ If you see a mistake or would like to request a feature, please [let us know](ht
 - Click and move your mouse to pan.
 - Use your mouse's scroll wheel to zoom in and out.
 - Click on a chunk to show the clue data for that chunk.
+- Click on the search icon in the top right to open the search modal.
+  - You can search for clue steps by their clue text or by what items are required.
+  - You can search for STASH units by what items can be stored in them.
 - Turn on "Chunk locking/unlocking mode" then click a chunk to toggle whether it is locked or unlocked.
   - Use the "Lock/unlock all chunks" button to toggle the state of all chunks.
   - Unlocked chunks will be saved locally.
