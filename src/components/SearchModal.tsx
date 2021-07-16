@@ -187,7 +187,9 @@ const searchItems = memo((query: string) => {
   };
 });
 
-const SearchModal: React.FC = () => {
+const SearchModal: React.FC<{ goToChunk: (x: number, y: number) => void }> = ({
+  goToChunk,
+}) => {
   const searchClueHintsId = 'search-clue-hints';
   const searchItemsId = 'search-items';
 
@@ -280,31 +282,61 @@ const SearchModal: React.FC = () => {
       </form>
 
       <div>
-        <StashUnitTable units={stashUnits} />
+        <StashUnitTable units={stashUnits} goToChunk={goToChunk} />
       </div>
 
       <div>
-        <ClueTable clues={beginnerClues} difficulty="Beginner" search />
+        <ClueTable
+          clues={beginnerClues}
+          difficulty="Beginner"
+          goToChunk={goToChunk}
+          search
+        />
       </div>
 
       <div>
-        <ClueTable clues={easyClues} difficulty="Easy" search />
+        <ClueTable
+          clues={easyClues}
+          difficulty="Easy"
+          goToChunk={goToChunk}
+          search
+        />
       </div>
 
       <div>
-        <ClueTable clues={mediumClues} difficulty="Medium" search />
+        <ClueTable
+          clues={mediumClues}
+          difficulty="Medium"
+          goToChunk={goToChunk}
+          search
+        />
       </div>
 
       <div>
-        <ClueTable clues={hardClues} difficulty="Hard" search />
+        <ClueTable
+          clues={hardClues}
+          difficulty="Hard"
+          goToChunk={goToChunk}
+          search
+        />
       </div>
 
       <div>
-        <ClueTable clues={eliteClues} difficulty="Elite" search />
+        <ClueTable
+          clues={eliteClues}
+          difficulty="Elite"
+          goToChunk={goToChunk}
+          search
+        />
       </div>
 
       <div>
-        <ClueTable clues={masterClues} difficulty="Master" search />
+        <ClueTable
+          clues={masterClues}
+          difficulty="Master"
+          goToChunk={goToChunk}
+          search
+        />
       </div>
     </div>
   );

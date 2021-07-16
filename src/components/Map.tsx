@@ -308,8 +308,6 @@ const Map: React.FC = () => {
     }
 
     loadingRef.current = false;
-
-    goToChunk(26, 8);
   }, []);
 
   function dismissInfoModal() {
@@ -419,9 +417,10 @@ const Map: React.FC = () => {
         ),
       },
     });
-  }
 
-  console.log(view);
+    chunkModal.current?.close();
+    searchModal.current?.close();
+  }
 
   return (
     <>
@@ -747,12 +746,16 @@ const Map: React.FC = () => {
 
       <Modal onClose={() => setSelectedMapChunk(undefined)} ref={chunkModal}>
         {selectedMapChunk && (
-          <ChunkModal chunkCoords={selectedMapChunk} editMode={editMode} />
+          <ChunkModal
+            chunkCoords={selectedMapChunk}
+            editMode={editMode}
+            goToChunk={goToChunk}
+          />
         )}
       </Modal>
 
       <Modal ref={searchModal}>
-        <SearchModal />
+        <SearchModal goToChunk={goToChunk} />
       </Modal>
 
       <Modal onClose={dismissInfoModal} ref={infoModal}>

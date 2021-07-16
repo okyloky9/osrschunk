@@ -8,7 +8,8 @@ import { chunkHasClues, getKillCreatureCluesForChunk } from '../utils';
 const ChunkModal: React.FC<{
   chunkCoords: { x: number; y: number };
   editMode: boolean;
-}> = ({ chunkCoords, editMode }) => {
+  goToChunk: (x: number, y: number) => void;
+}> = ({ chunkCoords, editMode, goToChunk }) => {
   const { getChunk, setChunk } = useContext(ChunkDataContext);
 
   const { x, y } = chunkCoords;
@@ -46,6 +47,7 @@ const ChunkModal: React.FC<{
               ? (clues: Clue[]) => updateClues('Beginner', clues)
               : undefined
           }
+          goToChunk={goToChunk}
         />
       </div>
 
@@ -56,6 +58,7 @@ const ChunkModal: React.FC<{
           updateClues={
             editMode ? (clues: Clue[]) => updateClues('Easy', clues) : undefined
           }
+          goToChunk={goToChunk}
         />
       </div>
 
@@ -68,6 +71,7 @@ const ChunkModal: React.FC<{
               ? (clues: Clue[]) => updateClues('Medium', clues)
               : undefined
           }
+          goToChunk={goToChunk}
         />
       </div>
 
@@ -78,6 +82,7 @@ const ChunkModal: React.FC<{
           updateClues={
             editMode ? (clues: Clue[]) => updateClues('Hard', clues) : undefined
           }
+          goToChunk={goToChunk}
         />
       </div>
 
@@ -93,6 +98,7 @@ const ChunkModal: React.FC<{
               ? (clues: Clue[]) => updateClues('Elite', clues)
               : undefined
           }
+          goToChunk={goToChunk}
         />
       </div>
 
@@ -108,6 +114,7 @@ const ChunkModal: React.FC<{
               ? (clues: Clue[]) => updateClues('Master', clues)
               : undefined
           }
+          goToChunk={goToChunk}
         />
       </div>
     </div>
