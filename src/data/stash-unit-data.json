@@ -1,5 +1,17 @@
 [
   {
+    "x": 34,
+    "y": 2,
+    "stashUnits": [
+      {
+        "difficulty": "Hard",
+        "type": "Rock",
+        "location": "Volcano in the north-eastern Wilderness (south of the volcano's bridge)",
+        "items": ["Headband", "Crozier"]
+      }
+    ]
+  },
+  {
     "x": 2,
     "y": 4,
     "stashUnits": [
@@ -24,6 +36,30 @@
     ]
   },
   {
+    "x": 25,
+    "y": 6,
+    "stashUnits": [
+      {
+        "difficulty": "Hard",
+        "type": "Rock",
+        "location": "Mountain Camp goat enclosure (outside Jokul's tent)",
+        "items": ["Rune full helm", "Blue d'hide chaps", "Fire battlestaff"]
+      }
+    ]
+  },
+  {
+    "x": 29,
+    "y": 6,
+    "stashUnits": [
+      {
+        "difficulty": "Hard",
+        "type": "Hole",
+        "location": "Noterazzo's shop in the Wilderness (inside the Bandit Duty Free shop in the Bandit Camp)",
+        "items": ["Adamant sq shield", "Blue d'hide vambraces", "Rune pickaxe"]
+      }
+    ]
+  },
+  {
     "x": 5,
     "y": 7,
     "stashUnits": [
@@ -32,6 +68,30 @@
         "type": "Crate",
         "location": "North of the Shayzien Combat Ring",
         "items": ["Adamant platebody", "Adamant full helm", "Adamant platelegs"]
+      }
+    ]
+  },
+  {
+    "x": 7,
+    "y": 7,
+    "stashUnits": [
+      {
+        "difficulty": "Hard",
+        "type": "Crate",
+        "location": "Hosidius Mess (inside, north-east corner)",
+        "items": ["Rune halberd", "Rune platebody", "Amulet of strength"]
+      }
+    ]
+  },
+  {
+    "x": 21,
+    "y": 7,
+    "stashUnits": [
+      {
+        "difficulty": "Hard",
+        "type": "Crate",
+        "location": "Top floor of the Lighthouse",
+        "items": ["Blue d'hide body", "Blue d'hide vambraces"]
       }
     ]
   },
@@ -92,6 +152,18 @@
         "type": "Bush",
         "location": "Outside the Seers' Village courthouse",
         "items": ["Adamant halberd", "Mystic robe bottom", "Diamond ring"]
+      }
+    ]
+  },
+  {
+    "x": 26,
+    "y": 9,
+    "stashUnits": [
+      {
+        "difficulty": "Hard",
+        "type": "Hole",
+        "location": "Gnome Glider on White Wolf Mountain (near Captain Bleemadge)",
+        "items": ["Mithril platelegs", "Ring of life", "Rune axe"]
       }
     ]
   },
@@ -200,6 +272,12 @@
         "type": "Hole",
         "location": "Outside the Fishing Guild (by the entrance)",
         "items": ["Emerald ring", "Sapphire amulet", "Bronze chainbody"]
+      },
+      {
+        "difficulty": "Hard",
+        "type": "Crate",
+        "location": "Fishing Guild bank",
+        "items": ["Elemental shield", "Blue d'hide chaps", "Rune warhammer"]
       }
     ]
   },
@@ -380,6 +458,12 @@
         "type": "Bush",
         "location": "Outside the Digsite Exam Centre (next to the urn)",
         "items": ["White apron", "Green boots", "Leather gloves"]
+      },
+      {
+        "difficulty": "Hard",
+        "type": "Crate",
+        "location": "Inside the Digsite Exam Centre (near the archaeological expert)",
+        "items": ["Mystic fire staff", "Diamond bracelet", "Rune boots"]
       }
     ]
   },
@@ -540,6 +624,18 @@
     ]
   },
   {
+    "x": 27,
+    "y": 14,
+    "stashUnits": [
+      {
+        "difficulty": "Hard",
+        "type": "Crate",
+        "location": "West side of the Karamja banana plantation (in Musa Point)",
+        "items": ["Diamond ring", "Amulet of power"]
+      }
+    ]
+  },
+  {
     "x": 30,
     "y": 14,
     "stashUnits": [
@@ -636,6 +732,70 @@
         "type": "Crate",
         "location": "Shantay Pass",
         "items": ["Bruise blue snelm", "Staff of air", "Bronze sq shield"]
+      }
+    ]
+  },
+  {
+    "x": 20,
+    "y": 16,
+    "stashUnits": [
+      {
+        "difficulty": "Hard",
+        "type": "Rock",
+        "location": "In the middle of Jiggig (by the dungeon entrance)",
+        "items": [
+          "Rune spear",
+          "Rune platelegs",
+          "Rune heraldic armour#Full helm"
+        ]
+      }
+    ]
+  },
+  {
+    "x": 26,
+    "y": 17,
+    "stashUnits": [
+      {
+        "difficulty": "Hard",
+        "type": "Crate",
+        "location": "Shilo Village bank",
+        "items": ["Mystic hat", "Bone spear", "Rune platebody"]
+      }
+    ]
+  },
+  {
+    "x": 28,
+    "y": 18,
+    "stashUnits": [
+      {
+        "difficulty": "Hard",
+        "type": "Hole",
+        "location": "North-east corner of the Kharazi Jungle",
+        "items": ["Rune heraldic armour#Kiteshield", "Stole"]
+      }
+    ]
+  },
+  {
+    "x": 34,
+    "y": 19,
+    "stashUnits": [
+      {
+        "difficulty": "Hard",
+        "type": "Hole",
+        "location": "Agility Pyramid (stairs by the beginning of the pyramid)",
+        "items": ["Mystic robe top", "Rune heraldic armour#Kiteshield"]
+      }
+    ]
+  },
+  {
+    "x": 33,
+    "y": 20,
+    "stashUnits": [
+      {
+        "difficulty": "Hard",
+        "type": "Hole",
+        "location": "Outside the great pyramid of Sophanem",
+        "items": ["Ring of life", "Amulet of glory", "Adamant 2h sword"]
       }
     ]
   }
