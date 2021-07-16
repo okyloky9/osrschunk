@@ -279,11 +279,6 @@ const SearchModal: React.FC = () => {
         </div>
       </form>
 
-      {/* TODO: remove this when the data is complete */}
-      <p style={{ textAlign: 'center' }}>
-        (STASH Unit data is currently incomplete)
-      </p>
-
       <div>
         <StashUnitTable units={stashUnits} />
       </div>

@@ -56,6 +56,16 @@
         "type": "Rock",
         "location": "Near a ladder in the Wilderness Lava Maze (by the eastern entrance)\n(Bring a knife if you don't have access to the shortcut — 82 Agility and Wilderness Hard Diary required)",
         "items": ["Black d'hide chaps", "Spotted cape", "Rolling pin"]
+      },
+      {
+        "difficulty": "Master",
+        "type": "Rock",
+        "location": "King Black Dragon's lair (south-east corner)",
+        "items": [
+          "Black d'hide body",
+          "Black d'hide vambraces",
+          "Black dragon mask"
+        ]
       }
     ]
   },
@@ -384,6 +394,18 @@
     ]
   },
   {
+    "x": 28,
+    "y": 9,
+    "stashUnits": [
+      {
+        "difficulty": "Master",
+        "type": "Rock",
+        "location": "Outside the Mudknuckles' hut (Goblin Cook's house in Goblin Village)",
+        "items": ["Bandos platebody", "Bandos cloak", "Bandos godsword"]
+      }
+    ]
+  },
+  {
     "x": 29,
     "y": 9,
     "stashUnits": [
@@ -428,6 +450,12 @@
         "type": "Crate",
         "location": "Varrock Palace Library (in the south-east corner)",
         "items": ["Green robe top", "Ham robe", "Iron warhammer"]
+      },
+      {
+        "difficulty": "Master",
+        "type": "Bush",
+        "location": "By the bear cage in Varrock Palace gardens (Queen Ellamaria's garden)",
+        "items": ["Zamorak godsword"]
       }
     ]
   },
@@ -464,6 +492,18 @@
         "type": "Rock",
         "location": "Centre of Canifis",
         "items": ["Green robe top", "Mithril platelegs", "Iron 2h sword"]
+      }
+    ]
+  },
+  {
+    "x": 16,
+    "y": 10,
+    "stashUnits": [
+      {
+        "difficulty": "Master",
+        "type": "Hole",
+        "location": "North of Prifddinas by several maple trees (north of Gwenith)",
+        "items": ["Bryophyta's staff", "Nature tiara"]
       }
     ]
   },
@@ -949,6 +989,12 @@
         "type": "Bush",
         "location": "Outside Draynor Village jail (near the entrance)",
         "items": ["Adamant sword", "Sapphire amulet", "Adamant plateskirt"]
+      },
+      {
+        "difficulty": "Master",
+        "type": "Bush",
+        "location": "Behind Miss Schism in Draynor Village",
+        "items": ["Abyssal whip", "Cape of legends", "Spined chaps"]
       }
     ]
   },
@@ -1063,6 +1109,23 @@
         "type": "Crate",
         "location": "Castle Wars bank",
         "items": ["Ruby amulet", "Mithril scimitar", "Team cape"]
+      }
+    ]
+  },
+  {
+    "x": 21,
+    "y": 15,
+    "stashUnits": [
+      {
+        "difficulty": "Master",
+        "type": "Crate",
+        "location": "Top floor of the Yanille Watchtower",
+        "items": [
+          "Bull roarer",
+          "Dragon plateskirt",
+          "Climbing boots",
+          "Dragon chainbody"
+        ]
       }
     ]
   },
