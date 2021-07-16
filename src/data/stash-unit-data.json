@@ -468,6 +468,18 @@
     ]
   },
   {
+    "x": 21,
+    "y": 12,
+    "stashUnits": [
+      {
+        "difficulty": "Elite",
+        "type": "Crate",
+        "location": "Chapel in West Ardougne (inside)",
+        "items": ["Dragon spear", "Red d'hide chaps"]
+      }
+    ]
+  },
+  {
     "x": 22,
     "y": 12,
     "stashUnits": [

@@ -219,7 +219,7 @@ const slayerHelmVariants = [
   'Green',
   'Red',
   'Purple',
-  'Turqoise',
+  'Turquoise',
   'Hydra',
   'Twisted',
 ];
