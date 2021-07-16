@@ -4796,7 +4796,11 @@
       {
         "type": "Emote",
         "clueHint": "Flap at the death altar. Beware of double agents!",
-        "itemsRequired": ["Death tiara", "Cape of legends", "Ring of wealth"]
+        "itemsRequired": [
+          "Death tiara",
+          "Cape of legends",
+          "Ring of wealth (5)"
+        ]
       },
       {
         "type": "Hot/Cold",

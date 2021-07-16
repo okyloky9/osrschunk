@@ -1,5 +1,17 @@
 [
   {
+    "x": 31,
+    "y": 2,
+    "stashUnits": [
+      {
+        "difficulty": "Master",
+        "type": "Hole",
+        "location": "Outside the Wilderness axe hut (in level 55 Wilderness)",
+        "items": ["Flared trousers"]
+      }
+    ]
+  },
+  {
     "x": 34,
     "y": 2,
     "stashUnits": [
@@ -97,6 +109,44 @@
           "Rune platebody",
           "Brine sabre",
           "Amulet of glory"
+        ]
+      }
+    ]
+  },
+  {
+    "x": 27,
+    "y": 5,
+    "stashUnits": [
+      {
+        "difficulty": "Master",
+        "type": "Hole",
+        "location": "Outside K'ril Tsutsaroth's room",
+        "items": ["Shadow sword", "Zamorak full helm"]
+      }
+    ]
+  },
+  {
+    "x": 7,
+    "y": 6,
+    "stashUnits": [
+      {
+        "difficulty": "Master",
+        "type": "Hole",
+        "location": "Centre of the Catacombs of Kourend",
+        "items": ["Arclight", "Amulet of the damned"],
+        "alternateChunks": [
+          {
+            "x": 8,
+            "y": 3
+          },
+          {
+            "x": 4,
+            "y": 6
+          },
+          {
+            "x": 6,
+            "y": 4
+          }
         ]
       }
     ]
@@ -230,6 +280,12 @@
         "type": "Hole",
         "location": "Warriors' Guild bank",
         "items": ["Black salamander"]
+      },
+      {
+        "difficulty": "Master",
+        "type": "Crate",
+        "location": "Warriors' Guild bank",
+        "items": ["Dragon battleaxe", "Dragon defender", "Slayer helmet"]
       }
     ]
   },
@@ -674,6 +730,22 @@
     ]
   },
   {
+    "x": 20,
+    "y": 12,
+    "stashUnits": [
+      {
+        "difficulty": "Master",
+        "type": "Hole",
+        "location": "Well of Voyage (south-west corner in Iban's Temple)",
+        "items": [
+          "Iban's staff",
+          "Mystic robe top (dark)",
+          "Mystic robe bottom (dark)"
+        ]
+      }
+    ]
+  },
+  {
     "x": 21,
     "y": 12,
     "stashUnits": [
@@ -682,6 +754,12 @@
         "type": "Crate",
         "location": "Chapel in West Ardougne (inside)",
         "items": ["Dragon spear", "Red d'hide chaps"]
+      },
+      {
+        "difficulty": "Master",
+        "type": "Hole",
+        "location": "Death Altar (north-east corner)",
+        "items": ["Death tiara", "Cape of legends", "Ring of wealth (5)"]
       }
     ]
   },
@@ -811,6 +889,18 @@
         "type": "Hole",
         "location": "TzHaar weapons store (TzHaar-Hur-Tel's Equipment Store just outside Mor Ul Rek)",
         "items": ["Steel longsword", "Blue d'hide body", "Mystic gloves"],
+        "alternateChunks": [
+          {
+            "x": 26,
+            "y": 14
+          }
+        ]
+      },
+      {
+        "difficulty": "Master",
+        "type": "Hole",
+        "location": "TzHaar gem store (the one outside Mor Ul Rek)",
+        "items": ["Fire cape", "Toktz-xil-ul"],
         "alternateChunks": [
           {
             "x": 26,
@@ -955,6 +1045,12 @@
         "type": "Hole",
         "location": "Near a shed in Lumbridge Swamp (entrance to Zanaris)",
         "items": ["Bronze dagger", "Iron full helm", "Gold ring"]
+      },
+      {
+        "difficulty": "Master",
+        "type": "Bush",
+        "location": "North-western corner of the Enchanted Valley (bkq)",
+        "items": ["Dragon axe"]
       }
     ]
   },
@@ -1023,6 +1119,18 @@
     ]
   },
   {
+    "x": 16,
+    "y": 16,
+    "stashUnits": [
+      {
+        "difficulty": "Master",
+        "type": "Hole",
+        "location": "Near the pier in Zul-Andra (next to a tree)",
+        "items": ["Dragon 2h sword", "Bandos boots", "Obsidian cape"]
+      }
+    ]
+  },
+  {
     "x": 20,
     "y": 16,
     "stashUnits": [
@@ -1083,6 +1191,17 @@
         "type": "Hole",
         "location": "Outside the great pyramid of Sophanem",
         "items": ["Ring of life", "Amulet of glory", "Adamant 2h sword"]
+      },
+      {
+        "difficulty": "Master",
+        "type": "Hole",
+        "location": "7th Chamber of Jalsavrah (Pyramid Plunder)",
+        "items": [
+          "Pharaoh's sceptre",
+          "Menaphite purple hat",
+          "Menaphite purple top",
+          "Menaphite purple robe"
+        ]
       }
     ]
   }
