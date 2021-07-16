@@ -12,6 +12,18 @@
     ]
   },
   {
+    "x": 10,
+    "y": 3,
+    "stashUnits": [
+      {
+        "difficulty": "Master",
+        "type": "Hole",
+        "location": "Soul Altar (west of the altar)",
+        "items": ["Dragon pickaxe", "Helm of neitiznot", "Rune boots"]
+      }
+    ]
+  },
+  {
     "x": 19,
     "y": 3,
     "stashUnits": [
@@ -68,6 +80,24 @@
         "type": "Rock",
         "location": "Half-way down Trollweiss Mountain (Trollweiss flowers after sledding down)",
         "items": ["Blue d'hide vambraces", "Dragon spear", "Rune plateskirt"]
+      }
+    ]
+  },
+  {
+    "x": 32,
+    "y": 4,
+    "stashUnits": [
+      {
+        "difficulty": "Master",
+        "type": "Hole",
+        "location": "South-east corner of Lava Dragon Isle (by the big egg)",
+        "items": [
+          "Dragon med helm",
+          "Toktz-ket-xil",
+          "Rune platebody",
+          "Brine sabre",
+          "Amulet of glory"
+        ]
       }
     ]
   },
@@ -562,6 +592,22 @@
     ]
   },
   {
+    "x": 26,
+    "y": 11,
+    "stashUnits": [
+      {
+        "difficulty": "Master",
+        "type": "Crate",
+        "location": "Entrana Chapel (inside, north)",
+        "items": [
+          "Black d'hide body",
+          "Black d'hide chaps",
+          "Black d'hide vambraces"
+        ]
+      }
+    ]
+  },
+  {
     "x": 28,
     "y": 11,
     "stashUnits": [
@@ -612,6 +658,18 @@
         "type": "Crate",
         "location": "Inside the Digsite Exam Centre (near the archaeological expert)",
         "items": ["Mystic fire staff", "Diamond bracelet", "Rune boots"]
+      }
+    ]
+  },
+  {
+    "x": 37,
+    "y": 11,
+    "stashUnits": [
+      {
+        "difficulty": "Master",
+        "type": "Rock",
+        "location": "On top of the Northern wall of Castle Drakan (by the sickle marking on the floor)",
+        "items": ["Boater", "Splitbark body", "Dragon sq shield"]
       }
     ]
   },
@@ -712,6 +770,35 @@
         "type": "Rock",
         "location": "Al Kharid scorpion mine",
         "items": ["Desert shirt", "Leather gloves", "Leather boots"]
+      }
+    ]
+  },
+  {
+    "x": 37,
+    "y": 12,
+    "stashUnits": [
+      {
+        "difficulty": "Master",
+        "type": "Hole",
+        "location": "Barrows chest",
+        "items": [
+          "Barrows head piece",
+          "Barrows body piece",
+          "Barrows leg piece",
+          "Barrows weapon"
+        ]
+      }
+    ]
+  },
+  {
+    "x": 16,
+    "y": 13,
+    "stashUnits": [
+      {
+        "difficulty": "Master",
+        "type": "Crate",
+        "location": "Tent in Lord Iorwerth's encampment (north-west tent)",
+        "items": ["Crystal bow"]
       }
     ]
   },

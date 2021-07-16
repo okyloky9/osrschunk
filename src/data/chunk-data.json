@@ -4635,7 +4635,7 @@
       {
         "type": "Emote",
         "clueHint": "Wave on the northern wall of the Castle Drakan. Beware of double agents!",
-        "itemsRequired": ["Dragon sq shield", "Splitbark body", "Boater"]
+        "itemsRequired": ["Boater", "Splitbark body", "Dragon sq shield"]
       }
     ]
   },
@@ -5295,7 +5295,7 @@
       {
         "type": "Emote",
         "clueHint": "Bow in the Iorwerth Camp. Beware of double agents!",
-        "itemsRequired": ["Cystal bow"]
+        "itemsRequired": ["Crystal bow"]
       }
     ]
   },
