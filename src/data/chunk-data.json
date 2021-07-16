@@ -2487,7 +2487,11 @@
       {
         "type": "Emote",
         "clueHint": "Jump for joy in the Ancient Cavern.",
-        "itemsRequired": ["Granite shield", "Splitbark body", ""]
+        "itemsRequired": [
+          "Granite shield",
+          "Splitbark body",
+          "Rune heraldic armour#Full helm"
+        ]
       }
     ],
     "masterClues": [
