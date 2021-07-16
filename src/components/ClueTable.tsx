@@ -7,9 +7,10 @@ import { Clue, ClueDifficulty } from '../models';
 const ClueTable: React.FC<{
   clues?: Clue[];
   difficulty: ClueDifficulty;
+  goToChunk: (x: number, y: number) => void;
   search?: boolean;
   updateClues?: (clues: Clue[]) => void;
-}> = ({ clues, difficulty, search, updateClues }) => {
+}> = ({ clues, difficulty, goToChunk, search, updateClues }) => {
   const editing = !!updateClues;
 
   const ClueHint = ({ hint }: { hint: string | undefined }) => {
@@ -320,6 +321,7 @@ const ClueTable: React.FC<{
                             data-tip={alt.notes}
                             data-place="top"
                             data-background-color="#13135f"
+                            onClick={() => goToChunk(alt.x, alt.y)}
                           >
                             ({alt.x}, {alt.y})
                           </span>

@@ -43,6 +43,10 @@ const Map: React.FC = () => {
   const ZOOM_AND_PAN_KEY = 'ZOOM_AND_PAN';
   const INFO_MODAL_KEY = 'INFO_MODAL';
 
+  // chunk dimensions (in pixels)
+  const chunkWidth = 192;
+  const chunkHeight = chunkWidth;
+
   // map dimensions (in chunks)
   const width = 43;
   const height = 25;
@@ -82,8 +86,8 @@ const Map: React.FC = () => {
   const [autoSaveInterval, setAutoSaveInterval] = useState<number>();
 
   // min scale calculations
-  const minWidthScale = windowDimensions.width / (width * 192);
-  const minHeightScale = windowDimensions.height / (height * 192);
+  const minWidthScale = windowDimensions.width / (width * chunkWidth);
+  const minHeightScale = windowDimensions.height / (height * chunkHeight);
 
   const minScale =
     minWidthScale > minHeightScale ? minWidthScale : minHeightScale;
@@ -388,6 +392,36 @@ const Map: React.FC = () => {
     }
   }
 
+  function goToChunk(x: number, y: number) {
+    const td = document.querySelector(
+      `#map > tbody > tr:nth-child(${y + 1}) > td:nth-child(${x + 1})`
+    ) as unknown as { offsetLeft: number; offsetTop: number };
+    if (!td) return;
+
+    const { offsetLeft, offsetTop } = td;
+
+    const newScale = 1.5;
+
+    setView({
+      scale: newScale,
+      translation: {
+        x: -(
+          offsetLeft * newScale -
+          windowDimensions.width / 2 +
+          (chunkWidth / 2) * newScale
+        ),
+        y: -(
+          offsetTop * newScale -
+          windowDimensions.height / 2 +
+          (chunkHeight / 2) * newScale
+        ),
+      },
+    });
+
+    chunkModal.current?.close();
+    searchModal.current?.close();
+  }
+
   return (
     <>
       <MapInteractionCSS
@@ -396,8 +430,8 @@ const Map: React.FC = () => {
         translationBounds={{
           xMax: 0,
           yMax: 0,
-          xMin: -(width * 192 * scale) + windowDimensions.width,
-          yMin: -(height * 192 * scale) + windowDimensions.height,
+          xMin: -(width * chunkWidth * scale) + windowDimensions.width,
+          yMin: -(height * chunkHeight * scale) + windowDimensions.height,
         }}
         minScale={minScale}
       >
@@ -712,12 +746,16 @@ const Map: React.FC = () => {
 
       <Modal onClose={() => setSelectedMapChunk(undefined)} ref={chunkModal}>
         {selectedMapChunk && (
-          <ChunkModal chunkCoords={selectedMapChunk} editMode={editMode} />
+          <ChunkModal
+            chunkCoords={selectedMapChunk}
+            editMode={editMode}
+            goToChunk={goToChunk}
+          />
         )}
       </Modal>
 
       <Modal ref={searchModal}>
-        <SearchModal />
+        <SearchModal goToChunk={goToChunk} />
       </Modal>
 
       <Modal onClose={dismissInfoModal} ref={infoModal}>

@@ -8,7 +8,10 @@ import crateStashIcon from '../images/icons/STASH_unit_(crate).png';
 import holeStashIcon from '../images/icons/STASH_unit_(hole).png';
 import rockStashIcon from '../images/icons/STASH_unit_(rock).png';
 
-const StashUnitTable: React.FC<{ units?: StashUnit[] }> = ({ units }) => {
+const StashUnitTable: React.FC<{
+  goToChunk: (x: number, y: number) => void;
+  units?: StashUnit[];
+}> = ({ units, goToChunk }) => {
   if (!units || !units.length) {
     return <></>;
   }
@@ -60,12 +63,24 @@ const StashUnitTable: React.FC<{ units?: StashUnit[] }> = ({ units }) => {
                     <ItemIcon item={item} key={index} />
                   ))}
                 </td>
-                <td className="chunk-coords">
-                  ({chunk?.x}, {chunk?.y})
+                <td>
+                  <span
+                    className="chunk-coords"
+                    onClick={() => goToChunk(chunk?.x!, chunk?.y!)}
+                  >
+                    ({chunk?.x}, {chunk?.y})
+                  </span>
+
                   {alternateChunks &&
                     alternateChunks.map(({ x, y }) => (
                       <React.Fragment key={`alt-${x}-${y}`}>
-                        <span className="comma">,</span> ({x}, {y})
+                        ,{' '}
+                        <span
+                          className="chunk-coords"
+                          onClick={() => goToChunk(x, y)}
+                        >
+                          ({x}, {y})
+                        </span>
                       </React.Fragment>
                     ))}
                 </td>
