@@ -2228,7 +2228,7 @@
       {
         "type": "Emote",
         "clueHint": "Headbang at the top of the Slayer Tower.",
-        "itemsRequired": ["Seercull", "Helm of neitiznot", "Combat bracelet"]
+        "itemsRequired": ["Seercull", "Combat bracelet(6)", "Helm of neitiznot"]
       }
     ]
   },
@@ -6170,7 +6170,7 @@
       {
         "type": "Emote",
         "clueHint": "Headbang in the Fight Arena pub.",
-        "itemsRequired": ["Pirate bandana", "Magic longbow", "Dragon necklace"]
+        "itemsRequired": ["Pirate bandana", "Dragon necklace", "Magic longbow"]
       }
     ],
     "masterClues": [

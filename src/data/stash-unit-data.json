@@ -12,6 +12,30 @@
     ]
   },
   {
+    "x": 19,
+    "y": 3,
+    "stashUnits": [
+      {
+        "difficulty": "Elite",
+        "type": "Rock",
+        "location": "Near a runite rock in the Fremennik Isles (Central Fremennik Isles mine; not underground)",
+        "items": ["Rune boots", "Proselyte hauberk", "Dragonstone ring"]
+      }
+    ]
+  },
+  {
+    "x": 29,
+    "y": 3,
+    "stashUnits": [
+      {
+        "difficulty": "Elite",
+        "type": "Rock",
+        "location": "Near a ladder in the Wilderness Lava Maze (by the eastern entrance)\n(Bring a knife if you don't have access to the shortcut — 82 Agility and Wilderness Hard Diary required)",
+        "items": ["Black d'hide chaps", "Spotted cape", "Rolling pin"]
+      }
+    ]
+  },
+  {
     "x": 2,
     "y": 4,
     "stashUnits": [
@@ -37,6 +61,18 @@
   },
   {
     "x": 25,
+    "y": 4,
+    "stashUnits": [
+      {
+        "difficulty": "Elite",
+        "type": "Rock",
+        "location": "Half-way down Trollweiss Mountain (Trollweiss flowers after sledding down)",
+        "items": ["Blue d'hide vambraces", "Dragon spear", "Rune plateskirt"]
+      }
+    ]
+  },
+  {
+    "x": 25,
     "y": 6,
     "stashUnits": [
       {
@@ -44,6 +80,18 @@
         "type": "Rock",
         "location": "Mountain Camp goat enclosure (outside Jokul's tent)",
         "items": ["Rune full helm", "Blue d'hide chaps", "Fire battlestaff"]
+      }
+    ]
+  },
+  {
+    "x": 27,
+    "y": 6,
+    "stashUnits": [
+      {
+        "difficulty": "Elite",
+        "type": "Rock",
+        "location": "On top of Trollheim Mountain",
+        "items": ["Lava battlestaff", "Black d'hide vambraces", "Mind shield"]
       }
     ]
   },
@@ -108,6 +156,18 @@
     ]
   },
   {
+    "x": 6,
+    "y": 8,
+    "stashUnits": [
+      {
+        "difficulty": "Elite",
+        "type": "Crate",
+        "location": "Shayzien War Tent (the southernmost tent)",
+        "items": ["Mystic robe bottom", "Rune kiteshield", "Bob shirt"]
+      }
+    ]
+  },
+  {
     "x": 21,
     "y": 8,
     "stashUnits": [
@@ -132,6 +192,30 @@
     ]
   },
   {
+    "x": 26,
+    "y": 8,
+    "stashUnits": [
+      {
+        "difficulty": "Elite",
+        "type": "Hole",
+        "location": "Warriors' Guild bank",
+        "items": ["Black salamander"]
+      }
+    ]
+  },
+  {
+    "x": 35,
+    "y": 8,
+    "stashUnits": [
+      {
+        "difficulty": "Elite",
+        "type": "Crate",
+        "location": "Outside the Slayer Tower gargoyle room (top floor)",
+        "items": ["Seercull", "Combat bracelet(6)", "Helm of neitiznot"]
+      }
+    ]
+  },
+  {
     "x": 36,
     "y": 8,
     "stashUnits": [
@@ -140,6 +224,34 @@
         "type": "Hole",
         "location": "Mausoleum off the Morytania coast (west of Fenkenstrain's Castle)\n(Push the memorial west of the allotment patch in Morytania, north-west of alq)",
         "items": ["Mithril plateskirt", "Maple longbow"]
+      }
+    ]
+  },
+  {
+    "x": 8,
+    "y": 9,
+    "stashUnits": [
+      {
+        "difficulty": "Elite",
+        "type": "Crate",
+        "location": "Near the Charcoal Furnace south of Hosidius",
+        "items": ["Farmer's strawhat", "Shayzien body (5)", "Pyromancer robe"]
+      }
+    ]
+  },
+  {
+    "x": 21,
+    "y": 9,
+    "stashUnits": [
+      {
+        "difficulty": "Elite",
+        "type": "Rock",
+        "location": "Entrance of the cavern under the whirlpool (Ancient Cavern)",
+        "items": [
+          "Granite shield",
+          "Splitbark body",
+          "Rune heraldic armour#Full helm"
+        ]
       }
     ]
   },
@@ -176,6 +288,24 @@
         "type": "Rock",
         "location": "Taverley Stone Circle (by the southernmost dolmen)",
         "items": ["Blue wizard hat", "Bronze 2h sword", "Ham boots"]
+      },
+      {
+        "difficulty": "Elite",
+        "type": "Hole",
+        "location": "Fountain of Heroes (under the Heroes' Guild)",
+        "items": ["Splitbark legs", "Dragon boots", "Rune longsword"]
+      }
+    ]
+  },
+  {
+    "x": 29,
+    "y": 9,
+    "stashUnits": [
+      {
+        "difficulty": "Elite",
+        "type": "Crate",
+        "location": "South-east corner of the Monastery (next to Edgeville, on the ground floor)",
+        "items": ["God book"]
       }
     ]
   },
@@ -260,6 +390,18 @@
         "type": "Crate",
         "location": "Gnome Stronghold balancing rope (top of platform in the Gnome Stronghold Agility Course)",
         "items": ["Steel kiteshield", "Green d'hide chaps", "Ring of forging"]
+      }
+    ]
+  },
+  {
+    "x": 21,
+    "y": 10,
+    "stashUnits": [
+      {
+        "difficulty": "Elite",
+        "type": "Hole",
+        "location": "Entrance of the cave of Damis (Shadow Dungeon; ring of visibility required)",
+        "items": ["Rune crossbow", "Climbing boots", "Mitre"]
       }
     ]
   },
@@ -410,6 +552,12 @@
         "type": "Bush",
         "location": "Outside the Legends' Guild gates (east)",
         "items": ["Iron platelegs", "Emerald amulet", "Oak longbow"]
+      },
+      {
+        "difficulty": "Elite",
+        "type": "Bush",
+        "location": "Outside the Legends' Guild door (west of the fountain)",
+        "items": ["Cape of legends", "Dragon battleaxe", "Amulet of glory"]
       }
     ]
   },
@@ -488,6 +636,34 @@
         "type": "Bush",
         "location": "Near the parrots in Ardougne Zoo (near Parroty Pete)",
         "items": ["Studded body", "Bronze platelegs", "Staff"]
+      }
+    ]
+  },
+  {
+    "x": 23,
+    "y": 12,
+    "stashUnits": [
+      {
+        "difficulty": "Elite",
+        "type": "Hole",
+        "location": "Near the gem stall in Ardougne Market (behind the Ardougne Gem Stall.)",
+        "items": [
+          "Castle wars bracelet(3)",
+          "Dragonstone amulet",
+          "Ring of forging"
+        ]
+      }
+    ]
+  },
+  {
+    "x": 25,
+    "y": 12,
+    "stashUnits": [
+      {
+        "difficulty": "Elite",
+        "type": "Crate",
+        "location": "South-east corner of the Fishing Platform",
+        "items": ["Barrows gloves", "Dragon med helm", "Amulet of glory"]
       }
     ]
   },
@@ -632,6 +808,18 @@
         "type": "Crate",
         "location": "Observatory",
         "items": ["Mithril chainbody", "Green d'hide chaps", "Ruby amulet"]
+      }
+    ]
+  },
+  {
+    "x": 22,
+    "y": 14,
+    "stashUnits": [
+      {
+        "difficulty": "Elite",
+        "type": "Crate",
+        "location": "Outside the bar by the Fight Arena",
+        "items": ["Pirate bandana", "Dragon necklace", "Magic longbow"]
       }
     ]
   },
