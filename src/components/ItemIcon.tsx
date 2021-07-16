@@ -330,11 +330,18 @@ const axeItems = [
   '3rd age axe',
 ];
 
+const amuletOfGloryItems = [
+  'Amulet of glory (Uncharged)',
+  'Amulet of glory (6)',
+  'Amulet of eternal glory',
+];
+
 const itemSets: {
   [name: string]: string[];
 } = {
   Axe: axeItems,
   'Abyssal whip': abyssalWhipItems,
+  'Amulet of glory': amuletOfGloryItems,
   'Barrows body piece': barrowsBodyPieceItems,
   'Barrows head piece': barrowsHeadPieceItems,
   'Barrows leg piece': barrowsLegPieceItems,
