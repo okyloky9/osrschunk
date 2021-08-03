@@ -318,7 +318,8 @@ const ClueTable: React.FC<{
                           <span
                             className="alternate-chunk"
                             data-class="alternate-chunk-tooltip"
-                            data-tip={alt.notes}
+                            data-tip={alt.notes?.replaceAll('\n', '<br />')}
+                            data-html={true}
                             data-place="top"
                             data-background-color="#13135f"
                             onClick={() => goToChunk(alt.x, alt.y)}

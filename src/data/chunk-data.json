@@ -5761,11 +5761,67 @@
   {
     "x": 31,
     "y": 13,
+    "beginnerClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Always walking around the castle grounds and somehow knows everyone's age.",
+        "solution": "Talk to Hans walking around Lumbridge Castle.",
+        "location": "Lumbridge Castle",
+        "alternateChunks": [
+          {
+            "x": 31,
+            "y": 12,
+            "notes": "This is the chunk Hans normally navigates around in."
+          }
+        ]
+      }
+    ],
+    "easyClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Speak to Hans to solve the clue.",
+        "solution": "Hans can be found at Lumbridge Castle.",
+        "alternateChunks": [
+          {
+            "x": 31,
+            "y": 12,
+            "notes": "This is the chunk Hans normally navigates around in."
+          }
+        ]
+      }
+    ],
     "mediumClues": [
       {
         "type": "Coordinates",
         "clueHint": "02 degrees 48 minutes north, 22 degrees 30 minutes east",
         "itemsRequired": ["Spade"]
+      },
+      {
+        "type": "Anagram",
+        "clueHint": "Snah",
+        "location": "Lumbridge Castle courtyard",
+        "solution": "Hans",
+        "alternateChunks": [
+          {
+            "x": 31,
+            "y": 12,
+            "notes": "This is the chunk Hans normally navigates around in."
+          }
+        ]
+      }
+    ],
+    "hardClues": [
+      {
+        "type": "Cryptic",
+        "clueHint": "Snah? I feel all confused, like one of those cakes...",
+        "solution": "Talk to Hans roaming around Lumbridge Castle.",
+        "alternateChunks": [
+          {
+            "x": 31,
+            "y": 12,
+            "notes": "This is the chunk Hans normally navigates around in."
+          }
+        ]
       }
     ]
   },
@@ -5777,7 +5833,14 @@
         "type": "Cryptic",
         "clueHint": "Always walking around the castle grounds and somehow knows everyone's age.",
         "solution": "Talk to Hans walking around Lumbridge Castle.",
-        "location": "Lumbridge Castle"
+        "location": "Lumbridge Castle",
+        "alternateChunks": [
+          {
+            "x": 31,
+            "y": 13,
+            "notes": "Talk to Hans with your clue on the ground and tell him you're going to kill\neveryone in the castle to make him navigate out the back of Lumbridge castle.\nPick up your clue and speak with him to complete the step."
+          }
+        ]
       },
       {
         "type": "Cryptic",
@@ -5818,7 +5881,14 @@
       {
         "type": "Cryptic",
         "clueHint": "Speak to Hans to solve the clue.",
-        "solution": "Hans can be found at Lumbridge Castle."
+        "solution": "Hans can be found at Lumbridge Castle.",
+        "alternateChunks": [
+          {
+            "x": 31,
+            "y": 13,
+            "notes": "Talk to Hans with your clue on the ground and tell him you're going to kill\neveryone in the castle to make him navigate out the back of Lumbridge castle.\nPick up your clue and speak with him to complete the step."
+          }
+        ]
       },
       {
         "type": "Cryptic",
@@ -5843,7 +5913,14 @@
         "type": "Anagram",
         "clueHint": "Snah",
         "location": "Lumbridge Castle courtyard",
-        "solution": "Hans"
+        "solution": "Hans",
+        "alternateChunks": [
+          {
+            "x": 31,
+            "y": 13,
+            "notes": "Talk to Hans with your clue on the ground and tell him you're going to kill\neveryone in the castle to make him navigate out the back of Lumbridge castle.\nPick up your clue and speak with him to complete the step."
+          }
+        ]
       },
       {
         "type": "Cipher",
@@ -5867,7 +5944,14 @@
       {
         "type": "Cryptic",
         "clueHint": "Snah? I feel all confused, like one of those cakes...",
-        "solution": "Talk to Hans roaming around Lumbridge Castle."
+        "solution": "Talk to Hans roaming around Lumbridge Castle.",
+        "alternateChunks": [
+          {
+            "x": 31,
+            "y": 13,
+            "notes": "Talk to Hans with your clue on the ground and tell him you're going to kill\neveryone in the castle to make him navigate out the back of Lumbridge castle.\nPick up your clue and speak with him to complete the step."
+          }
+        ]
       },
       {
         "type": "Cryptic",
