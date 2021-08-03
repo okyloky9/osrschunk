@@ -11,6 +11,7 @@ type Clue = {
       x: number;
       y: number;
       location: string;
+      notes?: string;
     }[];
   }[];
 };

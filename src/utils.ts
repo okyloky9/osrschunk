@@ -68,7 +68,9 @@ export function getKillCreatureCluesForChunk(
           alternateChunks.push({
             x: creatureChunk.x,
             y: creatureChunk.y,
-            notes: `${creature.name} can be found ${creatureChunk.location}.`,
+            notes: creatureChunk.notes
+              ? creatureChunk.notes
+              : `${creature.name} can be found ${creatureChunk.location}.`,
           });
         }
       }

@@ -484,6 +484,12 @@
               "x": 24,
               "y": 5,
               "location": "in the Brine Rat Cavern"
+            },
+            {
+              "x": 1,
+              "y": 8,
+              "location": "THIS WILL NOT BE SHOWN",
+              "notes": "A rock crab can be lured into this chunk."
             }
           ]
         }
