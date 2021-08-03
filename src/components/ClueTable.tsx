@@ -78,7 +78,7 @@ const ClueTable: React.FC<{
             <th>Solution</th>
             <th>Location</th>
             <th>Items</th>
-            <th>{!search && 'Alternate'} Chunks</th>
+            <th>{!search ? 'Alternate Chunks' : 'Chunk(s)'}</th>
             {editing && <th>Delete</th>}
           </tr>
         </thead>

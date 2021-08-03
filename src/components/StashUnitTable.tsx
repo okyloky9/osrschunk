@@ -34,7 +34,7 @@ const StashUnitTable: React.FC<{
             <th>Appearance</th>
             <th>Location</th>
             <th>Items</th>
-            <th>Chunk(s)</th>
+            <th>Chunk</th>
           </tr>
         </thead>
 
