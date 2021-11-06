@@ -2330,7 +2330,7 @@
     "eliteClues": [
       {
         "type": "Coordinates",
-        "clueHint": "10 degrees 52 minutes south, 30 degrees 54 minutes west",
+        "clueHint": "10 degrees 52 minutes north, 30 degrees 54 minutes west",
         "itemsRequired": ["Spade"]
       }
     ]
