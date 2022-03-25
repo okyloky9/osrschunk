@@ -142,6 +142,24 @@
     ]
   },
   {
+    "x": 30,
+    "y": 2,
+    "masterClues": [
+      {
+        "type": "Hot/Cold",
+        "location": "South-west of the Deserted Keep, level 49 Wilderness.",
+        "itemsRequired": ["Spade", " Strange device"],
+        "alternateChunks": [
+          {
+            "x": 31,
+            "y": 2,
+            "notes": "Master hot and colds have an area to dig in. Can be gotten from both"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "x": 31,
     "y": 2,
     "hardClues": [
@@ -200,7 +218,14 @@
       {
         "type": "Hot/Cold",
         "location": "South-west of the Deserted Keep, level 49 Wilderness.",
-        "itemsRequired": ["Spade", "Strange device"]
+        "itemsRequired": ["Spade", "Strange device"],
+        "alternateChunks": [
+          {
+            "x": 30,
+            "y": 12,
+            "notes": "Master hot and colds have an area to dig in. Can be gotten from both."
+          }
+        ]
       }
     ]
   },
@@ -3932,6 +3957,57 @@
         "clueHint": "Elvish onions.",
         "solution": "Dig in the onion patch east of the allotment patches in the east part of Prifddinas.",
         "itemsRequired": ["Spade"]
+      },
+      {
+        "type": "Coordinates",
+        "clueHint": "05 degrees 13 minutes north, 04 degrees 16 minutes west",
+        "location": "",
+        "alternateChunks": [
+          {
+            "x": 18,
+            "y": 12,
+            "notes": "Master dig step clues have an area you can dig in. You can dig in either chunk."
+          },
+          {
+            "x": 17,
+            "y": 12,
+            "notes": "Master dig step clues have an area you can dig in. You can dig in either chunk."
+          },
+          {
+            "x": 18,
+            "y": 11,
+            "notes": "Master dig step clues have an area you can dig in. You can dig in either chunk."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "x": 18,
+    "y": 11,
+    "masterClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "05 degrees 13 minutes north, 04 degrees 16 minutes west",
+        "location": "",
+        "alternateChunks": [
+          {
+            "x": 17,
+            "y": 11,
+            "notes": "Master dig step clues have an area you can dig in. You can dig in either chunk."
+          },
+          {
+            "x": 17,
+            "y": 12,
+            "notes": "Master dig step clues have an area you can dig in. You can dig in either chunk."
+          },
+          {
+            "x": 18,
+            "y": 12,
+            "notes": "Master dig step clues have an area you can dig in. You can dig in either chunk."
+          }
+        ],
+        "itemsRequired": ["Spade"]
       }
     ]
   },
@@ -4688,6 +4764,35 @@
     ]
   },
   {
+    "x": 17,
+    "y": 12,
+    "masterClues": [
+      {
+        "type": "Coordinates",
+        "clueHint": "05 degrees 13 minutes north, 04 degrees 16 minutes west",
+        "location": "",
+        "alternateChunks": [
+          {
+            "x": 18,
+            "y": 12,
+            "notes": "Master dig step clues have an area you can dig in. You can dig in either chunk."
+          },
+          {
+            "x": 17,
+            "y": 11,
+            "notes": "Master dig step clues have an area you can dig in. You can dig in either chunk."
+          },
+          {
+            "x": 18,
+            "y": 11,
+            "notes": "Master dig step clues have an area you can dig in. You can dig in either chunk."
+          }
+        ],
+        "itemsRequired": ["Spade"]
+      }
+    ]
+  },
+  {
     "x": 18,
     "y": 12,
     "hardClues": [
@@ -4701,7 +4806,24 @@
       {
         "type": "Coordinates",
         "clueHint": "05 degrees 13 minutes north, 04 degrees 16 minutes west",
-        "itemsRequired": ["Spade"]
+        "itemsRequired": ["Spade"],
+        "alternateChunks": [
+          {
+            "x": 17,
+            "y": 12,
+            "notes": "Master dig step clues have an area you can dig in. You can dig in either chunk."
+          },
+          {
+            "x": 17,
+            "y": 11,
+            "notes": "Master dig step clues have an area you can dig in. You can dig in either chunk."
+          },
+          {
+            "x": 18,
+            "y": 11,
+            "notes": "Master dig step clues have an area you can dig in. You can dig in either chunk."
+          }
+        ]
       },
       {
         "type": "Hot/Cold",

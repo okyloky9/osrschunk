@@ -230,6 +230,16 @@
               "x": 32,
               "y": 6,
               "location": "in the Wilderness Slayer Cave"
+            },
+            {
+              "x": 30,
+              "y": 6,
+              "location": "northwest of Ferox Enclave"
+            },
+            {
+              "x": 29,
+              "y": 4,
+              "location": "south of the entrance to King Black Dragon's lair"
             }
           ]
         },
