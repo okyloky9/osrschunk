@@ -1,30 +1,15 @@
 {
   "files": {
-    "main.css": "/osrschunk/static/css/main.33f7ac18.chunk.css",
-    "main.js": "/osrschunk/static/js/main.2c609a0b.chunk.js",
-    "main.js.map": "/osrschunk/static/js/main.2c609a0b.chunk.js.map",
-    "runtime-main.js": "/osrschunk/static/js/runtime-main.e5fe7c5b.js",
-    "runtime-main.js.map": "/osrschunk/static/js/runtime-main.e5fe7c5b.js.map",
-    "static/css/2.52805df1.chunk.css": "/osrschunk/static/css/2.52805df1.chunk.css",
-    "static/js/2.1edffed1.chunk.js": "/osrschunk/static/js/2.1edffed1.chunk.js",
-    "static/js/2.1edffed1.chunk.js.map": "/osrschunk/static/js/2.1edffed1.chunk.js.map",
-    "static/js/3.32272688.chunk.js": "/osrschunk/static/js/3.32272688.chunk.js",
-    "static/js/3.32272688.chunk.js.map": "/osrschunk/static/js/3.32272688.chunk.js.map",
+    "main.css": "/osrschunk/static/css/main.5968a92f.css",
+    "main.js": "/osrschunk/static/js/main.7c1203cf.js",
+    "static/js/787.2ec68d9c.chunk.js": "/osrschunk/static/js/787.2ec68d9c.chunk.js",
     "index.html": "/osrschunk/index.html",
-    "static/css/2.52805df1.chunk.css.map": "/osrschunk/static/css/2.52805df1.chunk.css.map",
-    "static/css/main.33f7ac18.chunk.css.map": "/osrschunk/static/css/main.33f7ac18.chunk.css.map",
-    "static/js/2.1edffed1.chunk.js.LICENSE.txt": "/osrschunk/static/js/2.1edffed1.chunk.js.LICENSE.txt",
-    "static/media/STASH_unit_(bush).f8bd0451.png": "/osrschunk/static/media/STASH_unit_(bush).f8bd0451.png",
-    "static/media/STASH_unit_(crate).0cb282be.png": "/osrschunk/static/media/STASH_unit_(crate).0cb282be.png",
-    "static/media/STASH_unit_(hole).1b6d7519.png": "/osrschunk/static/media/STASH_unit_(hole).1b6d7519.png",
-    "static/media/STASH_unit_(rock).6d2fda3c.png": "/osrschunk/static/media/STASH_unit_(rock).6d2fda3c.png",
-    "static/media/Styles.scss": "/osrschunk/static/media/WorldMap_OSRS.e403e8f3.png"
+    "main.5968a92f.css.map": "/osrschunk/static/css/main.5968a92f.css.map",
+    "main.7c1203cf.js.map": "/osrschunk/static/js/main.7c1203cf.js.map",
+    "787.2ec68d9c.chunk.js.map": "/osrschunk/static/js/787.2ec68d9c.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.e5fe7c5b.js",
-    "static/css/2.52805df1.chunk.css",
-    "static/js/2.1edffed1.chunk.js",
-    "static/css/main.33f7ac18.chunk.css",
-    "static/js/main.2c609a0b.chunk.js"
+    "static/css/main.5968a92f.css",
+    "static/js/main.7c1203cf.js"
   ]
 }
