@@ -12,7 +12,7 @@ This is a tool for viewing what clues are available within each map chunk of Old
 
 ![Searching clue steps and STASH units](/screenshots/Search-1.png)
 
-If you see a mistake or would like to request a feature, please [let us know](https://github.com/okyloky9/osrschunk/issues/new).
+If you see a mistake or would like to request a feature, please [let us know](https://github.com/ConnorDY/clue-chunk-map/issues/new).
 
 ## Features
 
@@ -27,4 +27,4 @@ If you see a mistake or would like to request a feature, please [let us know](ht
   - Unlocked chunks will be saved locally.
   - Press "Create shareable link" to create a link that you can share with others. Opening a shared link will NOT overwrite your local data UNLESS you start making changes.
 - Turn on "Data editing mode" via the sidebar to make corrections or additions.
-  - Edits are saved locally. If you would like to submit a correction or addition to the data, use the "Export chunk-data.json" button and upload the file attached to a [new issue](https://github.com/okyloky9/osrschunk/issues/new).
+  - Edits are saved locally. If you would like to submit a correction or addition to the data, use the "Export chunk-data.json" button and upload the file attached to a [new issue](https://github.com/ConnorDY/clue-chunk-map/issues/new).

@@ -53,7 +53,7 @@ const InfoModal: React.FC = () => {
               use the "Export chunk-data.json" button and upload the file
               attached to a{' '}
               <a
-                href="https://github.com/okyloky9/osrschunk/issues/new"
+                href="https://github.com/ConnorDY/clue-chunk-map/issues/new"
                 target="_blank"
               >
                 new issue
@@ -67,7 +67,7 @@ const InfoModal: React.FC = () => {
 
       <p>
         The source code for this project can be found{' '}
-        <a href="https://github.com/okyloky9/osrschunk" target="_blank">
+        <a href="https://github.com/ConnorDY/clue-chunk-map" target="_blank">
           here
         </a>
         .
@@ -75,7 +75,7 @@ const InfoModal: React.FC = () => {
       <p>
         If you see a mistake or would like to request a feature, please{' '}
         <a
-          href="https://github.com/okyloky9/osrschunk/issues/new"
+          href="https://github.com/ConnorDY/clue-chunk-map/issues/new"
           target="_blank"
         >
           let us know
