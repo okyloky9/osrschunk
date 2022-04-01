@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.443b58f4.chunk.css",
+    "main.js": "/static/js/main.2c609a0b.chunk.js",
+    "main.js.map": "/static/js/main.2c609a0b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.104a8bba.js",
+    "runtime-main.js.map": "/static/js/runtime-main.104a8bba.js.map",
+    "static/css/2.52805df1.chunk.css": "/static/css/2.52805df1.chunk.css",
+    "static/js/2.1edffed1.chunk.js": "/static/js/2.1edffed1.chunk.js",
+    "static/js/2.1edffed1.chunk.js.map": "/static/js/2.1edffed1.chunk.js.map",
+    "static/js/3.32272688.chunk.js": "/static/js/3.32272688.chunk.js",
+    "static/js/3.32272688.chunk.js.map": "/static/js/3.32272688.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.52805df1.chunk.css.map": "/static/css/2.52805df1.chunk.css.map",
+    "static/css/main.443b58f4.chunk.css.map": "/static/css/main.443b58f4.chunk.css.map",
+    "static/js/2.1edffed1.chunk.js.LICENSE.txt": "/static/js/2.1edffed1.chunk.js.LICENSE.txt",
+    "static/media/STASH_unit_(bush).f8bd0451.png": "/static/media/STASH_unit_(bush).f8bd0451.png",
+    "static/media/STASH_unit_(crate).0cb282be.png": "/static/media/STASH_unit_(crate).0cb282be.png",
+    "static/media/STASH_unit_(hole).1b6d7519.png": "/static/media/STASH_unit_(hole).1b6d7519.png",
+    "static/media/STASH_unit_(rock).6d2fda3c.png": "/static/media/STASH_unit_(rock).6d2fda3c.png",
+    "static/media/Styles.scss": "/static/media/WorldMap_OSRS.e403e8f3.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.104a8bba.js",
+    "static/css/2.52805df1.chunk.css",
+    "static/js/2.1edffed1.chunk.js",
+    "static/css/main.443b58f4.chunk.css",
+    "static/js/main.2c609a0b.chunk.js"
+  ]
+}
