@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { ToastContainer } from 'react-toastify';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
   faArrowLeft,
@@ -10,21 +9,16 @@ import {
   faTimes,
 } from '@fortawesome/free-solid-svg-icons';
 
-import { Map } from './components';
-import { ChunkDataProvider } from './data';
 import reportWebVitals from './reportWebVitals';
 
+import TransferData from './TransferData';
 import './Styles.scss';
 
 library.add(faArrowLeft, faArrowRight, faQuestion, faSearch, faTimes);
 
 ReactDOM.render(
   <React.StrictMode>
-    <ChunkDataProvider>
-      <Map />
-
-      <ToastContainer autoClose={3000} />
-    </ChunkDataProvider>
+    <TransferData />
   </React.StrictMode>,
   document.getElementById('root')
 );
