@@ -11,14 +11,14 @@ import {
 
 import reportWebVitals from './reportWebVitals';
 
-import TransferData from './TransferData';
+import RedirectOrTransferData from './RedirectOrTransferData';
 import './Styles.scss';
 
 library.add(faArrowLeft, faArrowRight, faQuestion, faSearch, faTimes);
 
 ReactDOM.render(
   <React.StrictMode>
-    <TransferData />
+    <RedirectOrTransferData />
   </React.StrictMode>,
   document.getElementById('root')
 );
